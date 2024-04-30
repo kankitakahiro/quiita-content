@@ -68,7 +68,7 @@ CART_TOO_BIG_LIMIT  ->  MAX_ITEMS_IN_CART
   限界値を明確にするには、名前にmax_やmin_をつける
 
 ### 範囲を指定するときはfirstとlastを使う
-![alt text](image.png)
+![alt text](image/image.png)
 ```python
 print integer_range(start=2, stop=4)
 ```
@@ -80,7 +80,7 @@ set.Printkeys(first="Bart",last="Maggie")
 ```
 
 ### 包含/排他的範囲にはbeginとendを使う
-![alt text](image-1.png)
+![alt text](image/image-1.png)
 10月16日に開催されたイベントを印字したいとき
 ```java
 PrintEventsInRange("OCT 16 12:00am", "OCT 17 12:00am") // 良い
