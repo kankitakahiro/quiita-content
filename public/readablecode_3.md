@@ -1,11 +1,11 @@
 ---
 title: リーダブルコード　3章
 tags:
-  - '命名規則'
-  - 'リーダブルコード'
+  - リーダブルコード
+  - 命名規則
 private: true
-updated_at: ''
-id: null
+updated_at: '2024-04-30T18:23:55+09:00'
+id: 48b9a85f6c1104f9c01d
 organization_url_name: null
 slide: false
 ignorePublish: false
