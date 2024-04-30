@@ -1,7 +1,8 @@
 ---
 title: リーダブルコード　2章
 tags:
-  - ''
+  - '命名規則'
+  - 'リーダブルコード'
 private: true
 updated_at: ''
 id: null
