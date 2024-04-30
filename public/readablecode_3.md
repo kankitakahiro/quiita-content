@@ -10,13 +10,6 @@ organization_url_name: null
 slide: false
 ignorePublish: false
 ---
-# 名前に情報を詰め込む
-
-#### カギとなる考え
-名前に情報を詰め込む
-
-----------------------------
-
 # 誤解されない名前
 
 #### カギとなる考え
