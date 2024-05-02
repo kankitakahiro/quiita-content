@@ -4,8 +4,8 @@ tags:
   - リーダブルコード
   - 命名規則
 private: true
-updated_at: 
-id: 
+updated_at: '2024-05-02T15:50:49+09:00'
+id: dff77a163af8e92d441f
 organization_url_name: null
 slide: false
 ignorePublish: false
