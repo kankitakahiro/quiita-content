@@ -4,15 +4,15 @@ tags:
   - リーダブルコード
   - 命名規則
 private: true
-updated_at: 
-id: 
+updated_at: '2024-05-02T15:57:42+09:00'
+id: dff77a163af8e92d441f
 organization_url_name: null
 slide: false
 ignorePublish: false
 ---
 # 美しさ
 
-----------------------------
+---------------------------------
 
 - [美しさ](#美しさ)
     - [1. なぜ美しさが大切なのか](#1-なぜ美しさが大切なのか)
@@ -23,7 +23,8 @@ ignorePublish: false
     - [6. 宣言をブロックにまとめる](#6-宣言をブロックにまとめる)
     - [7. コードを「段落」に分割する](#7-コードを段落に分割する)
     - [8. 個人的な好みと一貫性](#8-個人的な好みと一貫性)
-_________________________
+    - [8. 個人的な好みと一貫性](#8-個人的な好みと一貫性-1)
+____________________
 
 ### 1. なぜ美しさが大切なのか
 
@@ -249,6 +250,19 @@ def suggest_new_friends(user, email_password):
 
     # それをページに表示する
     display['user'] = user
+    display['friends'] = friends
+    display['suggested_friends'] = suggested_friends
+
+    return render("suggested_friends.html", disply)
+```
+
+段落ごとに要約コメントを追加した。
+これで読みやすくなった。
+
+### 8. 個人的な好みと一貫性
+* 鍵となる考え
+  一貫性のあるスタイルは「正しい」スタイルよりも大切だ
+lay['user'] = user
     display['friends'] = friends
     display['suggested_friends'] = suggested_friends
 
