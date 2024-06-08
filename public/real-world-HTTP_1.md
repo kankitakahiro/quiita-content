@@ -1,12 +1,12 @@
 ---
 title: Real World HTTP　1章　ブラウザは何をしているのか
 tags:
-  - ブラウザ
-  - HTTP
   - Go
+  - HTTP
+  - ブラウザ
 private: true
-updated_at: 
-id: 
+updated_at: '2024-06-08T14:18:25+09:00'
+id: ef7492d26237e34f25e8
 organization_url_name: null
 slide: false
 ignorePublish: false
