@@ -10,6 +10,20 @@ organization_url_name: null
 slide: false
 ignorePublish: false
 ---
+- [1. 変数を削除する](#1-変数を削除する)
+    - [役に立たないコード一覧](#役に立たないコード一覧)
+    - [中間結果を削除する](#中間結果を削除する)
+    - [制御フロー変数を削除する](#制御フロー変数を削除する)
+- [2. 変数のスコープを縮める](#2-変数のスコープを縮める)
+  - [C++のif文のスコープ](#cのif文のスコープ)
+  - [JavaScriptで「プライベート」変数を作る](#javascriptでプライベート変数を作る)
+  - [JavaScriptのグローバルスコープ](#javascriptのグローバルスコープ)
+  - [PythonとJavascrptのネストしないスコープ](#pythonとjavascrptのネストしないスコープ)
+  - [定義の位値を下げる](#定義の位値を下げる)
+- [3. 変数は一度だけ書き込む](#3-変数は一度だけ書き込む)
+- [4. 最後の列](#4-最後の列)
+- [5. まとめ](#5-まとめ)
+
 変数を適当に使うとプログラムが理解しにくくなる
 
 1. 変数が多いと変数を追跡するのが難しくなる
@@ -154,7 +168,7 @@ class LargeClass{
 
 ただし、分割したいのはデータ（つまり変数）であることを意識して、相互にメンバを参照することがなどがないようにしよう。
 
-##### C++のif文のスコープ
+#### C++のif文のスコープ
 
 ```C++
 PaymentInfo* Info = database.ReadPaymentInfo();
@@ -220,3 +234,183 @@ Javascriptは変数にvarを付けないとグローバルスコープに入っ�
 変数を定義するときには常にvarキーワードを付ける(例：var x = i)。このように使うことで変数のスコープをその変数が定義された関数に制限することが出来る。
 
 #### PythonとJavascrptのネストしないスコープ
+
+C++やjavaのような言語にはブロックスコープがある。
+
+if,for,tryなどのブロックで定義された変数はスコープがそのブロックに制限される。
+
+```php
+if (...){
+    int x = 1;
+}
+x++; // コンパイルエラー!'x'は未定義です。
+```
+
+PYthonやjavascriptではブロックで定義された変数はその関数全体に「こぼれ出る」。
+
+```python
+# ここまではexample_valueを使っていない
+if request:
+    for value in request.value:
+        if value > 0:
+            example_value = value
+            break
+for logger in debag.loggers:
+    logger.log("Example:", example_value)
+```
+このようなコードは読みにくい。
+`example_value`を使っている場所に「最も近い共通の祖先」で変数を定義すればコードが読みやすくなる。
+
+```python
+example_value = None
+
+if request:
+    for value in request.value:
+        if value > 0:
+            example_value = value
+            break
+for logger in debag.loggers:
+    logger.log("Example:", example_value)
+```
+または`example_value`は中間結果を保持しているだけのため削除することも出来る。
+
+```python
+def LogExample(value):
+    for logger in debag.loggers:
+        logger.log("Example:", example_value)
+if request:
+    for value in request.value:
+        if value > 0:
+            LogExample(value) # すぐに'value'を使う
+            break
+```
+
+#### 定義の位値を下げる
+
+元々C言語では関数やブロックの先頭で変数を定義する必要があった。
+
+```C
+def ViewFilteredReplies(original_id):
+    filter_replies = []
+    root_message = Messages.objects.get(original_id)
+    all_replies = Messatges.objects.select(root_id=original_id)
+
+    root_message.view_count += 1
+    root_message.last_view_time = datetime.datetime.now()
+    root_message.save()
+
+    for reply in all_replies:
+        if reply.spam_votes <= MAX_SPAM_VOTES:
+            filtered_replies.append(reply)
+
+    return filtered_replies
+```
+このコードの問題点は常に3つの変数を切り替えなければいけないこと。
+変数の定義を変数を使う直前に移動することで読みやすくなる。
+
+```python
+def ViewFilteredReplies(original_id):
+    root_message = Messages.objects.get(original_id)
+    root_message.view_count += 1
+    root_message.last_view_time = datetime.datetime.now()
+    root_message.save()
+
+    all_replies = Messatges.objects.select(root_id=original_id)
+    filter_replies = []
+    for reply in all_replies:
+        if reply.spam_votes <= MAX_SPAM_VOTES:
+            filtered_replies.append(reply)
+
+    return filtered_replies
+```
+
+### 3. 変数は一度だけ書き込む
+
+変数が絶えず更新され続けると理解しにくい。
+
+この問題を対処するために変数は一度だけ書き込むようにするとわかりやすくなる。
+
+変数の変更する箇所を少なくすることで読みやすさがあがる。
+
+実際多くの言語でStringなどの組み込み型はイミュータブルになっている。「イミュータブルはトラブルになる傾向が少ない」ため積極的にconstなどを使うと良い。
+
+* 鍵となる考え
+変数を操作する場所が増えると、現在値の判断が難しくなる。
+
+※イミュータブル : 変更不可
+
+### 4. 最後の列
+
+'''html
+<input type="text" id="input1" value="Dustin">
+<input type="text" id="input2" value="Trevor">
+<input type="text" id="input3" value="">
+<input type="text" id="input4" value="Melissa">
+'''
+
+idはinput1から1ずつ増加する。
+文字列を受け取ってウェブページにある最初の空の<input>に入力する関数を作りたい。
+関数の戻り値は更新したDOM要素(空の入力フィールドがなければnull)になる。
+
+```javascript
+var setFirstEmptyInput = function (new_value){
+    var found = false;
+    var i = 1;
+    var elem = document.getElementById('input' + i);
+    while (elem !== null){
+        if (elem.value === ''){
+            found = true;
+            break;
+        }
+        i++;
+        elem = document.getElementById('input' + i);
+    }
+    if (found) elem.value = new_value;
+    return elem;
+};
+```
+このコードは動くが綺麗ではない。
+この場合は変数から考えると良い。
+
+var found
+var i
+var elem
+
+この三つの変数は関数の中でなんども書き換えられており、わかりにくい。
+
+```javascript
+var setFirstEmptyInput = function (new_value){
+    var i = 1;
+    var elem = document.getElementById('input' + i);
+    while (elem !== null){
+        if (elem.value === ''){
+            elem.value = new_value;
+            return elem
+        }
+        i++;
+        elem = document.getElementById('input' + i);
+    }
+    return null;
+};
+```
+次にelemを見る。
+elemはiに合わせてイテレートしている。
+そこでwhileをforに書き換えてみる。
+```javascript
+var setFirstEmptyInput = function (new_value){
+    for(var i = 1; true; i++){
+        var elem = document.getElementById('input' + i);
+        if(elem === null)
+            retrun null; //検索失敗。空のフィールドは見つからなかった。
+        if (elem.value === ''){
+            elem.value = new_value;
+            return elem
+        }
+    }
+};
+```
+### 5. まとめ
+
+* 邪魔な変数を削除する
+* 変数のスコープを出来るだけ小さくする
+* 一度だけ書き込む変数を使う
