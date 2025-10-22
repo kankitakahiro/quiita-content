@@ -3,8 +3,8 @@ title: 達人プログラマを読んで途中で調べたワードをまとめ�
 tags:
   - 達人プログラマ
 private: true
-updated_at: 
-id: 
+updated_at: '2025-10-23T00:38:52+09:00'
+id: c42ce9324158505bdc6a
 organization_url_name: null
 slide: false
 ignorePublish: false
