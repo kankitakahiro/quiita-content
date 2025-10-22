@@ -4,8 +4,8 @@ tags:
   - ハッカソン
   - 生成AI
 private: true
-updated_at: 
-id: 
+updated_at: '2025-10-23T01:09:21+09:00'
+id: 745246a2f732684da1cb
 organization_url_name: null
 slide: false
 ignorePublish: false
