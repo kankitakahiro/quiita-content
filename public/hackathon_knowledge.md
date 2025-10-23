@@ -11,6 +11,130 @@ slide: false
 ignorePublish: false
 ---
 
+# とにかく情報の取得にはMicrosoft Graph API を使う。
+
+teams
+
+https://learn.microsoft.com/ja-jp/entra/identity/enterprise-apps/grant-admin-consent?pivots=portal
+
+https://portal.azure.com
+https://entra.microsoft.com/
+
+# 💬 Microsoft Teams チャットを無料で取得する方法（会社アカウント環境向け）
+
+以下で、  
+1️⃣ 無料でできる範囲  
+2️⃣ 必要な権限  
+3️⃣ 実際に取得する手順  
+を具体的に説明します👇
+
+---
+
+## ✅ 1. 無料でできる範囲
+
+会社の Microsoft 365 テナントに **Azure AD（Microsoft Entra ID）** が含まれていれば、  
+以下は **追加料金なしで利用可能** です。
+
+| 機能 | 料金 | 備考 |
+|:--|:--:|:--|
+| Teams チャットメッセージの取得（Graph API） | ✅ 無料 | M365 Business / E1 / E3 / E5 ライセンスに含まれる |
+| API 登録（App Registration） | ✅ 無料 | Azure Portalで登録可能 |
+| トークン取得・呼び出し | ✅ 無料 | 認証後に Graph API 呼び出し可能 |
+
+---
+
+## 🧩 2. 必要な準備・権限
+
+Teams のメッセージを取得するには、**Microsoft Graph API** の権限を設定します。
+
+### 🔑 権限一覧
+
+| 権限タイプ | 権限名 | 用途 |
+|:--|:--|:--|
+| Delegated | Chat.Read | サインイン中のユーザーが参加しているチャットを取得 |
+| Delegated | ChannelMessage.Read.All | サインイン中のユーザーが参加しているチャンネルメッセージ取得 |
+| Application | Chat.Read.All | 組織全体のチャットメッセージ取得（管理者同意必要） |
+| Application | ChannelMessage.Read.All | 組織全体のTeamsチャンネルメッセージ取得（管理者同意必要） |
+
+💡 **ポイント：**
+- 自分のチャットだけ取得したい → **Delegated 権限でOK**
+- 全社員のチャットを自動収集したい → **Application 権限＋管理者同意が必要**
+
+---
+
+## 🪜 3. 手順（無料で設定する方法）
+
+### Step 1. Azureポータルでアプリ登録
+1. [https://portal.azure.com](https://portal.azure.com) に会社アカウントでログイン  
+2. 左メニュー → 「Microsoft Entra ID」 → 「アプリ登録」  
+3. 「＋新しい登録」をクリック  
+   - 名前：`TeamsChatReader`  
+   - アカウントの種類：この組織ディレクトリ内のアカウントのみ  
+   - 登録ボタンを押す  
+
+---
+
+### Step 2. API 権限を追加
+1. 「API permissions」 → 「＋追加」  
+2. 「Microsoft Graph」 → 「Delegated permissions」  
+3. 以下を選択：  
+   - `Chat.Read`  
+   - `ChannelMessage.Read.All`  
+4. 「同意」ボタンを押す（管理者であれば **admin consent** も付与）
+
+---
+
+### Step 3. クライアント情報を取得
+アプリ登録画面で以下をコピー：
+- `Application (client) ID`
+- `Directory (tenant) ID`
+
+---
+
+### Step 4. 認証してトークンを取得（Python例）
+
+ユーザーサインイン方式（Delegated権限）
+
+```python
+import requests
+from msal import PublicClientApplication
+
+client_id = "<YOUR_CLIENT_ID>"
+tenant_id = "<YOUR_TENANT_ID>"
+scopes = ["Chat.Read", "ChannelMessage.Read.All"]
+
+app = PublicClientApplication(client_id, authority=f"https://login.microsoftonline.com/{tenant_id}")
+
+result = app.acquire_token_interactive(scopes=scopes)
+print(result["access_token"])
+```
+## Step 5. チャットメッセージを取得
+
+```python
+import requests
+
+access_token = "<ACCESS_TOKEN>"
+url = "https://graph.microsoft.com/v1.0/me/chats"
+
+headers = {"Authorization": f"Bearer {access_token}"}
+res = requests.get(url, headers=headers)
+print(res.json())
+
+chat_id = "<YOUR_CHAT_ID>"
+res = requests.get(f"https://graph.microsoft.com/v1.0/chats/{chat_id}/messages", headers=headers)
+print(res.json())
+
+```
+## 📦 まとめ
+
+| 目的 | 必要権限 | 管理者同意 | 無料で可能か |
+|:--|:--|:--:|:--:|
+| 自分のチャットを取得 | Chat.Read | 不要 | ✅ 可能 |
+| 自分の参加チャンネルのメッセージを取得 | ChannelMessage.Read.All | 不要 | ✅ 可能 |
+| 全社チャットを取得 | Chat.Read.All | ✅ 必要 | ✅ (権限さえあれば) |
+| 全社チャンネルメッセージ | ChannelMessage.Read.All | ✅ 必要 | ✅ (権限さえあれば) |
+
+
 # ハッカソンで大事な考え方
 
 参考 : https://zenn.dev/nogu66/articles/how-to-win-shipaton
@@ -257,3 +381,6 @@ AIが自動提案・入力補完してくれるツール。
 もし希望があれば、  
 👉 **「Day 1の具体的なコードテンプレート（OpenAI API × FAISS × Streamlit構成）」**  
 をそのまま実行できる形で作成します。
+
+### ハッカソンでの学びをメモする。
+
