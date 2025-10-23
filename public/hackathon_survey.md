@@ -11,6 +11,25 @@ slide: false
 ignorePublish: false
 ---
 
+- [ハッカソンの調査結果](#ハッカソンの調査結果)
+- [Teams](#teams)
+  - [チーム１のチャット想定例](#チーム１のチャット想定例)
+  - [Teamsチーム２チーム、スレッドを活用](#teamsチーム２チームスレッドを活用)
+  - [Teamsチーム３チームスレッドを活用](#teamsチーム３チームスレッドを活用)
+- [outlook](#outlook)
+  - [チーム1　予定表例](#チーム1予定表例)
+  - [outlookチーム２例](#outlookチーム２例)
+  - [outlookチーム３](#outlookチーム３)
+  - [議事録例チーム２](#議事録例チーム２)
+  - [議事録例チーム3](#議事録例チーム3)
+  - [議事録例チーム4](#議事録例チーム4)
+  - [議事録チーム４別日](#議事録チーム４別日)
+  - [議事録チーム４別日２](#議事録チーム４別日２)
+  - [議事録全体会議チーム横断新プロジェクト](#議事録全体会議チーム横断新プロジェクト)
+  - [議事録チーム２に新規参画者がきた](#議事録チーム２に新規参画者がきた)
+- [基にしたjson](#基にしたjson)
+
+
 # ハッカソンの調査結果
 
 とにかく情報の取得にはMicrosoft Graph API を使う。
@@ -1231,6 +1250,544 @@ Power BIまたはExcelマクロで、日次報告を自動的に集約できる�
 
 ```
 
+## Teamsチーム３チームスレッドを活用
+```text
+💬 チャネル：一般
+🧵 スレッド①：在庫APIレビュー結果共有
+
+佐藤健（開発リーダー）
+在庫APIのレビューとマージ完了しました。
+共通エラーハンドリング仕様を統一する方向で進めます。
+外部システム連携のトークン認証方式については @高橋純 さんの提案案（JWT署名＋有効期限制御）を採用します。
+
+中村優（バックエンドエンジニア）
+@佐藤健 さん
+エラーフォーマットは "error": {"code": "E001", "message": "xxx", "trace_id": "..."} のような形式で定義する想定ですか？
+
+佐藤健
+はい、その方向です。詳細は「API共通エラーフォーマット仕様（draft）」として10/27までに整理します。
+
+高橋純（テクニカルリード）
+了解です。次回までに外部連携のトークン仕様書も併せてレビューします。
+
+🧵 スレッド②：会計APIテスト進捗
+
+中村優
+会計APIのテストコード追加が完了しました。
+モックデータ不整合が原因で一部テストが失敗していましたが修正済みです。
+販売APIとの結合テストを今週中（〜10/26）に実施予定です。
+
+伊藤萌（テスター）
+@中村優 さん
+結合テストのログ出力フォーマットを統一しましょうか？
+テストカバレッジの再確認も一緒に進めます。
+
+中村優
+お願いします。pytest --cov-report=xml の出力をまとめて次回共有します。
+
+佐藤健
+了解。次回（10/30）の定例で報告お願いします。
+
+🧵 スレッド③：フロントエンドとの連携確認
+
+石川怜奈（フロントエンドエンジニア）
+React UIのプロトタイプで、販売管理画面のAPI連携確認完了しました。
+ただし、/sales/list のレスポンス構造が変更（items → data）されていたため、モックを修正中です。
+
+高橋純
+@石川怜奈 さん
+バージョン管理ルールが曖昧なので、次回までにAPIバージョニングポリシーをまとめます（@佐藤健 さんと一緒に）。
+
+佐藤健
+了解。v1.5 から v2.0 に上がる際の互換性基準も定義しておきましょう。
+
+石川怜奈
+承知です。UI側のAPIモック更新は10/26までに完了させます。
+
+🧵 スレッド④：APIゲートウェイ設計方針
+
+高橋純
+APIゲートウェイ設計の初回レビュー結果を共有します。
+認証・認可を統合的に扱うため、AWS API Gateway + Lambda + Cognito連携案で進める予定です。
+スケーラビリティ面を考慮して、将来的にエッジキャッシュ構成も検討中です。
+
+河合亮（DevOpsエンジニア）
+了解です。CI/CD経由でデプロイする際、ステージごとの環境変数はSSM経由で読み込む構成にします。
+
+佐藤健
+OK。高橋さん・河合さんで10/29までに詳細設計まとめをお願いします。
+レビューは次回会議で行いましょう。
+
+🧵 スレッド⑤：統合テストとCI/CD整備
+
+伊藤萌
+販売APIの統合テストを実施しました。80件中78件成功です。
+失敗した2件はモックデータと期待値不一致によるものです。修正中。
+
+河合亮
+CI/CDパイプラインの自動デプロイ設定を本番相当環境に適用済みです。
+次はSlack通知の自動化を組み込み予定。
+@伊藤萌 さん、テスト完了時のSlack通知にWebhook使っていいですか？
+
+伊藤萌
+OKです。通知内容は成功率とエラー件数を入れてください。
+
+河合亮
+了解。10/28までにSlack連携完了させます。
+
+高橋純
+素晴らしい進捗です。CI実行トリガーの自動化も次フェーズで検討しましょう。
+
+📢 チャネル：連絡
+🧵 スレッド①：アクションアイテム整理
+
+佐藤健
+今週のアクションアイテムを共有します👇
+
+No	内容	担当	期限
+1	API共通エラーフォーマット定義	佐藤	10/27
+2	結合テスト結果報告・網羅率確認	中村・伊藤	10/28
+3	バージョニングポリシー策定	高橋・佐藤	10/29
+4	APIゲートウェイ詳細設計	高橋・河合	10/29
+5	UI側APIモック更新	石川	10/26
+6	Slack通知連携構築	河合	10/28
+
+高橋純
+ありがとうございます。進捗は #dev_progress チャンネルで日次更新します。
+
+🧵 スレッド②：次回会議案内
+
+伊藤萌
+📅 次回会議の予定です。
+日時：10/30（木） 14:00〜15:30
+議題：
+
+統合テスト結果レビュー
+
+APIバージョニング方針の最終確認
+
+デプロイ手順書レビュー
+URL：[Teams Meeting Link]
+
+佐藤健
+了解です。当日はゲートウェイ詳細設計とバージョン方針を共有します。
+
+📚 チャネル：技術共有
+🧵 スレッド①：API共通エラーフォーマット案共有
+
+佐藤健
+共通エラーフォーマットのドラフトを作成しました。
+
+{
+  "error": {
+    "code": "E001",
+    "message": "Invalid parameter",
+    "trace_id": "abcd1234efgh5678"
+  }
+}
+
+
+全APIでこの形式を返す想定です。
+意見があればコメントください。
+
+中村優
+了解です。detail フィールド追加を提案します。開発ログ連携で活用できそうです。
+
+高橋純
+良いですね。正式定義時にオプション項目として追加しましょう。
+
+🧵 スレッド②：Slack通知連携Tips
+
+河合亮
+CI/CDのSlack通知はGitHub ActionsとWebhookでつなげます。
+通知例👇
+
+✅ 統合テスト完了  
+成功率: 97.5%（78/80）  
+担当: 伊藤・中村
+
+
+Webhook URLは devops-config/slack.env に格納します。
+
+伊藤萌
+ありがとうございます！通知テンプレート整えたらQAチームにも共有します。
+```
+```json
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('devteam123')/channels/messages",
+  "team": {
+    "id": "devteam123",
+    "displayName": "設計・開発チーム"
+  },
+  "channels": [
+    {
+      "id": "19:general@thread.tacv2",
+      "displayName": "一般",
+      "messages": [
+        {
+          "id": "msg-001",
+          "replyToId": null,
+          "createdDateTime": "2025-10-23T05:02:00Z",
+          "lastModifiedDateTime": "2025-10-23T05:02:00Z",
+          "messageType": "message",
+          "subject": "在庫APIレビュー結果共有",
+          "from": {
+            "user": {
+              "id": "u-sato",
+              "displayName": "佐藤健",
+              "userPrincipalName": "ken.sato@contoso.com"
+            }
+          },
+          "body": {
+            "contentType": "html",
+            "content": "<p>在庫APIのレビューとマージ完了しました。<br/>共通エラーハンドリング仕様を統一する方向で進めます。<br/>外部システム連携のトークン認証方式については <at id=\"0\">高橋純</at> さんの提案案（JWT署名＋有効期限制御）を採用します。</p>"
+          },
+          "mentions": [
+            {
+              "id": 0,
+              "mentionText": "高橋純",
+              "mentioned": { "user": { "id": "u-takahashi", "displayName": "高橋純", "userPrincipalName": "jun.takahashi@contoso.com" } }
+            }
+          ],
+          "attachments": [],
+          "reactions": [],
+          "replies": [
+            {
+              "id": "msg-001-r1",
+              "replyToId": "msg-001",
+              "createdDateTime": "2025-10-23T05:04:12Z",
+              "from": { "user": { "id": "u-nakamura", "displayName": "中村優", "userPrincipalName": "yu.nakamura@contoso.com" } },
+              "body": {
+                "contentType": "html",
+                "content": "<p><at id=\"0\">佐藤健</at> さん<br/>エラーフォーマットは <code>{\"error\":{\"code\":\"E001\",\"message\":\"xxx\",\"trace_id\":\"...\"}}</code> のような形式で定義する想定ですか？</p>"
+              },
+              "mentions": [
+                { "id": 0, "mentionText": "佐藤健", "mentioned": { "user": { "id": "u-sato", "displayName": "佐藤健" } } }
+              ]
+            },
+            {
+              "id": "msg-001-r2",
+              "replyToId": "msg-001",
+              "createdDateTime": "2025-10-23T05:05:40Z",
+              "from": { "user": { "id": "u-sato", "displayName": "佐藤健" } },
+              "body": { "contentType": "html", "content": "<p>はい、その方向です。詳細は「API共通エラーフォーマット仕様（draft）」として<b>10/27</b>までに整理します。</p>" }
+            },
+            {
+              "id": "msg-001-r3",
+              "replyToId": "msg-001",
+              "createdDateTime": "2025-10-23T05:07:00Z",
+              "from": { "user": { "id": "u-takahashi", "displayName": "高橋純" } },
+              "body": { "contentType": "html", "content": "<p>了解です。次回までに外部連携のトークン仕様書も併せてレビューします。</p>" }
+            }
+          ]
+        },
+        {
+          "id": "msg-002",
+          "replyToId": null,
+          "createdDateTime": "2025-10-23T05:10:00Z",
+          "lastModifiedDateTime": "2025-10-23T05:10:00Z",
+          "messageType": "message",
+          "subject": "会計APIテスト進捗",
+          "from": { "user": { "id": "u-nakamura", "displayName": "中村優" } },
+          "body": {
+            "contentType": "html",
+            "content": "<p>会計APIのテストコード追加が完了しました。<br/>モックデータ不整合が原因で一部テストが失敗していましたが修正済みです。<br/>販売APIとの結合テストを今週中（〜10/26）に実施予定です。</p>"
+          },
+          "mentions": [],
+          "attachments": [],
+          "reactions": [],
+          "replies": [
+            {
+              "id": "msg-002-r1",
+              "replyToId": "msg-002",
+              "createdDateTime": "2025-10-23T05:12:05Z",
+              "from": { "user": { "id": "u-ito", "displayName": "伊藤萌" } },
+              "body": {
+                "contentType": "html",
+                "content": "<p><at id=\"0\">中村優</at> さん<br/>結合テストのログ出力フォーマットを統一しましょうか？テストカバレッジの再確認も一緒に進めます。</p>"
+              },
+              "mentions": [
+                { "id": 0, "mentionText": "中村優", "mentioned": { "user": { "id": "u-nakamura", "displayName": "中村優" } } }
+              ]
+            },
+            {
+              "id": "msg-002-r2",
+              "replyToId": "msg-002",
+              "createdDateTime": "2025-10-23T05:13:10Z",
+              "from": { "user": { "id": "u-nakamura", "displayName": "中村優" } },
+              "body": { "contentType": "html", "content": "<p>お願いします。pytest --cov-report=xml の出力をまとめて次回共有します。</p>" }
+            },
+            {
+              "id": "msg-002-r3",
+              "replyToId": "msg-002",
+              "createdDateTime": "2025-10-23T05:14:25Z",
+              "from": { "user": { "id": "u-sato", "displayName": "佐藤健" } },
+              "body": { "contentType": "html", "content": "<p>了解。次回（10/30）の定例で報告お願いします。</p>" }
+            }
+          ]
+        },
+        {
+          "id": "msg-003",
+          "replyToId": null,
+          "createdDateTime": "2025-10-23T05:17:00Z",
+          "lastModifiedDateTime": "2025-10-23T05:17:00Z",
+          "messageType": "message",
+          "subject": "フロントエンドとの連携確認",
+          "from": { "user": { "id": "u-ishikawa", "displayName": "石川怜奈" } },
+          "body": {
+            "contentType": "html",
+            "content": "<p>React UIのプロトタイプで、販売管理画面のAPI連携確認完了しました。<br/>ただし、/sales/list のレスポンス構造が変更（items → data）されていたため、モックを修正中です。</p>"
+          },
+          "mentions": [],
+          "attachments": [],
+          "reactions": [],
+          "replies": [
+            {
+              "id": "msg-003-r1",
+              "replyToId": "msg-003",
+              "createdDateTime": "2025-10-23T05:18:20Z",
+              "from": { "user": { "id": "u-takahashi", "displayName": "高橋純" } },
+              "body": {
+                "contentType": "html",
+                "content": "<p><at id=\"0\">石川怜奈</at> さん<br/>バージョン管理ルールが曖昧なので、次回までにAPIバージョニングポリシーをまとめます（<at id=\"1\">佐藤健</at> さんと一緒に）。</p>"
+              },
+              "mentions": [
+                { "id": 0, "mentionText": "石川怜奈", "mentioned": { "user": { "id": "u-ishikawa", "displayName": "石川怜奈" } } },
+                { "id": 1, "mentionText": "佐藤健", "mentioned": { "user": { "id": "u-sato", "displayName": "佐藤健" } } }
+              ]
+            },
+            {
+              "id": "msg-003-r2",
+              "replyToId": "msg-003",
+              "createdDateTime": "2025-10-23T05:19:10Z",
+              "from": { "user": { "id": "u-sato", "displayName": "佐藤健" } },
+              "body": { "contentType": "html", "content": "<p>了解。v1.5 から v2.0 に上がる際の互換性基準も定義しておきましょう。</p>" }
+            },
+            {
+              "id": "msg-003-r3",
+              "replyToId": "msg-003",
+              "createdDateTime": "2025-10-23T05:20:30Z",
+              "from": { "user": { "id": "u-ishikawa", "displayName": "石川怜奈" } },
+              "body": { "contentType": "html", "content": "<p>承知です。UI側のAPIモック更新は10/26までに完了させます。</p>" }
+            }
+          ]
+        },
+        {
+          "id": "msg-004",
+          "replyToId": null,
+          "createdDateTime": "2025-10-23T05:23:00Z",
+          "lastModifiedDateTime": "2025-10-23T05:23:00Z",
+          "messageType": "message",
+          "subject": "APIゲートウェイ設計方針",
+          "from": { "user": { "id": "u-takahashi", "displayName": "高橋純" } },
+          "body": {
+            "contentType": "html",
+            "content": "<p>APIゲートウェイ設計の初回レビュー結果を共有します。<br/>認証・認可を統合的に扱うため、AWS API Gateway + Lambda + Cognito連携案で進める予定です。<br/>スケーラビリティ面を考慮して、将来的にエッジキャッシュ構成も検討中です。</p>"
+          },
+          "mentions": [],
+          "attachments": [],
+          "reactions": [],
+          "replies": [
+            {
+              "id": "msg-004-r1",
+              "replyToId": "msg-004",
+              "createdDateTime": "2025-10-23T05:25:10Z",
+              "from": { "user": { "id": "u-kawai", "displayName": "河合亮" } },
+              "body": { "contentType": "html", "content": "<p>了解です。CI/CD経由でデプロイする際、ステージごとの環境変数はSSM経由で読み込む構成にします。</p>" }
+            },
+            {
+              "id": "msg-004-r2",
+              "replyToId": "msg-004",
+              "createdDateTime": "2025-10-23T05:26:20Z",
+              "from": { "user": { "id": "u-sato", "displayName": "佐藤健" } },
+              "body": {
+                "contentType": "html",
+                "content": "<p>OK。<at id=\"0\">高橋純</at> さん・<at id=\"1\">河合亮</at> さんで<b>10/29</b>までに詳細設計まとめをお願いします。レビューは次回会議で行いましょう。</p>"
+              },
+              "mentions": [
+                { "id": 0, "mentionText": "高橋純", "mentioned": { "user": { "id": "u-takahashi", "displayName": "高橋純" } } },
+                { "id": 1, "mentionText": "河合亮", "mentioned": { "user": { "id": "u-kawai", "displayName": "河合亮" } } }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "msg-005",
+          "replyToId": null,
+          "createdDateTime": "2025-10-23T05:30:00Z",
+          "lastModifiedDateTime": "2025-10-23T05:30:00Z",
+          "messageType": "message",
+          "subject": "統合テストとCI/CD整備",
+          "from": { "user": { "id": "u-ito", "displayName": "伊藤萌" } },
+          "body": {
+            "contentType": "html",
+            "content": "<p>販売APIの統合テストを実施しました。80件中78件成功です。<br/>失敗した2件はモックデータと期待値不一致によるものです。修正中。</p>"
+          },
+          "mentions": [],
+          "attachments": [],
+          "reactions": [],
+          "replies": [
+            {
+              "id": "msg-005-r1",
+              "replyToId": "msg-005",
+              "createdDateTime": "2025-10-23T05:31:10Z",
+              "from": { "user": { "id": "u-kawai", "displayName": "河合亮" } },
+              "body": {
+                "contentType": "html",
+                "content": "<p>CI/CDパイプラインの自動デプロイ設定を本番相当環境に適用済みです。<br/>次はSlack通知の自動化を組み込み予定。<br/><at id=\"0\">伊藤萌</at> さん、テスト完了時のSlack通知にWebhook使っていいですか？</p>"
+              },
+              "mentions": [
+                { "id": 0, "mentionText": "伊藤萌", "mentioned": { "user": { "id": "u-ito", "displayName": "伊藤萌" } } }
+              ]
+            },
+            {
+              "id": "msg-005-r2",
+              "replyToId": "msg-005",
+              "createdDateTime": "2025-10-23T05:32:00Z",
+              "from": { "user": { "id": "u-ito", "displayName": "伊藤萌" } },
+              "body": { "contentType": "html", "content": "<p>OKです。通知内容は成功率とエラー件数を入れてください。</p>" }
+            },
+            {
+              "id": "msg-005-r3",
+              "replyToId": "msg-005",
+              "createdDateTime": "2025-10-23T05:33:00Z",
+              "from": { "user": { "id": "u-kawai", "displayName": "河合亮" } },
+              "body": { "contentType": "html", "content": "<p>了解。<b>10/28</b>までにSlack連携完了させます。</p>" }
+            },
+            {
+              "id": "msg-005-r4",
+              "replyToId": "msg-005",
+              "createdDateTime": "2025-10-23T05:34:30Z",
+              "from": { "user": { "id": "u-takahashi", "displayName": "高橋純" } },
+              "body": { "contentType": "html", "content": "<p>素晴らしい進捗です。CI実行トリガーの自動化も次フェーズで検討しましょう。</p>" }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "19:notice@thread.tacv2",
+      "displayName": "連絡",
+      "messages": [
+        {
+          "id": "msg-006",
+          "replyToId": null,
+          "createdDateTime": "2025-10-23T05:40:00Z",
+          "lastModifiedDateTime": "2025-10-23T05:40:00Z",
+          "messageType": "message",
+          "subject": "アクションアイテム整理",
+          "from": { "user": { "id": "u-sato", "displayName": "佐藤健" } },
+          "body": {
+            "contentType": "html",
+            "content": "<p>今週のアクションアイテムを共有します👇</p><table><tr><th>No</th><th>内容</th><th>担当</th><th>期限</th></tr><tr><td>1</td><td>API共通エラーフォーマット定義</td><td>佐藤</td><td>10/27</td></tr><tr><td>2</td><td>結合テスト結果報告・網羅率確認</td><td>中村・伊藤</td><td>10/28</td></tr><tr><td>3</td><td>バージョニングポリシー策定</td><td>高橋・佐藤</td><td>10/29</td></tr><tr><td>4</td><td>APIゲートウェイ詳細設計</td><td>高橋・河合</td><td>10/29</td></tr><tr><td>5</td><td>UI側APIモック更新</td><td>石川</td><td>10/26</td></tr><tr><td>6</td><td>Slack通知連携構築</td><td>河合</td><td>10/28</td></tr></table>"
+          },
+          "mentions": [],
+          "attachments": [],
+          "reactions": [],
+          "replies": [
+            {
+              "id": "msg-006-r1",
+              "replyToId": "msg-006",
+              "createdDateTime": "2025-10-23T05:42:00Z",
+              "from": { "user": { "id": "u-takahashi", "displayName": "高橋純" } },
+              "body": { "contentType": "html", "content": "<p>ありがとうございます。進捗は <code>#dev_progress</code> チャンネルで日次更新します。</p>" }
+            }
+          ]
+        },
+        {
+          "id": "msg-007",
+          "replyToId": null,
+          "createdDateTime": "2025-10-23T05:45:00Z",
+          "lastModifiedDateTime": "2025-10-23T05:45:00Z",
+          "messageType": "message",
+          "subject": "次回会議案内",
+          "from": { "user": { "id": "u-ito", "displayName": "伊藤萌" } },
+          "body": {
+            "contentType": "html",
+            "content": "<p>📅 次回会議の予定です。<br/>日時：<b>10/30（木） 14:00〜15:30</b><br/>議題：<br/>・統合テスト結果レビュー<br/>・APIバージョニング方針の最終確認<br/>・デプロイ手順書レビュー<br/><br/><a href=\"https://teams.microsoft.com/l/meetup-join/19%3Ameeting_link\">Teams Meeting Link</a></p>"
+          },
+          "mentions": [],
+          "attachments": [],
+          "reactions": [],
+          "replies": [
+            {
+              "id": "msg-007-r1",
+              "replyToId": "msg-007",
+              "createdDateTime": "2025-10-23T05:46:10Z",
+              "from": { "user": { "id": "u-sato", "displayName": "佐藤健" } },
+              "body": { "contentType": "html", "content": "<p>了解です。当日はゲートウェイ詳細設計とバージョン方針を共有します。</p>" }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "19:tech-share@thread.tacv2",
+      "displayName": "技術共有",
+      "messages": [
+        {
+          "id": "msg-008",
+          "replyToId": null,
+          "createdDateTime": "2025-10-23T05:55:00Z",
+          "lastModifiedDateTime": "2025-10-23T05:55:00Z",
+          "messageType": "message",
+          "subject": "API共通エラーフォーマット案共有",
+          "from": { "user": { "id": "u-sato", "displayName": "佐藤健" } },
+          "body": {
+            "contentType": "html",
+            "content": "<p>共通エラーフォーマットのドラフトを作成しました。</p><pre><code>{\n  \"error\": {\n    \"code\": \"E001\",\n    \"message\": \"Invalid parameter\",\n    \"trace_id\": \"abcd1234efgh5678\"\n  }\n}\n</code></pre><p>全APIでこの形式を返す想定です。意見があればコメントください。</p>"
+          },
+          "mentions": [],
+          "attachments": [],
+          "reactions": [],
+          "replies": [
+            {
+              "id": "msg-008-r1",
+              "replyToId": "msg-008",
+              "createdDateTime": "2025-10-23T05:56:20Z",
+              "from": { "user": { "id": "u-nakamura", "displayName": "中村優" } },
+              "body": { "contentType": "html", "content": "<p>了解です。<code>detail</code> フィールド追加を提案します。開発ログ連携で活用できそうです。</p>" }
+            },
+            {
+              "id": "msg-008-r2",
+              "replyToId": "msg-008",
+              "createdDateTime": "2025-10-23T05:57:10Z",
+              "from": { "user": { "id": "u-takahashi", "displayName": "高橋純" } },
+              "body": { "contentType": "html", "content": "<p>良いですね。正式定義時にオプション項目として追加しましょう。</p>" }
+            }
+          ]
+        },
+        {
+          "id": "msg-009",
+          "replyToId": null,
+          "createdDateTime": "2025-10-23T06:00:00Z",
+          "lastModifiedDateTime": "2025-10-23T06:00:00Z",
+          "messageType": "message",
+          "subject": "Slack通知連携Tips",
+          "from": { "user": { "id": "u-kawai", "displayName": "河合亮" } },
+          "body": {
+            "contentType": "html",
+            "content": "<p>CI/CDのSlack通知はGitHub ActionsとWebhookでつなげます。通知例👇</p><pre><code>✅ 統合テスト完了\n成功率: 97.5%（78/80）\n担当: 伊藤・中村\n</code></pre><p>Webhook URLは <code>devops-config/slack.env</code> に格納します。</p>"
+          },
+          "mentions": [],
+          "attachments": [],
+          "reactions": [],
+          "replies": [
+            {
+              "id": "msg-009-r1",
+              "replyToId": "msg-009",
+              "createdDateTime": "2025-10-23T06:01:30Z",
+              "from": { "user": { "id": "u-ito", "displayName": "伊藤萌" } },
+              "body": { "contentType": "html", "content": "<p>ありがとうございます！通知テンプレート整えたらQAチームにも共有します。</p>" }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+
+```
 # outlook
 
 ## チーム1　予定表例
@@ -2220,6 +2777,346 @@ APIバージョニング方針の最終確認（高橋・佐藤）
     }
   ]
 }
+
+```
+## outlookチーム３
+
+```text
+予定一覧（Asia/Tokyo）
+
+【期限】UI側 APIモック更新（/sales/list: items→data）
+
+日時：2025/10/26（日）終日
+
+担当（主催）：石川怜奈
+
+場所：リポジトリ（frontend/mock）
+
+概要：レスポンス構造変更（items→data）をモックに反映し、UI連携を確認。
+
+【期限】API共通エラーフォーマット仕様（draft）
+
+日時：2025/10/27（月）終日
+
+担当（主催）：佐藤健
+
+場所：設計ドキュメント（SharePoint）
+
+概要：標準エラーフォーマット案を作成・共有（code/message/trace_id/detail など）。
+
+【期限】Slack通知連携（GitHub Actions + Webhook）
+
+日時：2025/10/28（火）終日
+
+担当（主催）：河合亮
+
+場所：DevOps 設定リポジトリ
+
+概要：成功率・エラー件数を含む通知テンプレートを整備。Webhookは devops-config/slack.env。
+
+【期限】結合テスト結果報告・網羅率確認
+
+日時：2025/10/28（火）終日（※15:30〜17:00に報告準備想定）
+
+担当（主催）：中村優
+
+参加者：伊藤萌（必須）
+
+場所：Teams／#dev_progress
+
+概要：販売API×会計APIの結合テスト総括、失敗2件の是正結果、カバレッジ（--cov-report=xml）提示。
+
+【期限】APIバージョニングポリシー策定（v1.5→v2.0 互換基準）
+
+日時：2025/10/29（水）終日
+
+担当（主催）：高橋純
+
+参加者：佐藤健（必須）
+
+場所：設計ドキュメント（SharePoint）
+
+概要：互換性基準、破壊的変更の扱い、移行ガイドの雛形を定義。
+
+【期限】APIゲートウェイ詳細設計まとめ（API GW + Lambda + Cognito）
+
+日時：2025/10/29（水）終日
+
+担当（主催）：高橋純
+
+参加者：河合亮（必須）
+
+場所：設計レビュー用ノート（OneNote）
+
+概要：認証・認可統合、ステージ別変数はSSM、将来のエッジキャッシュ前提のルーティング/スロットリング設計。
+
+会議：設計・開発チーム 定例（統合テスト結果／API方針／デプロイ手順）
+
+日時：2025/10/30（木）14:00〜15:30
+
+主催：伊藤萌
+
+参加者：高橋純（承諾）、佐藤健（仮承諾）、中村優（任意）、石川怜奈（任意）、河合亮（任意）
+
+開催方法：Microsoft Teams（参加URLあり）
+
+議題：
+
+統合テスト結果レビュー
+
+APIバージョニング方針（互換性・移行）最終確認
+
+デプロイ手順書レビュー
+```
+```json
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#me/calendarView",
+  "generatedFrom": {
+    "source": "Teams messages (Graph-like JSON provided by user)",
+    "teamId": "devteam123",
+    "channels": [
+      "19:general@thread.tacv2",
+      "19:notice@thread.tacv2",
+      "19:tech-share@thread.tacv2"
+    ],
+    "timezone": "Asia/Tokyo",
+    "extractedAt": "2025-10-24T00:00:00Z"
+  },
+  "value": [
+    {
+      "id": "ev-20251026-ui-mock-allDay",
+      "createdDateTime": "2025-10-23T06:00:00Z",
+      "lastModifiedDateTime": "2025-10-23T06:00:00Z",
+      "changeKey": "ck-1",
+      "categories": ["Deadline", "Frontend"],
+      "subject": "【期限】UI側 APIモック更新（/sales/list: items→data）",
+      "bodyPreview": "担当: 石川怜奈。モック更新と連携確認を完了する。",
+      "importance": "normal",
+      "isAllDay": true,
+      "isCancelled": false,
+      "isOrganizer": true,
+      "showAs": "free",
+      "type": "singleInstance",
+      "start": { "dateTime": "2025-10-26T00:00:00", "timeZone": "Asia/Tokyo" },
+      "end":   { "dateTime": "2025-10-27T00:00:00", "timeZone": "Asia/Tokyo" },
+      "location": { "displayName": "リポジトリ: frontend/mock" },
+      "reminderMinutesBeforeStart": 540,
+      "isReminderOn": true,
+      "organizer": { "emailAddress": { "name": "石川怜奈", "address": "rena.ishikawa@contoso.com" } },
+      "attendees": [],
+      "body": {
+        "contentType": "html",
+        "content": "<p>React UI プロトタイプ連携確認に合わせて、/sales/list のレスポンス構造（items→data）変更をモックへ反映。</p>"
+      },
+      "webLink": "https://outlook.office.com/calendar/item/ev-20251026-ui-mock-allDay"
+    },
+    {
+      "id": "ev-20251027-error-format-allDay",
+      "createdDateTime": "2025-10-23T06:01:00Z",
+      "lastModifiedDateTime": "2025-10-23T06:01:00Z",
+      "changeKey": "ck-2",
+      "categories": ["Deadline", "API"],
+      "subject": "【期限】API共通エラーフォーマット仕様（draft）",
+      "bodyPreview": "担当: 佐藤健。エラーフォーマット標準案を作成し共有。",
+      "importance": "normal",
+      "isAllDay": true,
+      "isOrganizer": true,
+      "showAs": "free",
+      "type": "singleInstance",
+      "start": { "dateTime": "2025-10-27T00:00:00", "timeZone": "Asia/Tokyo" },
+      "end":   { "dateTime": "2025-10-28T00:00:00", "timeZone": "Asia/Tokyo" },
+      "location": { "displayName": "設計ドキュメント（SharePoint）" },
+      "reminderMinutesBeforeStart": 540,
+      "isReminderOn": true,
+      "organizer": { "emailAddress": { "name": "佐藤健", "address": "ken.sato@contoso.com" } },
+      "attendees": [],
+      "body": {
+        "contentType": "html",
+        "content": "<p>例: <code>{\"error\":{\"code\":\"E001\",\"message\":\"Invalid parameter\",\"trace_id\":\"...\",\"detail\":\"...\"}}</code></p>"
+      },
+      "webLink": "https://outlook.office.com/calendar/item/ev-20251027-error-format-allDay"
+    },
+    {
+      "id": "ev-20251028-slack-integration-allDay",
+      "createdDateTime": "2025-10-23T06:02:00Z",
+      "lastModifiedDateTime": "2025-10-23T06:02:00Z",
+      "changeKey": "ck-3",
+      "categories": ["Deadline", "DevOps"],
+      "subject": "【期限】Slack通知連携（GitHub Actions + Webhook）",
+      "bodyPreview": "担当: 河合亮。成功率/エラー件数を含む通知テンプレート。",
+      "importance": "normal",
+      "isAllDay": true,
+      "isOrganizer": true,
+      "showAs": "free",
+      "type": "singleInstance",
+      "start": { "dateTime": "2025-10-28T00:00:00", "timeZone": "Asia/Tokyo" },
+      "end":   { "dateTime": "2025-10-29T00:00:00", "timeZone": "Asia/Tokyo" },
+      "location": { "displayName": "DevOps 設定リポジトリ" },
+      "reminderMinutesBeforeStart": 540,
+      "isReminderOn": true,
+      "organizer": { "emailAddress": { "name": "河合亮", "address": "ryo.kawai@contoso.com" } },
+      "attendees": [],
+      "body": {
+        "contentType": "html",
+        "content": "<p>Webhook: <code>devops-config/slack.env</code><br/>通知サンプル：✅ 統合テスト完了／成功率・エラー数・担当者を含む。</p>"
+      },
+      "webLink": "https://outlook.office.com/calendar/item/ev-20251028-slack-integration-allDay"
+    },
+    {
+      "id": "ev-20251028-ct-report-allDay",
+      "createdDateTime": "2025-10-23T06:03:00Z",
+      "lastModifiedDateTime": "2025-10-23T06:03:00Z",
+      "changeKey": "ck-4",
+      "categories": ["Deadline", "Testing"],
+      "subject": "【期限】結合テスト結果報告・網羅率確認",
+      "bodyPreview": "担当: 中村優・伊藤萌。pytestのカバレッジを含めて共有。",
+      "importance": "normal",
+      "isAllDay": true,
+      "isOrganizer": true,
+      "showAs": "free",
+      "type": "singleInstance",
+      "start": { "dateTime": "2025-10-28T00:00:00", "timeZone": "Asia/Tokyo" },
+      "end":   { "dateTime": "2025-10-29T00:00:00", "timeZone": "Asia/Tokyo" },
+      "location": { "displayName": "Teams / #dev_progress" },
+      "reminderMinutesBeforeStart": 540,
+      "isReminderOn": true,
+      "organizer": { "emailAddress": { "name": "中村優", "address": "yu.nakamura@contoso.com" } },
+      "attendees": [
+        {
+          "type": "required",
+          "status": { "response": "none", "time": "0001-01-01T00:00:00Z" },
+          "emailAddress": { "name": "伊藤萌", "address": "moe.ito@contoso.com" }
+        }
+      ],
+      "body": {
+        "contentType": "html",
+        "content": "<p>販売API×会計APIの結合テスト総括。失敗2件の原因（モック/期待値不一致）と是正結果、<code>--cov-report=xml</code> を添付予定。</p>"
+      },
+      "webLink": "https://outlook.office.com/calendar/item/ev-20251028-ct-report-allDay"
+    },
+    {
+      "id": "ev-20251029-versioning-allDay",
+      "createdDateTime": "2025-10-23T06:04:00Z",
+      "lastModifiedDateTime": "2025-10-23T06:04:00Z",
+      "changeKey": "ck-5",
+      "categories": ["Deadline", "Architecture"],
+      "subject": "【期限】APIバージョニングポリシー策定（v1.5→v2.0 互換基準）",
+      "bodyPreview": "担当: 高橋純・佐藤健。破壊的変更の扱い・移行手順を定義。",
+      "importance": "normal",
+      "isAllDay": true,
+      "isOrganizer": true,
+      "showAs": "free",
+      "type": "singleInstance",
+      "start": { "dateTime": "2025-10-29T00:00:00", "timeZone": "Asia/Tokyo" },
+      "end":   { "dateTime": "2025-10-30T00:00:00", "timeZone": "Asia/Tokyo" },
+      "location": { "displayName": "設計ドキュメント（SharePoint）" },
+      "reminderMinutesBeforeStart": 540,
+      "isReminderOn": true,
+      "organizer": { "emailAddress": { "name": "高橋純", "address": "jun.takahashi@contoso.com" } },
+      "attendees": [
+        {
+          "type": "required",
+          "status": { "response": "none", "time": "0001-01-01T00:00:00Z" },
+          "emailAddress": { "name": "佐藤健", "address": "ken.sato@contoso.com" }
+        }
+      ],
+      "body": {
+        "contentType": "html",
+        "content": "<p>セマンティックバージョニング準拠。非互換変更の周知・移行ガイドの雛形作成。</p>"
+      },
+      "webLink": "https://outlook.office.com/calendar/item/ev-20251029-versioning-allDay"
+    },
+    {
+      "id": "ev-20251029-apigw-allDay",
+      "createdDateTime": "2025-10-23T06:05:00Z",
+      "lastModifiedDateTime": "2025-10-23T06:05:00Z",
+      "changeKey": "ck-6",
+      "categories": ["Deadline", "Architecture", "DevOps"],
+      "subject": "【期限】APIゲートウェイ詳細設計まとめ（API GW + Lambda + Cognito）",
+      "bodyPreview": "担当: 高橋純・河合亮。認証/認可・SSM・スケーラビリティ設計。",
+      "importance": "normal",
+      "isAllDay": true,
+      "isOrganizer": true,
+      "showAs": "free",
+      "type": "singleInstance",
+      "start": { "dateTime": "2025-10-29T00:00:00", "timeZone": "Asia/Tokyo" },
+      "end":   { "dateTime": "2025-10-30T00:00:00", "timeZone": "Asia/Tokyo" },
+      "location": { "displayName": "設計レビュー用ノート（OneNote）" },
+      "reminderMinutesBeforeStart": 540,
+      "isReminderOn": true,
+      "organizer": { "emailAddress": { "name": "高橋純", "address": "jun.takahashi@contoso.com" } },
+      "attendees": [
+        {
+          "type": "required",
+          "status": { "response": "none", "time": "0001-01-01T00:00:00Z" },
+          "emailAddress": { "name": "河合亮", "address": "ryo.kawai@contoso.com" }
+        }
+      ],
+      "body": {
+        "contentType": "html",
+        "content": "<p>認証・認可の統合、ステージ別変数はSSM管理。将来的なエッジキャッシュ前提のルーティング/スロットリング設計を含む。</p>"
+      },
+      "webLink": "https://outlook.office.com/calendar/item/ev-20251029-apigw-allDay"
+    },
+    {
+      "id": "ev-20251030-regular-meeting",
+      "createdDateTime": "2025-10-23T06:06:00Z",
+      "lastModifiedDateTime": "2025-10-23T06:06:00Z",
+      "changeKey": "ck-7",
+      "categories": ["Meeting", "Project"],
+      "subject": "設計・開発チーム 定例（統合テスト結果／API方針／デプロイ手順）",
+      "bodyPreview": "10/30（木）14:00–15:30（JST）Teams会議。",
+      "importance": "normal",
+      "isAllDay": false,
+      "isCancelled": false,
+      "isOrganizer": true,
+      "responseRequested": true,
+      "showAs": "busy",
+      "type": "singleInstance",
+      "start": { "dateTime": "2025-10-30T14:00:00", "timeZone": "Asia/Tokyo" },
+      "end":   { "dateTime": "2025-10-30T15:30:00", "timeZone": "Asia/Tokyo" },
+      "location": { "displayName": "Microsoft Teams 会議", "locationType": "online" },
+      "onlineMeetingUrl": "https://teams.microsoft.com/l/meetup-join/19%3Ameeting_link",
+      "onlineMeeting": { "joinUrl": "https://teams.microsoft.com/l/meetup-join/19%3Ameeting_link" },
+      "reminderMinutesBeforeStart": 15,
+      "isReminderOn": true,
+      "organizer": { "emailAddress": { "name": "伊藤萌", "address": "moe.ito@contoso.com" } },
+      "attendees": [
+        {
+          "type": "required",
+          "status": { "response": "accepted", "time": "2025-10-23T07:01:00Z" },
+          "emailAddress": { "name": "高橋純", "address": "jun.takahashi@contoso.com" }
+        },
+        {
+          "type": "required",
+          "status": { "response": "tentativelyAccepted", "time": "2025-10-23T07:00:00Z" },
+          "emailAddress": { "name": "佐藤健", "address": "ken.sato@contoso.com" }
+        },
+        {
+          "type": "optional",
+          "status": { "response": "none", "time": "0001-01-01T00:00:00Z" },
+          "emailAddress": { "name": "中村優", "address": "yu.nakamura@contoso.com" }
+        },
+        {
+          "type": "optional",
+          "status": { "response": "none", "time": "0001-01-01T00:00:00Z" },
+          "emailAddress": { "name": "石川怜奈", "address": "rena.ishikawa@contoso.com" }
+        },
+        {
+          "type": "optional",
+          "status": { "response": "none", "time": "0001-01-01T00:00:00Z" },
+          "emailAddress": { "name": "河合亮", "address": "ryo.kawai@contoso.com" }
+        }
+      ],
+      "body": {
+        "contentType": "html",
+        "content": "<p>議題：</p><ul><li>統合テスト結果レビュー</li><li>APIバージョニング方針（互換性基準・移行）最終確認</li><li>デプロイ手順書レビュー</li></ul>"
+      },
+      "webLink": "https://outlook.office.com/calendar/item/ev-20251030-regular-meeting"
+    }
+  ]
+}
+```
 
 ```
 
