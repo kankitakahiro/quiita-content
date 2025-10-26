@@ -4,7 +4,7 @@ tags:
   - ハッカソン
   - 生成AI
 private: true
-updated_at: '2025-10-27T05:19:22+09:00'
+updated_at: '2025-10-27T00:52:38+09:00'
 id: 782d60db555591645e7c
 organization_url_name: null
 slide: false
@@ -39,13 +39,13 @@ ignorePublish: false
     - [teamsでの会話内容](#teamsでの会話内容-1)
 - [② データ基盤構築チーム（三宅チーム）](#-データ基盤構築チーム三宅チーム-1)
   - [📘 第1週（10月13日週）](#-第1週10月13日週-1)
-    - [会議①：データ基盤チーム週次定例（第3週）](#会議データ基盤チーム週次定例第3週)
-    - [🗓 会議②：API・匿名化方式 技術分科会](#-会議api匿名化方式-技術分科会)
+    - [📝 第1回：データ統合進捗確認会](#-第1回データ統合進捗確認会)
+    - [📝 第2回：API試験公開準備ミーティング](#-第2回api試験公開準備ミーティング)
   - [teamsでの会話内容](#teamsでの会話内容-2)
     - [outlook予定表第一週](#outlook予定表第一週-1)
   - [📘 第2週（10月20日週）](#-第2週10月20日週-1)
-    - [🗓 会議③：AI分析チーム合同データ連携会議](#-会議ai分析チーム合同データ連携会議)
-    - [🗓 会議④：第4週チーム定例](#-会議第4週チーム定例)
+    - [📝 第3回：品質・データ検証レビュー](#-第3回品質データ検証レビュー)
+    - [📝 第4回：クラウド運用・監視強化検討会](#-第4回クラウド運用監視強化検討会)
   - [teamsでの会話内容](#teamsでの会話内容-3)
   - [outlook予定表第二週](#outlook予定表第二週)
 - [③ AI分析チーム（藤原チーム）](#-ai分析チーム藤原チーム-1)
@@ -2584,339 +2584,308 @@ ETL再送データ取り込み 監視ウィンドウ（運用ブロック／Team
 ```
 
 # ② データ基盤構築チーム（三宅チーム）
+```
+🧭 今後2週間の主な見通し（10/27〜11/7）
+
+B市・C市のデータ統合版リリース候補生成（10/31）
+
+API試験公開結果レビュー（11/1予定）
+
+DataDog監視＋KeyVault連携テスト（11/5完了目標）
+
+次回「全体進捗会議」では、他チーム（AI分析・UX）連携要件を共有予定
+```
 
 ## 📘 第1週（10月13日週）
 
-### 会議①：データ基盤チーム週次定例（第3週）
+### 📝 第1回：データ統合進捗確認会
 
 ```
-🗓 会議①：データ基盤チーム週次定例（第3週）
+📝 第1回：データ統合進捗確認会
 
-日時： 2025年10月15日（水）10:00〜11:30
-場所： Teams（オンライン）
-出席者：
-三宅、白井、木下、青山、陳、橋本、河野、横山、福井、山岡、浜田、田村、大森、小泉、水谷（計15名）
+開催日時：2025年10月14日（火） 10:00〜11:30
+開催形式：Teamsオンライン
+出席者：三宅、白井、木下、青山、陳、橋本、河野、浜田、田村、横山
 
-■ 議題
+【議題】
 
-進捗報告（各サブリーダー）
+データレイク統合スキーマ進捗確認
 
-自治体Bデータ遅延対応
+自治体Bデータ再送対応
 
-Azure監視設計進捗
+ETLスケジュール調整と監視ジョブの設計
 
-次回AIチーム連携（データ提供範囲）確認
+【議事内容】
+① スキーマ進捗
 
-■ 議事概要
-1. 進捗報告
+白井：「10月10日時点で観光・宿泊・交通3カテゴリの統合スキーマを初版確定。
+ただし、B市の観光データで visit_date → used_date 変更があり、ETL側調整が必要。」
 
-白井（データアーキテクト）
-　スキーマ定義v2完成。属性名の英語化対応完了。
+木下：「Airflow DAGでスキーマv2へのマッピング対応を完了済み。
+staging環境での実データテストは10/16実施予定。」
 
-木下（ETL）
-　Airflow DAG構成のテスト環境反映済み。運用環境へ移行予定（10/17）。
+② 自治体Bデータ再送
 
-青山（クラウド）
-　Azure BLOBストレージ構築完了、RBAC設定も反映済み。
+河野：「B市より10/18（土）午前に再送予定の通知あり。新形式サンプルを確認済み。」
 
-陳（API）
-　API Gateway側の認証方式（OAuth2）でトークン有効期限延長対応を実施。
+橋本：「visit_date列名変更のほか、null許容カラムが増えている点を検証対象に追加。」
 
-横山（匿名化）
-　識別子マスキング処理で地方自治体データの一部仕様差分を発見、調整中。
+③ 監視ジョブ
 
-2. 自治体Bデータ遅延対応
+青山：「ETLの正常終了をAzure Data Factoryに通知する機構を、DataDog連携で追加検討中。」
 
-河野より報告：B市観光課からCSV形式変更の通知あり、10/18に再送予定。
+水谷（欠席報告により代理報告）：「閾値設定案を今週中に共有予定。」
 
-三宅判断：受領次第、橋本・浜田が検証→木下がETL再実行。
+【決定事項】
 
-3. Azure監視設計
+ETLマッピング修正（木下）：10/15完了
 
-水谷：DataDog連携は完了。バッチ監視はジョブ単位で閾値設定中。
+B市再送データ受領後、即日再ETL実施
 
-福井：監視ログに暗号化情報を含まないよう再設定を要請。
+DataDog閾値設定試行を10/18までにテスト環境適用
 
-4. AIチーム連携
-
-三宅→藤原AIチームと連携、10/21の全体会で「分析対象データ提供条件」を共有予定。
-
-■ 決定事項
-
-ETL移行は10/17夜間実施（木下・山岡担当）。
-
-自治体Bデータは10/18再取得、20日までに反映。
-
-次回会議（10/22）はAIチーム合同で開催。
-
-■ アクションアイテム
+【新規発生タスク】
 担当	内容	期限
-橋本・浜田	B市データ品質検証	10/20
-木下	ETL再実行・Airflow更新	10/21
-青山	VPN接続確認・BLOB再配置	10/20
-水谷・福井	DataDogアラート調整	10/19
+横山	B市データ匿名化ルール再確認	10/17
+田村	統合スキーマv2をメタデータカタログへ反映	10/20
+青山	Azure監視ジョブ連携PoC実施	10/19
 ```
 
-### 🗓 会議②：API・匿名化方式 技術分科会
+### 📝 第2回：API試験公開準備ミーティング
 
 ```
-🗓 会議②：API・匿名化方式 技術分科会
+📝 第2回：API試験公開準備ミーティング
 
-日時： 2025年10月17日（金）16:00〜17:30
-場所： Teams小会議室「API分科会」
-出席者： 陳、横山、陶、福井、青山、橋本、三宅
+開催日時：2025年10月17日（金） 15:00〜16:30
+開催形式：Teamsオンライン
+出席者：陳、三宅、青山、陶、橋本、木下、大森、福井
 
-■ 議題
+【議題】
 
-API Gateway 認証トークン更新方式
+API試験公開（/api/v1/visits/summary）進捗確認
 
-個人情報マスキング仕様統一
+認証方式（JWT＋APIキー）実装状況
 
-セキュリティ審査提出資料レビュー
+セキュリティスキャン結果の確認
 
-■ 議事概要
-1. 認証トークン更新
+【議事内容】
+① API疎通テスト結果
 
-陳：OAuth2トークン有効期限を2時間→6時間に変更済。
+陳：「ステージング環境で疎通確認済み。平均応答速度220ms、問題なし。
+ただしETL終了直後にAPIレスポンスが一時的に遅延するケースあり。」
 
-福井：運用監視側でトークン切れのログを追えるように設定要。
+木下：「Airflow側の一部ジョブでPostgreSQL VACUUM処理が重なっており、時間帯を分ける。」
 
-2. 匿名化仕様
+② 認証方式
 
-横山：SHA256＋ソルト方式を採用。ソルトキーはKeyVault管理。
+陶：「JWTの発行サーバをAzure Functionsに統一予定。
+APIキー管理はTerraform経由の自動発行に対応中。」
 
-青山：KeyVaultのバックアップポリシー設定を確認。
+青山：「IaC整備側でも対応可。10/21にPR予定。」
 
-3. セキュリティ資料
+③ セキュリティ関連
 
-三宅：NEC社内セキュリティレビューへ10/23提出。
+福井：「OWASP ZAPでのスキャン実施。警告2件（CORSヘッダとOPTIONS応答）→軽微対応予定。」
 
-福井：暗号化方式、アクセス制御図の再チェック担当。
+【決定事項】
 
-■ 決定事項
+本番公開テスト日：10/25（土）AM予定
 
-匿名化仕様（SHA256＋ソルト）正式採用。
+セキュリティ修正：10/20までに完了
 
-KeyVault保守権限は福井に一本化。
+APIキー発行ロジックはCI/CDに統合（大森）
 
-次回、セキュリティレビュー報告会を10/24に設定。
+【新規発生タスク】
+担当	内容	期限
+陳	API応答遅延ログを5件抽出し原因分析	10/19
+福井	CORS設定修正および再スキャン	10/20
+大森	GitHub ActionsへのAPIキー発行ジョブ追加	10/22
 ```
 
 ## teamsでの会話内容
+```
+主なトピック：
+
+統合スキーマv2対応完了（ETLマッピング修正・匿名化調整）
+
+B市再送データの準備完了、再ETL実施予定
+
+DataDog監視PoC成功（Teams通知化進行中）
+
+API試験公開に向けたテスト・認証方式・セキュリティスキャン完了
+
+CI/CDでのAPIキー自動発行準備着手
+```
 
 ```
-💬 技術・課題共有（チャネル）
-💬 スレッド①：自治体Bデータ再送対応について
-
-投稿者：河野 遥（データ連携管理）｜2025年10月15日 13:20
-
-各位
-B市観光課からデータ形式変更の件、正式に連絡がありました。
-10/18（土）午前に CSV再送 の予定とのことです。
-新形式のサンプル（1万件分）をもらったので、共有しておきます。
-📎 B_city_sample_20251015.csv
-
-@橋本翼 さん @浜田真帆 さん
-検証の観点で注意すべき点があればコメントお願いします。
-
-🟢 橋本 翼（品質管理）｜10/15 14:05
-
-確認しました。
-「利用日付」列が visit_date → used_date に変わってますね。
-そのままだとETLスキーマでマッピング落ちします。
-@木下俊輔 さん、この部分、再送時にスキーマv2対応できますか？
-
-🟢 木下 俊輔（ETLリーダー）｜10/15 14:18
-
-対応可能です。
-Airflow側のDAG修正をローカルで済ませてますので、
-再送データ受領後に v2.1 にアップデートして流します。
-
-実行タイミングは 10/18（土）夜間（23:00〜）を想定しています。
-@山岡 さん、その時間、モニタリング入れられますか？
-
-🟢 山岡 健（ETL運用）｜10/15 14:21
-
-はい、対応します。DataDog側のジョブ監視も追加しておきます。
-実行完了後、#📅定例・進捗報告 に報告します。
-
-🟢 浜田 真帆（品質検証）｜10/15 14:35
-
-B市データの旧形式との差分検証、私の方で比較スクリプト準備中です。
-diff_col_check.py の更新を今日中にpushします。
-（@橋本 さん レビューお願いします🙏）
-
-🟢 三宅 悠人（リーダー）｜10/15 15:00
-
-ありがとうございます。
-本件、20日までに反映が必要なのでスケジュール厳守でお願いします。
-
-進捗は次回のAIチーム合同会議（10/22）で共有予定です。
-
-💬 スレッド②：API Gatewayのトークン更新確認
-
-投稿者：陳 文傑（APIリード）｜2025年10月16日 09:15
-
-@青山玲奈 さん
-OAuth2 トークンの有効期限を 6時間 に延ばしました。
-DataDog で 401エラーを拾ってるログが少し増えてるようです。
-Azure App Gateway 側のキャッシュ残りの影響かもしれません。
-いったんキャッシュクリアお願いできますか？
-
-🟢 青山 玲奈（クラウド統括）｜10/16 09:32
-
-承知しました。
-今夜のメンテ枠（22:00〜23:00）でキャッシュクリア＋再デプロイします。
-終わったらこのスレッドに報告します。
-
-🟢 福井 大介（セキュリティ）｜10/16 09:48
-
-@陳 さん
-トークン切れ時の監査ログですが、Azure Monitor の DiagnosticSetting で
-すべてのAPI呼出しを追跡する設定にしました。
-SecurityReview用のサンプルログも取っておきます。
-
-🟢 陳 文傑｜10/16 10:05
-
-助かります！
-では、10/17のAPI分科会までに最新ログを整理しておきます。
-
-（参考）OAuthトークン延長の設定差分
-📎 auth_config_diff_20251016.json
-
-🟢 青山 玲奈｜10/16 22:42（夜）
-
-✅ キャッシュクリア＋App Gateway再デプロイ完了しました。
-DataDogログも正常化しています。
-@陳 さん、念のためAPI疎通確認お願いします。
-
-🟢 陳 文傑｜10/17 08:50
-
-問題なしでした。
-/api/v2/tourdata エンドポイント含め、全件正常応答。
-ありがとうございます🙆‍♂️
-
-💬 スレッド③：匿名化処理の仕様統一
-
-投稿者：横山 翔（匿名化担当）｜2025年10月17日 13:15
-
-@福井 さん
-SHA256＋ソルト化仕様で進めて良いとのことでしたので、
-KeyVaultの設定詳細を再確認させてください。
-
-現在は keyvault-prod-datakey に mask_salt_v1 が登録されていますが、
-バックアップの自動スナップショットがOFFになっています。
-これは意図的ですか？
-
-🟢 福井 大介｜10/17 13:28
-
-はい、現状はセキュリティポリシー上OFFです。
-来週のセキュリティレビュー（10/24）でON/OFFポリシーを再検討予定。
-一時的に手動バックアップを取ってもらってOKです。
-
-🟢 青山 玲奈｜10/17 13:45
-
-手動バックアップ対応します。
-KeyVaultの状態を確認して、バックアップファイルを
-secure_storage/20251017/ に格納予定です。
-@横山 さん 完了したらSlackでDMします。
-
-🟢 三宅 悠人｜10/17 17:30
-
-皆さんお疲れさまです。
-本日の分科会議事録は @横山 さん から共有あり次第、
-Generalチャネルにも転載します。
-特に匿名化仕様（SHA256＋ソルト）は正式採用とします。
-
-📅 定例・進捗報告（チャネル）
-📅 スレッド①：10/15 定例（データ基盤チーム）進捗まとめ
-
-投稿者：三宅 悠人（チームリーダー）｜2025年10月15日 17:45
-
-本日の定例内容を共有します。
-
-✅ スキーマv2完成（@白井）
-✅ Airflowテスト環境→運用移行10/17予定（@木下）
-✅ Azure監視構築完了（@青山・@水谷）
-✅ B市データ遅延対応（再送10/18予定）
-✅ 次回（10/22）はAIチーム合同開催
-
-アクションアイテムの進捗は以下のスレッドに追記してください👇
-
-🟢 橋本 翼｜10/16 09:10
-
-✅ B市データ品質チェックスクリプト更新済
-check_bcity_v2.py → Gitリポジトリ data_validation にコミット済み。
-
-🟢 青山 玲奈｜10/16 18:30
-
-VPN接続確認完了。
-Azure BLOB再配置も無事に完了しています。
-DataDogでの監視アラート調整は @水谷 さんに引き継ぎ済み。
-
-🟢 水谷 翔太｜10/17 09:45
-
-DataDog閾値調整完了しました。
-重大度「Critical」を5分連続エラー時にのみ発報するよう変更。
-
-🔔 テスト発報も成功しています。
-
-🟢 木下 俊輔｜10/18 23:45
-
-ETL移行完了しました！
-Airflowジョブも問題なし。
-実行ログ：/logs/etl_20251018_run.log
-@三宅 さん、@橋本 さん、B市データ再投入フェーズに入ります。
-
-🟢 浜田 真帆｜10/19 10:20
-
-データ品質OKです。
-Null率、桁数、ユニーク制約ともに正常範囲内でした。
-
-@木下 さん、再ETL実行OKです。
-
-🟢 木下 俊輔｜10/19 11:15
-
-了解しました。再ETL流しました。
-結果：レコード件数 1,285,432件（旧版と+2.3%）
-
-ETL完了後、DataLakeに反映済みです。
-
-🟢 三宅 悠人｜10/19 12:00
-
-完璧です。
-全体連携報告に反映しておきます。
-来週の合同会議でAIチーム側へのデータ提供範囲を説明予定です。
-
-皆さん、週末対応ありがとうございました。👏
-
+💬 Teams会話記録（データ基盤構築チーム）
 📰 一般（General）
 
-投稿者：西川 麻衣（品質PM）｜2025年10月20日 09:00
+📩 投稿者：三宅 悠人（チームリーダー）｜2025年10月14日 08:45
 
-各チームへ
-10/22（水）全体会議（AIチーム合同）にて
-「データ提供ルール」「監視ログ運用方針」について
-データ基盤チームからも説明をお願いします。
+@チーム全員
+おはようございます。
+本日10:00〜の「データ統合進捗確認会」前に、B市データの再送件について共有します。
+@河野 さん、サンプルCSVをここに添付できますか？
+@木下 さん、スキーマv2対応のAirflowブランチ、確認できる状態ですか？
 
-@三宅 さん、発表スライド（5分想定）を10/21午前までにご共有ください。
+📎 添付：B_city_sample_20251014.csv（1.2MB）
 
-🟢 三宅 悠人｜10/20 09:22
+🟢 河野 遥｜09:10
 
-承知しました。
-白井さん、スキーマ図とAPI連携フローをスライドに入れましょう。
-@白井 奏 さん、今日中に素材共有いただけますか？
+@三宅 さん
+サンプル共有しました。
+列構成は前回から2列追加（visit_category, used_device）。
+ETL側で新カラムのdefault値が必要です。
 
-🟢 白井 奏｜10/20 11:00
+🟢 木下 俊輔｜09:25
 
+@河野 さん
+了解です。Airflow側ではused_deviceはunknownで初期化します。
+@白井 さん、スキーマ定義書v2のDraft、最新版ありますか？
+
+🟢 白井 奏｜09:32
+
+あります！
+OneDrive共有済み → schema_v2_draft_1013.xlsx
+visit_date→used_date への変更も反映済みです。
+
+🟣 青山 玲奈｜09:50
+
+DataDog連携の件ですが、昨日テストでジョブ監視の通知出力を試しました。
+Slack通知との重複が少し煩雑なので、@水谷 さん、Teams通知一本化できそうですか？
+
+🟢 水谷 里菜｜10:05
+
+@青山 さん
+Teams Webhook連携、閾値別で通知先を分けられそうです。
+本日午後にPoCしてみます。
+
+🟢 三宅 悠人｜11:40（会議終了後のまとめ投稿）
+
+皆さんお疲れ様でした。
+今日の会議で決定した内容を共有します👇
+
+ETLマッピング修正 → @木下 さん、10/15完了予定
+
+B市再送データ受領後 → 即日再ETL実施（@河野 さん）
+
+DataDog閾値設定試行 → @青山 さん・@水谷 さん、10/18まで
+
+匿名化ルール再確認 → @横山 さん、10/17まで
+
+次回は10/17（金）「API試験公開準備ミーティング」で進捗を確認します。
+
+🟢 横山 玲｜11:45
+
+匿名化ルール再確認、visit_deviceカラムにも適用範囲拡大します。
+実装影響は軽微です。
+
+🟢 田村 知沙｜12:10
+
+統合スキーマv2をメタデータカタログへ反映しました。
+catalog.nec-tourism.jp/schema/20251014 で確認可能です。
+
+🟢 橋本 翼｜13:40
+
+@浜田 さん
+B市サンプルのnull値チェック結果共有できますか？
+監査ログと合わせて品質レポートに追記します。
+
+🟢 浜田 俊｜14:10
+
+@橋本 さん
+null率：全体で0.6%、特にused_deviceの欠損が多いです。
+レポートに追記済み → quality_check_B_city_1014.xlsx
+
+📅 定例・進捗報告
+
+📩 投稿者：木下 俊輔（ETLリーダー）｜2025年10月15日 19:10
+
+ETLマッピング修正完了しました。
+ステージング環境でテストジョブ（B_CITY_ETL_V2）を流し、正常終了を確認。
+@橋本 さん、結果ログをDataDogでも確認お願いします。
+
+📎 airflow_log_b_city_20251015.txt
+
+🟢 橋本 翼｜19:30
+
+@木下 さん
+ログ確認しました。問題なし。
+DataDogアラートも発火しなかったのでOKです。
+
+🟢 三宅 悠人｜19:45
+
+よし！これでB市再送受け入れの準備は完了ですね。
+明日のPMO報告にも反映します。お疲れさまです👏
+
+🟢 青山 玲奈｜10月16日 10:20
+
+@水谷 さん
+DataDog閾値設定、昨夜のテスト通知来てました！
+CPU負荷80%超えアラート、正常に出ました。
+本番適用日（10/18）で問題なしとします。
+
+💬 技術・課題共有
+
+📩 投稿者：陳 文傑（APIリード）｜2025年10月17日 09:20
+
+各位
+API試験公開（10/25予定）に向けて、テスト用エンドポイント /api/v1/visits/summary の疎通確認を開始しました。
+@青山 さん、Azure側ロードバランサ設定は予定通り24日中に反映で問題なさそうですか？
+@木下 さん、ETL出力フォーマット（CSV→Parquet変換）のサンプルをAPI側で確認したいです。
+
+📎 api_test_request.json
+
+🟢 青山 玲奈｜09:45
+
+@陳 さん
+LB設定はステージングで動作確認済み。
+本番への反映は10/23午前中に行います。
+
+🟢 木下 俊輔｜09:50
+
+Parquet変換済みファイルを共有します。
+/mnt/data/export_20251016.parquet に格納済み。
+20行だけAPIでサンプル取得可能です。
+
+🟢 陶 宏明｜10:10
+
+JWT発行サーバのFunctions設定完了しました。
+次はAPIキー自動発行ロジックをTerraformに追加します。
+@大森 さん、CI/CD連携ブランチfeature/api-key-automationに追記お願いします。
+
+🟢 大森 颯｜10:35
+
+@陶 さん
 了解です。
-schema_v2_diagram.pptx をTeamsファイルにアップしました。
-これをベースに @三宅 さん で最終調整お願いします。
+GitHub Actionsのdeploy_api_pipeline.ymlにAPIキー発行処理を追加します。
+テスト環境反映は10/20夜予定。
 
-🟢 三宅 悠人｜10/20 11:15
+🟢 福井 隆｜10:40
 
-確認しました。
-👌 完成版は明日朝にPMOへ提出します。
+ZAPスキャンの結果を共有します。
+警告2件（CORSヘッダ, OPTIONS応答）→軽微。
+明日修正して再スキャンします。
+
+📎 zap_scan_report_20251017.html
+
+🟢 橋本 翼｜11:00
+
+@福井 さん
+再スキャン後のレポート、品質レビューに添付してください。
+PMO週報に反映します。
+
+🟢 陳 文傑｜11:10
+
+皆さん対応ありがとうございます。
+念のため、10/23(木)夜に最終疎通テストを実施します。
+その際、@木下 さん のETLジョブを一時停止してもらう予定です。
+
+🟢 木下 俊輔｜11:15
+
+承知しました。ジョブ停止をスケジュールに登録します。
+Airflow管理画面で22:00〜23:00をメンテナンス時間に設定します。
 ```
 
 ```json
@@ -2924,125 +2893,320 @@ schema_v2_diagram.pptx をTeamsファイルにアップしました。
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('team-nec-kanko-dx')/channels/messages",
   "team": {
     "id": "team-nec-kanko-dx",
-    "displayName": "NEC観光DX基盤構築プロジェクト（全体）"
+    "displayName": "NEC観光DX基盤構築プロジェクト（データ基盤構築チーム）"
   },
-  "fetchedAtUtc": "2025-10-27T17:00:00Z",
+  "fetchedAtUtc": "2025-10-27T01:30:00Z",
   "channels": [
     {
       "id": "19:general@thread.tacv2",
       "displayName": "📰 一般（General）",
       "messages": [
         {
-          "id": "gen-msg-20251020-0900",
+          "id": "gen-20251014-0845",
           "replyToId": null,
-          "createdDateTime": "2025-10-20T00:00:00Z",
-          "lastModifiedDateTime": "2025-10-20T00:00:00Z",
+          "etag": "W/\"gen-20251014-0845\"",
           "messageType": "message",
+          "createdDateTime": "2025-10-13T23:45:00Z",
+          "lastModifiedDateTime": "2025-10-13T23:45:00Z",
           "importance": "normal",
-          "subject": "【PMO】10/22 全体会議（AIチーム合同）依頼",
+          "subject": "【連絡】本日10:00〜 データ統合進捗確認会／B市データ再送",
           "from": {
             "user": {
-              "id": "u-nishikawa",
-              "displayName": "西川 麻衣（品質PM）",
-              "userPrincipalName": "mai.nishikawa@contoso.com"
+              "id": "u-miyake",
+              "displayName": "三宅 悠人",
+              "userIdentityType": "aadUser"
             }
           },
           "body": {
             "contentType": "html",
-            "content": "<p>各チームへ<br/>10/22（水）全体会議（AIチーム合同）にて<br/>「データ提供ルール」「監視ログ運用方針」についてデータ基盤チームからも説明をお願いします。<br/><at id=\"0\">三宅 悠人</at> さん、発表スライド（5分想定）を10/21午前までにご共有ください。</p>"
+            "content": "<p>@チーム全員 おはようございます。<br/>本日10:00〜の「データ統合進捗確認会」前に、B市データの再送件について共有します。<br/><at id=\"0\">河野 遥</at> さん、サンプルCSVをここに添付できますか？<br/><at id=\"1\">木下 俊輔</at> さん、スキーマv2対応のAirflowブランチ、確認できる状態ですか？</p>"
           },
           "mentions": [
             {
               "id": 0,
-              "mentionText": "三宅 悠人",
+              "mentionText": "河野 遥",
               "mentioned": {
-                "user": {
-                  "id": "u-miyake",
-                  "displayName": "三宅 悠人",
-                  "userIdentityType": "aadUser"
-                }
+                "user": { "id": "u-kono", "displayName": "河野 遥" }
+              }
+            },
+            {
+              "id": 1,
+              "mentionText": "木下 俊輔",
+              "mentioned": {
+                "user": { "id": "u-kinoshita", "displayName": "木下 俊輔" }
               }
             }
           ],
-          "attachments": [],
+          "attachments": [
+            {
+              "id": "att-gen-001",
+              "name": "B_city_sample_20251014.csv",
+              "contentType": "text/csv",
+              "contentUrl": "https://contoso.sharepoint.com/sites/kanko/Shared%20Documents/B_city_sample_20251014.csv",
+              "size": 1205380
+            }
+          ],
           "reactions": [],
           "replies": [
             {
-              "id": "gen-rep-20251020-0922",
-              "replyToId": "gen-msg-20251020-0900",
-              "createdDateTime": "2025-10-20T00:22:00Z",
-              "lastModifiedDateTime": "2025-10-20T00:22:00Z",
+              "id": "gen-20251014-0910",
+              "replyToId": "gen-20251014-0845",
+              "etag": "W/\"gen-20251014-0910\"",
               "messageType": "message",
+              "createdDateTime": "2025-10-14T00:10:00Z",
+              "lastModifiedDateTime": "2025-10-14T00:10:00Z",
+              "importance": "normal",
+              "subject": null,
               "from": {
                 "user": {
-                  "id": "u-miyake",
-                  "displayName": "三宅 悠人",
-                  "userPrincipalName": "yuto.miyake@contoso.com"
+                  "id": "u-kono",
+                  "displayName": "河野 遥",
+                  "userIdentityType": "aadUser"
                 }
               },
               "body": {
                 "contentType": "html",
-                "content": "<p>承知しました。<br/>スキーマ図とAPI連携フローを反映します。<br/><at id=\"0\">白井 奏</at> さん、今日中に素材共有いただけますか？</p>"
+                "content": "<p><at id=\"0\">三宅 悠人</at> さん サンプル共有しました。<br/>列構成は前回から2列追加（<code>visit_category</code>, <code>used_device</code>）。<br/>ETL側で新カラムのdefault値が必要です。</p>"
               },
               "mentions": [
                 {
                   "id": 0,
-                  "mentionText": "白井 奏",
+                  "mentionText": "三宅 悠人",
                   "mentioned": {
-                    "user": {
-                      "id": "u-shirai",
-                      "displayName": "白井 奏",
-                      "userIdentityType": "aadUser"
-                    }
+                    "user": { "id": "u-miyake", "displayName": "三宅 悠人" }
                   }
                 }
               ],
-              "attachments": []
+              "attachments": [],
+              "reactions": []
             },
             {
-              "id": "gen-rep-20251020-1100",
-              "replyToId": "gen-msg-20251020-0900",
-              "createdDateTime": "2025-10-20T02:00:00Z",
-              "lastModifiedDateTime": "2025-10-20T02:00:00Z",
+              "id": "gen-20251014-0925",
+              "replyToId": "gen-20251014-0845",
+              "etag": "W/\"gen-20251014-0925\"",
               "messageType": "message",
+              "createdDateTime": "2025-10-14T00:25:00Z",
+              "lastModifiedDateTime": "2025-10-14T00:25:00Z",
+              "importance": "normal",
+              "from": {
+                "user": {
+                  "id": "u-kinoshita",
+                  "displayName": "木下 俊輔",
+                  "userIdentityType": "aadUser"
+                }
+              },
+              "body": {
+                "contentType": "html",
+                "content": "<p><at id=\"0\">河野 遥</at> さん 了解です。Airflow側では <code>used_device</code> は <code>unknown</code> で初期化します。<br/><at id=\"1\">白井 奏</at> さん、スキーマ定義書v2のDraft、最新版ありますか？</p>"
+              },
+              "mentions": [
+                {
+                  "id": 0,
+                  "mentionText": "河野 遥",
+                  "mentioned": {
+                    "user": { "id": "u-kono", "displayName": "河野 遥" }
+                  }
+                },
+                {
+                  "id": 1,
+                  "mentionText": "白井 奏",
+                  "mentioned": {
+                    "user": { "id": "u-shirai", "displayName": "白井 奏" }
+                  }
+                }
+              ],
+              "attachments": [],
+              "reactions": []
+            },
+            {
+              "id": "gen-20251014-0932",
+              "replyToId": "gen-20251014-0845",
+              "etag": "W/\"gen-20251014-0932\"",
+              "messageType": "message",
+              "createdDateTime": "2025-10-14T00:32:00Z",
+              "lastModifiedDateTime": "2025-10-14T00:32:00Z",
+              "importance": "normal",
               "from": {
                 "user": {
                   "id": "u-shirai",
                   "displayName": "白井 奏",
-                  "userPrincipalName": "kanade.shirai@contoso.com"
+                  "userIdentityType": "aadUser"
                 }
               },
               "body": {
                 "contentType": "html",
-                "content": "<p>了解です。<br/>資料をアップしました：<strong>schema_v2_diagram.pptx</strong></p>"
+                "content": "<p>あります！ OneDrive共有済み → <strong>schema_v2_draft_1013.xlsx</strong><br/><code>visit_date</code> → <code>used_date</code> への変更も反映済みです。</p>"
               },
               "attachments": [
                 {
-                  "id": "att-20251020-1100-1",
-                  "name": "schema_v2_diagram.pptx",
-                  "contentType": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
-                  "contentUrl": "https://contoso.sharepoint.com/sites/nec-kanko-dx/Shared%20Documents/schema_v2_diagram.pptx"
+                  "id": "att-gen-002",
+                  "name": "schema_v2_draft_1013.xlsx",
+                  "contentType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+                  "contentUrl": "https://contoso.sharepoint.com/sites/kanko/Shared%20Documents/schema_v2_draft_1013.xlsx",
+                  "size": 184320
                 }
-              ]
+              ],
+              "reactions": []
             },
             {
-              "id": "gen-rep-20251020-1115",
-              "replyToId": "gen-msg-20251020-0900",
-              "createdDateTime": "2025-10-20T02:15:00Z",
-              "lastModifiedDateTime": "2025-10-20T02:15:00Z",
+              "id": "gen-20251014-0950",
+              "replyToId": "gen-20251014-0845",
+              "etag": "W/\"gen-20251014-0950\"",
               "messageType": "message",
+              "createdDateTime": "2025-10-14T00:50:00Z",
+              "lastModifiedDateTime": "2025-10-14T00:50:00Z",
+              "importance": "normal",
               "from": {
                 "user": {
-                  "id": "u-miyake",
-                  "displayName": "三宅 悠人",
-                  "userPrincipalName": "yuto.miyake@contoso.com"
+                  "id": "u-aoyama",
+                  "displayName": "青山 玲奈",
+                  "userIdentityType": "aadUser"
                 }
               },
               "body": {
                 "contentType": "html",
-                "content": "<p>確認しました。明日朝にPMOへ提出します。</p>"
+                "content": "<p>DataDog連携の件ですが、昨日テストでジョブ監視の通知出力を試しました。<br/>Slack通知との重複が少し煩雑なので、<at id=\"0\">水谷 里菜</at> さん、Teams通知一本化できそうですか？</p>"
               },
-              "attachments": []
+              "mentions": [
+                {
+                  "id": 0,
+                  "mentionText": "水谷 里菜",
+                  "mentioned": { "user": { "id": "u-mizutani", "displayName": "水谷 里菜" } }
+                }
+              ],
+              "attachments": [],
+              "reactions": []
+            },
+            {
+              "id": "gen-20251014-1005",
+              "replyToId": "gen-20251014-0845",
+              "etag": "W/\"gen-20251014-1005\"",
+              "messageType": "message",
+              "createdDateTime": "2025-10-14T01:05:00Z",
+              "lastModifiedDateTime": "2025-10-14T01:05:00Z",
+              "importance": "normal",
+              "from": {
+                "user": {
+                  "id": "u-mizutani",
+                  "displayName": "水谷 里菜",
+                  "userIdentityType": "aadUser"
+                }
+              },
+              "body": {
+                "contentType": "html",
+                "content": "<p><at id=\"0\">青山 玲奈</at> さん Teams Webhook連携、閾値別で通知先を分けられそうです。<br/>本日午後にPoCしてみます。</p>"
+              },
+              "mentions": [
+                {
+                  "id": 0,
+                  "mentionText": "青山 玲奈",
+                  "mentioned": { "user": { "id": "u-aoyama", "displayName": "青山 玲奈" } }
+                }
+              ],
+              "attachments": [],
+              "reactions": []
+            },
+            {
+              "id": "gen-20251014-1140",
+              "replyToId": "gen-20251014-0845",
+              "etag": "W/\"gen-20251014-1140\"",
+              "messageType": "message",
+              "createdDateTime": "2025-10-14T02:40:00Z",
+              "lastModifiedDateTime": "2025-10-14T02:40:00Z",
+              "importance": "normal",
+              "from": { "user": { "id": "u-miyake", "displayName": "三宅 悠人" } },
+              "body": {
+                "contentType": "html",
+                "content": "<p>皆さんお疲れ様でした。今日の会議で決定した内容を共有します👇<br/><ul><li>ETLマッピング修正 → <at id=\"0\">木下 俊輔</at> さん、10/15完了予定</li><li>B市再送データ受領後 → 即日再ETL実施（<at id=\"1\">河野 遥</at> さん）</li><li>DataDog閾値設定試行 → <at id=\"2\">青山 玲奈</at> さん・<at id=\"3\">水谷 里菜</at> さん、10/18まで</li><li>匿名化ルール再確認 → <at id=\"4\">横山 玲</at> さん、10/17まで</li></ul>次回は10/17（金）「API試験公開準備ミーティング」で進捗を確認します。</p>"
+              },
+              "mentions": [
+                { "id": 0, "mentionText": "木下 俊輔", "mentioned": { "user": { "id": "u-kinoshita", "displayName": "木下 俊輔" } } },
+                { "id": 1, "mentionText": "河野 遥", "mentioned": { "user": { "id": "u-kono", "displayName": "河野 遥" } } },
+                { "id": 2, "mentionText": "青山 玲奈", "mentioned": { "user": { "id": "u-aoyama", "displayName": "青山 玲奈" } } },
+                { "id": 3, "mentionText": "水谷 里菜", "mentioned": { "user": { "id": "u-mizutani", "displayName": "水谷 里菜" } } },
+                { "id": 4, "mentionText": "横山 玲", "mentioned": { "user": { "id": "u-yokoyama", "displayName": "横山 玲" } } }
+              ],
+              "attachments": [],
+              "reactions": []
+            },
+            {
+              "id": "gen-20251014-1145",
+              "replyToId": "gen-20251014-0845",
+              "etag": "W/\"gen-20251014-1145\"",
+              "messageType": "message",
+              "createdDateTime": "2025-10-14T02:45:00Z",
+              "lastModifiedDateTime": "2025-10-14T02:45:00Z",
+              "importance": "normal",
+              "from": { "user": { "id": "u-yokoyama", "displayName": "横山 玲" } },
+              "body": {
+                "contentType": "html",
+                "content": "<p>匿名化ルール再確認、<code>visit_device</code> カラムにも適用範囲拡大します。実装影響は軽微です。</p>"
+              },
+              "mentions": [],
+              "attachments": [],
+              "reactions": []
+            },
+            {
+              "id": "gen-20251014-1210",
+              "replyToId": "gen-20251014-0845",
+              "etag": "W/\"gen-20251014-1210\"",
+              "messageType": "message",
+              "createdDateTime": "2025-10-14T03:10:00Z",
+              "lastModifiedDateTime": "2025-10-14T03:10:00Z",
+              "importance": "normal",
+              "from": { "user": { "id": "u-tamura", "displayName": "田村 知沙" } },
+              "body": {
+                "contentType": "html",
+                "content": "<p>統合スキーマv2をメタデータカタログへ反映しました。<br/> <a href=\"https://catalog.nec-tourism.jp/schema/20251014\">catalog.nec-tourism.jp/schema/20251014</a> で確認可能です。</p>"
+              },
+              "attachments": [],
+              "reactions": []
+            },
+            {
+              "id": "gen-20251014-1340",
+              "replyToId": "gen-20251014-0845",
+              "etag": "W/\"gen-20251014-1340\"",
+              "messageType": "message",
+              "createdDateTime": "2025-10-14T04:40:00Z",
+              "lastModifiedDateTime": "2025-10-14T04:40:00Z",
+              "importance": "normal",
+              "from": { "user": { "id": "u-hashimoto", "displayName": "橋本 翼" } },
+              "body": {
+                "contentType": "html",
+                "content": "<p><at id=\"0\">浜田 俊</at> さん B市サンプルのnull値チェック結果共有できますか？監査ログと合わせて品質レポートに追記します。</p>"
+              },
+              "mentions": [
+                { "id": 0, "mentionText": "浜田 俊", "mentioned": { "user": { "id": "u-hamada", "displayName": "浜田 俊" } } }
+              ],
+              "attachments": [],
+              "reactions": []
+            },
+            {
+              "id": "gen-20251014-1410",
+              "replyToId": "gen-20251014-0845",
+              "etag": "W/\"gen-20251014-1410\"",
+              "messageType": "message",
+              "createdDateTime": "2025-10-14T05:10:00Z",
+              "lastModifiedDateTime": "2025-10-14T05:10:00Z",
+              "importance": "normal",
+              "from": { "user": { "id": "u-hamada", "displayName": "浜田 俊" } },
+              "body": {
+                "contentType": "html",
+                "content": "<p><at id=\"0\">橋本 翼</at> さん null率：全体で0.6%、特に <code>used_device</code> の欠損が多いです。レポートに追記済み → <strong>quality_check_B_city_1014.xlsx</strong></p>"
+              },
+              "mentions": [
+                { "id": 0, "mentionText": "橋本 翼", "mentioned": { "user": { "id": "u-hashimoto", "displayName": "橋本 翼" } } }
+              ],
+              "attachments": [
+                {
+                  "id": "att-gen-003",
+                  "name": "quality_check_B_city_1014.xlsx",
+                  "contentType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+                  "contentUrl": "https://contoso.sharepoint.com/sites/kanko/Shared%20Documents/quality_check_B_city_1014.xlsx",
+                  "size": 262144
+                }
+              ],
+              "reactions": []
             }
           ]
         }
@@ -3053,174 +3217,91 @@ schema_v2_diagram.pptx をTeamsファイルにアップしました。
       "displayName": "📅 定例・進捗報告",
       "messages": [
         {
-          "id": "wkly-msg-20251015-1745",
+          "id": "wkly-20251015-1910",
           "replyToId": null,
-          "createdDateTime": "2025-10-15T08:45:00Z",
-          "lastModifiedDateTime": "2025-10-15T08:45:00Z",
+          "etag": "W/\"wkly-20251015-1910\"",
           "messageType": "message",
+          "createdDateTime": "2025-10-15T10:10:00Z",
+          "lastModifiedDateTime": "2025-10-15T10:10:00Z",
           "importance": "normal",
-          "subject": "10/15 定例（データ基盤チーム）進捗まとめ",
+          "subject": "【報告】ETLマッピング修正完了（B_CITY_ETL_V2）",
           "from": {
-            "user": {
-              "id": "u-miyake",
-              "displayName": "三宅 悠人",
-              "userPrincipalName": "yuto.miyake@contoso.com"
-            }
+            "user": { "id": "u-kinoshita", "displayName": "木下 俊輔" }
           },
           "body": {
             "contentType": "html",
-            "content": "<p>本日の定例内容を共有します。</p><ul><li>✅ スキーマv2完成（<at id=\"0\">白井 奏</at>）</li><li>✅ Airflowテスト環境→運用移行10/17予定（<at id=\"1\">木下 俊輔</at>）</li><li>✅ Azure監視構築完了（<at id=\"2\">青山 玲奈</at>・<at id=\"3\">水谷 翔太</at>）</li><li>✅ B市データ遅延対応（再送10/18予定）</li><li>✅ 次回（10/22）はAIチーム合同開催</li></ul><p>アクションアイテムの進捗はこのスレッドに追記してください👇</p>"
+            "content": "<p>ETLマッピング修正完了しました。<br/>ステージング環境でテストジョブ（<code>B_CITY_ETL_V2</code>）を流し、正常終了を確認。<br/><at id=\"0\">橋本 翼</at> さん、結果ログをDataDogでも確認お願いします。</p>"
           },
           "mentions": [
-            { "id": 0, "mentionText": "白井 奏", "mentioned": { "user": { "id": "u-shirai", "displayName": "白井 奏", "userIdentityType": "aadUser" } } },
-            { "id": 1, "mentionText": "木下 俊輔", "mentioned": { "user": { "id": "u-kinoshita", "displayName": "木下 俊輔", "userIdentityType": "aadUser" } } },
-            { "id": 2, "mentionText": "青山 玲奈", "mentioned": { "user": { "id": "u-aoyama", "displayName": "青山 玲奈", "userIdentityType": "aadUser" } } },
-            { "id": 3, "mentionText": "水谷 翔太", "mentioned": { "user": { "id": "u-mizutani", "displayName": "水谷 翔太", "userIdentityType": "aadUser" } } }
+            { "id": 0, "mentionText": "橋本 翼", "mentioned": { "user": { "id": "u-hashimoto", "displayName": "橋本 翼" } } }
           ],
-          "attachments": [],
+          "attachments": [
+            {
+              "id": "att-wkly-001",
+              "name": "airflow_log_b_city_20251015.txt",
+              "contentType": "text/plain",
+              "contentUrl": "https://contoso.sharepoint.com/sites/kanko/Shared%20Documents/airflow_log_b_city_20251015.txt",
+              "size": 48192
+            }
+          ],
+          "reactions": [],
           "replies": [
             {
-              "id": "wkly-rep-20251016-0910",
-              "replyToId": "wkly-msg-20251015-1745",
-              "createdDateTime": "2025-10-16T00:10:00Z",
-              "lastModifiedDateTime": "2025-10-16T00:10:00Z",
+              "id": "wkly-20251015-1930",
+              "replyToId": "wkly-20251015-1910",
+              "etag": "W/\"wkly-20251015-1930\"",
               "messageType": "message",
-              "from": {
-                "user": {
-                  "id": "u-hashimoto",
-                  "displayName": "橋本 翼",
-                  "userPrincipalName": "tsubasa.hashimoto@contoso.com"
-                }
-              },
+              "createdDateTime": "2025-10-15T10:30:00Z",
+              "lastModifiedDateTime": "2025-10-15T10:30:00Z",
+              "importance": "normal",
+              "from": { "user": { "id": "u-hashimoto", "displayName": "橋本 翼" } },
               "body": {
                 "contentType": "html",
-                "content": "<p>✅ B市データ品質チェックスクリプト更新済<br/>`check_bcity_v2.py` を <code>data_validation</code> リポジトリにコミットしました。</p>"
-              },
-              "attachments": []
-            },
-            {
-              "id": "wkly-rep-20251016-1830",
-              "replyToId": "wkly-msg-20251015-1745",
-              "createdDateTime": "2025-10-16T09:30:00Z",
-              "lastModifiedDateTime": "2025-10-16T09:30:00Z",
-              "messageType": "message",
-              "from": {
-                "user": {
-                  "id": "u-aoyama",
-                  "displayName": "青山 玲奈",
-                  "userPrincipalName": "rena.aoyama@contoso.com"
-                }
-              },
-              "body": {
-                "contentType": "html",
-                "content": "<p>VPN接続確認完了。Azure BLOB再配置も完了。DataDogアラート調整は <at id=\"0\">水谷 翔太</at> に引き継ぎ済み。</p>"
+                "content": "<p><at id=\"0\">木下 俊輔</at> さん ログ確認しました。問題なし。DataDogアラートも発火しなかったのでOKです。</p>"
               },
               "mentions": [
-                { "id": 0, "mentionText": "水谷 翔太", "mentioned": { "user": { "id": "u-mizutani", "displayName": "水谷 翔太", "userIdentityType": "aadUser" } } }
+                { "id": 0, "mentionText": "木下 俊輔", "mentioned": { "user": { "id": "u-kinoshita", "displayName": "木下 俊輔" } } }
               ],
-              "attachments": []
+              "attachments": [],
+              "reactions": []
             },
             {
-              "id": "wkly-rep-20251017-0945",
-              "replyToId": "wkly-msg-20251015-1745",
-              "createdDateTime": "2025-10-17T00:45:00Z",
-              "lastModifiedDateTime": "2025-10-17T00:45:00Z",
+              "id": "wkly-20251015-1945",
+              "replyToId": "wkly-20251015-1910",
+              "etag": "W/\"wkly-20251015-1945\"",
               "messageType": "message",
-              "from": {
-                "user": {
-                  "id": "u-mizutani",
-                  "displayName": "水谷 翔太",
-                  "userPrincipalName": "shota.mizutani@contoso.com"
-                }
-              },
+              "createdDateTime": "2025-10-15T10:45:00Z",
+              "lastModifiedDateTime": "2025-10-15T10:45:00Z",
+              "importance": "normal",
+              "from": { "user": { "id": "u-miyake", "displayName": "三宅 悠人" } },
               "body": {
                 "contentType": "html",
-                "content": "<p>DataDog閾値調整完了。重大度「Critical」は5分連続エラー時のみ発報に変更。テスト発報も成功。</p>"
+                "content": "<p>よし！これでB市再送受け入れの準備は完了ですね。明日のPMO報告にも反映します。お疲れさまです👏</p>"
               },
-              "attachments": []
+              "mentions": [],
+              "attachments": [],
+              "reactions": [
+                { "reactionType": "like", "createdDateTime": "2025-10-15T10:46:00Z", "user": { "user": { "id": "u-kinoshita", "displayName": "木下 俊輔" } } }
+              ]
             },
             {
-              "id": "wkly-rep-20251018-2345",
-              "replyToId": "wkly-msg-20251015-1745",
-              "createdDateTime": "2025-10-18T14:45:00Z",
-              "lastModifiedDateTime": "2025-10-18T14:45:00Z",
+              "id": "wkly-20251016-1020",
+              "replyToId": "wkly-20251015-1910",
+              "etag": "W/\"wkly-20251016-1020\"",
               "messageType": "message",
-              "from": {
-                "user": {
-                  "id": "u-kinoshita",
-                  "displayName": "木下 俊輔",
-                  "userPrincipalName": "shunsuke.kinoshita@contoso.com"
-                }
-              },
+              "createdDateTime": "2025-10-16T01:20:00Z",
+              "lastModifiedDateTime": "2025-10-16T01:20:00Z",
+              "importance": "normal",
+              "from": { "user": { "id": "u-aoyama", "displayName": "青山 玲奈" } },
               "body": {
                 "contentType": "html",
-                "content": "<p>ETL移行完了！Airflowジョブも問題なし。<br/>実行ログ：<code>/logs/etl_20251018_run.log</code><br/><at id=\"0\">三宅 悠人</at> さん、<at id=\"1\">橋本 翼</at> さん、B市データ再投入フェーズに入ります。</p>"
+                "content": "<p><at id=\"0\">水谷 里菜</at> さん DataDog閾値設定、昨夜のテスト通知来てました！CPU負荷80%超えアラート、正常に出ました。本番適用日（10/18）で問題なしとします。</p>"
               },
               "mentions": [
-                { "id": 0, "mentionText": "三宅 悠人", "mentioned": { "user": { "id": "u-miyake", "displayName": "三宅 悠人", "userIdentityType": "aadUser" } } },
-                { "id": 1, "mentionText": "橋本 翼", "mentioned": { "user": { "id": "u-hashimoto", "displayName": "橋本 翼", "userIdentityType": "aadUser" } } }
+                { "id": 0, "mentionText": "水谷 里菜", "mentioned": { "user": { "id": "u-mizutani", "displayName": "水谷 里菜" } } }
               ],
-              "attachments": []
-            },
-            {
-              "id": "wkly-rep-20251019-1020",
-              "replyToId": "wkly-msg-20251015-1745",
-              "createdDateTime": "2025-10-19T01:20:00Z",
-              "lastModifiedDateTime": "2025-10-19T01:20:00Z",
-              "messageType": "message",
-              "from": {
-                "user": {
-                  "id": "u-hamada",
-                  "displayName": "浜田 真帆",
-                  "userPrincipalName": "maho.hamada@contoso.com"
-                }
-              },
-              "body": {
-                "contentType": "html",
-                "content": "<p>データ品質OK。Null率、桁数、ユニーク制約ともに正常範囲内。<br/><at id=\"0\">木下 俊輔</at> さん、再ETL実行OKです。</p>"
-              },
-              "mentions": [
-                { "id": 0, "mentionText": "木下 俊輔", "mentioned": { "user": { "id": "u-kinoshita", "displayName": "木下 俊輔", "userIdentityType": "aadUser" } } }
-              ],
-              "attachments": []
-            },
-            {
-              "id": "wkly-rep-20251019-1115",
-              "replyToId": "wkly-msg-20251015-1745",
-              "createdDateTime": "2025-10-19T02:15:00Z",
-              "lastModifiedDateTime": "2025-10-19T02:15:00Z",
-              "messageType": "message",
-              "from": {
-                "user": {
-                  "id": "u-kinoshita",
-                  "displayName": "木下 俊輔",
-                  "userPrincipalName": "shunsuke.kinoshita@contoso.com"
-                }
-              },
-              "body": {
-                "contentType": "html",
-                "content": "<p>了解しました。再ETL実行。結果：レコード件数 <strong>1,285,432</strong> 件（旧版比 +2.3%）。DataLakeへ反映済み。</p>"
-              },
-              "attachments": []
-            },
-            {
-              "id": "wkly-rep-20251019-1200",
-              "replyToId": "wkly-msg-20251015-1745",
-              "createdDateTime": "2025-10-19T03:00:00Z",
-              "lastModifiedDateTime": "2025-10-19T03:00:00Z",
-              "messageType": "message",
-              "from": {
-                "user": {
-                  "id": "u-miyake",
-                  "displayName": "三宅 悠人",
-                  "userPrincipalName": "yuto.miyake@contoso.com"
-                }
-              },
-              "body": {
-                "contentType": "html",
-                "content": "<p>完璧です。全体連携報告に反映。10/22の合同会議でAIチームへのデータ提供範囲を説明します。<br/>週末対応ありがとうございました。👏</p>"
-              },
-              "attachments": []
+              "attachments": [],
+              "reactions": []
             }
           ]
         }
@@ -3231,244 +3312,186 @@ schema_v2_diagram.pptx をTeamsファイルにアップしました。
       "displayName": "💬 技術・課題共有",
       "messages": [
         {
-          "id": "tech-msg-20251015-1320",
+          "id": "tech-20251017-0920",
           "replyToId": null,
-          "createdDateTime": "2025-10-15T04:20:00Z",
-          "lastModifiedDateTime": "2025-10-15T04:20:00Z",
+          "etag": "W/\"tech-20251017-0920\"",
           "messageType": "message",
+          "createdDateTime": "2025-10-17T00:20:00Z",
+          "lastModifiedDateTime": "2025-10-17T00:20:00Z",
           "importance": "normal",
-          "subject": "スレッド①：自治体Bデータ再送対応について",
-          "from": {
-            "user": {
-              "id": "u-kono",
-              "displayName": "河野 遥",
-              "userPrincipalName": "haruka.kono@contoso.com"
-            }
-          },
+          "subject": "API試験公開（/api/v1/visits/summary）疎通開始",
+          "from": { "user": { "id": "u-chen", "displayName": "陳 文傑" } },
           "body": {
             "contentType": "html",
-            "content": "<p>各位<br/>B市観光課からデータ形式変更の件、正式に連絡がありました。10/18（土）午前に <strong>CSV再送</strong> の予定とのことです。新形式のサンプル（1万件分）を共有します。<br/>📎 <em>B_city_sample_20251015.csv</em><br/><at id=\"0\">橋本 翼</at> さん <at id=\"1\">浜田 真帆</at> さん、検証観点の注意点があればお願いします。</p>"
+            "content": "<p>各位 API試験公開（10/25予定）に向けて、テスト用エンドポイント <code>/api/v1/visits/summary</code> の疎通確認を開始しました。<br/><at id=\"0\">青山 玲奈</at> さん、Azure側ロードバランサ設定は予定通り24日中に反映で問題なさそうですか？<br/><at id=\"1\">木下 俊輔</at> さん、ETL出力フォーマット（CSV→Parquet変換）のサンプルをAPI側で確認したいです。</p>"
           },
           "mentions": [
-            { "id": 0, "mentionText": "橋本 翼", "mentioned": { "user": { "id": "u-hashimoto", "displayName": "橋本 翼", "userIdentityType": "aadUser" } } },
-            { "id": 1, "mentionText": "浜田 真帆", "mentioned": { "user": { "id": "u-hamada", "displayName": "浜田 真帆", "userIdentityType": "aadUser" } } }
+            { "id": 0, "mentionText": "青山 玲奈", "mentioned": { "user": { "id": "u-aoyama", "displayName": "青山 玲奈" } } },
+            { "id": 1, "mentionText": "木下 俊輔", "mentioned": { "user": { "id": "u-kinoshita", "displayName": "木下 俊輔" } } }
           ],
           "attachments": [
             {
-              "id": "att-20251015-1320-1",
-              "name": "B_city_sample_20251015.csv",
-              "contentType": "text/csv",
-              "contentUrl": "https://contoso.sharepoint.com/sites/nec-kanko-dx/Shared%20Documents/B_city_sample_20251015.csv"
+              "id": "att-tech-001",
+              "name": "api_test_request.json",
+              "contentType": "application/json",
+              "contentUrl": "https://contoso.sharepoint.com/sites/kanko/Shared%20Documents/api_test_request.json",
+              "size": 2048
             }
           ],
+          "reactions": [],
           "replies": [
             {
-              "id": "tech-rep-20251015-1405",
-              "replyToId": "tech-msg-20251015-1320",
-              "createdDateTime": "2025-10-15T05:05:00Z",
-              "lastModifiedDateTime": "2025-10-15T05:05:00Z",
+              "id": "tech-20251017-0945",
+              "replyToId": "tech-20251017-0920",
+              "etag": "W/\"tech-20251017-0945\"",
               "messageType": "message",
-              "from": { "user": { "id": "u-hashimoto", "displayName": "橋本 翼", "userPrincipalName": "tsubasa.hashimoto@contoso.com" } },
+              "createdDateTime": "2025-10-17T00:45:00Z",
+              "lastModifiedDateTime": "2025-10-17T00:45:00Z",
+              "importance": "normal",
+              "from": { "user": { "id": "u-aoyama", "displayName": "青山 玲奈" } },
               "body": {
                 "contentType": "html",
-                "content": "<p>確認しました。列名 <code>visit_date</code> → <code>used_date</code> に変更あり。ETLスキーマでマッピング落ちします。<br/><at id=\"0\">木下 俊輔</at> さん、スキーマv2対応可能でしょうか？</p>"
+                "content": "<p><at id=\"0\">陳 文傑</at> さん LB設定はステージングで動作確認済み。本番への反映は10/23午前中に行います。</p>"
               },
               "mentions": [
-                { "id": 0, "mentionText": "木下 俊輔", "mentioned": { "user": { "id": "u-kinoshita", "displayName": "木下 俊輔", "userIdentityType": "aadUser" } } }
+                { "id": 0, "mentionText": "陳 文傑", "mentioned": { "user": { "id": "u-chen", "displayName": "陳 文傑" } } }
               ],
-              "attachments": []
+              "attachments": [],
+              "reactions": []
             },
             {
-              "id": "tech-rep-20251015-1418",
-              "replyToId": "tech-msg-20251015-1320",
-              "createdDateTime": "2025-10-15T05:18:00Z",
-              "lastModifiedDateTime": "2025-10-15T05:18:00Z",
+              "id": "tech-20251017-0950",
+              "replyToId": "tech-20251017-0920",
+              "etag": "W/\"tech-20251017-0950\"",
               "messageType": "message",
-              "from": { "user": { "id": "u-kinoshita", "displayName": "木下 俊輔", "userPrincipalName": "shunsuke.kinoshita@contoso.com" } },
+              "createdDateTime": "2025-10-17T00:50:00Z",
+              "lastModifiedDateTime": "2025-10-17T00:50:00Z",
+              "importance": "normal",
+              "from": { "user": { "id": "u-kinoshita", "displayName": "木下 俊輔" } },
               "body": {
                 "contentType": "html",
-                "content": "<p>対応可能です。再送受領後に <strong>v2.1</strong> で流します。実行は 10/18（土）23:00〜 を想定。<br/><at id=\"0\">山岡 健</at> さん、モニタリングお願いできますか？</p>"
+                "content": "<p>Parquet変換済みファイルを共有します。<br/><code>/mnt/data/export_20251016.parquet</code> に格納済み。20行だけAPIでサンプル取得可能です。</p>"
+              },
+              "mentions": [],
+              "attachments": [],
+              "reactions": []
+            },
+            {
+              "id": "tech-20251017-1010",
+              "replyToId": "tech-20251017-0920",
+              "etag": "W/\"tech-20251017-1010\"",
+              "messageType": "message",
+              "createdDateTime": "2025-10-17T01:10:00Z",
+              "lastModifiedDateTime": "2025-10-17T01:10:00Z",
+              "importance": "normal",
+              "from": { "user": { "id": "u-tou", "displayName": "陶 宏明" } },
+              "body": {
+                "contentType": "html",
+                "content": "<p>JWT発行サーバのFunctions設定完了しました。次はAPIキー自動発行ロジックをTerraformに追加します。<br/><at id=\"0\">大森 颯</at> さん、CI/CD連携ブランチ <code>feature/api-key-automation</code> に追記お願いします。</p>"
               },
               "mentions": [
-                { "id": 0, "mentionText": "山岡 健", "mentioned": { "user": { "id": "u-yamaoka", "displayName": "山岡 健", "userIdentityType": "aadUser" } } }
-              ]
+                { "id": 0, "mentionText": "大森 颯", "mentioned": { "user": { "id": "u-omori", "displayName": "大森 颯" } } }
+              ],
+              "attachments": [],
+              "reactions": []
             },
             {
-              "id": "tech-rep-20251015-1421",
-              "replyToId": "tech-msg-20251015-1320",
-              "createdDateTime": "2025-10-15T05:21:00Z",
-              "lastModifiedDateTime": "2025-10-15T05:21:00Z",
+              "id": "tech-20251017-1035",
+              "replyToId": "tech-20251017-0920",
+              "etag": "W/\"tech-20251017-1035\"",
               "messageType": "message",
-              "from": { "user": { "id": "u-yamaoka", "displayName": "山岡 健", "userPrincipalName": "ken.yamaoka@contoso.com" } },
-              "body": { "contentType": "html", "content": "<p>対応します。DataDogジョブ監視も追加します。完了後 #📅 定例・進捗報告 に報告します。</p>" }
-            },
-            {
-              "id": "tech-rep-20251015-1435",
-              "replyToId": "tech-msg-20251015-1320",
-              "createdDateTime": "2025-10-15T05:35:00Z",
-              "lastModifiedDateTime": "2025-10-15T05:35:00Z",
-              "messageType": "message",
-              "from": { "user": { "id": "u-hamada", "displayName": "浜田 真帆", "userPrincipalName": "maho.hamada@contoso.com" } },
+              "createdDateTime": "2025-10-17T01:35:00Z",
+              "lastModifiedDateTime": "2025-10-17T01:35:00Z",
+              "importance": "normal",
+              "from": { "user": { "id": "u-omori", "displayName": "大森 颯" } },
               "body": {
                 "contentType": "html",
-                "content": "<p>旧形式との差分検証スクリプト <code>diff_col_check.py</code> を今日中にpushします。<br/><at id=\"0\">橋本 翼</at> さん、レビューお願いします🙏</p>"
+                "content": "<p><at id=\"0\">陶 宏明</at> さん 了解です。GitHub Actionsの <code>deploy_api_pipeline.yml</code> にAPIキー発行処理を追加します。テスト環境反映は10/20夜予定。</p>"
               },
               "mentions": [
-                { "id": 0, "mentionText": "橋本 翼", "mentioned": { "user": { "id": "u-hashimoto", "displayName": "橋本 翼", "userIdentityType": "aadUser" } } }
-              ]
+                { "id": 0, "mentionText": "陶 宏明", "mentioned": { "user": { "id": "u-tou", "displayName": "陶 宏明" } } }
+              ],
+              "attachments": [],
+              "reactions": []
             },
             {
-              "id": "tech-rep-20251015-1500",
-              "replyToId": "tech-msg-20251015-1320",
-              "createdDateTime": "2025-10-15T06:00:00Z",
-              "lastModifiedDateTime": "2025-10-15T06:00:00Z",
+              "id": "tech-20251017-1040",
+              "replyToId": "tech-20251017-0920",
+              "etag": "W/\"tech-20251017-1040\"",
               "messageType": "message",
-              "from": { "user": { "id": "u-miyake", "displayName": "三宅 悠人", "userPrincipalName": "yuto.miyake@contoso.com" } },
-              "body": { "contentType": "html", "content": "<p>ありがとうございます。20日までに反映必須。進捗は 10/22 のAI合同会議で共有します。</p>" }
-            }
-          ]
-        },
-        {
-          "id": "tech-msg-20251016-0915",
-          "replyToId": null,
-          "createdDateTime": "2025-10-16T00:15:00Z",
-          "lastModifiedDateTime": "2025-10-16T00:15:00Z",
-          "messageType": "message",
-          "importance": "normal",
-          "subject": "スレッド②：API Gatewayのトークン更新確認",
-          "from": {
-            "user": {
-              "id": "u-chen",
-              "displayName": "陳 文傑",
-              "userPrincipalName": "wenjie.chen@contoso.com"
-            }
-          },
-          "body": {
-            "contentType": "html",
-            "content": "<p><at id=\"0\">青山 玲奈</at> さん<br/>OAuth2 トークン有効期限を <strong>6時間</strong> に延長しました。DataDogで 401 がやや増加。App Gateway キャッシュ残りの可能性があるので、キャッシュクリアお願いします。</p>"
-          },
-          "mentions": [
-            { "id": 0, "mentionText": "青山 玲奈", "mentioned": { "user": { "id": "u-aoyama", "displayName": "青山 玲奈", "userIdentityType": "aadUser" } } }
-          ],
-          "attachments": [],
-          "replies": [
-            {
-              "id": "tech-rep-20251016-0932",
-              "replyToId": "tech-msg-20251016-0915",
-              "createdDateTime": "2025-10-16T00:32:00Z",
-              "lastModifiedDateTime": "2025-10-16T00:32:00Z",
-              "messageType": "message",
-              "from": { "user": { "id": "u-aoyama", "displayName": "青山 玲奈", "userPrincipalName": "rena.aoyama@contoso.com" } },
-              "body": { "contentType": "html", "content": "<p>承知しました。今夜（22:00〜23:00）にキャッシュクリア＋再デプロイします。完了後に報告します。</p>" }
-            },
-            {
-              "id": "tech-rep-20251016-0948",
-              "replyToId": "tech-msg-20251016-0915",
-              "createdDateTime": "2025-10-16T00:48:00Z",
-              "lastModifiedDateTime": "2025-10-16T00:48:00Z",
-              "messageType": "message",
-              "from": { "user": { "id": "u-fukui", "displayName": "福井 大介", "userPrincipalName": "daisuke.fukui@contoso.com" } },
-              "body": { "contentType": "html", "content": "<p>監査ログは Azure Monitor の DiagnosticSetting で全呼出しを追跡に設定。SecurityReview 用サンプルログも採取します。</p>" }
-            },
-            {
-              "id": "tech-rep-20251016-1005",
-              "replyToId": "tech-msg-20251016-0915",
-              "createdDateTime": "2025-10-16T01:05:00Z",
-              "lastModifiedDateTime": "2025-10-16T01:05:00Z",
-              "messageType": "message",
-              "from": { "user": { "id": "u-chen", "displayName": "陳 文傑", "userPrincipalName": "wenjie.chen@contoso.com" } },
+              "createdDateTime": "2025-10-17T01:40:00Z",
+              "lastModifiedDateTime": "2025-10-17T01:40:00Z",
+              "importance": "normal",
+              "from": { "user": { "id": "u-fukui", "displayName": "福井 隆" } },
               "body": {
                 "contentType": "html",
-                "content": "<p>ありがとうございます。10/17 の API 分科会までに最新ログを整理しておきます。<br/>参考：設定差分を添付します。</p>"
+                "content": "<p>ZAPスキャンの結果を共有します。警告2件（CORSヘッダ, OPTIONS応答）→軽微。明日修正して再スキャンします。</p>"
               },
               "attachments": [
                 {
-                  "id": "att-20251016-1005-1",
-                  "name": "auth_config_diff_20251016.json",
-                  "contentType": "application/json",
-                  "contentUrl": "https://contoso.sharepoint.com/sites/nec-kanko-dx/Shared%20Documents/auth_config_diff_20251016.json"
+                  "id": "att-tech-002",
+                  "name": "zap_scan_report_20251017.html",
+                  "contentType": "text/html",
+                  "contentUrl": "https://contoso.sharepoint.com/sites/kanko/Shared%20Documents/zap_scan_report_20251017.html",
+                  "size": 53120
                 }
-              ]
+              ],
+              "reactions": []
             },
             {
-              "id": "tech-rep-20251016-2242",
-              "replyToId": "tech-msg-20251016-0915",
-              "createdDateTime": "2025-10-16T13:42:00Z",
-              "lastModifiedDateTime": "2025-10-16T13:42:00Z",
+              "id": "tech-20251017-1100",
+              "replyToId": "tech-20251017-0920",
+              "etag": "W/\"tech-20251017-1100\"",
               "messageType": "message",
-              "from": { "user": { "id": "u-aoyama", "displayName": "青山 玲奈", "userPrincipalName": "rena.aoyama@contoso.com" } },
-              "body": { "contentType": "html", "content": "<p>✅ キャッシュクリア＋App Gateway再デプロイ完了。DataDogログも正常化しています。<br/><at id=\"0\">陳 文傑</at> さん、疎通確認お願いします。</p>" },
+              "createdDateTime": "2025-10-17T02:00:00Z",
+              "lastModifiedDateTime": "2025-10-17T02:00:00Z",
+              "importance": "normal",
+              "from": { "user": { "id": "u-hashimoto", "displayName": "橋本 翼" } },
+              "body": {
+                "contentType": "html",
+                "content": "<p><at id=\"0\">福井 隆</at> さん 再スキャン後のレポート、品質レビューに添付してください。PMO週報に反映します。</p>"
+              },
               "mentions": [
-                { "id": 0, "mentionText": "陳 文傑", "mentioned": { "user": { "id": "u-chen", "displayName": "陳 文傑", "userIdentityType": "aadUser" } } }
-              ]
+                { "id": 0, "mentionText": "福井 隆", "mentioned": { "user": { "id": "u-fukui", "displayName": "福井 隆" } } }
+              ],
+              "attachments": [],
+              "reactions": []
             },
             {
-              "id": "tech-rep-20251017-0850",
-              "replyToId": "tech-msg-20251016-0915",
-              "createdDateTime": "2025-10-16T23:50:00Z",
-              "lastModifiedDateTime": "2025-10-16T23:50:00Z",
+              "id": "tech-20251017-1110",
+              "replyToId": "tech-20251017-0920",
+              "etag": "W/\"tech-20251017-1110\"",
               "messageType": "message",
-              "from": { "user": { "id": "u-chen", "displayName": "陳 文傑", "userPrincipalName": "wenjie.chen@contoso.com" } },
-              "body": { "contentType": "html", "content": "<p>疎通問題なし。<code>/api/v2/tourdata</code> 含む全エンドポイント正常です。ありがとうございます🙆‍♂️</p>" }
-            }
-          ]
-        },
-        {
-          "id": "tech-msg-20251017-1315",
-          "replyToId": null,
-          "createdDateTime": "2025-10-17T04:15:00Z",
-          "lastModifiedDateTime": "2025-10-17T04:15:00Z",
-          "messageType": "message",
-          "importance": "normal",
-          "subject": "スレッド③：匿名化処理の仕様統一",
-          "from": {
-            "user": {
-              "id": "u-yokoyama",
-              "displayName": "横山 翔",
-              "userPrincipalName": "sho.yokoyama@contoso.com"
-            }
-          },
-          "body": {
-            "contentType": "html",
-            "content": "<p><at id=\"0\">福井 大介</at> さん<br/>SHA256＋ソルト化仕様で進めます。KeyVault の <code>keyvault-prod-datakey</code> に <code>mask_salt_v1</code> が登録済ですが、自動スナップショットが OFF です。意図的でしょうか？</p>"
-          },
-          "mentions": [
-            { "id": 0, "mentionText": "福井 大介", "mentioned": { "user": { "id": "u-fukui", "displayName": "福井 大介", "userIdentityType": "aadUser" } } }
-          ],
-          "attachments": [],
-          "replies": [
-            {
-              "id": "tech-rep-20251017-1328",
-              "replyToId": "tech-msg-20251017-1315",
-              "createdDateTime": "2025-10-17T04:28:00Z",
-              "lastModifiedDateTime": "2025-10-17T04:28:00Z",
-              "messageType": "message",
-              "from": { "user": { "id": "u-fukui", "displayName": "福井 大介", "userPrincipalName": "daisuke.fukui@contoso.com" } },
-              "body": { "contentType": "html", "content": "<p>現状はポリシー上 OFF にしています。10/24 のセキュリティレビューで再検討。一時的に手動バックアップを取ってOKです。</p>" }
-            },
-            {
-              "id": "tech-rep-20251017-1345",
-              "replyToId": "tech-msg-20251017-1315",
-              "createdDateTime": "2025-10-17T04:45:00Z",
-              "lastModifiedDateTime": "2025-10-17T04:45:00Z",
-              "messageType": "message",
-              "from": { "user": { "id": "u-aoyama", "displayName": "青山 玲奈", "userPrincipalName": "rena.aoyama@contoso.com" } },
+              "createdDateTime": "2025-10-17T02:10:00Z",
+              "lastModifiedDateTime": "2025-10-17T02:10:00Z",
+              "importance": "normal",
+              "from": { "user": { "id": "u-chen", "displayName": "陳 文傑" } },
               "body": {
                 "contentType": "html",
-                "content": "<p>手動バックアップ対応します。バックアップファイルは <code>secure_storage/20251017/</code> に格納予定。完了したらDMします。</p>"
-              }
+                "content": "<p>皆さん対応ありがとうございます。念のため、10/23(木)夜に最終疎通テストを実施します。<br/>その際、<at id=\"0\">木下 俊輔</at> さん のETLジョブを一時停止してもらう予定です。</p>"
+              },
+              "mentions": [
+                { "id": 0, "mentionText": "木下 俊輔", "mentioned": { "user": { "id": "u-kinoshita", "displayName": "木下 俊輔" } } }
+              ],
+              "attachments": [],
+              "reactions": []
             },
             {
-              "id": "tech-rep-20251017-1730",
-              "replyToId": "tech-msg-20251017-1315",
-              "createdDateTime": "2025-10-17T08:30:00Z",
-              "lastModifiedDateTime": "2025-10-17T08:30:00Z",
+              "id": "tech-20251017-1115",
+              "replyToId": "tech-20251017-0920",
+              "etag": "W/\"tech-20251017-1115\"",
               "messageType": "message",
-              "from": { "user": { "id": "u-miyake", "displayName": "三宅 悠人", "userPrincipalName": "yuto.miyake@contoso.com" } },
+              "createdDateTime": "2025-10-17T02:15:00Z",
+              "lastModifiedDateTime": "2025-10-17T02:15:00Z",
+              "importance": "normal",
+              "from": { "user": { "id": "u-kinoshita", "displayName": "木下 俊輔" } },
               "body": {
                 "contentType": "html",
-                "content": "<p>分科会議事録は共有あり次第 General に転載します。匿名化仕様（SHA256＋ソルト）は正式採用とします。</p>"
-              }
+                "content": "<p>承知しました。ジョブ停止をスケジュールに登録します。Airflow管理画面で22:00〜23:00をメンテナンス時間に設定します。</p>"
+              },
+              "mentions": [],
+              "attachments": [],
+              "reactions": []
             }
           ]
         }
@@ -3476,550 +3499,683 @@ schema_v2_diagram.pptx をTeamsファイルにアップしました。
     }
   ]
 }
+
 
 ```
 
 ### outlook予定表第一週
 
 ```
-想定されるOutlook予定（JST）
-2025-10-16（木）
+予定表（推定／Asia-Tokyo）
 
-22:00–23:00｜App Gateway キャッシュクリア＆再デプロイ（メンテ）
-参加：青山、陳、福井（監査ログ確認）
-場所：Teams 会議（オンライン）
-備考：作業後に疎通確認
+データ統合進捗確認会
 
-2025-10-17（金）
+日時：2025-10-14（火）10:00–11:30
 
-09:00–10:00｜API 分科会（トークン更新ログ確認）
-主催：陳
-参加：青山、福井、三宅 ほか
-場所：Teams 会議（オンライン）
+形式：Microsoft Teams 会議
 
-2025-10-18（土）
+出席：三宅（主催）、白井、木下、青山、陳、橋本、河野、浜田、田村、横山
 
-09:00–10:00｜自治体B：CSV再送 受領確認
-主催：河野
-参加：橋本、浜田、木下
-場所：Teams 会議（オンライン）
+メモ：B市再送／スキーマv2／監視ジョブ
 
-23:00–24:00｜ETL v2.1 再投入（監視付き）
-主催：木下
-参加：山岡（監視）、橋本、浜田、三宅
-場所：Teams 会議（オンライン）
-備考：DataDog アラート監視、完了後 #定例・進捗報告 に投稿
+API試験公開準備ミーティング
 
-2025-10-21（火）
+日時：2025-10-17（金）15:00–16:30
 
-09:00–09:30｜全体会議スライド提出締切（データ基盤パート）
-主催：西川（品質PM）
-参加：三宅、白井
-場所：—（期限リマインダー）
+形式：Microsoft Teams 会議
 
-2025-10-22（水）
+出席：陳（主催）、三宅、青山、陶、橋本、木下、大森、福井
 
-10:00–11:00｜全体会議（AIチーム合同）
-主催：西川（品質PM）
-参加：PMO、データ基盤（三宅・白井・木下・青山・水谷・橋本・浜田・陳 ほか）、AIチーム
-場所：Teams 会議（オンライン）
-議題：データ提供ルール／監視ログ運用方針（データ基盤から5分説明）
+メモ：/api/v1/visits/summary、JWT＋APIキー、ZAPスキャン
 
-2025-10-24（金）
+B市データ再送 受領・再ETL対応ウィンドウ
 
-10:00–11:00｜セキュリティレビュー（KeyVault運用・匿名化仕様）
-主催：福井
-参加：横山、青山、三宅 ほか
-場所：Teams 会議（オンライン）
-議題：匿名化（SHA256+ソルト）、KeyVaultバックアップ方針
+日時：2025-10-18（土）09:00–12:00
 
-定例（参考：データ基盤チーム）
+形式：作業ウィンドウ（オンライン）
 
-毎週水曜 17:30–18:00｜データ基盤 定例（進捗共有）
-主催：三宅
-場所：Teams 会議（オンライン）
-備考：10/22 は「AIチーム合同」で置き換え
+参加：河野（主担当）、木下、橋本、浜田
+
+メモ：再送データ受領→即日再ETL
+
+最終疎通テスト & ETLメンテナンス（停止）
+
+日時：2025-10-23（木）22:00–23:00
+
+形式：Microsoft Teams 会議（同時にETL停止）
+
+出席：陳（主催）、木下、青山、（必要に応じて）大森、福井
+
+メモ：LB本番反映後の最終疎通／ETL停止時間帯
 ```
 
 ```json
 {
-  "id": "AAMkADkya...-22ai-allhands",
-  "subject": "【全体】AIチーム合同：データ提供ルール／監視ログ運用",
-  "bodyPreview": "データ基盤から5分説明（スキーマ図・API連携フロー）",
-  "start": { "dateTime": "2025-10-22T10:00:00", "timeZone": "Asia/Tokyo" },
-  "end":   { "dateTime": "2025-10-22T11:00:00", "timeZone": "Asia/Tokyo" },
-  "location": { "displayName": "Microsoft Teams 会議" },
-  "isOnlineMeeting": true,
-  "onlineMeetingProvider": "teamsForBusiness",
-  "attendees": [
-    { "type": "required", "emailAddress": { "name": "西川 麻衣", "address": "mai.nishikawa@contoso.com" } },
-    { "type": "required", "emailAddress": { "name": "三宅 悠人", "address": "yuto.miyake@contoso.com" } },
-    { "type": "required", "emailAddress": { "name": "白井 奏", "address": "kanade.shirai@contoso.com" } }
-  ],
-  "organizer": { "emailAddress": { "name": "西川 麻衣", "address": "mai.nishikawa@contoso.com" } },
-  "reminderMinutesBeforeStart": 15,
-  "sensitivity": "normal",
-  "categories": ["全体会議","AI合同"]
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Me/events",
+  "value": [
+    {
+      "id": "evt-20251014-1000",
+      "subject": "データ統合進捗確認会",
+      "bodyPreview": "B市再送／スキーマv2／監視ジョブ",
+      "body": {
+        "contentType": "html",
+        "content": "<p>議題：B市再送／スキーマv2／監視ジョブ</p>"
+      },
+      "start": { "dateTime": "2025-10-14T10:00:00", "timeZone": "Asia/Tokyo" },
+      "end":   { "dateTime": "2025-10-14T11:30:00", "timeZone": "Asia/Tokyo" },
+      "location": { "displayName": "Microsoft Teams 会議" },
+      "isOnlineMeeting": true,
+      "onlineMeetingProvider": "teamsForBusiness",
+      "onlineMeeting": {
+        "joinUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting-xxx"
+      },
+      "organizer": {
+        "emailAddress": { "name": "三宅 悠人", "address": "yuto.miyake@contoso.com" }
+      },
+      "attendees": [
+        { "type": "required", "emailAddress": { "name": "白井 奏", "address": "kanade.shirai@contoso.com" } },
+        { "type": "required", "emailAddress": { "name": "木下 俊輔", "address": "shunsuke.kinoshita@contoso.com" } },
+        { "type": "required", "emailAddress": { "name": "青山 玲奈", "address": "rena.aoyama@contoso.com" } },
+        { "type": "required", "emailAddress": { "name": "陳 文傑", "address": "wenjie.chen@contoso.com" } },
+        { "type": "required", "emailAddress": { "name": "橋本 翼", "address": "tsubasa.hashimoto@contoso.com" } },
+        { "type": "required", "emailAddress": { "name": "河野 遥", "address": "haruka.kono@contoso.com" } },
+        { "type": "required", "emailAddress": { "name": "浜田 俊", "address": "shun.hamada@contoso.com" } },
+        { "type": "required", "emailAddress": { "name": "田村 知沙", "address": "chisa.tamura@contoso.com" } },
+        { "type": "required", "emailAddress": { "name": "横山 玲",  "address": "rei.yokoyama@contoso.com" } }
+      ],
+      "reminderMinutesBeforeStart": 15,
+      "isReminderOn": true,
+      "importance": "normal",
+      "sensitivity": "normal",
+      "categories": ["データ基盤"]
+    },
+    {
+      "id": "evt-20251017-1500",
+      "subject": "API試験公開準備ミーティング",
+      "bodyPreview": "/api/v1/visits/summary、JWT＋APIキー、ZAPスキャン",
+      "body": {
+        "contentType": "html",
+        "content": "<p>疎通・認証・セキュリティレビュー</p>"
+      },
+      "start": { "dateTime": "2025-10-17T15:00:00", "timeZone": "Asia/Tokyo" },
+      "end":   { "dateTime": "2025-10-17T16:30:00", "timeZone": "Asia/Tokyo" },
+      "location": { "displayName": "Microsoft Teams 会議" },
+      "isOnlineMeeting": true,
+      "onlineMeetingProvider": "teamsForBusiness",
+      "onlineMeeting": {
+        "joinUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting-yyy"
+      },
+      "organizer": {
+        "emailAddress": { "name": "陳 文傑", "address": "wenjie.chen@contoso.com" }
+      },
+      "attendees": [
+        { "type": "required", "emailAddress": { "name": "三宅 悠人", "address": "yuto.miyake@contoso.com" } },
+        { "type": "required", "emailAddress": { "name": "青山 玲奈", "address": "rena.aoyama@contoso.com" } },
+        { "type": "required", "emailAddress": { "name": "陶 宏明", "address": "hiroaki.tou@contoso.com" } },
+        { "type": "required", "emailAddress": { "name": "橋本 翼", "address": "tsubasa.hashimoto@contoso.com" } },
+        { "type": "required", "emailAddress": { "name": "木下 俊輔", "address": "shunsuke.kinoshita@contoso.com" } },
+        { "type": "required", "emailAddress": { "name": "大森 颯", "address": "hayate.omori@contoso.com" } },
+        { "type": "required", "emailAddress": { "name": "福井 隆", "address": "takashi.fukui@contoso.com" } }
+      ],
+      "reminderMinutesBeforeStart": 10,
+      "isReminderOn": true,
+      "importance": "high",
+      "sensitivity": "normal",
+      "categories": ["API","セキュリティ"]
+    },
+    {
+      "id": "evt-20251018-0900",
+      "subject": "B市データ再送 受領・再ETL対応ウィンドウ",
+      "bodyPreview": "再送データ受領→即日再ETL",
+      "body": {
+        "contentType": "html",
+        "content": "<p>再送データ受領→即日再ETL。品質チェック同時実施。</p>"
+      },
+      "start": { "dateTime": "2025-10-18T09:00:00", "timeZone": "Asia/Tokyo" },
+      "end":   { "dateTime": "2025-10-18T12:00:00", "timeZone": "Asia/Tokyo" },
+      "location": { "displayName": "オンライン" },
+      "isOnlineMeeting": false,
+      "organizer": {
+        "emailAddress": { "name": "河野 遥", "address": "haruka.kono@contoso.com" }
+      },
+      "attendees": [
+        { "type": "required", "emailAddress": { "name": "木下 俊輔", "address": "shunsuke.kinoshita@contoso.com" } },
+        { "type": "required", "emailAddress": { "name": "橋本 翼", "address": "tsubasa.hashimoto@contoso.com" } },
+        { "type": "required", "emailAddress": { "name": "浜田 俊", "address": "shun.hamada@contoso.com" } }
+      ],
+      "reminderMinutesBeforeStart": 30,
+      "isReminderOn": true,
+      "importance": "normal",
+      "sensitivity": "normal",
+      "categories": ["ETL","データ受領"]
+    },
+    {
+      "id": "evt-20251023-2200",
+      "subject": "最終疎通テスト & ETLメンテナンス（停止）",
+      "bodyPreview": "LB本番反映後の最終疎通／ETL停止 22:00–23:00",
+      "body": {
+        "contentType": "html",
+        "content": "<p>LB本番反映後の最終疎通テスト。時間中はETL停止（Airflowメンテナンス）。</p>"
+      },
+      "start": { "dateTime": "2025-10-23T22:00:00", "timeZone": "Asia/Tokyo" },
+      "end":   { "dateTime": "2025-10-23T23:00:00", "timeZone": "Asia/Tokyo" },
+      "location": { "displayName": "Microsoft Teams 会議" },
+      "isOnlineMeeting": true,
+      "onlineMeetingProvider": "teamsForBusiness",
+      "onlineMeeting": {
+        "joinUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting-zzz"
+      },
+      "organizer": {
+        "emailAddress": { "name": "陳 文傑", "address": "wenjie.chen@contoso.com" }
+      },
+      "attendees": [
+        { "type": "required", "emailAddress": { "name": "木下 俊輔", "address": "shunsuke.kinoshita@contoso.com" } },
+        { "type": "required", "emailAddress": { "name": "青山 玲奈", "address": "rena.aoyama@contoso.com" } },
+        { "type": "optional", "emailAddress": { "name": "大森 颯", "address": "hayate.omori@contoso.com" } },
+        { "type": "optional", "emailAddress": { "name": "福井 隆", "address": "takashi.fukui@contoso.com" } }
+      ],
+      "reminderMinutesBeforeStart": 30,
+      "isReminderOn": true,
+      "importance": "high",
+      "sensitivity": "normal",
+      "categories": ["リリース","メンテナンス"]
+    }
+  ]
 }
-{
-  "id": "AAMkADkya...-17api-wg",
-  "subject": "API分科会：トークン更新ログ・監査設定確認",
-  "bodyPreview": "10/16の再デプロイ後ログ確認、DiagnosticSetting見直し",
-  "start": { "dateTime": "2025-10-17T09:00:00", "timeZone": "Asia/Tokyo" },
-  "end":   { "dateTime": "2025-10-17T10:00:00", "timeZone": "Asia/Tokyo" },
-  "location": { "displayName": "Microsoft Teams 会議" },
-  "isOnlineMeeting": true,
-  "onlineMeetingProvider": "teamsForBusiness",
-  "attendees": [
-    { "type": "required", "emailAddress": { "name": "陳 文傑", "address": "wenjie.chen@contoso.com" } },
-    { "type": "required", "emailAddress": { "name": "青山 玲奈", "address": "rena.aoyama@contoso.com" } },
-    { "type": "optional", "emailAddress": { "name": "福井 大介", "address": "daisuke.fukui@contoso.com" } }
-  ],
-  "organizer": { "emailAddress": { "name": "陳 文傑", "address": "wenjie.chen@contoso.com" } },
-  "reminderMinutesBeforeStart": 10,
-  "categories": ["分科会","API"]
-}
-{
-  "id": "AAMkADkya...-16agw-maint",
-  "subject": "【メンテ】App Gateway キャッシュクリア＋再デプロイ",
-  "bodyPreview": "作業後に疎通確認。401増加解消の最終確認。",
-  "start": { "dateTime": "2025-10-16T22:00:00", "timeZone": "Asia/Tokyo" },
-  "end":   { "dateTime": "2025-10-16T23:00:00", "timeZone": "Asia/Tokyo" },
-  "location": { "displayName": "オンライン（Teams）" },
-  "attendees": [
-    { "type": "required", "emailAddress": { "name": "青山 玲奈", "address": "rena.aoyama@contoso.com" } },
-    { "type": "optional", "emailAddress": { "name": "陳 文傑", "address": "wenjie.chen@contoso.com" } },
-    { "type": "optional", "emailAddress": { "name": "福井 大介", "address": "daisuke.fukui@contoso.com" } }
-  ],
-  "isOnlineMeeting": true,
-  "onlineMeetingProvider": "teamsForBusiness",
-  "organizer": { "emailAddress": { "name": "青山 玲奈", "address": "rena.aoyama@contoso.com" } },
-  "reminderMinutesBeforeStart": 30,
-  "importance": "high",
-  "categories": ["メンテナンス"]
-}
-{
-  "id": "AAMkADkya...-18bcity-recv",
-  "subject": "自治体B：CSV再送 受領確認ミーティング",
-  "bodyPreview": "列名変更（visit_date→used_date）影響、差分チェック進行確認",
-  "start": { "dateTime": "2025-10-18T09:00:00", "timeZone": "Asia/Tokyo" },
-  "end":   { "dateTime": "2025-10-18T10:00:00", "timeZone": "Asia/Tokyo" },
-  "location": { "displayName": "Microsoft Teams 会議" },
-  "isOnlineMeeting": true,
-  "attendees": [
-    { "type": "required", "emailAddress": { "name": "河野 遥", "address": "haruka.kono@contoso.com" } },
-    { "type": "required", "emailAddress": { "name": "橋本 翼", "address": "tsubasa.hashimoto@contoso.com" } },
-    { "type": "required", "emailAddress": { "name": "浜田 真帆", "address": "maho.hamada@contoso.com" } },
-    { "type": "optional", "emailAddress": { "name": "木下 俊輔", "address": "shunsuke.kinoshita@contoso.com" } }
-  ],
-  "organizer": { "emailAddress": { "name": "河野 遥", "address": "haruka.kono@contoso.com" } },
-  "reminderMinutesBeforeStart": 10,
-  "categories": ["データ連携"]
-}
-{
-  "id": "AAMkADkya...-18etl-reingest",
-  "subject": "ETL v2.1 再投入（監視付き）",
-  "bodyPreview": "DataDog 監視、ジョブ閾値Critical=5分持続時のみ発報",
-  "start": { "dateTime": "2025-10-18T23:00:00", "timeZone": "Asia/Tokyo" },
-  "end":   { "dateTime": "2025-10-19T00:00:00", "timeZone": "Asia/Tokyo" },
-  "location": { "displayName": "オンライン（Teams）" },
-  "attendees": [
-    { "type": "required", "emailAddress": { "name": "木下 俊輔", "address": "shunsuke.kinoshita@contoso.com" } },
-    { "type": "required", "emailAddress": { "name": "山岡 健", "address": "ken.yamaoka@contoso.com" } },
-    { "type": "optional", "emailAddress": { "name": "橋本 翼", "address": "tsubasa.hashimoto@contoso.com" } },
-    { "type": "optional", "emailAddress": { "name": "浜田 真帆", "address": "maho.hamada@contoso.com" } }
-  ],
-  "isOnlineMeeting": true,
-  "organizer": { "emailAddress": { "name": "木下 俊輔", "address": "shunsuke.kinoshita@contoso.com" } },
-  "reminderMinutesBeforeStart": 60,
-  "categories": ["ETL","運用"]
-}
-{
-  "id": "AAMkADkya...-21deck-deadline",
-  "subject": "〆切：全体会議スライド提出（データ基盤）",
-  "bodyPreview": "三宅→西川へ。素材：schema_v2_diagram.pptx ほか",
-  "start": { "dateTime": "2025-10-21T09:00:00", "timeZone": "Asia/Tokyo" },
-  "end":   { "dateTime": "2025-10-21T09:30:00", "timeZone": "Asia/Tokyo" },
-  "location": { "displayName": "—" },
-  "attendees": [
-    { "type": "required", "emailAddress": { "name": "三宅 悠人", "address": "yuto.miyake@contoso.com" } },
-    { "type": "optional", "emailAddress": { "name": "白井 奏", "address": "kanade.shirai@contoso.com" } }
-  ],
-  "organizer": { "emailAddress": { "name": "西川 麻衣", "address": "mai.nishikawa@contoso.com" } },
-  "reminderMinutesBeforeStart": 60,
-  "categories": ["締切"]
-}
-{
-  "id": "AAMkADkya...-24sec-review",
-  "subject": "セキュリティレビュー：匿名化仕様／KeyVault運用",
-  "bodyPreview": "SHA256+ソルト、KeyVault自動スナップショット方針再検討",
-  "start": { "dateTime": "2025-10-24T10:00:00", "timeZone": "Asia/Tokyo" },
-  "end":   { "dateTime": "2025-10-24T11:00:00", "timeZone": "Asia/Tokyo" },
-  "location": { "displayName": "Microsoft Teams 会議" },
-  "isOnlineMeeting": true,
-  "attendees": [
-    { "type": "required", "emailAddress": { "name": "福井 大介", "address": "daisuke.fukui@contoso.com" } },
-    { "type": "required", "emailAddress": { "name": "横山 翔", "address": "sho.yokoyama@contoso.com" } },
-    { "type": "optional", "emailAddress": { "name": "青山 玲奈", "address": "rena.aoyama@contoso.com" } },
-    { "type": "optional", "emailAddress": { "name": "三宅 悠人", "address": "yuto.miyake@contoso.com" } }
-  ],
-  "organizer": { "emailAddress": { "name": "福井 大介", "address": "daisuke.fukui@contoso.com" } },
-  "reminderMinutesBeforeStart": 15,
-  "categories": ["セキュリティ"]
-}
-{
-  "id": "AAMkADkya...-wkly-dp-standup",
-  "subject": "データ基盤 定例（進捗共有）",
-  "bodyPreview": "進捗・リスク・アクション更新。10/22はAI合同へ置換。",
-  "start": { "dateTime": "2025-10-15T17:30:00", "timeZone": "Asia/Tokyo" },
-  "end":   { "dateTime": "2025-10-15T18:00:00", "timeZone": "Asia/Tokyo" },
-  "location": { "displayName": "Microsoft Teams 会議" },
-  "isOnlineMeeting": true,
-  "onlineMeetingProvider": "teamsForBusiness",
-  "recurrence": {
-    "pattern": { "type": "weekly", "interval": 1, "daysOfWeek": ["wednesday"] },
-    "range": { "type": "noEnd", "startDate": "2025-10-15" }
-  },
-  "attendees": [
-    { "type": "required", "emailAddress": { "name": "三宅 悠人", "address": "yuto.miyake@contoso.com" } },
-    { "type": "required", "emailAddress": { "name": "白井 奏", "address": "kanade.shirai@contoso.com" } },
-    { "type": "required", "emailAddress": { "name": "木下 俊輔", "address": "shunsuke.kinoshita@contoso.com" } }
-  ],
-  "organizer": { "emailAddress": { "name": "三宅 悠人", "address": "yuto.miyake@contoso.com" } },
-  "reminderMinutesBeforeStart": 10,
-  "categories": ["定例"]
-}
+
 
 ```
 
 ## 📘 第2週（10月20日週）
 
-### 🗓 会議③：AI分析チーム合同データ連携会議
+### 📝 第3回：品質・データ検証レビュー
 
 ```
-🗓 会議③：AI分析チーム合同データ連携会議
+開催日時：2025年10月21日（火） 14:00〜15:30
+開催形式：Teamsオンライン
+出席者：橋本、浜田、加賀、北島、神田、三宅、白井
 
-日時： 2025年10月22日（水）14:00〜15:30
-場所： Teams「全体推進会議／AI-基盤合同」
-出席者： 三宅、藤原（AI）、白井、木下、青山、加賀、陳、相沢（UX代表）ほか
+【議題】
 
-■ 議題
+データ欠損・異常検出レポート共有
 
-データ提供スキーマの最終確認
+再送データの品質比較結果
 
-SHAP分析用データセット範囲
+検証プロセス自動化検討
 
-APIエンドポイントの試験公開スケジュール
+【議事内容】
+① 欠損・異常検出
 
-次期PoC連携方針
+浜田：「10/1〜10/15のロード分で欠損率0.3%。閾値（1%）未満で許容範囲。
+ただし、自治体Cデータで「visit_purpose」項目に不明値多数（23%）。」
 
-■ 議事概要
-1. データスキーマ
+加賀：「クロス集計で visit_purpose=不明 の多くは宿泊データ連携なしが原因。」
 
-白井：最新スキーマv2.1を提示。AI側の必要カラム「stay_duration」「traffic_type」追加済。
+② 品質比較
 
-2. SHAP分析用データ
+橋本：「B市再送データは旧版より欠損減少（2.8%→0.5%）。改善傾向を確認。
+監査ログの整合性も問題なし。」
 
-加賀：匿名化済サンプルを10万件単位で準備。AI側での前処理要。
+③ 自動化検討
 
-3. API試験公開
+北島：「Airflowジョブ内に品質検証タスクを追加可能。ETL完了後にpandasで検査を実行。」
 
-陳：内部向けAPIを10/25に試験公開予定。
+神田：「結果を自動的にSlack／Teams通知できるようにする。」
 
-青山：Azure側ロードバランサ設定を10/24完了予定。
+【決定事項】
 
-4. PoC方針
+異常検出スクリプトをETLフロー内に統合（10/25まで）
 
-藤原（AI）：次期PoCでは自治体Cの宿泊データを活用。ETL負荷見積りを基盤側に依頼。
+不明値多発項目は対象自治体に共有予定（河野対応）
 
-■ 決定事項
-
-API試験公開：10/25（土）
-
-AIチームへのデータ提供：10/26（日）
-
-ETLリソース見積：木下・山岡が10/24までに提示。
-
-■ アクションアイテム
+【新規発生タスク】
 担当	内容	期限
-白井	スキーマv2.1最終化	10/23
-木下・山岡	ETL負荷見積作成	10/24
-青山	Azure LB設定	10/24
-陳	API試験公開	10/25
-加賀	SHAP分析用データ提供	10/26
+北島	ETL後の品質チェックDAG追加	10/24
+神田	チェック結果Teams通知スクリプト実装	10/26
+橋本	品質指標レポートフォーマット更新	10/27
 ```
 
-### 🗓 会議④：第4週チーム定例
+### 📝 第4回：クラウド運用・監視強化検討会
 
 ```
-🗓 会議④：第4週チーム定例
+開催日時：2025年10月24日（金） 16:00〜17:30
+開催形式：Teamsオンライン
+出席者：青山、水谷、福井、三宅、佐々木、山本、北島、大森
 
-日時： 2025年10月24日（金）10:00〜11:30
-場所： Teams（定例チャンネル）
-出席者： 三宅、白井、木下、青山、陳、橋本、河野、横山、浜田、福井、水谷、大森、小泉、田村（計14名）
+【議題】
 
-■ 議題
+DataDog監視項目拡張
 
-今週の進捗確認（AI連携後の反映）
+Azure KeyVault運用ポリシー策定
 
-監視アラート・エラー発生状況
+VPN接続安定化対応
 
-ドキュメント整理状況
+【議事内容】
+① 監視項目
 
-次回リリース（v1.2）準備
+水谷：「ETL完了通知以外に、Blob Storageのデータ容量監視・APIエラー率も追加検討。」
 
-■ 議事概要
-1. 進捗
+佐々木：「ETL実行失敗時の自動リトライ通知が一部遅延。Slack通知と併用を検討。」
 
-ETL再実行成功。B市データ取り込み完了（10/21）。
+② KeyVault管理
 
-API試験公開済（10/25予定を前倒し10/24午後に実施）。
+福井：「暗号化キー更新の自動化に向け、TerraformでKeyVaultローテーション設定を試行中。
+来週までにPoC完了予定。」
 
-データレイク格納件数：計4,120万件（前週比+8%）。
+③ VPN問題
 
-2. 監視・アラート
+山本：「自治体Dのネットワーク環境でVPN断が発生（1日2回程度）。ルータ側設定変更要請中。」
 
-水谷：夜間ジョブ1件でタイムアウト発生（リトライ成功）。閾値を調整予定。
+【決定事項】
 
-福井：監視ログから暗号化キー漏洩の恐れなし。確認済み。
+DataDog監視拡張版設定：10/28適用
 
-3. ドキュメント整理
+KeyVault自動ローテーションPoC：10/29報告
 
-小泉：設計書・ETL構成図をConfluenceに統合。
+VPN安定化対応完了目標：11/1
 
-田村：メタデータ辞書を更新、来週AIチームにも共有。
-
-4. 次回リリース
-
-三宅：v1.2リリースを10/28予定で進行。
-
-大森：GitHub Actionsで自動テスト導入予定。
-
-青山：Terraform IaC更新を反映。
-
-■ 決定事項
-
-v1.2リリース：10/28（火）夜間。
-
-Confluenceでドキュメント一元管理へ移行。
-
-来週は「運用自動化」分科会を新設予定。
-
-■ アクションアイテム
+【新規発生タスク】
 担当	内容	期限
-水谷	ジョブ監視閾値再設定	10/27
-小泉・田村	Confluence統合完了報告	10/27
-大森	GitHub Actionsテスト導入	10/28
-青山	Terraform更新反映	10/28
-三宅	リリースチェック・報告書提出	10/29
+水谷	DataDog監視テンプレート更新	10/27
+福井	KeyVaultローテーション検証報告	10/29
+山本	自治体D側VPN設定確認報告	10/30
+佐々木	Slack連携通知再試験	10/28
 ```
 
 ## teamsでの会話内容
-
 ```
-💬 技術・課題共有（チャネル）
-🧩 スレッド①：API試験公開準備（10/21〜10/25）
+✅ 完了報告（抜粋）
 
-投稿者：陳 文傑（APIリード）｜2025年10月21日 09:20
+北島：品質チェックDAGドラフト完了（10/24）
 
-各位
-API試験公開（10/25予定）に向け、テスト用エンドポイント /api/v1/visits/summary の疎通確認を開始しました。
-@青山 玲奈 さん、Azure側ロードバランサ設定は予定通り24日中に反映で問題なさそうですか？
-@木下 俊輔 さん、ETL出力フォーマット（CSV→Parquet変換）のサンプルをAPI側で確認したいです。
+神田：Teams通知テンプレ＋Webhook実装（10/26予定→コード完成・結線待ち）
 
-📎 api_test_request.json（テストリクエスト例）を添付しました。
+橋本：品質レポートフォーマット案をPMO週報へ反映
 
-返信：青山 玲奈（クラウド統括）｜10/21 10:05
+水谷：監視テンプレ更新→ステージングでテスト済み
 
-@陳 さん
-LB設定は昨晩ステージング環境でテスト済みです。
-本番側への反映は 10/23午前中 に前倒しで行います。
-Terraform更新も feature/lb_rule_v2 ブランチにpush済みです。
+福井：ZAP再スキャン警告0／KeyVaultローテPoC着手
 
-返信：木下 俊輔（ETLリーダー）｜10/21 11:10
+山本：VPN再接続パッチ適用・監視閾値設定
 
-@陳 さん
-Parquet出力の最新フォーマットを /etl/output/preview_20251021/ に配置しました。
-カラム名もスキーマv2.1に合わせて修正済み（stay_duration, traffic_type 含む）。
-@白井 奏 さん にも最終チェックお願いしたいです。
+岩城：Blob容量・I/O監視しきい値調整、テーブル統計再作成を提案
 
-返信：白井 奏（データアーキテクト）｜10/21 12:02
+鈴村：GE導入検証の環境作成開始
 
-確認しました。
-stay_duration の型はfloat→int変換で統一お願いします。
-traffic_type は文字列カテゴリで問題なし。
-→ 修正版を10/22午前までに再出力いただければOKです。
+小泉：資料とりまとめ・議事録の整備
 
-返信：木下 俊輔｜10/22 09:40
+🧾 まとめ（第2週のTeams動向）
 
-再出力完了しました。
-parquet_v2.1_20251022 を共有済み。
-@陳 さん API側で再確認お願いします。
+品質検証の自動化が大きく前進（品質チェックDAG・通知テンプレ・KPI定義の整備）。
 
-返信：陳 文傑｜10/22 13:15
+監視強化はDataDogテンプレ拡張・抑制ルール設計・Teamsフォールバックで実運用レベルへ。
 
-受領しました。
-動作問題なしです。
-予定通り 10/24午後に試験公開 へ切り替えます。
-@青山 さん LB側ルーティング変更タイミングだけ、Slackでも通知いただけると助かります。
+セキュリティ＆運用はKeyVaultローテPoC、VPN一時回避と再接続バックオフが進行。
 
-🧮 スレッド②：SHAP分析用データ提供（10/22〜10/24）
+データ連携の現実対応として、自治体Cのvisit_purpose不明値＆自治体EのCSV差し替えに即応。
 
-投稿者：加賀 亮（AIチーム）｜2025年10月22日 15:10
+パフォーマンス微調整（LB後の+40ms）に対し、I/O増の把握と深夜の統計再作成で手当て。
 
-@白井 さん
-SHAP分析用データ10万件×3セットの匿名化処理が完了しました。
-/ai_input/shap_dataset_v2.1.zip に格納済です。
-ETL側での整形（null埋め・日付正規化）をお願いできますか？
-AI側では週末から学習テストに入ります。
+チーム全員が**自分の担当で具体タスク→成果物（ファイル/PR/設定）**を出し、会議とSlack/Teams通知を接続する運用の地盤が固まった一週間でした。
+```
+```
+💬 Teams会話記録（第2週）
+📰 一般（General）
 
-返信：白井 奏｜10/22 16:00
+📌 スレッド①：品質・データ検証レビューの事前アクション
+投稿者：橋本 翼（品質管理）｜2025/10/21 09:05
 
-ありがとうございます。
-ETL整形スクリプトを修正中です（etl_shap_cleaner.py）。
-used_date 列の変換仕様だけ確認したいのですが、YYYY-MM-DD形式で統一で良いですか？
+@チーム全員
+本日14:00〜の「品質・データ検証レビュー」前に、各自必要データの最終反映をお願いします。
 
-返信：加賀 亮｜10/22 16:12
+@浜田 さん：欠損・異常検出レポートの最新版（10/1〜10/15）を掲示板フォルダにアップ願います。
 
-はい、それでOKです。
-used_date はAIモデル入力時に時系列特徴量として扱うので、フォーマット統一助かります。
+@加賀 さん：visit_purpose×宿泊連携のクロス集計表、可視化（PNG）も添付お願いします。
 
-返信：木下 俊輔｜10/23 10:00
+@北島 さん：Airflowへの品質チェックDAGのドラフト（実行だけ可、通知はダミーでOK）。
 
-整形完了しました。
-ファイルは /shared/etl/shap_ready_20251023.parquet に配置済。
-サイズ：2.8GB。
-@加賀 さん、@藤原 さん（AIリーダー）こちらで取り込み可能かご確認ください。
+@神田 さん：Teams通知のメッセージテンプレ（JSON）を共有ください。
 
-返信：藤原 大輝（AIリーダー）｜10/23 11:05
+@田村 さん：メタデータカタログに欠損率指標の定義を追加お願いします。
 
-確認OKです。
-本日夜からSHAPトレーニングを実施します。
-GPU環境（A100）で動かすため、バッチ単位で分割して取り込みます。
-ETL側の迅速対応ありがとうございました！
+@小泉 さん：会議用の議題スライドを作成してください（3枚でOK）。
 
-⚙️ スレッド③：夜間ジョブの監視アラート（10/23〜10/25）
+📎 添付予定フォルダ：\\share\quality_review\20251021\
 
-投稿者：水谷 翔（運用担当）｜2025年10月23日 22:30
+🟢 浜田 俊｜09:22（返信）
 
-昨夜のジョブ実行ログで etl_nightly_traffic_20251023 がタイムアウト。
-再実行で正常終了しましたが、閾値設定を調整します。
-@橋本 翼 さん、品質管理ログ上も異常検知なしで良いでしょうか？
+@橋本 さん
+欠損・異常検出レポート（v1.2）をアップしました。used_device の欠損多め、visit_purpose はC自治体由来が主因。
+📎 missing_anomaly_report_20251015_v12.xlsx
 
-返信：橋本 翼（品質管理）｜10/24 08:15
+🟢 加賀 美雪｜09:31（返信）
 
-@水谷 さん
-はい、該当ジョブはリトライ後に全件処理されているのを確認しました。
-セキュリティログ側にも異常はありません。
-閾値調整のPR作成時、threshold_reconfig.yaml の変更点だけレビュー依頼お願いします。
+クロス集計＋ヒートマップ置きました。
+📎 purpose_x_lodging_crosstab_20251021.csv
+📎 purpose_heatmap_20251021.png
 
-返信：水谷 翔｜10/24 11:05
+🟢 北島 洋｜09:44（返信）
 
-PR出しました（#245）。
-処理時間上限を「15分→25分」に拡張。
-@大森 さん 自動テストのジョブ連携に影響しないか確認お願いします。
+品質チェックDAGドラフト（quality_check_post_etl_dag.py）をPRしました。通知は print() のみ。
+📎 PR: feature/quality-check-dag-draft
 
-返信：大森 直人（CI/CD担当）｜10/24 13:45
+🟢 神田 遼｜09:55（返信）
 
-問題なしです。
-GitHub Actions側のタイムアウトは別設定（30分）なので影響なし。
-今夜自動テストフロー追加も併せてマージ予定です。
+Teamsメッセージテンプレ（Adaptive Cards想定）です。
+📎 teams_quality_notify_template.json
+失敗時は「重大」タグ、閾値超過は「警告」タグで色分けできるようにしました。
 
-📅 定例・進捗報告（チャネル）
-スレッド①：第4週リリース進行管理（10/24〜10/28）
+🟢 田村 知沙｜10:05（返信）
 
-投稿者：三宅 悠人（チームリーダー）｜2025年10月24日 17:30
+カタログに quality.missing_rate, quality.anomaly_rate を追加。APIエンドポイントにも展開可能です。
+URL: https://catalog.nec-tourism.jp/metrics/quality
 
-皆さん、お疲れ様です。
-定例会で決定した通り、v1.2リリースは 10/28（火）夜間 で進行します。
-以下、作業項目を再掲します。
+🟢 小泉 明｜10:18（返信）
 
-@青山 さん：Terraform更新反映（IaC調整）
+議題スライド（3枚）アップしました。
+📎 QualityReview_20251021_agenda_v1.pptx
 
-@大森 さん：GitHub Actions自動テスト導入
+📌 スレッド②：自治体Cの visit_purpose 不明値 対応方針
+投稿者：三宅 悠人（TL）｜2025/10/21 11:10
 
-@小泉 さん・@田村 さん：Confluence統合報告
+@河野 さん @白井 さん
+自治体Cの visit_purpose 不明値（23%）について、短期回避策として
 
-@水谷 さん：監視閾値再設定
+宿泊連携なしは purpose=unknown として集計対象外にし、
 
-@木下 さん：ETL負荷見積最終化（PoC対応）
+来月の連携フォーマットで明示フラグを追加要望、で行きたいです。
+異論なければ今週中に自治体Cへ連絡→合意取り付けでお願いします。
 
-それぞれ進捗をこのスレッドで報告してください。
+🟢 河野 遥｜11:18（返信）
 
-返信：青山 玲奈｜10/25 09:10
+了解。C自治体へは本日夕方に一次連絡（草案）を送付します。
+📎 request_format_change_draft_C_20251021.docx
 
-Terraform更新反映済です。
-main にマージ完了。
-Azure側のリソースグループ整備も完了しました。
-LB設定変更も合わせて確認OKです。
+🟢 白井 奏｜11:25（返信）
 
-返信：大森 直人｜10/25 12:00
+スキーマ側、purpose_flag のブール（lodging_linked）をv2.1に追加案で用意します。
+影響範囲：ETLマッピング（軽微）・BI可視化（凡例追加）。
 
-GitHub Actionsによる自動テストフロー導入完了。
-pytest結果をSlack通知する仕組みを追加しました。
-明日（10/26）の夜間ジョブで初回動作を確認予定。
+📌 スレッド③：新規発生（臨時）—自治体EよりCSV差し替え
+投稿者：平林 翔吾（調達連携）｜2025/10/22 09:05
 
-返信：小泉 愛実｜10/25 15:15
+@木下 さん @岩城 さん
+自治体Eから「10/20分のCSVに誤値が含まれるので差し替えたい」との連絡。
+10/22 12:00までに新ファイルが届く見込み。受領後の取り込みスロット確保できますか？
 
-Confluence統合完了しました。
-ETL・API設計書、構成図、メタデータ辞書を統合済。
-@田村 さん、AIチーム共有用ページの公開権限だけ再チェックお願いします。
+🟢 木下 俊輔｜09:18（返信）
 
-返信：田村 亮介｜10/25 17:00
+12:30〜13:00でステージングに流します。本番は日次バッチに乗せるため本日の夜間（1:00実行）で吸収予定。
 
-権限設定修正しました。
-/AI_shared/metadata_v2.1 ページをAIチームメンバーに公開済です。
+🟢 岩城 直也｜09:22（返信）
 
-返信：水谷 翔｜10/26 09:00
+Blobの一時領域（/landing/e_city/20251022/）を用意済み。到着検知でイベントトリガー飛ばします。
 
-ジョブ監視閾値を25分に変更済。
-異常検知テストも完了しました。
-来週から新しき閾値で監視運用を開始します。
+📌 スレッド④：VPN断の一次回避（D自治体）
+投稿者：山本 航（ネットワーク連携）｜2025/10/24 10:15
 
-返信：木下 俊輔｜10/26 13:30
+@青山 さん @佐々木 さん
+D自治体のVPN断（1日2回程度）について、ルータ側設定変更を要請中。
+一時回避として、再接続リトライを30秒間隔×6回に増やすパッチを今夜適用します。
+監視側（DataDog/Teams）への通知閾値は暫定2分で「警告」、5分で「重大」にします。
 
-ETL負荷見積作成完了。
-自治体Cの宿泊データ（約900万件）でCPU使用率平均65%、GPU処理時短効果15%。
-詳細レポートを @藤原 さん にも共有済です。
+🟢 青山 玲奈｜10:22（返信）
 
-返信：三宅 悠人｜10/27 10:15
+了解。IaC側の差分はnet-vpn-retry-policy.tfに集約します。
+@水谷 さん、通知テンプレ更新お願いします。
 
-各担当、迅速な対応ありがとうございます。
-本日夜、リリースリハーサルを実施し、
-10/28夜間の本番反映 に備えます。
-報告書は10/29にPMO宛提出予定です。
+🟢 佐々木 智｜10:30（返信）
 
-スレッド②：運用自動化分科会の準備（10/27〜10/28）
+Airflowの依存ジョブについて、VPN再接続まで待機するバックオフ追加します。
+📎 PR: hotfix/airflow-backoff-vpn
 
-投稿者：橋本 翼（品質管理）｜2025年10月27日 11:20
+📅 定例・進捗報告
 
-来週開始予定の「運用自動化分科会」について、初回議題案をまとめました。
-@三宅 さん、@青山 さん、@大森 さん ご確認ください。
+📌 スレッド⑤：第3回レビュー 後の決定事項・担当整理
+投稿者：三宅 悠人｜2025/10/21 16:20
 
-ジョブ監視の自動リカバリ（再実行フロー）
+今日（14:00〜）のレビューで決めた内容の担当と期日を整理します。
 
-成果物（ETLログ・テスト結果）の自動アーカイブ
+@北島：ETL後の品質チェックDAG追加（10/24）
 
-IaC更新時の自動差分通知（GitOps連携）
+@神田：チェック結果Teams通知スクリプト実装（10/26）
 
-資料ドラフト👇
-📎 automation_wg_agenda_v1.docx
+@橋本：品質指標レポートフォーマット更新（10/27）
 
-返信：三宅 悠人｜10/27 13:05
+@河野：purpose_flag 仕様をC自治体へ伝達（10/23一次連絡）
 
-確認しました。良い内容です。
-第1回は10/30（木）15:00〜で調整中。
-PMO側（@松下 さん）にも展開します。
+@白井：スキーマv2.1案（purpose_flag）作成（10/22）
 
-返信：青山 玲奈｜10/27 13:30
+@岩城：Blob容量のしきい値監視（警告：70%、重大：85%）設定レビュー（10/23）
 
-GitOps連携はAzure DevOpsでもPoC進めているので、その部分担当します。
-Terraform差分検知スクリプトもサンプル共有します。
+🟢 北島 洋｜16:33（返信）
 
-返信：大森 直人｜10/27 14:10
+DAG追加、ローカル検証OK。本番相当はデモデータで走らせて明日午前に共有します。
 
-了解しました。
-CI/CD観点での改善点（ログ整形・Slack通知）も発表パートでまとめておきます。
+🟢 神田 遼｜16:40（返信）
+
+通知スクリプトのTeams Webhook版できました。AdaptiveCards化もオプションで実装予定。
+
+🟢 橋本 翼｜16:48（返信）
+
+レポートフォーマット、KPIを「欠損率・異常率・要件準拠率」の3本柱に整理。ドラフト共有します。
+
+🟢 岩城 直也｜17:05（返信）
+
+容量しきい値の試験、/warehouse/visits/ で85%超のテスト値を入れて発火確認済み。DataDog→Teams連携もOK。
+
+📌 スレッド⑥：第4回 監視強化検討会の宿題
+投稿者：青山 玲奈｜2025/10/24 18:00（会議サマリ）
+
+決定事項：
+
+DataDog監視拡張版設定：10/28適用（@水谷）
+
+KeyVault自動ローテPoC：10/29報告（@福井）
+
+VPN安定化対応：11/1完了目標（@山本）
+
+Slack連携通知再試験：10/28（@佐々木）
+進捗はこのスレにスレッド返信で報告してください。
+
+🟢 水谷 里菜｜18:20（返信）
+
+監視テンプレ更新中。api.5xx_rate, blob.capacity, etl.lag_minutes を定義追加済み。10/27にテスト流します。
+
+🟢 福井 隆｜18:25（返信）
+
+KeyVaultローテはTerraformでkey_rotation_policyを定義。PoCはKeyID単位でのローテ挙動検証まで含めます。
+
+🟢 佐々木 智｜18:40（返信）
+
+Slack連携のレイテンシ課題、Webhook再設定とキューのflush間隔調整で改善見込み。10/28午前に再試験します。
+
+🟢 山本 航｜18:55（返信）
+
+D自治体のルータ設定が27日早朝に反映予定。以降のアラートトレンドを重点監視します。
+
+📌 スレッド⑦：週次“個別ToDo”ミニ報告（10/23）
+投稿者：小泉 明（ドキュメント管理）｜2025/10/23 17:10
+
+各位、本日のミニ報告をスレッド返信でお願いします（2〜3行でOK）。
+※抜け漏れチェックのため全員分記載🙇
+
+🟢 白井 奏（スキーマ）
+
+v2.1（purpose_flag）案を作成、レビュー依頼中。
+来週のAIチーム連携仕様に渡せます。
+
+🟢 木下 俊輔（ETL）
+
+自治体Eの差し替えCSV、ステージング取り込み完了。本番は夜間ジョブに合流予定。
+Airflowタスクのバックオフ連携（VPN対策）も取り込み中。
+
+🟢 陳 文傑（API）
+
+LB後のルーティングでタイムアウト閾値調整（API GW）。
+23日の最終疎通リハーサルOK。
+
+🟢 大森 颯（CI/CD）
+
+deploy_api_pipeline.yml にKey発行ステップ追加。
+Secrets取り回しをKeyVault連携に切り替え済み。
+
+🟢 福井 隆（セキュリティ）
+
+ZAP再スキャン完了、警告0。
+KeyVaultローテPoCでアラート連携を準備中。
+
+🟢 水谷 里菜（監視）
+
+DataDog新テンプレのテスト条件作成。
+5xxエラーと容量閾値の同時発火で通知が煩雑にならないよう、抑制ルールも検証。
+
+🟢 山岡 翔真（ETL支援）
+
+quality_check_post_etl のデモデータ調整。
+pandas→pyarrowのI/O最適化を検証中。
+
+🟢 加賀 美雪（統計）
+
+目的不明データの時系列分解を準備、季節変動っぽい揺れを確認。週報にグラフ化して添付予定。
+
+🟢 岩城 直也（ストレージ）
+
+/landingのライフサイクル管理ルール微調整（14日→10日に短縮）案。
+コスト効果の試算資料を作成。
+
+🟢 田村 知沙（メタデータ）
+
+カタログの英語ラベル整備。外部連携向けのdata dictionaryに追加。
+
+🟢 平林 翔吾（調達）
+
+自治体Eの誤値補償条項の確認中。契約側に追加覚書を打診。
+
+🟢 山本 航（ネットワーク）
+
+VPN再接続設定の一時パッチを検証。
+ルータ側変更後の指標（断回数/日）を統計化へ。
+
+🟢 横山 玲（匿名化）
+
+visit_deviceの匿名化ルール拡張、実装済み。
+サンプル出力を品質チームレビューへ回付。
+
+🟢 鈴村 隼（技術検証）
+
+Great Expectations の軽量導入を検討。Airflowオペレーターでの整合性テスト案をドラフト化。
+
+🟢 佐々木 智（運用支援）
+
+Slack連携再試験の手順書更新中。
+Airflowのretry戦略をexponential→exponential_jitterへ切替検証。
+
+🟢 北島 洋（運用統制）
+
+品質チェックDAGのスケジューリング整理。夜間ピークと被らないようにオフセット配置。
+
+🟢 小泉 明（ドキュメント）
+
+本スレッドの回収をドキュメント化してPMO週報へ反映します。
+
+💬 技術・課題共有
+
+📌 スレッド⑧：品質チェックDAG（コード断片共有）
+投稿者：北島 洋｜2025/10/22 13:00
+
+quality_check_post_etl_dag.py のポイントです👇
+
+ETL完了センサー → pandasで欠損・異常率算出 → 一時テーブルへ書き込み
+
+閾値比較 → @神田 のTeams通知テンプレへPOST
+
+すべて失敗時はAirflowリトライ＋@佐々木 のバックオフ設定を使用
+
+# pseudo
+miss = df.isna().mean()
+anomal = (df[col] < 0).mean()  # 例
+if miss.any() > 0.01 or anomal.any() > 0.005:
+    send_to_teams(payload)  # 神田テンプレ適用
+
+
+🟢 神田 遼｜13:18（返信）
+
+受け側のテンプレはこのペイロードでOKです。
+重大・警告の色替えは themeColor を分岐で。
+
+📌 スレッド⑨：監視テンプレ拡張（DataDog）
+投稿者：水谷 里菜｜2025/10/23 09:40
+
+追加監視：api.5xx_rate, blob.capacity, etl.lag_minutes
+抑制ルール：同一時間窓に複数アラートが出る場合、重大を優先、警告は抑制。
+今夜ステージングでテスト流します。
+
+🟢 青山 玲奈｜09:55（返信）
+
+ありがとうございます。etl.lag_minutes は12分で警告、25分で重大に設定でお願いします。
+
+📌 スレッド⑩：KeyVaultローテPoC（Terraform断片）
+投稿者：福井 隆｜2025/10/23 15:05
+
+ポリシーは90日＋30日前通知で定義。アラートはTeamsへ。
+
+resource "azurerm_key_vault_key" "api_key" {
+  rotation_policy {
+    time_after_creation = "P90D"
+    expire_after        = "P120D"
+    notify_before_expiry = "P30D"
+  }
+}
+
+
+10/29までに検証結果を共有します。
+
+🟢 大森 颯｜15:22（返信）
+
+CI/CD側もローテ後のキーを自動参照できるよう、referenceで取り込みます。
+パイプラインは夜間に検証。
+
+📌 スレッド⑪：API遅延の微増—LB後の観測
+投稿者：陳 文傑｜2025/10/24 11:10
+
+LB本番設定後のピーク帯で応答が+40ms程度。許容内ですが、念のため @木下 さん @岩城 さん と再確認したいです。
+
+API→DWクエリのキャッシュヒット率
+
+Parquet読み込みI/O
+
+5xxの無いことは監視で確認済み
+
+🟢 木下 俊輔｜11:22（返信）
+
+クエリ計画に変化無し。explain上は同等でした。
+ただI/Oが微増、@岩城 さんの計測結果を見たいです。
+
+🟢 岩城 直也｜11:40（返信）
+
+直近3日でBlob→DWの読み込みが+6%増。スロットリング閾値近傍。
+深夜帯にテーブル統計の再作成を提案します。
+
+📌 スレッド⑫：新規ツール評価（鈴村）
+投稿者：鈴村 隼｜2025/10/24 13:05
+
+品質検証に Great Expectations の軽量導入を提案。
+Airflowオペレーター化→GECheckOperatorで一部ルールを宣言的に書けます。試行環境つくります。
+
+🟢 橋本 翼｜13:18（返信）
+
+良いですね。KPIレポートと用語そろえるため、expect_column_values_to_not_be_null等の命名と我々のKPI名のマッピング表を用意しましょう。
+
+📌 スレッド⑬：Slack連携再試験（運用）
+投稿者：佐々木 智｜2025/10/24 16:10
+
+通知遅延の根因はWebhook側のRate Limitでした。
+キューのflush間隔を短縮し、バースト時はTeamsにフォールバックする設計で再試験します（10/28）。
+
+🟢 水谷 里菜｜16:20（返信）
+
+Teams側のフォールバック検出（バナー色変更）も入れておきます。視認性上げます。
 ```
 
 ```json
@@ -4027,53 +4183,333 @@ CI/CD観点での改善点（ログ整形・Slack通知）も発表パートで�
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('team-nec-kanko-dx')/channels/messages",
   "team": {
     "id": "team-nec-kanko-dx",
-    "displayName": "NEC観光DX基盤構築プロジェクト（全体）"
+    "displayName": "NEC観光DX基盤構築プロジェクト（データ基盤構築チーム）"
   },
-  "fetchedAtUtc": "2025-10-27T17:30:00Z",
+  "fetchedAtUtc": "2025-10-27T01:45:00Z",
   "channels": [
     {
       "id": "19:general@thread.tacv2",
       "displayName": "📰 一般（General）",
       "messages": [
         {
-          "id": "msg-gen-001",
+          "id": "gen-20251021-0905",
           "replyToId": null,
-          "createdDateTime": "2025-10-22T00:05:00Z",
-          "lastModifiedDateTime": "2025-10-22T00:05:00Z",
+          "etag": "W/\"gen-20251021-0905\"",
           "messageType": "message",
+          "createdDateTime": "2025-10-21T00:05:00Z",
+          "lastModifiedDateTime": "2025-10-21T00:05:00Z",
           "importance": "normal",
-          "subject": "【全体共有】10月第4週の連絡事項",
-          "from": {
-            "user": {
-              "id": "u-ishida",
-              "displayName": "石田 智久（PM）",
-              "userPrincipalName": "tomohisa.ishida@example.com"
-            }
-          },
+          "subject": "品質・データ検証レビューの事前アクション",
+          "from": { "user": { "id": "u-hashimoto", "displayName": "橋本 翼", "userIdentityType": "aadUser" } },
           "body": {
             "contentType": "html",
-            "content": "<p>今週の全体会議は10/24（金）10:00〜です。議題：進捗、リスク#12対応、v1.2リリース準備。</p>"
+            "content": "<p><at id=\"0\">チーム全員</at><br/>本日14:00〜の「品質・データ検証レビュー」前に、各自必要データの最終反映をお願いします。</p><ul><li><at id=\"1\">浜田 俊</at>：欠損・異常検出レポートの最新版（10/1〜10/15）を掲示板フォルダにアップ願います。</li><li><at id=\"2\">加賀 美雪</at>：<code>visit_purpose</code>×宿泊連携のクロス集計表、可視化（PNG）も添付お願いします。</li><li><at id=\"3\">北島 洋</at>：Airflowへの品質チェックDAGのドラフト（実行だけ可、通知はダミーでOK）。</li><li><at id=\"4\">神田 遼</at>：Teams通知のメッセージテンプレ（JSON）を共有ください。</li><li><at id=\"5\">田村 知沙</at>：メタデータカタログに欠損率指標の定義を追加お願いします。</li><li><at id=\"6\">小泉 明</at>：会議用の議題スライドを作成してください（3枚でOK）。</li></ul><p>📎 添付予定フォルダ：\\\\share\\quality_review\\20251021\\</p>"
           },
+          "mentions": [
+            { "id": 0, "mentionText": "チーム全員", "mentioned": { "conversation": { "id": "19:general@thread.tacv2" } } },
+            { "id": 1, "mentionText": "浜田 俊", "mentioned": { "user": { "id": "u-hamada", "displayName": "浜田 俊" } } },
+            { "id": 2, "mentionText": "加賀 美雪", "mentioned": { "user": { "id": "u-kaga", "displayName": "加賀 美雪" } } },
+            { "id": 3, "mentionText": "北島 洋", "mentioned": { "user": { "id": "u-kitajima", "displayName": "北島 洋" } } },
+            { "id": 4, "mentionText": "神田 遼", "mentioned": { "user": { "id": "u-kanda", "displayName": "神田 遼" } } },
+            { "id": 5, "mentionText": "田村 知沙", "mentioned": { "user": { "id": "u-tamura", "displayName": "田村 知沙" } } },
+            { "id": 6, "mentionText": "小泉 明", "mentioned": { "user": { "id": "u-koizumi", "displayName": "小泉 明" } } }
+          ],
           "attachments": [],
           "replies": [
             {
-              "id": "msg-gen-001-r1",
-              "replyToId": "msg-gen-001",
-              "createdDateTime": "2025-10-22T00:20:00Z",
-              "lastModifiedDateTime": "2025-10-22T00:20:00Z",
+              "id": "gen-20251021-0922",
+              "replyToId": "gen-20251021-0905",
+              "etag": "W/\"gen-20251021-0922\"",
               "messageType": "message",
-              "from": {
-                "user": {
-                  "id": "u-matsushita",
-                  "displayName": "松下 翔太（PMO）",
-                  "userPrincipalName": "shota.matsushita@example.com"
-                }
-              },
+              "createdDateTime": "2025-10-21T00:22:00Z",
+              "lastModifiedDateTime": "2025-10-21T00:22:00Z",
+              "importance": "normal",
+              "from": { "user": { "id": "u-hamada", "displayName": "浜田 俊" } },
               "body": {
                 "contentType": "html",
-                "content": "<p>議事録テンプレートを更新しました。定例後にアップします。</p>"
+                "content": "<p><at id=\"0\">橋本 翼</at> さん<br/>欠損・異常検出レポート（v1.2）をアップしました。<code>used_device</code> の欠損多め、<code>visit_purpose</code> はC自治体由来が主因。</p>"
+              },
+              "mentions": [{ "id": 0, "mentionText": "橋本 翼", "mentioned": { "user": { "id": "u-hashimoto", "displayName": "橋本 翼" } } }],
+              "attachments": [
+                {
+                  "id": "att-gen2-001",
+                  "name": "missing_anomaly_report_20251015_v12.xlsx",
+                  "contentType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+                  "contentUrl": "https://contoso.sharepoint.com/sites/kanko/Shared%20Documents/missing_anomaly_report_20251015_v12.xlsx",
+                  "size": 256000
+                }
+              ]
+            },
+            {
+              "id": "gen-20251021-0931",
+              "replyToId": "gen-20251021-0905",
+              "etag": "W/\"gen-20251021-0931\"",
+              "messageType": "message",
+              "createdDateTime": "2025-10-21T00:31:00Z",
+              "lastModifiedDateTime": "2025-10-21T00:31:00Z",
+              "importance": "normal",
+              "from": { "user": { "id": "u-kaga", "displayName": "加賀 美雪" } },
+              "body": { "contentType": "html", "content": "<p>クロス集計＋ヒートマップ置きました。</p>" },
+              "attachments": [
+                {
+                  "id": "att-gen2-002",
+                  "name": "purpose_x_lodging_crosstab_20251021.csv",
+                  "contentType": "text/csv",
+                  "contentUrl": "https://contoso.sharepoint.com/sites/kanko/Shared%20Documents/purpose_x_lodging_crosstab_20251021.csv",
+                  "size": 40960
+                },
+                {
+                  "id": "att-gen2-003",
+                  "name": "purpose_heatmap_20251021.png",
+                  "contentType": "image/png",
+                  "contentUrl": "https://contoso.sharepoint.com/sites/kanko/Shared%20Documents/purpose_heatmap_20251021.png",
+                  "size": 145632
+                }
+              ]
+            },
+            {
+              "id": "gen-20251021-0944",
+              "replyToId": "gen-20251021-0905",
+              "etag": "W/\"gen-20251021-0944\"",
+              "messageType": "message",
+              "createdDateTime": "2025-10-21T00:44:00Z",
+              "lastModifiedDateTime": "2025-10-21T00:44:00Z",
+              "importance": "normal",
+              "from": { "user": { "id": "u-kitajima", "displayName": "北島 洋" } },
+              "body": {
+                "contentType": "html",
+                "content": "<p>品質チェックDAGドラフト（<code>quality_check_post_etl_dag.py</code>）をPRしました。通知は <code>print()</code> のみ。</p>"
+              },
+              "attachments": [
+                {
+                  "id": "att-gen2-004",
+                  "name": "PR: feature/quality-check-dag-draft",
+                  "contentType": "text/plain",
+                  "contentUrl": "https://github.com/contoso/kanko/pull/1234",
+                  "size": 100
+                }
+              ]
+            },
+            {
+              "id": "gen-20251021-0955",
+              "replyToId": "gen-20251021-0905",
+              "etag": "W/\"gen-20251021-0955\"",
+              "messageType": "message",
+              "createdDateTime": "2025-10-21T00:55:00Z",
+              "lastModifiedDateTime": "2025-10-21T00:55:00Z",
+              "importance": "normal",
+              "from": { "user": { "id": "u-kanda", "displayName": "神田 遼" } },
+              "body": {
+                "contentType": "html",
+                "content": "<p>Teamsメッセージテンプレ（Adaptive Cards想定）です。失敗時は「重大」タグ、閾値超過は「警告」タグで色分けできるようにしました。</p>"
+              },
+              "attachments": [
+                {
+                  "id": "att-gen2-005",
+                  "name": "teams_quality_notify_template.json",
+                  "contentType": "application/json",
+                  "contentUrl": "https://contoso.sharepoint.com/sites/kanko/Shared%20Documents/teams_quality_notify_template.json",
+                  "size": 4096
+                }
+              ]
+            },
+            {
+              "id": "gen-20251021-1005",
+              "replyToId": "gen-20251021-0905",
+              "etag": "W/\"gen-20251021-1005\"",
+              "messageType": "message",
+              "createdDateTime": "2025-10-21T01:05:00Z",
+              "lastModifiedDateTime": "2025-10-21T01:05:00Z",
+              "importance": "normal",
+              "from": { "user": { "id": "u-tamura", "displayName": "田村 知沙" } },
+              "body": {
+                "contentType": "html",
+                "content": "<p>カタログに <code>quality.missing_rate</code>, <code>quality.anomaly_rate</code> を追加。APIエンドポイントにも展開可能です。<br/>URL: <a href=\"https://catalog.nec-tourism.jp/metrics/quality\">https://catalog.nec-tourism.jp/metrics/quality</a></p>"
               },
               "attachments": []
+            },
+            {
+              "id": "gen-20251021-1018",
+              "replyToId": "gen-20251021-0905",
+              "etag": "W/\"gen-20251021-1018\"",
+              "messageType": "message",
+              "createdDateTime": "2025-10-21T01:18:00Z",
+              "lastModifiedDateTime": "2025-10-21T01:18:00Z",
+              "importance": "normal",
+              "from": { "user": { "id": "u-koizumi", "displayName": "小泉 明" } },
+              "body": { "contentType": "html", "content": "<p>議題スライド（3枚）アップしました。</p>" },
+              "attachments": [
+                {
+                  "id": "att-gen2-006",
+                  "name": "QualityReview_20251021_agenda_v1.pptx",
+                  "contentType": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+                  "contentUrl": "https://contoso.sharepoint.com/sites/kanko/Shared%20Documents/QualityReview_20251021_agenda_v1.pptx",
+                  "size": 524288
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "gen-20251021-1110",
+          "replyToId": null,
+          "etag": "W/\"gen-20251021-1110\"",
+          "messageType": "message",
+          "createdDateTime": "2025-10-21T02:10:00Z",
+          "lastModifiedDateTime": "2025-10-21T02:10:00Z",
+          "importance": "normal",
+          "subject": "自治体Cの visit_purpose 不明値 対応方針",
+          "from": { "user": { "id": "u-miyake", "displayName": "三宅 悠人" } },
+          "body": {
+            "contentType": "html",
+            "content": "<p><at id=\"0\">河野 遥</at> <at id=\"1\">白井 奏</at><br/>自治体Cの <code>visit_purpose</code> 不明値（23%）について、短期回避策として</p><ol><li>宿泊連携なしは <code>purpose=unknown</code> として集計対象外</li><li>来月の連携フォーマットで明示フラグ追加要望</li></ol><p>で行きたいです。異論なければ今週中に自治体Cへ連絡→合意取り付けでお願いします。</p>"
+          },
+          "mentions": [
+            { "id": 0, "mentionText": "河野 遥", "mentioned": { "user": { "id": "u-kono", "displayName": "河野 遥" } } },
+            { "id": 1, "mentionText": "白井 奏", "mentioned": { "user": { "id": "u-shirai", "displayName": "白井 奏" } } }
+          ],
+          "attachments": [],
+          "replies": [
+            {
+              "id": "gen-20251021-1118",
+              "replyToId": "gen-20251021-1110",
+              "etag": "W/\"gen-20251021-1118\"",
+              "messageType": "message",
+              "createdDateTime": "2025-10-21T02:18:00Z",
+              "lastModifiedDateTime": "2025-10-21T02:18:00Z",
+              "importance": "normal",
+              "from": { "user": { "id": "u-kono", "displayName": "河野 遥" } },
+              "body": { "contentType": "html", "content": "<p>了解。C自治体へは本日夕方に一次連絡（草案）を送付します。</p>" },
+              "attachments": [
+                {
+                  "id": "att-gen2-007",
+                  "name": "request_format_change_draft_C_20251021.docx",
+                  "contentType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+                  "contentUrl": "https://contoso.sharepoint.com/sites/kanko/Shared%20Documents/request_format_change_draft_C_20251021.docx",
+                  "size": 131072
+                }
+              ]
+            },
+            {
+              "id": "gen-20251021-1125",
+              "replyToId": "gen-20251021-1110",
+              "etag": "W/\"gen-20251021-1125\"",
+              "messageType": "message",
+              "createdDateTime": "2025-10-21T02:25:00Z",
+              "lastModifiedDateTime": "2025-10-21T02:25:00Z",
+              "importance": "normal",
+              "from": { "user": { "id": "u-shirai", "displayName": "白井 奏" } },
+              "body": {
+                "contentType": "html",
+                "content": "<p>スキーマ側、<code>purpose_flag</code> のブール（<code>lodging_linked</code>）をv2.1に追加案で用意します。影響範囲：ETLマッピング（軽微）・BI可視化（凡例追加）。</p>"
+              },
+              "attachments": []
+            }
+          ]
+        },
+        {
+          "id": "gen-20251022-0905",
+          "replyToId": null,
+          "etag": "W/\"gen-20251022-0905\"",
+          "messageType": "message",
+          "createdDateTime": "2025-10-22T00:05:00Z",
+          "lastModifiedDateTime": "2025-10-22T00:05:00Z",
+          "importance": "normal",
+          "subject": "【臨時】自治体EよりCSV差し替え",
+          "from": { "user": { "id": "u-hirabayashi", "displayName": "平林 翔吾" } },
+          "body": {
+            "contentType": "html",
+            "content": "<p><at id=\"0\">木下 俊輔</at> <at id=\"1\">岩城 直也</at><br/>自治体Eから「10/20分のCSVに誤値が含まれるので差し替えたい」との連絡。<br/>10/22 12:00までに新ファイルが届く見込み。受領後の取り込みスロット確保できますか？</p>"
+          },
+          "mentions": [
+            { "id": 0, "mentionText": "木下 俊輔", "mentioned": { "user": { "id": "u-kinoshita", "displayName": "木下 俊輔" } } },
+            { "id": 1, "mentionText": "岩城 直也", "mentioned": { "user": { "id": "u-iwaki", "displayName": "岩城 直也" } } }
+          ],
+          "attachments": [],
+          "replies": [
+            {
+              "id": "gen-20251022-0918",
+              "replyToId": "gen-20251022-0905",
+              "etag": "W/\"gen-20251022-0918\"",
+              "messageType": "message",
+              "createdDateTime": "2025-10-22T00:18:00Z",
+              "lastModifiedDateTime": "2025-10-22T00:18:00Z",
+              "importance": "normal",
+              "from": { "user": { "id": "u-kinoshita", "displayName": "木下 俊輔" } },
+              "body": { "contentType": "html", "content": "<p>12:30〜13:00でステージングに流します。本番は日次バッチに乗せるため本日の夜間（1:00実行）で吸収予定。</p>" }
+            },
+            {
+              "id": "gen-20251022-0922",
+              "replyToId": "gen-20251022-0905",
+              "etag": "W/\"gen-20251022-0922\"",
+              "messageType": "message",
+              "createdDateTime": "2025-10-22T00:22:00Z",
+              "lastModifiedDateTime": "2025-10-22T00:22:00Z",
+              "importance": "normal",
+              "from": { "user": { "id": "u-iwaki", "displayName": "岩城 直也" } },
+              "body": {
+                "contentType": "html",
+                "content": "<p>Blobの一時領域（<code>/landing/e_city/20251022/</code>）を用意済み。到着検知でイベントトリガー飛ばします。</p>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "gen-20251024-1015",
+          "replyToId": null,
+          "etag": "W/\"gen-20251024-1015\"",
+          "messageType": "message",
+          "createdDateTime": "2025-10-24T01:15:00Z",
+          "lastModifiedDateTime": "2025-10-24T01:15:00Z",
+          "importance": "normal",
+          "subject": "VPN断の一次回避（D自治体）",
+          "from": { "user": { "id": "u-yamamoto", "displayName": "山本 航" } },
+          "body": {
+            "contentType": "html",
+            "content": "<p><at id=\"0\">青山 玲奈</at> <at id=\"1\">佐々木 智</at><br/>D自治体のVPN断（1日2回程度）について、ルータ側設定変更を要請中。<br/>一時回避として、再接続リトライを30秒間隔×6回に増やすパッチを今夜適用します。<br/>監視側（DataDog/Teams）への通知閾値は暫定2分で「警告」、5分で「重大」にします。</p>"
+          },
+          "mentions": [
+            { "id": 0, "mentionText": "青山 玲奈", "mentioned": { "user": { "id": "u-aoyama", "displayName": "青山 玲奈" } } },
+            { "id": 1, "mentionText": "佐々木 智", "mentioned": { "user": { "id": "u-sasaki", "displayName": "佐々木 智" } } }
+          ],
+          "attachments": [],
+          "replies": [
+            {
+              "id": "gen-20251024-1022",
+              "replyToId": "gen-20251024-1015",
+              "etag": "W/\"gen-20251024-1022\"",
+              "messageType": "message",
+              "createdDateTime": "2025-10-24T01:22:00Z",
+              "lastModifiedDateTime": "2025-10-24T01:22:00Z",
+              "importance": "normal",
+              "from": { "user": { "id": "u-aoyama", "displayName": "青山 玲奈" } },
+              "body": {
+                "contentType": "html",
+                "content": "<p>了解。IaC側の差分は<code>net-vpn-retry-policy.tf</code>に集約します。<br/><at id=\"0\">水谷 里菜</at> さん、通知テンプレ更新お願いします。</p>"
+              },
+              "mentions": [
+                { "id": 0, "mentionText": "水谷 里菜", "mentioned": { "user": { "id": "u-mizutani", "displayName": "水谷 里菜" } } }
+              ]
+            },
+            {
+              "id": "gen-20251024-1030",
+              "replyToId": "gen-20251024-1015",
+              "etag": "W/\"gen-20251024-1030\"",
+              "messageType": "message",
+              "createdDateTime": "2025-10-24T01:30:00Z",
+              "lastModifiedDateTime": "2025-10-24T01:30:00Z",
+              "importance": "normal",
+              "from": { "user": { "id": "u-sasaki", "displayName": "佐々木 智" } },
+              "body": { "contentType": "html", "content": "<p>Airflowの依存ジョブについて、VPN再接続まで待機するバックオフ追加します。</p>" },
+              "attachments": [
+                {
+                  "id": "att-gen2-008",
+                  "name": "PR: hotfix/airflow-backoff-vpn",
+                  "contentType": "text/plain",
+                  "contentUrl": "https://github.com/contoso/kanko/pull/1240",
+                  "size": 100
+                }
+              ]
             }
           ]
         }
@@ -4084,246 +4520,179 @@ CI/CD観点での改善点（ログ整形・Slack通知）も発表パートで�
       "displayName": "📅 定例・進捗報告",
       "messages": [
         {
-          "id": "msg-prog-001",
+          "id": "wkly-20251021-1620",
           "replyToId": null,
-          "createdDateTime": "2025-10-24T08:30:00Z",
-          "lastModifiedDateTime": "2025-10-24T08:30:00Z",
+          "etag": "W/\"wkly-20251021-1620\"",
           "messageType": "message",
+          "createdDateTime": "2025-10-21T07:20:00Z",
+          "lastModifiedDateTime": "2025-10-21T07:20:00Z",
           "importance": "normal",
-          "subject": "第4週リリース進行管理（10/24〜10/28）",
-          "from": {
-            "user": {
-              "id": "u-miyake",
-              "displayName": "三宅 悠人（チームリーダー）",
-              "userPrincipalName": "yuto.miyake@example.com"
-            }
-          },
+          "subject": "第3回レビュー 後の決定事項・担当整理",
+          "from": { "user": { "id": "u-miyake", "displayName": "三宅 悠人" } },
           "body": {
             "contentType": "html",
-            "content": "<p>定例会で決定した通り、v1.2リリースは <b>10/28（火）夜間</b> で進行します。各担当は本スレで進捗共有をお願いします。</p><ul><li>@青山：Terraform更新反映（IaC調整）</li><li>@大森：GitHub Actions自動テスト導入</li><li>@小泉・@田村：Confluence統合報告</li><li>@水谷：監視閾値再設定</li><li>@木下：ETL負荷見積最終化（PoC対応）</li></ul>"
+            "content": "<p>今日（14:00〜）のレビューで決めた内容の担当と期日を整理します。</p><ul><li><at id=\"0\">北島 洋</at>：ETL後の品質チェックDAG追加（10/24）</li><li><at id=\"1\">神田 遼</at>：チェック結果Teams通知スクリプト実装（10/26）</li><li><at id=\"2\">橋本 翼</at>：品質指標レポートフォーマット更新（10/27）</li><li><at id=\"3\">河野 遥</at>：<code>purpose_flag</code> 仕様をC自治体へ伝達（10/23一次連絡）</li><li><at id=\"4\">白井 奏</at>：スキーマv2.1案（<code>purpose_flag</code>）作成（10/22）</li><li><at id=\"5\">岩城 直也</at>：Blob容量のしきい値監視（警告：70%、重大：85%）設定レビュー（10/23）</li></ul>"
           },
+          "mentions": [
+            { "id": 0, "mentionText": "北島 洋", "mentioned": { "user": { "id": "u-kitajima", "displayName": "北島 洋" } } },
+            { "id": 1, "mentionText": "神田 遼", "mentioned": { "user": { "id": "u-kanda", "displayName": "神田 遼" } } },
+            { "id": 2, "mentionText": "橋本 翼", "mentioned": { "user": { "id": "u-hashimoto", "displayName": "橋本 翼" } } },
+            { "id": 3, "mentionText": "河野 遥", "mentioned": { "user": { "id": "u-kono", "displayName": "河野 遥" } } },
+            { "id": 4, "mentionText": "白井 奏", "mentioned": { "user": { "id": "u-shirai", "displayName": "白井 奏" } } },
+            { "id": 5, "mentionText": "岩城 直也", "mentioned": { "user": { "id": "u-iwaki", "displayName": "岩城 直也" } } }
+          ],
           "attachments": [],
           "replies": [
             {
-              "id": "msg-prog-001-r1",
-              "replyToId": "msg-prog-001",
-              "createdDateTime": "2025-10-25T00:10:00Z",
-              "lastModifiedDateTime": "2025-10-25T00:10:00Z",
+              "id": "wkly-20251021-1633",
+              "replyToId": "wkly-20251021-1620",
+              "etag": "W/\"wkly-20251021-1633\"",
               "messageType": "message",
-              "from": {
-                "user": {
-                  "id": "u-aoyama",
-                  "displayName": "青山 玲奈（クラウド統括）",
-                  "userPrincipalName": "rena.aoyama@example.com"
-                }
-              },
-              "body": {
-                "contentType": "html",
-                "content": "<p>Terraform更新反映済。<code>main</code>にマージ、LB設定も確認完了です。</p>"
-              },
-              "attachments": []
+              "createdDateTime": "2025-10-21T07:33:00Z",
+              "lastModifiedDateTime": "2025-10-21T07:33:00Z",
+              "importance": "normal",
+              "from": { "user": { "id": "u-kitajima", "displayName": "北島 洋" } },
+              "body": { "contentType": "html", "content": "<p>DAG追加、ローカル検証OK。本番相当はデモデータで走らせて明日午前に共有します。</p>" }
             },
             {
-              "id": "msg-prog-001-r2",
-              "replyToId": "msg-prog-001",
-              "createdDateTime": "2025-10-25T03:00:00Z",
-              "lastModifiedDateTime": "2025-10-25T03:00:00Z",
+              "id": "wkly-20251021-1640",
+              "replyToId": "wkly-20251021-1620",
+              "etag": "W/\"wkly-20251021-1640\"",
               "messageType": "message",
-              "from": {
-                "user": {
-                  "id": "u-omori",
-                  "displayName": "大森 直人（CI/CD担当）",
-                  "userPrincipalName": "naoto.omori@example.com"
-                }
-              },
-              "body": {
-                "contentType": "html",
-                "content": "<p>GitHub Actions自動テスト導入完了。<code>pytest</code>結果をSlack通知する設定を追加しました。</p>"
-              },
-              "attachments": []
+              "createdDateTime": "2025-10-21T07:40:00Z",
+              "lastModifiedDateTime": "2025-10-21T07:40:00Z",
+              "importance": "normal",
+              "from": { "user": { "id": "u-kanda", "displayName": "神田 遼" } },
+              "body": { "contentType": "html", "content": "<p>通知スクリプトのTeams Webhook版できました。AdaptiveCards化もオプションで実装予定。</p>" }
             },
             {
-              "id": "msg-prog-001-r3",
-              "replyToId": "msg-prog-001",
-              "createdDateTime": "2025-10-25T06:15:00Z",
-              "lastModifiedDateTime": "2025-10-25T06:15:00Z",
+              "id": "wkly-20251021-1648",
+              "replyToId": "wkly-20251021-1620",
+              "etag": "W/\"wkly-20251021-1648\"",
               "messageType": "message",
-              "from": {
-                "user": {
-                  "id": "u-koizumi",
-                  "displayName": "小泉 愛実",
-                  "userPrincipalName": "manami.koizumi@example.com"
-                }
-              },
-              "body": {
-                "contentType": "html",
-                "content": "<p>Confluence統合完了。設計書・構成図・メタデータ辞書を統合済です。@田村 さん、AI共有ページの権限確認お願いします。</p>"
-              },
-              "attachments": []
+              "createdDateTime": "2025-10-21T07:48:00Z",
+              "lastModifiedDateTime": "2025-10-21T07:48:00Z",
+              "importance": "normal",
+              "from": { "user": { "id": "u-hashimoto", "displayName": "橋本 翼" } },
+              "body": { "contentType": "html", "content": "<p>レポートフォーマット、KPIを「欠損率・異常率・要件準拠率」の3本柱に整理。ドラフト共有します。</p>" }
             },
             {
-              "id": "msg-prog-001-r4",
-              "replyToId": "msg-prog-001",
-              "createdDateTime": "2025-10-25T08:00:00Z",
-              "lastModifiedDateTime": "2025-10-25T08:00:00Z",
+              "id": "wkly-20251021-1705",
+              "replyToId": "wkly-20251021-1620",
+              "etag": "W/\"wkly-20251021-1705\"",
               "messageType": "message",
-              "from": {
-                "user": {
-                  "id": "u-tamura",
-                  "displayName": "田村 亮介",
-                  "userPrincipalName": "ryosuke.tamura@example.com"
-                }
-              },
-              "body": {
-                "contentType": "html",
-                "content": "<p>権限設定修正完了。<code>/AI_shared/metadata_v2.1</code> をAIチームに公開しました。</p>"
-              },
-              "attachments": []
-            },
-            {
-              "id": "msg-prog-001-r5",
-              "replyToId": "msg-prog-001",
-              "createdDateTime": "2025-10-26T00:00:00Z",
-              "lastModifiedDateTime": "2025-10-26T00:00:00Z",
-              "messageType": "message",
-              "from": {
-                "user": {
-                  "id": "u-mizutani",
-                  "displayName": "水谷 翔（運用）",
-                  "userPrincipalName": "sho.mizutani@example.com"
-                }
-              },
-              "body": {
-                "contentType": "html",
-                "content": "<p>ジョブ監視閾値を25分に変更、異常検知テストも完了。来週から新閾値で運用します。</p>"
-              },
-              "attachments": []
-            },
-            {
-              "id": "msg-prog-001-r6",
-              "replyToId": "msg-prog-001",
-              "createdDateTime": "2025-10-26T04:30:00Z",
-              "lastModifiedDateTime": "2025-10-26T04:30:00Z",
-              "messageType": "message",
-              "from": {
-                "user": {
-                  "id": "u-kinoshita",
-                  "displayName": "木下 俊輔（ETL）",
-                  "userPrincipalName": "shunsuke.kinoshita@example.com"
-                }
-              },
-              "body": {
-                "contentType": "html",
-                "content": "<p>ETL負荷見積完了。自治体C宿泊データ約900万件：CPU平均65%、GPU時短効果15%。詳細レポートを@藤原 さんに共有済。</p>"
-              },
-              "attachments": []
-            },
-            {
-              "id": "msg-prog-001-r7",
-              "replyToId": "msg-prog-001",
-              "createdDateTime": "2025-10-27T01:15:00Z",
-              "lastModifiedDateTime": "2025-10-27T01:15:00Z",
-              "messageType": "message",
-              "from": {
-                "user": {
-                  "id": "u-miyake",
-                  "displayName": "三宅 悠人（チームリーダー）",
-                  "userPrincipalName": "yuto.miyake@example.com"
-                }
-              },
-              "body": {
-                "contentType": "html",
-                "content": "<p>各担当、迅速な対応に感謝。本日夜にリリースリハーサルを実施し、<b>10/28夜間</b>の本番反映に備えます。報告書は10/29にPMO宛提出。</p>"
-              },
-              "attachments": []
+              "createdDateTime": "2025-10-21T08:05:00Z",
+              "lastModifiedDateTime": "2025-10-21T08:05:00Z",
+              "importance": "normal",
+              "from": { "user": { "id": "u-iwaki", "displayName": "岩城 直也" } },
+              "body": { "contentType": "html", "content": "<p>容量しきい値の試験、<code>/warehouse/visits/</code> で85%超のテスト値を入れて発火確認済み。DataDog→Teams連携もOK。</p>" }
             }
           ]
         },
         {
-          "id": "msg-prog-002",
+          "id": "wkly-20251024-1800",
           "replyToId": null,
-          "createdDateTime": "2025-10-27T02:20:00Z",
-          "lastModifiedDateTime": "2025-10-27T02:20:00Z",
+          "etag": "W/\"wkly-20251024-1800\"",
           "messageType": "message",
+          "createdDateTime": "2025-10-24T09:00:00Z",
+          "lastModifiedDateTime": "2025-10-24T09:00:00Z",
           "importance": "normal",
-          "subject": "運用自動化分科会の準備（10/27〜10/28）",
-          "from": {
-            "user": {
-              "id": "u-hashimoto",
-              "displayName": "橋本 翼（品質管理）",
-              "userPrincipalName": "tsubasa.hashimoto@example.com"
-            }
-          },
+          "subject": "第4回 監視強化検討会の宿題（サマリ）",
+          "from": { "user": { "id": "u-aoyama", "displayName": "青山 玲奈" } },
           "body": {
             "contentType": "html",
-            "content": "<p>来週開始予定の「運用自動化分科会」初回議題案を共有します。</p><ul><li>ジョブ監視の自動リカバリ（再実行フロー）</li><li>成果物の自動アーカイブ</li><li>IaC更新時の自動差分通知（GitOps連携）</li></ul>"
+            "content": "<p>決定事項：</p><ul><li>DataDog監視拡張版設定：<strong>10/28適用</strong>（<at id=\"0\">水谷 里菜</at>）</li><li>KeyVault自動ローテPoC：<strong>10/29報告</strong>（<at id=\"1\">福井 隆</at>）</li><li>VPN安定化対応：<strong>11/1完了目標</strong>（<at id=\"2\">山本 航</at>）</li><li>Slack連携通知再試験：<strong>10/28</strong>（<at id=\"3\">佐々木 智</at>）</li></ul><p>進捗はこのスレにスレッド返信で報告してください。</p>"
           },
-          "attachments": [
-            {
-              "id": "att-automation-agenda",
-              "name": "automation_wg_agenda_v1.docx",
-              "contentType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
-              "contentUrl": "https://example.sharepoint.com/sites/nec-kanko-dx/Shared%20Documents/automation_wg_agenda_v1.docx"
-            }
+          "mentions": [
+            { "id": 0, "mentionText": "水谷 里菜", "mentioned": { "user": { "id": "u-mizutani", "displayName": "水谷 里菜" } } },
+            { "id": 1, "mentionText": "福井 隆", "mentioned": { "user": { "id": "u-fukui", "displayName": "福井 隆" } } },
+            { "id": 2, "mentionText": "山本 航", "mentioned": { "user": { "id": "u-yamamoto", "displayName": "山本 航" } } },
+            { "id": 3, "mentionText": "佐々木 智", "mentioned": { "user": { "id": "u-sasaki", "displayName": "佐々木 智" } } }
           ],
+          "attachments": [],
           "replies": [
             {
-              "id": "msg-prog-002-r1",
-              "replyToId": "msg-prog-002",
-              "createdDateTime": "2025-10-27T04:05:00Z",
-              "lastModifiedDateTime": "2025-10-27T04:05:00Z",
+              "id": "wkly-20251024-1820",
+              "replyToId": "wkly-20251024-1800",
+              "etag": "W/\"wkly-20251024-1820\"",
               "messageType": "message",
-              "from": {
-                "user": {
-                  "id": "u-miyake",
-                  "displayName": "三宅 悠人（チームリーダー）",
-                  "userPrincipalName": "yuto.miyake@example.com"
-                }
-              },
+              "createdDateTime": "2025-10-24T09:20:00Z",
+              "lastModifiedDateTime": "2025-10-24T09:20:00Z",
+              "importance": "normal",
+              "from": { "user": { "id": "u-mizutani", "displayName": "水谷 里菜" } },
               "body": {
                 "contentType": "html",
-                "content": "<p>確認済。初回は10/30（木）15:00〜で調整します。PMO（@松下）にも展開します。</p>"
-              },
-              "attachments": []
+                "content": "<p>監視テンプレ更新中。<code>api.5xx_rate</code>, <code>blob.capacity</code>, <code>etl.lag_minutes</code> を定義追加済み。10/27にテスト流します。</p>"
+              }
             },
             {
-              "id": "msg-prog-002-r2",
-              "replyToId": "msg-prog-002",
-              "createdDateTime": "2025-10-27T04:30:00Z",
-              "lastModifiedDateTime": "2025-10-27T04:30:00Z",
+              "id": "wkly-20251024-1825",
+              "replyToId": "wkly-20251024-1800",
+              "etag": "W/\"wkly-20251024-1825\"",
               "messageType": "message",
-              "from": {
-                "user": {
-                  "id": "u-aoyama",
-                  "displayName": "青山 玲奈（クラウド統括）",
-                  "userPrincipalName": "rena.aoyama@example.com"
-                }
-              },
-              "body": {
-                "contentType": "html",
-                "content": "<p>GitOps連携（Azure DevOps）パート担当します。Terraform差分検知サンプルを共有します。</p>"
-              },
-              "attachments": []
+              "createdDateTime": "2025-10-24T09:25:00Z",
+              "lastModifiedDateTime": "2025-10-24T09:25:00Z",
+              "importance": "normal",
+              "from": { "user": { "id": "u-fukui", "displayName": "福井 隆" } },
+              "body": { "contentType": "html", "content": "<p>KeyVaultローテはTerraformで<code>key_rotation_policy</code>を定義。PoCはKeyID単位でのローテ挙動検証まで含めます。</p>" }
             },
             {
-              "id": "msg-prog-002-r3",
-              "replyToId": "msg-prog-002",
-              "createdDateTime": "2025-10-27T05:10:00Z",
-              "lastModifiedDateTime": "2025-10-27T05:10:00Z",
+              "id": "wkly-20251024-1840",
+              "replyToId": "wkly-20251024-1800",
+              "etag": "W/\"wkly-20251024-1840\"",
               "messageType": "message",
-              "from": {
-                "user": {
-                  "id": "u-omori",
-                  "displayName": "大森 直人（CI/CD担当）",
-                  "userPrincipalName": "naoto.omori@example.com"
-                }
-              },
-              "body": {
-                "contentType": "html",
-                "content": "<p>CI/CD改善点（ログ整形・Slack通知）を発表資料にまとめます。</p>"
-              },
-              "attachments": []
+              "createdDateTime": "2025-10-24T09:40:00Z",
+              "lastModifiedDateTime": "2025-10-24T09:40:00Z",
+              "importance": "normal",
+              "from": { "user": { "id": "u-sasaki", "displayName": "佐々木 智" } },
+              "body": { "contentType": "html", "content": "<p>Slack連携のレイテンシ課題、Webhook再設定とキューのflush間隔調整で改善見込み。10/28午前に再試験します。</p>" }
+            },
+            {
+              "id": "wkly-20251024-1855",
+              "replyToId": "wkly-20251024-1800",
+              "etag": "W/\"wkly-20251024-1855\"",
+              "messageType": "message",
+              "createdDateTime": "2025-10-24T09:55:00Z",
+              "lastModifiedDateTime": "2025-10-24T09:55:00Z",
+              "importance": "normal",
+              "from": { "user": { "id": "u-yamamoto", "displayName": "山本 航" } },
+              "body": { "contentType": "html", "content": "<p>D自治体のルータ設定が27日早朝に反映予定。以降のアラートトレンドを重点監視します。</p>" }
             }
+          ]
+        },
+        {
+          "id": "wkly-20251023-1710",
+          "replyToId": null,
+          "etag": "W/\"wkly-20251023-1710\"",
+          "messageType": "message",
+          "createdDateTime": "2025-10-23T08:10:00Z",
+          "lastModifiedDateTime": "2025-10-23T08:10:00Z",
+          "importance": "normal",
+          "subject": "週次“個別ToDo”ミニ報告（10/23）",
+          "from": { "user": { "id": "u-koizumi", "displayName": "小泉 明" } },
+          "body": {
+            "contentType": "html",
+            "content": "<p>各位、本日のミニ報告をスレッド返信でお願いします（2〜3行でOK）。<br/>※抜け漏れチェックのため全員分記載🙇</p>"
+          },
+          "attachments": [],
+          "replies": [
+            { "id": "wkly-20251023-1712", "replyToId": "wkly-20251023-1710", "etag": "W/\"wkly-20251023-1712\"", "messageType": "message", "createdDateTime": "2025-10-23T08:12:00Z", "lastModifiedDateTime": "2025-10-23T08:12:00Z", "importance": "normal", "from": { "user": { "id": "u-shirai", "displayName": "白井 奏" } }, "body": { "contentType": "html", "content": "<p>v2.1（<code>purpose_flag</code>）案を作成、レビュー依頼中。来週のAIチーム連携仕様に渡せます。</p>" } },
+            { "id": "wkly-20251023-1714", "replyToId": "wkly-20251023-1710", "etag": "W/\"wkly-20251023-1714\"", "messageType": "message", "createdDateTime": "2025-10-23T08:14:00Z", "lastModifiedDateTime": "2025-10-23T08:14:00Z", "importance": "normal", "from": { "user": { "id": "u-kinoshita", "displayName": "木下 俊輔" } }, "body": { "contentType": "html", "content": "<p>自治体Eの差し替えCSV、ステージング取り込み完了。本番は夜間ジョブに合流予定。Airflowタスクのバックオフ連携（VPN対策）も取り込み中。</p>" } },
+            { "id": "wkly-20251023-1716", "replyToId": "wkly-20251023-1710", "etag": "W/\"wkly-20251023-1716\"", "messageType": "message", "createdDateTime": "2025-10-23T08:16:00Z", "lastModifiedDateTime": "2025-10-23T08:16:00Z", "importance": "normal", "from": { "user": { "id": "u-chen", "displayName": "陳 文傑" } }, "body": { "contentType": "html", "content": "<p>LB後のルーティングでタイムアウト閾値調整（API GW）。23日の最終疎通リハーサルOK。</p>" } },
+            { "id": "wkly-20251023-1718", "replyToId": "wkly-20251023-1710", "etag": "W/\"wkly-20251023-1718\"", "messageType": "message", "createdDateTime": "2025-10-23T08:18:00Z", "lastModifiedDateTime": "2025-10-23T08:18:00Z", "importance": "normal", "from": { "user": { "id": "u-omori", "displayName": "大森 颯" } }, "body": { "contentType": "html", "content": "<p><code>deploy_api_pipeline.yml</code> にKey発行ステップ追加。Secrets取り回しをKeyVault連携に切り替え済み。</p>" } },
+            { "id": "wkly-20251023-1720", "replyToId": "wkly-20251023-1710", "etag": "W/\"wkly-20251023-1720\"", "messageType": "message", "createdDateTime": "2025-10-23T08:20:00Z", "lastModifiedDateTime": "2025-10-23T08:20:00Z", "importance": "normal", "from": { "user": { "id": "u-fukui", "displayName": "福井 隆" } }, "body": { "contentType": "html", "content": "<p>ZAP再スキャン完了、警告0。KeyVaultローテPoCでアラート連携を準備中。</p>" } },
+            { "id": "wkly-20251023-1722", "replyToId": "wkly-20251023-1710", "etag": "W/\"wkly-20251023-1722\"", "messageType": "message", "createdDateTime": "2025-10-23T08:22:00Z", "lastModifiedDateTime": "2025-10-23T08:22:00Z", "importance": "normal", "from": { "user": { "id": "u-mizutani", "displayName": "水谷 里菜" } }, "body": { "contentType": "html", "content": "<p>DataDog新テンプレのテスト条件作成。5xxエラーと容量閾値の同時発火で通知が煩雑にならないよう、抑制ルールも検証。</p>" } },
+            { "id": "wkly-20251023-1724", "replyToId": "wkly-20251023-1710", "etag": "W/\"wkly-20251023-1724\"", "messageType": "message", "createdDateTime": "2025-10-23T08:24:00Z", "lastModifiedDateTime": "2025-10-23T08:24:00Z", "importance": "normal", "from": { "user": { "id": "u-yamaoka", "displayName": "山岡 翔真" } }, "body": { "contentType": "html", "content": "<p><code>quality_check_post_etl</code> のデモデータ調整。pandas→pyarrowのI/O最適化を検証中。</p>" } },
+            { "id": "wkly-20251023-1726", "replyToId": "wkly-20251023-1710", "etag": "W/\"wkly-20251023-1726\"", "messageType": "message", "createdDateTime": "2025-10-23T08:26:00Z", "lastModifiedDateTime": "2025-10-23T08:26:00Z", "importance": "normal", "from": { "user": { "id": "u-kaga", "displayName": "加賀 美雪" } }, "body": { "contentType": "html", "content": "<p>目的不明データの時系列分解を準備、季節変動っぽい揺れを確認。週報にグラフ化して添付予定。</p>" } },
+            { "id": "wkly-20251023-1728", "replyToId": "wkly-20251023-1710", "etag": "W/\"wkly-20251023-1728\"", "messageType": "message", "createdDateTime": "2025-10-23T08:28:00Z", "lastModifiedDateTime": "2025-10-23T08:28:00Z", "importance": "normal", "from": { "user": { "id": "u-iwaki", "displayName": "岩城 直也" } }, "body": { "contentType": "html", "content": "<p><code>/landing</code>のライフサイクル管理ルール微調整（14日→10日に短縮）案。コスト効果の試算資料を作成。</p>" } },
+            { "id": "wkly-20251023-1730", "replyToId": "wkly-20251023-1710", "etag": "W/\"wkly-20251023-1730\"", "messageType": "message", "createdDateTime": "2025-10-23T08:30:00Z", "lastModifiedDateTime": "2025-10-23T08:30:00Z", "importance": "normal", "from": { "user": { "id": "u-tamura", "displayName": "田村 知沙" } }, "body": { "contentType": "html", "content": "<p>カタログの英語ラベル整備。外部連携向けの<em>data dictionary</em>に追加。</p>" } },
+            { "id": "wkly-20251023-1732", "replyToId": "wkly-20251023-1710", "etag": "W/\"wkly-20251023-1732\"", "messageType": "message", "createdDateTime": "2025-10-23T08:32:00Z", "lastModifiedDateTime": "2025-10-23T08:32:00Z", "importance": "normal", "from": { "user": { "id": "u-hirabayashi", "displayName": "平林 翔吾" } }, "body": { "contentType": "html", "content": "<p>自治体Eの誤値補償条項の確認中。契約側に追加覚書を打診。</p>" } },
+            { "id": "wkly-20251023-1734", "replyToId": "wkly-20251023-1710", "etag": "W/\"wkly-20251023-1734\"", "messageType": "message", "createdDateTime": "2025-10-23T08:34:00Z", "lastModifiedDateTime": "2025-10-23T08:34:00Z", "importance": "normal", "from": { "user": { "id": "u-yamamoto", "displayName": "山本 航" } }, "body": { "contentType": "html", "content": "<p>VPN再接続設定の一時パッチを検証。ルータ側変更後の指標（断回数/日）を統計化へ。</p>" } },
+            { "id": "wkly-20251023-1736", "replyToId": "wkly-20251023-1710", "etag": "W/\"wkly-20251023-1736\"", "messageType": "message", "createdDateTime": "2025-10-23T08:36:00Z", "lastModifiedDateTime": "2025-10-23T08:36:00Z", "importance": "normal", "from": { "user": { "id": "u-yokoyama", "displayName": "横山 玲" } }, "body": { "contentType": "html", "content": "<p><code>visit_device</code>の匿名化ルール拡張、実装済み。サンプル出力を品質チームレビューへ回付。</p>" } },
+            { "id": "wkly-20251023-1738", "replyToId": "wkly-20251023-1710", "etag": "W/\"wkly-20251023-1738\"", "messageType": "message", "createdDateTime": "2025-10-23T08:38:00Z", "lastModifiedDateTime": "2025-10-23T08:38:00Z", "importance": "normal", "from": { "user": { "id": "u-suzumura", "displayName": "鈴村 隼" } }, "body": { "contentType": "html", "content": "<p><em>Great Expectations</em> の軽量導入を検討。Airflowオペレーターでの整合性テスト案をドラフト化。</p>" } },
+            { "id": "wkly-20251023-1740", "replyToId": "wkly-20251023-1710", "etag": "W/\"wkly-20251023-1740\"", "messageType": "message", "createdDateTime": "2025-10-23T08:40:00Z", "lastModifiedDateTime": "2025-10-23T08:40:00Z", "importance": "normal", "from": { "user": { "id": "u-sasaki", "displayName": "佐々木 智" } }, "body": { "contentType": "html", "content": "<p>Slack連携再試験の手順書更新中。Airflowのretry戦略を<code>exponential</code>→<code>exponential_jitter</code>へ切替検証。</p>" } },
+            { "id": "wkly-20251023-1742", "replyToId": "wkly-20251023-1710", "etag": "W/\"wkly-20251023-1742\"", "messageType": "message", "createdDateTime": "2025-10-23T08:42:00Z", "lastModifiedDateTime": "2025-10-23T08:42:00Z", "importance": "normal", "from": { "user": { "id": "u-kitajima", "displayName": "北島 洋" } }, "body": { "contentType": "html", "content": "<p>品質チェックDAGのスケジューリング整理。夜間ピークと被らないようにオフセット配置。</p>" } },
+            { "id": "wkly-20251023-1745", "replyToId": "wkly-20251023-1710", "etag": "W/\"wkly-20251023-1745\"", "messageType": "message", "createdDateTime": "2025-10-23T08:45:00Z", "lastModifiedDateTime": "2025-10-23T08:45:00Z", "importance": "normal", "from": { "user": { "id": "u-koizumi", "displayName": "小泉 明" } }, "body": { "contentType": "html", "content": "<p>本スレッドの回収をドキュメント化してPMO週報へ反映します。</p>" } }
           ]
         }
       ]
@@ -4333,306 +4702,201 @@ CI/CD観点での改善点（ログ整形・Slack通知）も発表パートで�
       "displayName": "💬 技術・課題共有",
       "messages": [
         {
-          "id": "msg-tech-001",
+          "id": "tech-20251022-1300",
           "replyToId": null,
-          "createdDateTime": "2025-10-21T00:20:00Z",
-          "lastModifiedDateTime": "2025-10-21T00:20:00Z",
+          "etag": "W/\"tech-20251022-1300\"",
           "messageType": "message",
+          "createdDateTime": "2025-10-22T04:00:00Z",
+          "lastModifiedDateTime": "2025-10-22T04:00:00Z",
           "importance": "normal",
-          "subject": "API試験公開準備（10/21〜10/25）",
-          "from": {
-            "user": {
-              "id": "u-chen",
-              "displayName": "陳 文傑（APIリード）",
-              "userPrincipalName": "wenjie.chen@example.com"
-            }
-          },
+          "subject": "品質チェックDAG（コード断片共有）",
+          "from": { "user": { "id": "u-kitajima", "displayName": "北島 洋" } },
           "body": {
             "contentType": "html",
-            "content": "<p>各位<br/>API試験公開（10/25予定）に向け、テスト用エンドポイント <code>/api/v1/visits/summary</code> の疎通確認を開始しました。@青山 玲奈 さん、LB設定は24日中反映で問題ないでしょうか？ @木下 俊輔 さん、ETL出力（CSV→Parquet）のサンプル確認希望です。<br/>📎 <i>api_test_request.json</i> を添付。</p>"
+            "content": "<p><code>quality_check_post_etl_dag.py</code> のポイントです👇</p><ul><li>ETL完了センサー → pandasで欠損・異常率算出 → 一時テーブルへ書き込み</li><li>閾値比較 → <at id=\"0\">神田 遼</at> のTeams通知テンプレへPOST</li><li>すべて失敗時はAirflowリトライ＋<at id=\"1\">佐々木 智</at> のバックオフ設定を使用</li></ul><pre># pseudo\nmiss = df.isna().mean()\nanomal = (df[col] &lt; 0).mean()  # 例\nif miss.any() &gt; 0.01 or anomal.any() &gt; 0.005:\n    send_to_teams(payload)  # 神田テンプレ適用\n</pre>"
           },
-          "attachments": [
-            {
-              "id": "att-api-test",
-              "name": "api_test_request.json",
-              "contentType": "application/json",
-              "contentUrl": "https://example.sharepoint.com/sites/nec-kanko-dx/Shared%20Documents/api_test_request.json"
-            }
+          "mentions": [
+            { "id": 0, "mentionText": "神田 遼", "mentioned": { "user": { "id": "u-kanda", "displayName": "神田 遼" } } },
+            { "id": 1, "mentionText": "佐々木 智", "mentioned": { "user": { "id": "u-sasaki", "displayName": "佐々木 智" } } }
           ],
+          "attachments": [],
           "replies": [
             {
-              "id": "msg-tech-001-r1",
-              "replyToId": "msg-tech-001",
-              "createdDateTime": "2025-10-21T01:05:00Z",
-              "lastModifiedDateTime": "2025-10-21T01:05:00Z",
+              "id": "tech-20251022-1318",
+              "replyToId": "tech-20251022-1300",
+              "etag": "W/\"tech-20251022-1318\"",
               "messageType": "message",
-              "from": {
-                "user": {
-                  "id": "u-aoyama",
-                  "displayName": "青山 玲奈（クラウド統括）",
-                  "userPrincipalName": "rena.aoyama@example.com"
-                }
-              },
-              "body": {
-                "contentType": "html",
-                "content": "<p>ステージングでLBテスト済。本番反映は <b>10/23午前</b> に前倒しします。Terraform更新は <code>feature/lb_rule_v2</code> にpush済。</p>"
-              },
-              "attachments": []
-            },
-            {
-              "id": "msg-tech-001-r2",
-              "replyToId": "msg-tech-001",
-              "createdDateTime": "2025-10-21T02:10:00Z",
-              "lastModifiedDateTime": "2025-10-21T02:10:00Z",
-              "messageType": "message",
-              "from": {
-                "user": {
-                  "id": "u-kinoshita",
-                  "displayName": "木下 俊輔（ETLリーダー）",
-                  "userPrincipalName": "shunsuke.kinoshita@example.com"
-                }
-              },
-              "body": {
-                "contentType": "html",
-                "content": "<p>Parquetサンプルを <code>/etl/output/preview_20251021/</code> に配置。スキーマv2.1（<code>stay_duration</code>, <code>traffic_type</code>）に対応済。@白井 さん最終チェックお願いします。</p>"
-              },
-              "attachments": []
-            },
-            {
-              "id": "msg-tech-001-r3",
-              "replyToId": "msg-tech-001",
-              "createdDateTime": "2025-10-21T03:02:00Z",
-              "lastModifiedDateTime": "2025-10-21T03:02:00Z",
-              "messageType": "message",
-              "from": {
-                "user": {
-                  "id": "u-shirai",
-                  "displayName": "白井 奏（データアーキテクト）",
-                  "userPrincipalName": "kanade.shirai@example.com"
-                }
-              },
-              "body": {
-                "contentType": "html",
-                "content": "<p>確認しました。<code>stay_duration</code> は float→int へ統一をお願いします。<code>traffic_type</code> は文字列カテゴリでOK。10/22午前までに再出力で問題なし。</p>"
-              },
-              "attachments": []
-            },
-            {
-              "id": "msg-tech-001-r4",
-              "replyToId": "msg-tech-001",
-              "createdDateTime": "2025-10-22T00:40:00Z",
-              "lastModifiedDateTime": "2025-10-22T00:40:00Z",
-              "messageType": "message",
-              "from": {
-                "user": {
-                  "id": "u-kinoshita",
-                  "displayName": "木下 俊輔（ETLリーダー）",
-                  "userPrincipalName": "shunsuke.kinoshita@example.com"
-                }
-              },
-              "body": {
-                "contentType": "html",
-                "content": "<p>再出力完了。<code>parquet_v2.1_20251022</code> を共有しました。@陳 さん、API側でご確認を。</p>"
-              },
-              "attachments": []
-            },
-            {
-              "id": "msg-tech-001-r5",
-              "replyToId": "msg-tech-001",
-              "createdDateTime": "2025-10-22T04:15:00Z",
-              "lastModifiedDateTime": "2025-10-22T04:15:00Z",
-              "messageType": "message",
-              "from": {
-                "user": {
-                  "id": "u-chen",
-                  "displayName": "陳 文傑（APIリード）",
-                  "userPrincipalName": "wenjie.chen@example.com"
-                }
-              },
-              "body": {
-                "contentType": "html",
-                "content": "<p>受領。動作問題なし。<b>10/24午後</b>に試験公開へ切替ます。@青山 さん、LBルーティング変更タイミングをSlackでも連携ください。</p>"
-              },
-              "attachments": []
+              "createdDateTime": "2025-10-22T04:18:00Z",
+              "lastModifiedDateTime": "2025-10-22T04:18:00Z",
+              "importance": "normal",
+              "from": { "user": { "id": "u-kanda", "displayName": "神田 遼" } },
+              "body": { "contentType": "html", "content": "<p>受け側のテンプレはこのペイロードでOKです。重大・警告の色替えは <code>themeColor</code> を分岐で。</p>" }
             }
           ]
         },
         {
-          "id": "msg-tech-002",
+          "id": "tech-20251023-0940",
           "replyToId": null,
-          "createdDateTime": "2025-10-22T06:10:00Z",
-          "lastModifiedDateTime": "2025-10-22T06:10:00Z",
+          "etag": "W/\"tech-20251023-0940\"",
           "messageType": "message",
+          "createdDateTime": "2025-10-23T00:40:00Z",
+          "lastModifiedDateTime": "2025-10-23T00:40:00Z",
           "importance": "normal",
-          "subject": "SHAP分析用データ提供（10/22〜10/24）",
-          "from": {
-            "user": {
-              "id": "u-kaga",
-              "displayName": "加賀 亮（AIチーム）",
-              "userPrincipalName": "ryo.kaga@example.com"
-            }
-          },
+          "subject": "監視テンプレ拡張（DataDog）",
+          "from": { "user": { "id": "u-mizutani", "displayName": "水谷 里菜" } },
           "body": {
             "contentType": "html",
-            "content": "<p>@白井 さん、SHAP分析用データ10万件×3セットの匿名化完了。<code>/ai_input/shap_dataset_v2.1.zip</code> に格納。ETL側で null 埋め・日付正規化をお願いします。週末から学習テスト開始予定。</p>"
+            "content": "<p>追加監視：<code>api.5xx_rate</code>, <code>blob.capacity</code>, <code>etl.lag_minutes</code><br/>抑制ルール：同一時間窓に複数アラートが出る場合、重大を優先、警告は抑制。<br/>今夜ステージングでテスト流します。</p>"
           },
           "attachments": [],
           "replies": [
             {
-              "id": "msg-tech-002-r1",
-              "replyToId": "msg-tech-002",
-              "createdDateTime": "2025-10-22T07:00:00Z",
-              "lastModifiedDateTime": "2025-10-22T07:00:00Z",
+              "id": "tech-20251023-0955",
+              "replyToId": "tech-20251023-0940",
+              "etag": "W/\"tech-20251023-0955\"",
               "messageType": "message",
-              "from": {
-                "user": {
-                  "id": "u-shirai",
-                  "displayName": "白井 奏（データアーキテクト）",
-                  "userPrincipalName": "kanade.shirai@example.com"
-                }
-              },
-              "body": {
-                "contentType": "html",
-                "content": "<p>対応中（<code>etl_shap_cleaner.py</code> 修正）。<code>used_date</code> のフォーマットは <code>YYYY-MM-DD</code> 統一で良いですか？</p>"
-              },
-              "attachments": []
-            },
-            {
-              "id": "msg-tech-002-r2",
-              "replyToId": "msg-tech-002",
-              "createdDateTime": "2025-10-22T07:12:00Z",
-              "lastModifiedDateTime": "2025-10-22T07:12:00Z",
-              "messageType": "message",
-              "from": {
-                "user": {
-                  "id": "u-kaga",
-                  "displayName": "加賀 亮（AIチーム）",
-                  "userPrincipalName": "ryo.kaga@example.com"
-                }
-              },
-              "body": {
-                "contentType": "html",
-                "content": "<p>はい、<code>YYYY-MM-DD</code> 統一でお願いします。時系列特徴量で使用します。</p>"
-              },
-              "attachments": []
-            },
-            {
-              "id": "msg-tech-002-r3",
-              "replyToId": "msg-tech-002",
-              "createdDateTime": "2025-10-23T01:00:00Z",
-              "lastModifiedDateTime": "2025-10-23T01:00:00Z",
-              "messageType": "message",
-              "from": {
-                "user": {
-                  "id": "u-kinoshita",
-                  "displayName": "木下 俊輔（ETLリーダー）",
-                  "userPrincipalName": "shunsuke.kinoshita@example.com"
-                }
-              },
-              "body": {
-                "contentType": "html",
-                "content": "<p>整形完了。<code>/shared/etl/shap_ready_20251023.parquet</code>（2.8GB）を配置。@加賀 さん、@藤原 さん取り込み可か確認お願いします。</p>"
-              },
-              "attachments": []
-            },
-            {
-              "id": "msg-tech-002-r4",
-              "replyToId": "msg-tech-002",
-              "createdDateTime": "2025-10-23T02:05:00Z",
-              "lastModifiedDateTime": "2025-10-23T02:05:00Z",
-              "messageType": "message",
-              "from": {
-                "user": {
-                  "id": "u-fujiwara",
-                  "displayName": "藤原 大輝（AIリーダー）",
-                  "userPrincipalName": "daiki.fujiwara@example.com"
-                }
-              },
-              "body": {
-                "contentType": "html",
-                "content": "<p>取り込みOK。今夜からSHAPトレーニングを実施。A100でバッチ分割して回します。迅速対応ありがとうございます。</p>"
-              },
-              "attachments": []
+              "createdDateTime": "2025-10-23T00:55:00Z",
+              "lastModifiedDateTime": "2025-10-23T00:55:00Z",
+              "importance": "normal",
+              "from": { "user": { "id": "u-aoyama", "displayName": "青山 玲奈" } },
+              "body": { "contentType": "html", "content": "<p>ありがとうございます。<code>etl.lag_minutes</code> は12分で警告、25分で重大に設定でお願いします。</p>" }
             }
           ]
         },
         {
-          "id": "msg-tech-003",
+          "id": "tech-20251023-1505",
           "replyToId": null,
-          "createdDateTime": "2025-10-23T13:30:00Z",
-          "lastModifiedDateTime": "2025-10-23T13:30:00Z",
+          "etag": "W/\"tech-20251023-1505\"",
           "messageType": "message",
+          "createdDateTime": "2025-10-23T06:05:00Z",
+          "lastModifiedDateTime": "2025-10-23T06:05:00Z",
           "importance": "normal",
-          "subject": "夜間ジョブの監視アラート（10/23〜10/25）",
-          "from": {
-            "user": {
-              "id": "u-mizutani",
-              "displayName": "水谷 翔（運用担当）",
-              "userPrincipalName": "sho.mizutani@example.com"
-            }
-          },
+          "subject": "KeyVaultローテPoC（Terraform断片）",
+          "from": { "user": { "id": "u-fukui", "displayName": "福井 隆" } },
           "body": {
             "contentType": "html",
-            "content": "<p>昨夜のジョブログで <code>etl_nightly_traffic_20251023</code> がタイムアウト。再実行で正常終了。閾値設定を見直します。@橋本 さん、品質ログ上も異常なしで良いでしょうか？</p>"
+            "content": "<p>ポリシーは90日＋30日前通知で定義。アラートはTeamsへ。</p><pre>resource \"azurerm_key_vault_key\" \"api_key\" {\n  rotation_policy {\n    time_after_creation = \"P90D\"\n    expire_after        = \"P120D\"\n    notify_before_expiry = \"P30D\"\n  }\n}\n</pre><p>10/29までに検証結果を共有します。</p>"
           },
           "attachments": [],
           "replies": [
             {
-              "id": "msg-tech-003-r1",
-              "replyToId": "msg-tech-003",
-              "createdDateTime": "2025-10-24T23:15:00Z",
-              "lastModifiedDateTime": "2025-10-24T23:15:00Z",
+              "id": "tech-20251023-1522",
+              "replyToId": "tech-20251023-1505",
+              "etag": "W/\"tech-20251023-1522\"",
               "messageType": "message",
-              "from": {
-                "user": {
-                  "id": "u-hashimoto",
-                  "displayName": "橋本 翼（品質管理）",
-                  "userPrincipalName": "tsubasa.hashimoto@example.com"
-                }
-              },
-              "body": {
-                "contentType": "html",
-                "content": "<p>リトライ後に全件処理を確認。セキュリティログも異常なし。PR時に <code>threshold_reconfig.yaml</code> のレビュー依頼をお願いします。</p>"
-              },
-              "attachments": []
+              "createdDateTime": "2025-10-23T06:22:00Z",
+              "lastModifiedDateTime": "2025-10-23T06:22:00Z",
+              "importance": "normal",
+              "from": { "user": { "id": "u-omori", "displayName": "大森 颯" } },
+              "body": { "contentType": "html", "content": "<p>CI/CD側もローテ後のキーを自動参照できるよう、<code>reference</code>で取り込みます。パイプラインは夜間に検証。</p>" }
+            }
+          ]
+        },
+        {
+          "id": "tech-20251024-1110",
+          "replyToId": null,
+          "etag": "W/\"tech-20251024-1110\"",
+          "messageType": "message",
+          "createdDateTime": "2025-10-24T02:10:00Z",
+          "lastModifiedDateTime": "2025-10-24T02:10:00Z",
+          "importance": "normal",
+          "subject": "API遅延の微増—LB後の観測",
+          "from": { "user": { "id": "u-chen", "displayName": "陳 文傑" } },
+          "body": {
+            "contentType": "html",
+            "content": "<p>LB本番設定後のピーク帯で応答が+40ms程度。許容内ですが、念のため <at id=\"0\">木下 俊輔</at> <at id=\"1\">岩城 直也</at> と再確認したいです。</p><ul><li>API→DWクエリのキャッシュヒット率</li><li>Parquet読み込みI/O</li><li>5xxの無いことは監視で確認済み</li></ul>"
+          },
+          "mentions": [
+            { "id": 0, "mentionText": "木下 俊輔", "mentioned": { "user": { "id": "u-kinoshita", "displayName": "木下 俊輔" } } },
+            { "id": 1, "mentionText": "岩城 直也", "mentioned": { "user": { "id": "u-iwaki", "displayName": "岩城 直也" } } }
+          ],
+          "attachments": [],
+          "replies": [
+            {
+              "id": "tech-20251024-1122",
+              "replyToId": "tech-20251024-1110",
+              "etag": "W/\"tech-20251024-1122\"",
+              "messageType": "message",
+              "createdDateTime": "2025-10-24T02:22:00Z",
+              "lastModifiedDateTime": "2025-10-24T02:22:00Z",
+              "importance": "normal",
+              "from": { "user": { "id": "u-kinoshita", "displayName": "木下 俊輔" } },
+              "body": { "contentType": "html", "content": "<p>クエリ計画に変化無し。<code>explain</code>上は同等でした。<br/>ただI/Oが微増、<at id=\"0\">岩城 直也</at> さんの計測結果を見たいです。</p>" },
+              "mentions": [
+                { "id": 0, "mentionText": "岩城 直也", "mentioned": { "user": { "id": "u-iwaki", "displayName": "岩城 直也" } } }
+              ]
             },
             {
-              "id": "msg-tech-003-r2",
-              "replyToId": "msg-tech-003",
-              "createdDateTime": "2025-10-24T02:05:00Z",
-              "lastModifiedDateTime": "2025-10-24T02:05:00Z",
+              "id": "tech-20251024-1140",
+              "replyToId": "tech-20251024-1110",
+              "etag": "W/\"tech-20251024-1140\"",
               "messageType": "message",
-              "from": {
-                "user": {
-                  "id": "u-mizutani",
-                  "displayName": "水谷 翔（運用担当）",
-                  "userPrincipalName": "sho.mizutani@example.com"
-                }
-              },
-              "body": {
-                "contentType": "html",
-                "content": "<p>PR #245 を作成。処理時間上限を <b>15→25分</b> に拡張。@大森 さん、自動テスト連携の影響有無を確認お願いします。</p>"
-              },
-              "attachments": []
-            },
+              "createdDateTime": "2025-10-24T02:40:00Z",
+              "lastModifiedDateTime": "2025-10-24T02:40:00Z",
+              "importance": "normal",
+              "from": { "user": { "id": "u-iwaki", "displayName": "岩城 直也" } },
+              "body": { "contentType": "html", "content": "<p>直近3日でBlob→DWの読み込みが+6%増。スロットリング閾値近傍。深夜帯にテーブル統計の再作成を提案します。</p>" }
+            }
+          ]
+        },
+        {
+          "id": "tech-20251024-1305",
+          "replyToId": null,
+          "etag": "W/\"tech-20251024-1305\"",
+          "messageType": "message",
+          "createdDateTime": "2025-10-24T04:05:00Z",
+          "lastModifiedDateTime": "2025-10-24T04:05:00Z",
+          "importance": "normal",
+          "subject": "新規ツール評価（Great Expectations）",
+          "from": { "user": { "id": "u-suzumura", "displayName": "鈴村 隼" } },
+          "body": {
+            "contentType": "html",
+            "content": "<p>品質検証に <em>Great Expectations</em> の軽量導入を提案。Airflowオペレーター化→<code>GECheckOperator</code>で一部ルールを宣言的に書けます。試行環境つくります。</p>"
+          },
+          "attachments": [],
+          "replies": [
             {
-              "id": "msg-tech-003-r3",
-              "replyToId": "msg-tech-003",
-              "createdDateTime": "2025-10-24T04:45:00Z",
-              "lastModifiedDateTime": "2025-10-24T04:45:00Z",
+              "id": "tech-20251024-1318",
+              "replyToId": "tech-20251024-1305",
+              "etag": "W/\"tech-20251024-1318\"",
               "messageType": "message",
-              "from": {
-                "user": {
-                  "id": "u-omori",
-                  "displayName": "大森 直人（CI/CD担当）",
-                  "userPrincipalName": "naoto.omori@example.com"
-                }
-              },
+              "createdDateTime": "2025-10-24T04:18:00Z",
+              "lastModifiedDateTime": "2025-10-24T04:18:00Z",
+              "importance": "normal",
+              "from": { "user": { "id": "u-hashimoto", "displayName": "橋本 翼" } },
               "body": {
                 "contentType": "html",
-                "content": "<p>影響なし。GitHub Actionsのタイムアウトは30分設定。今夜、自動テストフロー追加をマージ予定です。</p>"
-              },
-              "attachments": []
+                "content": "<p>良いですね。KPIレポートと用語そろえるため、<code>expect_column_values_to_not_be_null</code>等の命名と我々のKPI名のマッピング表を用意しましょう。</p>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "tech-20251024-1610",
+          "replyToId": null,
+          "etag": "W/\"tech-20251024-1610\"",
+          "messageType": "message",
+          "createdDateTime": "2025-10-24T07:10:00Z",
+          "lastModifiedDateTime": "2025-10-24T07:10:00Z",
+          "importance": "normal",
+          "subject": "Slack連携再試験（運用）",
+          "from": { "user": { "id": "u-sasaki", "displayName": "佐々木 智" } },
+          "body": {
+            "contentType": "html",
+            "content": "<p>通知遅延の根因はWebhook側のRate Limitでした。キューのflush間隔を短縮し、バースト時はTeamsにフォールバックする設計で再試験します（10/28）。</p>"
+          },
+          "attachments": [],
+          "replies": [
+            {
+              "id": "tech-20251024-1620",
+              "replyToId": "tech-20251024-1610",
+              "etag": "W/\"tech-20251024-1620\"",
+              "messageType": "message",
+              "createdDateTime": "2025-10-24T07:20:00Z",
+              "lastModifiedDateTime": "2025-10-24T07:20:00Z",
+              "importance": "normal",
+              "from": { "user": { "id": "u-mizutani", "displayName": "水谷 里菜" } },
+              "body": { "contentType": "html", "content": "<p>Teams側のフォールバック検出（バナー色変更）も入れておきます。視認性上げます。</p>" }
             }
           ]
         }
@@ -4640,174 +4904,249 @@ CI/CD観点での改善点（ログ整形・Slack通知）も発表パートで�
     }
   ]
 }
+
 ```
 
 ## outlook予定表第二週
 ```
-想定されるOutlook予定（JST）
-2025-10-23（木）
+1) 第3回：品質・データ検証レビュー
 
-21:00–23:00｜SHAPトレーニング初回実行ウィンドウ
-主催：AIチーム（藤原）／参加：加賀・白井・木下
-備考：「今夜からSHAPトレーニング」宣言に基づく初回回し
+日時：2025年10月21日（火）14:00–15:30
 
-2025-10-24（金）
+開催方法：Microsoft Teams 会議
 
-10:00–11:00｜全体会議（第4週・進捗／リスク#12／v1.2準備）
-主催：石田（PM）／参加：全体
+参加URL：https://teams.microsoft.com/l/meetup-join/19%3ameeting_qc_20251021@thread.v2/0
 
-15:00–16:00｜API試験公開・切替ウィンドウ
-主催：陳（API）／参加：青山（LB）、木下、白井 ほか
-備考：LBルーティング変更と疎通確認
+主催者：橋本 翼（u-hashimoto@contoso.com
+）
 
-2025-10-27（月）
+出席者（必須）：橋本 俊／浜田 俊／加賀 美雪／北島 洋／神田 遼／三宅 悠人／白井 奏
 
-21:00–22:00｜v1.2 リリース・リハーサル
-主催：三宅（データ基盤）／参加：青山・大森・水谷・木下 ほか
+概要：欠損・異常検出レポート共有、再送データの品質比較、検証プロセス自動化
 
-2025-10-28（火）
+リマインダー：開始10分前
 
-09:00–09:30｜監視閾値切替（25分へ）運用切替ブリーフィング
-主催：水谷（運用）／参加：橋本・大森
+分類：品質レビュー／Teams
 
-22:00–24:00｜v1.2 リリース本番（夜間反映）
-主催：三宅／参加：青山・大森・水谷・木下・PMO（松下）
-備考：作業・検証・ロールバック手順確認、完了報告は10/29提出
+2) API最終疎通テスト（/api/v1/visits/summary）
 
-2025-10-30（木）
+日時：2025年10月23日（木）22:00–23:00
 
-15:00–16:00｜運用自動化分科会 #1（キックオフ）
-主催：三宅／参加：橋本（品質）、青山（IaC/GitOps）、大森（CI/CD）
-議題：自動リカバリ／成果物自動アーカイブ／IaC差分通知（GitOps）
+開催方法：Microsoft Teams 会議
+
+参加URL：https://teams.microsoft.com/l/meetup-join/19%3ameeting_api_final_20251023@thread.v2/0
+
+主催者：陳 文傑（u-chen@contoso.com
+）
+
+出席者（必須）：陳 文傑／青山 玲奈／木下 俊輔
+
+概要：LB本番反映前の最終疎通。Airflowの一時停止（22:00–23:00）と連携して実施
+
+リマインダー：開始15分前
+
+分類：API／リリース前テスト／Teams
+
+3) Airflowメンテナンス停止（API疎通テスト枠）
+
+日時：2025年10月23日（木）22:00–23:00
+
+開催方法：リモート作業（運用メンテナンス）
+
+主催者：木下 俊輔（u-kinoshita@contoso.com
+）
+
+出席者：木下 俊輔（必須）、陳 文傑（任意）
+
+概要：API最終疎通テストに合わせて、Airflowの該当DAGをメンテナンス停止
+
+リマインダー：開始30分前
+
+分類：運用／メンテナンス
+
+4) 【臨時】自治体E CSV差し替え・ステージング取り込み
+
+日時：2025年10月22日（水）12:30–13:00
+
+開催方法：リモート作業（Blob/ADF）
+
+主催者：木下 俊輔（u-kinoshita@contoso.com
+）
+
+出席者：岩城 直也（必須）、平林 翔吾（任意）
+
+概要：/landing/e_city/20251022/ に届いた差し替えCSVをステージングへ取り込み（本番は夜間1:00のバッチで吸収）
+
+リマインダー：開始10分前
+
+分類：データ取り込み／臨時対応
+
+5) 第4回：クラウド運用・監視強化検討会
+
+日時：2025年10月24日（金）16:00–17:30
+
+開催方法：Microsoft Teams 会議
+
+参加URL：https://teams.microsoft.com/l/meetup-join/19%3ameeting_ops_20251024@thread.v2/0
+
+主催者：青山 玲奈（u-aoyama@contoso.com
+）
+
+出席者（必須）：青山 玲奈／水谷 里菜／福井 隆／三宅 悠人／佐々木 智／山本 航／北島 洋／大森 颯
+
+概要：DataDog監視項目拡張、KeyVaultローテPoC、VPN安定化対応
+
+リマインダー：開始10分前
+
+分類：運用／監視／Teams
 ```
 ```json
 {
-  "id": "AAMkADkya...-allhands-20251024",
-  "subject": "【全体】第4週 全体会議：進捗／リスク#12／v1.2準備",
-  "bodyPreview": "議事：進捗、リスク#12対応、v1.2リリース準備。",
-  "start": { "dateTime": "2025-10-24T10:00:00", "timeZone": "Asia/Tokyo" },
-  "end":   { "dateTime": "2025-10-24T11:00:00", "timeZone": "Asia/Tokyo" },
-  "location": { "displayName": "Microsoft Teams 会議" },
-  "isOnlineMeeting": true,
-  "onlineMeetingProvider": "teamsForBusiness",
-  "attendees": [
-    { "type": "required", "emailAddress": { "name": "石田 智久", "address": "tomohisa.ishida@example.com" } },
-    { "type": "required", "emailAddress": { "name": "三宅 悠人", "address": "yuto.miyake@example.com" } },
-    { "type": "optional", "emailAddress": { "name": "松下 翔太", "address": "shota.matsushita@example.com" } }
-  ],
-  "organizer": { "emailAddress": { "name": "石田 智久", "address": "tomohisa.ishida@example.com" } },
-  "reminderMinutesBeforeStart": 15,
-  "categories": ["全体会議"]
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('u-miyake@contoso.com')/events",
+  "fetchedAtUtc": "2025-10-27T01:55:00Z",
+  "inferredFromTeamsThreads": true,
+  "events": [
+    {
+      "id": "evt-qc-20251021-1400",
+      "iCalUId": "040000008200E00074C5B7101A82E00800000000QC20251021T050000Z",
+      "subject": "第3回：品質・データ検証レビュー",
+      "bodyPreview": "欠損・異常検出レポート共有／再送データの品質比較／検証プロセス自動化。議事録の対象：橋本、浜田、加賀、北島、神田、三宅、白井。",
+      "body": {
+        "contentType": "html",
+        "content": "<p>議題：欠損・異常検出レポート共有、再送データの品質比較、検証プロセス自動化</p><p>参考：teams スレッド『品質・データ検証レビューの事前アクション』</p>"
+      },
+      "start": { "dateTime": "2025-10-21T05:00:00", "timeZone": "UTC" },
+      "end":   { "dateTime": "2025-10-21T06:30:00", "timeZone": "UTC" },
+      "location": { "displayName": "Microsoft Teams 会議" },
+      "isOnlineMeeting": true,
+      "onlineMeetingProvider": "teamsForBusiness",
+      "onlineMeeting": { "joinUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_qc_20251021@thread.v2/0" },
+      "showAs": "busy",
+      "sensitivity": "normal",
+      "organizer": { "emailAddress": { "name": "橋本 翼", "address": "u-hashimoto@contoso.com" } },
+      "attendees": [
+        { "type": "required", "emailAddress": { "name": "橋本 翼", "address": "u-hashimoto@contoso.com" } },
+        { "type": "required", "emailAddress": { "name": "浜田 俊", "address": "u-hamada@contoso.com" } },
+        { "type": "required", "emailAddress": { "name": "加賀 美雪", "address": "u-kaga@contoso.com" } },
+        { "type": "required", "emailAddress": { "name": "北島 洋", "address": "u-kitajima@contoso.com" } },
+        { "type": "required", "emailAddress": { "name": "神田 遼", "address": "u-kanda@contoso.com" } },
+        { "type": "required", "emailAddress": { "name": "三宅 悠人", "address": "u-miyake@contoso.com" } },
+        { "type": "required", "emailAddress": { "name": "白井 奏", "address": "u-shirai@contoso.com" } }
+      ],
+      "reminderMinutesBeforeStart": 10,
+      "categories": [ "品質レビュー", "Teams" ],
+      "webLink": "https://outlook.office.com/calendar/item/evt-qc-20251021-1400"
+    },
+    {
+      "id": "evt-api-20251023-2200",
+      "iCalUId": "040000008200E00074C5B7101A82E00800000000API20251023T130000Z",
+      "subject": "API最終疎通テスト（/api/v1/visits/summary）",
+      "bodyPreview": "LB本番反映前の最終疎通。Airflow一時停止(22:00-23:00 JST)との連携。",
+      "body": {
+        "contentType": "html",
+        "content": "<p>対象：/api/v1/visits/summary</p><p>連携：同時刻にAirflowメンテナンス停止（@木下）</p>"
+      },
+      "start": { "dateTime": "2025-10-23T13:00:00", "timeZone": "UTC" },
+      "end":   { "dateTime": "2025-10-23T14:00:00", "timeZone": "UTC" },
+      "location": { "displayName": "Microsoft Teams 会議" },
+      "isOnlineMeeting": true,
+      "onlineMeetingProvider": "teamsForBusiness",
+      "onlineMeeting": { "joinUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_api_final_20251023@thread.v2/0" },
+      "showAs": "busy",
+      "sensitivity": "normal",
+      "organizer": { "emailAddress": { "name": "陳 文傑", "address": "u-chen@contoso.com" } },
+      "attendees": [
+        { "type": "required", "emailAddress": { "name": "陳 文傑", "address": "u-chen@contoso.com" } },
+        { "type": "required", "emailAddress": { "name": "青山 玲奈", "address": "u-aoyama@contoso.com" } },
+        { "type": "required", "emailAddress": { "name": "木下 俊輔", "address": "u-kinoshita@contoso.com" } }
+      ],
+      "reminderMinutesBeforeStart": 15,
+      "categories": [ "API", "リリース前テスト", "Teams" ],
+      "webLink": "https://outlook.office.com/calendar/item/evt-api-20251023-2200"
+    },
+    {
+      "id": "evt-airflow-20251023-2200",
+      "iCalUId": "040000008200E00074C5B7101A82E00800000000AF20251023T130000Z",
+      "subject": "Airflowメンテナンス停止（API疎通テスト枠）",
+      "bodyPreview": "API最終疎通テストに合わせてDAGを停止。22:00-23:00 JST。",
+      "body": {
+        "contentType": "html",
+        "content": "<p>Airflow管理画面：22:00〜23:00をメンテナンス時間に設定（ステージング/本番対象は必要範囲）。</p>"
+      },
+      "start": { "dateTime": "2025-10-23T13:00:00", "timeZone": "UTC" },
+      "end":   { "dateTime": "2025-10-23T14:00:00", "timeZone": "UTC" },
+      "location": { "displayName": "運用メンテナンス（リモート）" },
+      "isOnlineMeeting": false,
+      "showAs": "busy",
+      "sensitivity": "normal",
+      "organizer": { "emailAddress": { "name": "木下 俊輔", "address": "u-kinoshita@contoso.com" } },
+      "attendees": [
+        { "type": "required", "emailAddress": { "name": "木下 俊輔", "address": "u-kinoshita@contoso.com" } },
+        { "type": "optional", "emailAddress": { "name": "陳 文傑", "address": "u-chen@contoso.com" } }
+      ],
+      "reminderMinutesBeforeStart": 30,
+      "categories": [ "運用", "メンテナンス" ],
+      "webLink": "https://outlook.office.com/calendar/item/evt-airflow-20251023-2200"
+    },
+    {
+      "id": "evt-ingest-20251022-1230",
+      "iCalUId": "040000008200E00074C5B7101A82E00800000000ING20251022T033000Z",
+      "subject": "【臨時】自治体E CSV差し替え・ステージング取り込み",
+      "bodyPreview": "10/20分差し替えCSVの取り込みスロット。/landing/e_city/20251022/ → ステージング。",
+      "body": {
+        "contentType": "html",
+        "content": "<p>Blob一時領域：/landing/e_city/20251022/ （@岩城 準備済み）</p><p>本番は夜間日次バッチで吸収（1:00実行）</p>"
+      },
+      "start": { "dateTime": "2025-10-22T03:30:00", "timeZone": "UTC" },
+      "end":   { "dateTime": "2025-10-22T04:00:00", "timeZone": "UTC" },
+      "location": { "displayName": "リモート作業（Blob/ADF）" },
+      "isOnlineMeeting": false,
+      "showAs": "busy",
+      "sensitivity": "normal",
+      "organizer": { "emailAddress": { "name": "木下 俊輔", "address": "u-kinoshita@contoso.com" } },
+      "attendees": [
+        { "type": "required", "emailAddress": { "name": "岩城 直也", "address": "u-iwaki@contoso.com" } },
+        { "type": "optional", "emailAddress": { "name": "平林 翔吾", "address": "u-hirabayashi@contoso.com" } }
+      ],
+      "reminderMinutesBeforeStart": 10,
+      "categories": [ "データ取り込み", "臨時対応" ],
+      "webLink": "https://outlook.office.com/calendar/item/evt-ingest-20251022-1230"
+    },
+    {
+      "id": "evt-ops-20251024-1600",
+      "iCalUId": "040000008200E00074C5B7101A82E00800000000OPS20251024T070000Z",
+      "subject": "第4回：クラウド運用・監視強化検討会",
+      "bodyPreview": "DataDog監視項目拡張／KeyVaultローテPoC／VPN安定化。",
+      "body": {
+        "contentType": "html",
+        "content": "<p>議題：DataDog監視項目拡張、Azure KeyVault運用ポリシー、VPN接続安定化</p><p>進捗報告スレ参照（Teams『第4回 監視強化検討会の宿題』）</p>"
+      },
+      "start": { "dateTime": "2025-10-24T07:00:00", "timeZone": "UTC" },
+      "end":   { "dateTime": "2025-10-24T08:30:00", "timeZone": "UTC" },
+      "location": { "displayName": "Microsoft Teams 会議" },
+      "isOnlineMeeting": true,
+      "onlineMeetingProvider": "teamsForBusiness",
+      "onlineMeeting": { "joinUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_ops_20251024@thread.v2/0" },
+      "showAs": "busy",
+      "sensitivity": "normal",
+      "organizer": { "emailAddress": { "name": "青山 玲奈", "address": "u-aoyama@contoso.com" } },
+      "attendees": [
+        { "type": "required", "emailAddress": { "name": "青山 玲奈", "address": "u-aoyama@contoso.com" } },
+        { "type": "required", "emailAddress": { "name": "水谷 里菜", "address": "u-mizutani@contoso.com" } },
+        { "type": "required", "emailAddress": { "name": "福井 隆", "address": "u-fukui@contoso.com" } },
+        { "type": "required", "emailAddress": { "name": "三宅 悠人", "address": "u-miyake@contoso.com" } },
+        { "type": "required", "emailAddress": { "name": "佐々木 智", "address": "u-sasaki@contoso.com" } },
+        { "type": "required", "emailAddress": { "name": "山本 航", "address": "u-yamamoto@contoso.com" } },
+        { "type": "required", "emailAddress": { "name": "北島 洋", "address": "u-kitajima@contoso.com" } },
+        { "type": "required", "emailAddress": { "name": "大森 颯", "address": "u-omori@contoso.com" } }
+      ],
+      "reminderMinutesBeforeStart": 10,
+      "categories": [ "運用", "監視", "Teams" ],
+      "webLink": "https://outlook.office.com/calendar/item/evt-ops-20251024-1600"
+    }
+  ]
 }
-{
-  "id": "AAMkADkya...-api-trial-20251024",
-  "subject": "API試験公開・切替（/api/v1/visits/summary）",
-  "bodyPreview": "LBルーティング変更・疎通確認。Slack併用連絡。",
-  "start": { "dateTime": "2025-10-24T15:00:00", "timeZone": "Asia/Tokyo" },
-  "end":   { "dateTime": "2025-10-24T16:00:00", "timeZone": "Asia/Tokyo" },
-  "location": { "displayName": "オンライン（Teams）" },
-  "isOnlineMeeting": true,
-  "onlineMeetingProvider": "teamsForBusiness",
-  "attendees": [
-    { "type": "required", "emailAddress": { "name": "陳 文傑", "address": "wenjie.chen@example.com" } },
-    { "type": "required", "emailAddress": { "name": "青山 玲奈", "address": "rena.aoyama@example.com" } },
-    { "type": "optional", "emailAddress": { "name": "木下 俊輔", "address": "shunsuke.kinoshita@example.com" } },
-    { "type": "optional", "emailAddress": { "name": "白井 奏", "address": "kanade.shirai@example.com" } }
-  ],
-  "organizer": { "emailAddress": { "name": "陳 文傑", "address": "wenjie.chen@example.com" } },
-  "reminderMinutesBeforeStart": 10,
-  "categories": ["API","リリース"]
-}
-{
-  "id": "AAMkADkya...-rehearsal-20251027",
-  "subject": "v1.2 リリース・リハーサル",
-  "bodyPreview": "手順確認・自動テスト・ロールバック演習。",
-  "start": { "dateTime": "2025-10-27T21:00:00", "timeZone": "Asia/Tokyo" },
-  "end":   { "dateTime": "2025-10-27T22:00:00", "timeZone": "Asia/Tokyo" },
-  "location": { "displayName": "Microsoft Teams 会議" },
-  "isOnlineMeeting": true,
-  "attendees": [
-    { "type": "required", "emailAddress": { "name": "三宅 悠人", "address": "yuto.miyake@example.com" } },
-    { "type": "required", "emailAddress": { "name": "大森 直人", "address": "naoto.omori@example.com" } },
-    { "type": "required", "emailAddress": { "name": "水谷 翔", "address": "sho.mizutani@example.com" } },
-    { "type": "optional", "emailAddress": { "name": "青山 玲奈", "address": "rena.aoyama@example.com" } }
-  ],
-  "organizer": { "emailAddress": { "name": "三宅 悠人", "address": "yuto.miyake@example.com" } },
-  "reminderMinutesBeforeStart": 30,
-  "categories": ["リリース準備"]
-}
-{
-  "id": "AAMkADkya...-release-20251028",
-  "subject": "【本番】v1.2 リリース（夜間反映）",
-  "bodyPreview": "反映・検証・監視。完了報告は10/29 PMO提出。",
-  "start": { "dateTime": "2025-10-28T22:00:00", "timeZone": "Asia/Tokyo" },
-  "end":   { "dateTime": "2025-10-29T00:00:00", "timeZone": "Asia/Tokyo" },
-  "location": { "displayName": "オンライン（Teams）" },
-  "isOnlineMeeting": true,
-  "onlineMeetingProvider": "teamsForBusiness",
-  "attendees": [
-    { "type": "required", "emailAddress": { "name": "三宅 悠人", "address": "yuto.miyake@example.com" } },
-    { "type": "required", "emailAddress": { "name": "青山 玲奈", "address": "rena.aoyama@example.com" } },
-    { "type": "required", "emailAddress": { "name": "大森 直人", "address": "naoto.omori@example.com" } },
-    { "type": "required", "emailAddress": { "name": "水谷 翔", "address": "sho.mizutani@example.com" } },
-    { "type": "optional", "emailAddress": { "name": "松下 翔太", "address": "shota.matsushita@example.com" } }
-  ],
-  "organizer": { "emailAddress": { "name": "三宅 悠人", "address": "yuto.miyake@example.com" } },
-  "reminderMinutesBeforeStart": 60,
-  "categories": ["本番リリース"]
-}
-{
-  "id": "AAMkADkya...-threshold-20251028",
-  "subject": "監視閾値切替（15→25分）ブリーフィング",
-  "bodyPreview": "夜間ジョブの閾値変更に伴う運用切替説明。",
-  "start": { "dateTime": "2025-10-28T09:00:00", "timeZone": "Asia/Tokyo" },
-  "end":   { "dateTime": "2025-10-28T09:30:00", "timeZone": "Asia/Tokyo" },
-  "location": { "displayName": "Microsoft Teams 会議" },
-  "isOnlineMeeting": true,
-  "attendees": [
-    { "type": "required", "emailAddress": { "name": "水谷 翔", "address": "sho.mizutani@example.com" } },
-    { "type": "required", "emailAddress": { "name": "橋本 翼", "address": "tsubasa.hashimoto@example.com" } },
-    { "type": "optional", "emailAddress": { "name": "大森 直人", "address": "naoto.omori@example.com" } }
-  ],
-  "organizer": { "emailAddress": { "name": "水谷 翔", "address": "sho.mizutani@example.com" } },
-  "reminderMinutesBeforeStart": 10,
-  "categories": ["運用"]
-}
-{
-  "id": "AAMkADkya...-automationwg-20251030",
-  "subject": "運用自動化分科会 #1（キックオフ）",
-  "bodyPreview": "自動リカバリ／成果物自動アーカイブ／IaC差分通知。",
-  "start": { "dateTime": "2025-10-30T15:00:00", "timeZone": "Asia/Tokyo" },
-  "end":   { "dateTime": "2025-10-30T16:00:00", "timeZone": "Asia/Tokyo" },
-  "location": { "displayName": "Microsoft Teams 会議" },
-  "isOnlineMeeting": true,
-  "attendees": [
-    { "type": "required", "emailAddress": { "name": "三宅 悠人", "address": "yuto.miyake@example.com" } },
-    { "type": "required", "emailAddress": { "name": "橋本 翼", "address": "tsubasa.hashimoto@example.com" } },
-    { "type": "required", "emailAddress": { "name": "青山 玲奈", "address": "rena.aoyama@example.com" } },
-    { "type": "optional", "emailAddress": { "name": "大森 直人", "address": "naoto.omori@example.com" } }
-  ],
-  "organizer": { "emailAddress": { "name": "三宅 悠人", "address": "yuto.miyake@example.com" } },
-  "reminderMinutesBeforeStart": 15,
-  "categories": ["分科会","運用自動化"]
-}
-{
-  "id": "AAMkADkya...-shap-20251023",
-  "subject": "SHAPトレーニング初回実行",
-  "bodyPreview": "A100でバッチ分割。データ：shap_ready_20251023.parquet。",
-  "start": { "dateTime": "2025-10-23T21:00:00", "timeZone": "Asia/Tokyo" },
-  "end":   { "dateTime": "2025-10-23T23:00:00", "timeZone": "Asia/Tokyo" },
-  "location": { "displayName": "リモート（GPUノード）" },
-  "attendees": [
-    { "type": "required", "emailAddress": { "name": "藤原 大輝", "address": "daiki.fujiwara@example.com" } },
-    { "type": "required", "emailAddress": { "name": "加賀 亮", "address": "ryo.kaga@example.com" } },
-    { "type": "optional", "emailAddress": { "name": "白井 奏", "address": "kanade.shirai@example.com" } },
-    { "type": "optional", "emailAddress": { "name": "木下 俊輔", "address": "shunsuke.kinoshita@example.com" } }
-  ],
-  "organizer": { "emailAddress": { "name": "藤原 大輝", "address": "daiki.fujiwara@example.com" } },
-  "reminderMinutesBeforeStart": 10,
-  "categories": ["AI","学習"]
-}
+
 ```
 
 # ③ AI分析チーム（藤原チーム）
