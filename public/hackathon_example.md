@@ -73,35 +73,36 @@ ignorePublish: false
     - [outlook予定表第二週](#outlook予定表第二週-3)
 - [⑤ UX・顧客連携チーム（相沢チーム）](#-ux顧客連携チーム相沢チーム-1)
   - [📘 第1週（10月13日週）](#-第1週10月13日週-4)
-    - [会議①：データ基盤チーム週次定例（第3週）](#会議データ基盤チーム週次定例第3週-1)
-    - [🗓 会議②：API・匿名化方式 技術分科会](#-会議api匿名化方式-技術分科会-1)
+    - [📝 議事録①：UXデザイン進捗会議](#-議事録uxデザイン進捗会議)
+    - [📝 議事録②：自治体向け操作説明会準備会議](#-議事録自治体向け操作説明会準備会議)
     - [teamsでの会話内容](#teamsでの会話内容-8)
     - [outlook予定表第一週](#outlook予定表第一週-4)
   - [📘 第2週（10月20日週）](#-第2週10月20日週-4)
-    - [🗓 会議③：AI分析チーム合同データ連携会議](#-会議ai分析チーム合同データ連携会議-1)
-    - [🗓 会議④：第4週チーム定例](#-会議第4週チーム定例-1)
+    - [📝 議事録③：UX改善・利用分析共有会](#-議事録ux改善利用分析共有会)
+    - [📝 議事録④：実証現場連携ミーティング](#-議事録実証現場連携ミーティング)
+    - [📝 議事録⑤：チーム全体レビュー会](#-議事録チーム全体レビュー会)
     - [teamsでの会話内容](#teamsでの会話内容-9)
     - [outlook予定表第二週](#outlook予定表第二週-4)
 - [⑥ 行政・自治体連携チーム（新設）](#-行政自治体連携チーム新設-1)
   - [📘 第1週（10月13日週）](#-第1週10月13日週-5)
-    - [会議①：データ基盤チーム週次定例（第3週）](#会議データ基盤チーム週次定例第3週-2)
-    - [🗓 会議②：API・匿名化方式 技術分科会](#-会議api匿名化方式-技術分科会-2)
+    - [会議①：データ基盤チーム週次定例（第3週）](#会議データ基盤チーム週次定例第3週-1)
+    - [🗓 会議②：API・匿名化方式 技術分科会](#-会議api匿名化方式-技術分科会-1)
     - [teamsでの会話内容](#teamsでの会話内容-10)
     - [outlook予定表第一週](#outlook予定表第一週-5)
   - [📘 第2週（10月20日週）](#-第2週10月20日週-5)
-    - [🗓 会議③：AI分析チーム合同データ連携会議](#-会議ai分析チーム合同データ連携会議-2)
-    - [🗓 会議④：第4週チーム定例](#-会議第4週チーム定例-2)
+    - [🗓 会議③：AI分析チーム合同データ連携会議](#-会議ai分析チーム合同データ連携会議-1)
+    - [🗓 会議④：第4週チーム定例](#-会議第4週チーム定例-1)
     - [teamsでの会話内容](#teamsでの会話内容-11)
     - [outlook予定表第二週](#outlook予定表第二週-5)
 - [⑦ 品質保証・テスト支援チーム（新設）](#-品質保証テスト支援チーム新設-1)
   - [📘 第1週（10月13日週）](#-第1週10月13日週-6)
-    - [会議①：データ基盤チーム週次定例（第3週）](#会議データ基盤チーム週次定例第3週-3)
-    - [🗓 会議②：API・匿名化方式 技術分科会](#-会議api匿名化方式-技術分科会-3)
+    - [会議①：データ基盤チーム週次定例（第3週）](#会議データ基盤チーム週次定例第3週-2)
+    - [🗓 会議②：API・匿名化方式 技術分科会](#-会議api匿名化方式-技術分科会-2)
     - [teamsでの会話内容](#teamsでの会話内容-12)
     - [outlook予定表第一週](#outlook予定表第一週-6)
   - [📘 第2週（10月20日週）](#-第2週10月20日週-6)
-    - [🗓 会議③：AI分析チーム合同データ連携会議](#-会議ai分析チーム合同データ連携会議-3)
-    - [🗓 会議④：第4週チーム定例](#-会議第4週チーム定例-3)
+    - [🗓 会議③：AI分析チーム合同データ連携会議](#-会議ai分析チーム合同データ連携会議-2)
+    - [🗓 会議④：第4週チーム定例](#-会議第4週チーム定例-2)
     - [teamsでの会話内容](#teamsでの会話内容-13)
     - [outlook予定表第二週](#outlook予定表第二週-6)
 
@@ -8412,16 +8413,2354 @@ RCA自動生成は運用チーム全体の省力化に直結します。
 ```
 
 # ⑤ UX・顧客連携チーム（相沢チーム）
+```
+会議一覧
+回	会議名	開催日	目的	主なテーマ	参加者
+①	定例UXデザイン進捗会議	10月14日（月）	UI改善進捗・利用者テスト準備	新UIデザイン最終確認／自治体Aヒアリング準備	相沢・宮内・河合・北谷・長尾・岡村
+②	自治体向け操作説明会準備会議	10月17日（木）	操作研修・マニュアル整備	Power BIダッシュボードの説明内容確定／会場運営手順	相沢・藤井・高島・小嶋・森田
+③	UX改善・利用分析共有会	10月21日（月）	前週利用ログ分析結果の共有	利用率の低い画面の改善提案／FAQ整理	相沢・菅原・宮内・岡村・森田
+④	実証現場連携ミーティング	10月24日（木）	現地検証と広報準備	現地イベントでの利用テスト計画／PR動画素材確認	相沢・前田・西原・橘・高島・小嶋
+⑤	チーム全体レビュー会	10月25日（金）	第4週総括と次週計画	UI改善反映計画・新規課題共有	チーム全員（15名）
+
+📊 総括（2週間まとめ）
+区分	継続業務	新規業務
+継続	UI改善・利用分析・操作マニュアル整備・現地実証準備	
+新規	Chatbot導入検討・SUSスコア評価導入・英語版操作ガイド	
+
+総評（相沢）：
+
+チーム全体で利用者視点の改善サイクルが回り始めている。
+現地実証に向けた準備も順調。次週は利用者アンケートを基に定量的UX評価を進める。
+```
 ## 📘 第1週（10月13日週）
-### 会議①：データ基盤チーム週次定例（第3週）
-### 🗓 会議②：API・匿名化方式 技術分科会
+### 📝 議事録①：UXデザイン進捗会議
+```
+📝 議事録①：UXデザイン進捗会議
+
+開催日時： 2025年10月14日（月） 10:00〜11:30
+開催形式： Teamsオンライン
+出席者： 相沢（リーダー）、宮内、河合、北谷、長尾、岡村
+欠席者： なし
+議題：
+
+新UIデザインの最終確認（観光事業者向けポータル）
+
+自治体Aへの利用者ヒアリング準備
+
+操作ガイド整備状況
+
+議事内容
+
+① 新UIデザイン最終確認
+
+宮内：React版の新UI（ダッシュボード／来訪者分析画面）を本番構成に近い形でデモ。
+
+河合：利用者テスト観点から「絞り込み条件の配置」部分の操作負荷を指摘。フィルター項目が縦に長すぎてスクロールが必要。
+
+相沢：主要指標を上段固定する案を了承。週内に改修。
+
+決定事項：10/17までに修正版をデプロイ。利用テストシナリオを北谷が更新。
+
+② 自治体Aへのヒアリング準備
+
+北谷：ヒアリング対象3名（観光課／商工課／データ推進室）との日程調整完了。10/18午前実施予定。
+
+長尾：議事録テンプレートを共有、質問事項を事前に相沢へ確認依頼。
+
+決定事項：質問項目（操作性・視認性・データ更新頻度）を明日午前までに最終確定。
+
+③ 操作ガイド整備状況
+
+岡村：最新版（ver.0.8）でスクリーンショットを更新中。PDF化はPowerPointから自動出力方式に変更予定。
+
+相沢：本番向けリリース時に動画チュートリアルと連携予定。
+
+今後の対応
+
+担当	内容	期限
+宮内	UI修正版デプロイ	10/17
+北谷	ヒアリングシート更新	10/16
+岡村	操作ガイド更新	10/20
+```
+### 📝 議事録②：自治体向け操作説明会準備会議
+```
+📝 議事録②：自治体向け操作説明会準備会議
+
+開催日時： 2025年10月17日（木） 14:00〜15:30
+開催形式： オンサイト（第2会議室）
+出席者： 相沢、高島、藤井、小嶋、森田
+欠席者： なし
+議題：
+
+操作説明会（10/23開催）のプログラム内容
+
+会場運営・受付動線確認
+
+FAQ・資料整備進捗
+
+議事内容
+
+① プログラム内容
+
+高島：説明会全体構成（概要説明→デモ→Q&A）の案を提示。
+
+藤井：実演部分を2名体制で実施する方針に。1人操作、1人ナレーション担当。
+
+相沢：デモデータは実際の観光統計ではなく、ダミーデータで表現。
+
+② 会場運営
+
+小嶋：参加予定者25名（自治体B、C、観光事業者含む）。受付は9:30開始、セッション10:00開始。
+
+森田：問い合わせ窓口（support@）に案内を送信済み。
+
+③ FAQ・資料整備
+
+藤井：想定質問30件を整理（ログイン、データ更新、BI利用）。
+
+相沢：マニュアルとFAQを合わせた冊子（A4、16ページ予定）にする方向を承認。
+
+決定事項：印刷発注を10/21に行う。リハーサルを10/22午前に実施。
+```
 ### teamsでの会話内容
+```
+✅ チーム内まとめ
+
+UI修正版デプロイ完了（10/17）
+
+自治体ヒアリング準備完了（10/18）
+
+操作ガイド更新・PDF自動化設定完了（10/16）
+
+説明会資料構成案共有（10/17）
+
+FAQ原稿・マニュアル統合作業進行中
+```
+```
+💬 Teams会話記録（UX・顧客連携チーム）
+📰 一般（General）
+
+投稿者：相沢 沙耶（UXリーダー）｜2025年10月14日 09:15
+
+各位
+今日10:00〜の「UXデザイン進捗会議」で使用するデモ版について、@宮内 さん、最新版のURLをここに共有しておいてください。
+また、会議後に議事録（ver.1）をこのチャネルにアップします。
+
+🟢 返信：宮内 梓（UIエンジニア）｜10:20
+
+デモ版アップしました👇
+https://portal-dev.uxdemo.internal/
+
+ビルド日時：10/14 09:10
+ブランチ：feature/new-dashboard-layout
+絞り込みエリアのスクロール対応はまだ未反映です（本日午後対応予定です）。
+
+🟢 返信：北谷 優花（調査員）｜10:25
+
+ヒアリング対象の3部署（観光課・商工課・データ推進室）との調整完了しています。
+10/18 午前 10:00〜 現地実施予定です。
+事前質問票のドラフト版を午後までに共有します。
+
+投稿者：長尾 海斗（顧客調整）｜2025年10月15日 09:45
+
+@相沢 さん
+自治体Aヒアリングの質問項目について、修正版を作成しました。
+Googleスプレッドシートにまとめてあります👇
+質問リスト_自治体A_ver2.xlsx
+
+ご確認ください。午前中に確定できれば助かります。
+
+🟢 返信：相沢 沙耶｜10:05
+
+確認しました。
+「データ更新頻度」の項目に “リアルタイム更新の必要性” という選択肢を追加してください。
+最終版を明日10:00までに共有でOKです。
+
+投稿者：岡村 沙良（マニュアル作成）｜2025年10月16日 16:40
+
+操作ガイド（ver.0.8）更新しました！
+PowerPoint → PDF 自動出力の設定も完了。
+操作ガイド_観光ポータル_v0.8.pdf
+
+次は @藤井 さん のFAQ原稿を統合して16ページ構成にします。
+
+🟢 返信：藤井 凌（研修担当）｜16:55
+
+@岡村 さん、FAQの第3章（BIツール連携）を追記しました。
+FAQ案_v0.4.docx
+
+明日の午前中に全体レビューしたいです。
+
+🟢 返信：相沢 沙耶｜17:10
+
+ありがとうございます。
+明日10:30〜「資料統合レビュー」をこのチームでやりましょう（TeamsミーティングURLは📅チャネルに貼っておきます）。
+
+📅 定例・進捗報告
+
+投稿者：宮内 梓（UIエンジニア）｜2025年10月17日 11:45
+
+🎨 UI修正版デプロイ完了しました！
+
+修正内容：絞り込み条件の折りたたみ機能追加
+
+上段指標固定対応
+
+軽微なレイアウト調整（カード間余白統一）
+
+デプロイ環境：https://ux-portal.staging.internal/
+
+@北谷 さん、これを使ってテストシナリオ更新お願いします。
+
+🟢 返信：北谷 優花｜12:10
+
+承知しました！
+今日中に「利用テストシナリオ_v2」として更新します。
+来週のヒアリングではこのバージョンを使用します。
+
+🟢 返信：相沢 沙耶｜12:15
+
+👍 素晴らしい対応スピードです。
+本番反映は10/21を予定しているので、それまでにUI不具合がないか軽く回して確認お願いします。
+
+投稿者：高島 遼（広報）｜2025年10月17日 15:10
+
+来週10/23（木）の自治体向け説明会に向けた 進行スライド（案） をアップします。
+説明会スライド_構成案_v1.pptx
+
+各パート担当者は、自分の部分に追記をお願いします。
+
+@相沢 さん：冒頭の概要部分
+
+@藤井 さん：実演パート
+
+@森田 さん：Q&Aまとめ
+
+🟢 返信：藤井 凌｜15:25
+
+実演パート、操作→ナレーション構成でOKです。
+明日午前にリハ用スクリプトを共有します。
+
+🟢 返信：相沢 沙耶｜15:40
+
+構成案、良い感じです。
+冒頭は「デジタル基盤の全体像」スライドを追加しておきます。
+
+💬 技術・課題共有
+
+投稿者：宮内 梓（UIエンジニア）｜2025年10月16日 09:20
+
+💻 React版ダッシュボードの軽量化対応について
+現在、初回読み込み時にグラフ描画が重い件を調査中です。
+Power BI iframeのキャッシュを利用しない設定になっているのが原因っぽいです。
+
+→ @菅原 さん、利用分析チームで設定方針わかりますか？
+→ もし許可されるなら、embedToken の有効期限を延長したいです（現在30分）。
+
+🟢 返信：菅原 渉（利用分析）｜09:45
+
+なるほど、BI側のキャッシュは有効化してOKです。
+期限延長は最大60分まで可能。パフォーマンスに影響しない範囲で設定変更します。
+
+🟢 返信：宮内 梓｜10:05
+
+了解しました！今夜のビルドで反映します。
+
+投稿者：岡村 沙良（マニュアル作成）｜2025年10月17日 10:50
+
+@宮内 さん
+ガイドに載せるスクリーンショットを差し替えたいので、最新ビルドの画面キャプチャを3枚ほど撮ってもらえますか？
+
+トップ画面
+
+分析条件の設定画面
+
+結果出力画面
+
+🟢 返信：宮内 梓｜11:05
+
+了解です。
+昼までに撮って共有します。スクショ用のデータは demo_tourism_v3 を使います。
+
+🟢 返信：岡村 沙良｜11:20
+
+ありがとうございます！助かります🙌
+
+投稿者：相沢 沙耶｜2025年10月18日 18:20
+
+🌟 1週間お疲れさまでした！
+今週はUIリニューアル・ヒアリング準備・資料整備と盛りだくさんでしたが、予定通り完了できました。
+来週は「説明会リハーサル」「操作ガイド最終版」「FAQ冊子印刷発注」が中心になります。
+
+週報は月曜朝に共有予定です。よい週末を☕
+
+🟢 リアクション： 👍 ❤️ 🙌 （チームメンバー全員から反応）
+```
+```json
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('team-ux-customer')/channels/messages",
+  "team": {
+    "id": "team-ux-customer",
+    "displayName": "UX・顧客連携チーム（相沢チーム）"
+  },
+  "fetchedAtUtc": "2025-10-27T09:00:00Z",
+  "channels": [
+    {
+      "id": "19:general@thread.tacv2",
+      "displayName": "📰 一般（General）",
+      "messages": [
+        {
+          "id": "gen-001",
+          "replyToId": null,
+          "createdDateTime": "2025-10-14T00:15:00Z",
+          "lastModifiedDateTime": "2025-10-14T00:15:00Z",
+          "messageType": "message",
+          "importance": "normal",
+          "subject": null,
+          "from": {
+            "user": {
+              "id": "u-aizawa",
+              "displayName": "相沢 沙耶（UXリーダー）",
+              "userPrincipalName": "saya.aizawa@contoso.example"
+            }
+          },
+          "mentions": [
+            {
+              "id": 0,
+              "mentioned": {
+                "user": {
+                  "id": "u-miyauchi",
+                  "displayName": "宮内 梓",
+                  "userPrincipalName": "azusa.miyauchi@contoso.example"
+                }
+              },
+              "displayName": "宮内 梓"
+            }
+          ],
+          "body": {
+            "contentType": "html",
+            "content": "<p>各位<br/>今日10:00〜の「UXデザイン進捗会議」で使用するデモ版について、<at id=\"0\">宮内 梓</at> さん、最新版のURLをここに共有しておいてください。<br/>また、会議後に議事録（ver.1）をこのチャネルにアップします。</p>"
+          },
+          "reactions": [],
+          "attachments": [],
+          "replies": [
+            {
+              "id": "gen-001-r1",
+              "replyToId": "gen-001",
+              "createdDateTime": "2025-10-14T00:20:00Z",
+              "lastModifiedDateTime": "2025-10-14T00:20:00Z",
+              "messageType": "message",
+              "importance": "normal",
+              "from": {
+                "user": {
+                  "id": "u-miyauchi",
+                  "displayName": "宮内 梓（UIエンジニア）",
+                  "userPrincipalName": "azusa.miyauchi@contoso.example"
+                }
+              },
+              "body": {
+                "contentType": "html",
+                "content": "<p>デモ版アップしました👇<br/><a href=\"https://portal-dev.uxdemo.internal/\">https://portal-dev.uxdemo.internal/</a><br/><br/>ビルド日時：10/14 09:10<br/>ブランチ：<code>feature/new-dashboard-layout</code><br/>絞り込みエリアのスクロール対応はまだ未反映です（本日午後対応予定です）。</p>"
+              },
+              "attachments": [],
+              "mentions": [],
+              "reactions": [
+                {
+                  "reactionType": "like",
+                  "createdDateTime": "2025-10-14T00:22:10Z",
+                  "user": {
+                    "user": {
+                      "id": "u-aizawa",
+                      "displayName": "相沢 沙耶（UXリーダー）"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "gen-001-r2",
+              "replyToId": "gen-001",
+              "createdDateTime": "2025-10-14T00:25:00Z",
+              "lastModifiedDateTime": "2025-10-14T00:25:00Z",
+              "messageType": "message",
+              "importance": "normal",
+              "from": {
+                "user": {
+                  "id": "u-kitatani",
+                  "displayName": "北谷 優花（調査員）",
+                  "userPrincipalName": "yuka.kitatani@contoso.example"
+                }
+              },
+              "body": {
+                "contentType": "html",
+                "content": "<p>ヒアリング対象の3部署（観光課・商工課・データ推進室）との調整完了しています。<br/>10/18 午前 10:00〜 現地実施予定です。<br/>事前質問票のドラフト版を午後までに共有します。</p>"
+              },
+              "attachments": [],
+              "mentions": [],
+              "reactions": []
+            }
+          ]
+        },
+        {
+          "id": "gen-002",
+          "replyToId": null,
+          "createdDateTime": "2025-10-15T00:45:00Z",
+          "lastModifiedDateTime": "2025-10-15T00:45:00Z",
+          "messageType": "message",
+          "importance": "normal",
+          "subject": null,
+          "from": {
+            "user": {
+              "id": "u-nagao",
+              "displayName": "長尾 海斗（顧客調整）",
+              "userPrincipalName": "kaito.nagao@contoso.example"
+            }
+          },
+          "mentions": [
+            {
+              "id": 0,
+              "mentioned": {
+                "user": {
+                  "id": "u-aizawa",
+                  "displayName": "相沢 沙耶",
+                  "userPrincipalName": "saya.aizawa@contoso.example"
+                }
+              },
+              "displayName": "相沢 沙耶"
+            }
+          ],
+          "body": {
+            "contentType": "html",
+            "content": "<p><at id=\"0\">相沢 沙耶</at> さん<br/>自治体Aヒアリングの質問項目について、修正版を作成しました。<br/>Googleスプレッドシートにまとめてあります👇<br/><a href=\"https://drive.contoso.example/spreadsheet/qa-v2\">質問リスト_自治体A_ver2.xlsx</a><br/><br/>ご確認ください。午前中に確定できれば助かります。</p>"
+          },
+          "attachments": [],
+          "reactions": [],
+          "replies": [
+            {
+              "id": "gen-002-r1",
+              "replyToId": "gen-002",
+              "createdDateTime": "2025-10-15T01:05:00Z",
+              "lastModifiedDateTime": "2025-10-15T01:05:00Z",
+              "messageType": "message",
+              "importance": "normal",
+              "from": {
+                "user": {
+                  "id": "u-aizawa",
+                  "displayName": "相沢 沙耶（UXリーダー）",
+                  "userPrincipalName": "saya.aizawa@contoso.example"
+                }
+              },
+              "body": {
+                "contentType": "html",
+                "content": "<p>確認しました。<br/>「データ更新頻度」の項目に “リアルタイム更新の必要性” という選択肢を追加してください。<br/>最終版を明日10:00までに共有でOKです。</p>"
+              },
+              "attachments": [],
+              "mentions": [],
+              "reactions": [
+                {
+                  "reactionType": "like",
+                  "createdDateTime": "2025-10-15T01:06:12Z",
+                  "user": {
+                    "user": {
+                      "id": "u-nagao",
+                      "displayName": "長尾 海斗（顧客調整）"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "gen-003",
+          "replyToId": null,
+          "createdDateTime": "2025-10-16T07:40:00Z",
+          "lastModifiedDateTime": "2025-10-16T07:40:00Z",
+          "messageType": "message",
+          "importance": "normal",
+          "subject": null,
+          "from": {
+            "user": {
+              "id": "u-okamura",
+              "displayName": "岡村 沙良（マニュアル作成）",
+              "userPrincipalName": "sara.okamura@contoso.example"
+            }
+          },
+          "body": {
+            "contentType": "html",
+            "content": "<p>操作ガイド（ver.0.8）更新しました！<br/>PowerPoint → PDF 自動出力の設定も完了。<br/><a href=\"https://drive.contoso.example/docs/guide-v0_8.pdf\">操作ガイド_観光ポータル_v0.8.pdf</a><br/><br/>次は <at id=\"0\">藤井 凌</at> さん のFAQ原稿を統合して16ページ構成にします。</p>"
+          },
+          "mentions": [
+            {
+              "id": 0,
+              "mentioned": {
+                "user": {
+                  "id": "u-fujii",
+                  "displayName": "藤井 凌",
+                  "userPrincipalName": "ryo.fujii@contoso.example"
+                }
+              },
+              "displayName": "藤井 凌"
+            }
+          ],
+          "attachments": [
+            {
+              "id": "att-001",
+              "contentType": "reference",
+              "contentUrl": "https://drive.contoso.example/docs/guide-v0_8.pdf",
+              "name": "操作ガイド_観光ポータル_v0.8.pdf"
+            }
+          ],
+          "reactions": [],
+          "replies": [
+            {
+              "id": "gen-003-r1",
+              "replyToId": "gen-003",
+              "createdDateTime": "2025-10-16T07:55:00Z",
+              "lastModifiedDateTime": "2025-10-16T07:55:00Z",
+              "messageType": "message",
+              "importance": "normal",
+              "from": {
+                "user": {
+                  "id": "u-fujii",
+                  "displayName": "藤井 凌（研修担当）",
+                  "userPrincipalName": "ryo.fujii@contoso.example"
+                }
+              },
+              "body": {
+                "contentType": "html",
+                "content": "<p><at id=\"0\">岡村 沙良</at> さん、FAQの第3章（BIツール連携）を追記しました。<br/><a href=\"https://drive.contoso.example/docs/faq-v0_4.docx\">FAQ案_v0.4.docx</a><br/>明日の午前中に全体レビューしたいです。</p>"
+              },
+              "mentions": [
+                {
+                  "id": 0,
+                  "mentioned": {
+                    "user": {
+                      "id": "u-okamura",
+                      "displayName": "岡村 沙良",
+                      "userPrincipalName": "sara.okamura@contoso.example"
+                    }
+                  },
+                  "displayName": "岡村 沙良"
+                }
+              ],
+              "attachments": [
+                {
+                  "id": "att-002",
+                  "contentType": "reference",
+                  "contentUrl": "https://drive.contoso.example/docs/faq-v0_4.docx",
+                  "name": "FAQ案_v0.4.docx"
+                }
+              ],
+              "reactions": []
+            },
+            {
+              "id": "gen-003-r2",
+              "replyToId": "gen-003",
+              "createdDateTime": "2025-10-16T08:10:00Z",
+              "lastModifiedDateTime": "2025-10-16T08:10:00Z",
+              "messageType": "message",
+              "importance": "normal",
+              "from": {
+                "user": {
+                  "id": "u-aizawa",
+                  "displayName": "相沢 沙耶（UXリーダー）",
+                  "userPrincipalName": "saya.aizawa@contoso.example"
+                }
+              },
+              "body": {
+                "contentType": "html",
+                "content": "<p>ありがとうございます。<br/>明日10:30〜「資料統合レビュー」をこのチームでやりましょう（TeamsミーティングURLは📅チャネルに貼っておきます）。</p>"
+              },
+              "mentions": [],
+              "attachments": [],
+              "reactions": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "19:progress@thread.tacv2",
+      "displayName": "📅 定例・進捗報告",
+      "messages": [
+        {
+          "id": "prog-001",
+          "replyToId": null,
+          "createdDateTime": "2025-10-17T02:45:00Z",
+          "lastModifiedDateTime": "2025-10-17T02:45:00Z",
+          "messageType": "message",
+          "importance": "normal",
+          "subject": "UI修正版デプロイ完了",
+          "from": {
+            "user": {
+              "id": "u-miyauchi",
+              "displayName": "宮内 梓（UIエンジニア）",
+              "userPrincipalName": "azusa.miyauchi@contoso.example"
+            }
+          },
+          "body": {
+            "contentType": "html",
+            "content": "<p>🎨 <strong>UI修正版デプロイ完了しました！</strong><br/><br/>修正内容：<ul><li>絞り込み条件の折りたたみ機能追加</li><li>上段指標固定対応</li><li>軽微なレイアウト調整（カード間余白統一）</li></ul>デプロイ環境：<a href=\"https://ux-portal.staging.internal/\">https://ux-portal.staging.internal/</a><br/><br/><at id=\"0\">北谷 優花</at> さん、これを使ってテストシナリオ更新お願いします。</p>"
+          },
+          "mentions": [
+            {
+              "id": 0,
+              "mentioned": {
+                "user": {
+                  "id": "u-kitatani",
+                  "displayName": "北谷 優花",
+                  "userPrincipalName": "yuka.kitatani@contoso.example"
+                }
+              },
+              "displayName": "北谷 優花"
+            }
+          ],
+          "attachments": [],
+          "reactions": [],
+          "replies": [
+            {
+              "id": "prog-001-r1",
+              "replyToId": "prog-001",
+              "createdDateTime": "2025-10-17T03:10:00Z",
+              "lastModifiedDateTime": "2025-10-17T03:10:00Z",
+              "messageType": "message",
+              "importance": "normal",
+              "from": {
+                "user": {
+                  "id": "u-kitatani",
+                  "displayName": "北谷 優花（調査員）",
+                  "userPrincipalName": "yuka.kitatani@contoso.example"
+                }
+              },
+              "body": {
+                "contentType": "html",
+                "content": "<p>承知しました！<br/>今日中に「利用テストシナリオ_v2」として更新します。<br/>来週のヒアリングではこのバージョンを使用します。</p>"
+              },
+              "attachments": [],
+              "mentions": [],
+              "reactions": []
+            },
+            {
+              "id": "prog-001-r2",
+              "replyToId": "prog-001",
+              "createdDateTime": "2025-10-17T03:15:00Z",
+              "lastModifiedDateTime": "2025-10-17T03:15:00Z",
+              "messageType": "message",
+              "importance": "normal",
+              "from": {
+                "user": {
+                  "id": "u-aizawa",
+                  "displayName": "相沢 沙耶（UXリーダー）",
+                  "userPrincipalName": "saya.aizawa@contoso.example"
+                }
+              },
+              "body": {
+                "contentType": "html",
+                "content": "<p>👍 素晴らしい対応スピードです。<br/>本番反映は10/21を予定しているので、それまでにUI不具合がないか軽く回して確認お願いします。</p>"
+              },
+              "attachments": [],
+              "mentions": [],
+              "reactions": [
+                {
+                  "reactionType": "heart",
+                  "createdDateTime": "2025-10-17T03:16:10Z",
+                  "user": {
+                    "user": {
+                      "id": "u-miyauchi",
+                      "displayName": "宮内 梓"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "prog-002",
+          "replyToId": null,
+          "createdDateTime": "2025-10-17T06:10:00Z",
+          "lastModifiedDateTime": "2025-10-17T06:10:00Z",
+          "messageType": "message",
+          "importance": "normal",
+          "subject": "説明会スライド構成案",
+          "from": {
+            "user": {
+              "id": "u-takashima",
+              "displayName": "高島 遼（広報）",
+              "userPrincipalName": "ryo.takashima@contoso.example"
+            }
+          },
+          "body": {
+            "contentType": "html",
+            "content": "<p>来週10/23（木）の自治体向け説明会に向けた <strong>進行スライド（案）</strong> をアップします。<br/><a href=\"https://drive.contoso.example/slides/briefing-v1.pptx\">説明会スライド_構成案_v1.pptx</a><br/><br/>各パート担当者は、自分の部分に追記をお願いします。<br/>- <at id=\"0\">相沢 沙耶</at>：冒頭の概要部分<br/>- <at id=\"1\">藤井 凌</at>：実演パート<br/>- <at id=\"2\">森田 佳奈</at>：Q&amp;Aまとめ</p>"
+          },
+          "mentions": [
+            {
+              "id": 0,
+              "mentioned": {
+                "user": {
+                  "id": "u-aizawa",
+                  "displayName": "相沢 沙耶",
+                  "userPrincipalName": "saya.aizawa@contoso.example"
+                }
+              },
+              "displayName": "相沢 沙耶"
+            },
+            {
+              "id": 1,
+              "mentioned": {
+                "user": {
+                  "id": "u-fujii",
+                  "displayName": "藤井 凌",
+                  "userPrincipalName": "ryo.fujii@contoso.example"
+                }
+              },
+              "displayName": "藤井 凌"
+            },
+            {
+              "id": 2,
+              "mentioned": {
+                "user": {
+                  "id": "u-morita",
+                  "displayName": "森田 佳奈",
+                  "userPrincipalName": "kana.morita@contoso.example"
+                }
+              },
+              "displayName": "森田 佳奈"
+            }
+          ],
+          "attachments": [
+            {
+              "id": "att-003",
+              "contentType": "reference",
+              "contentUrl": "https://drive.contoso.example/slides/briefing-v1.pptx",
+              "name": "説明会スライド_構成案_v1.pptx"
+            }
+          ],
+          "reactions": [],
+          "replies": [
+            {
+              "id": "prog-002-r1",
+              "replyToId": "prog-002",
+              "createdDateTime": "2025-10-17T06:25:00Z",
+              "lastModifiedDateTime": "2025-10-17T06:25:00Z",
+              "messageType": "message",
+              "importance": "normal",
+              "from": {
+                "user": {
+                  "id": "u-fujii",
+                  "displayName": "藤井 凌（研修担当）",
+                  "userPrincipalName": "ryo.fujii@contoso.example"
+                }
+              },
+              "body": {
+                "contentType": "html",
+                "content": "<p>実演パート、操作→ナレーション構成でOKです。<br/>明日午前にリハ用スクリプトを共有します。</p>"
+              },
+              "attachments": [],
+              "mentions": [],
+              "reactions": []
+            },
+            {
+              "id": "prog-002-r2",
+              "replyToId": "prog-002",
+              "createdDateTime": "2025-10-17T06:40:00Z",
+              "lastModifiedDateTime": "2025-10-17T06:40:00Z",
+              "messageType": "message",
+              "importance": "normal",
+              "from": {
+                "user": {
+                  "id": "u-aizawa",
+                  "displayName": "相沢 沙耶（UXリーダー）",
+                  "userPrincipalName": "saya.aizawa@contoso.example"
+                }
+              },
+              "body": {
+                "contentType": "html",
+                "content": "<p>構成案、良い感じです。<br/>冒頭は「デジタル基盤の全体像」スライドを追加しておきます。</p>"
+              },
+              "attachments": [],
+              "mentions": [],
+              "reactions": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "19:tech@thread.tacv2",
+      "displayName": "💬 技術・課題共有",
+      "messages": [
+        {
+          "id": "tech-001",
+          "replyToId": null,
+          "createdDateTime": "2025-10-16T00:20:00Z",
+          "lastModifiedDateTime": "2025-10-16T00:20:00Z",
+          "messageType": "message",
+          "importance": "normal",
+          "subject": "React版ダッシュボード軽量化",
+          "from": {
+            "user": {
+              "id": "u-miyauchi",
+              "displayName": "宮内 梓（UIエンジニア）",
+              "userPrincipalName": "azusa.miyauchi@contoso.example"
+            }
+          },
+          "body": {
+            "contentType": "html",
+            "content": "<p>💻 <strong>React版ダッシュボードの軽量化対応について</strong><br/>現在、初回読み込み時にグラフ描画が重い件を調査中です。<br/>Power BI iframeのキャッシュを利用しない設定になっているのが原因っぽいです。<br/><br/>→ <at id=\"0\">菅原 渉</at> さん、利用分析チームで設定方針わかりますか？<br/>→ もし許可されるなら、<code>embedToken</code> の有効期限を延長したいです（現在30分）。</p>"
+          },
+          "mentions": [
+            {
+              "id": 0,
+              "mentioned": {
+                "user": {
+                  "id": "u-sugawara",
+                  "displayName": "菅原 渉",
+                  "userPrincipalName": "wataru.sugawara@contoso.example"
+                }
+              },
+              "displayName": "菅原 渉"
+            }
+          ],
+          "attachments": [],
+          "reactions": [],
+          "replies": [
+            {
+              "id": "tech-001-r1",
+              "replyToId": "tech-001",
+              "createdDateTime": "2025-10-16T00:45:00Z",
+              "lastModifiedDateTime": "2025-10-16T00:45:00Z",
+              "messageType": "message",
+              "importance": "normal",
+              "from": {
+                "user": {
+                  "id": "u-sugawara",
+                  "displayName": "菅原 渉（利用分析）",
+                  "userPrincipalName": "wataru.sugawara@contoso.example"
+                }
+              },
+              "body": {
+                "contentType": "html",
+                "content": "<p>なるほど、BI側のキャッシュは有効化してOKです。<br/>期限延長は最大60分まで可能。パフォーマンスに影響しない範囲で設定変更します。</p>"
+              },
+              "attachments": [],
+              "mentions": [],
+              "reactions": []
+            },
+            {
+              "id": "tech-001-r2",
+              "replyToId": "tech-001",
+              "createdDateTime": "2025-10-16T01:05:00Z",
+              "lastModifiedDateTime": "2025-10-16T01:05:00Z",
+              "messageType": "message",
+              "importance": "normal",
+              "from": {
+                "user": {
+                  "id": "u-miyauchi",
+                  "displayName": "宮内 梓（UIエンジニア）",
+                  "userPrincipalName": "azusa.miyauchi@contoso.example"
+                }
+              },
+              "body": {
+                "contentType": "html",
+                "content": "<p>了解しました！今夜のビルドで反映します。</p>"
+              },
+              "attachments": [],
+              "mentions": [],
+              "reactions": [
+                {
+                  "reactionType": "like",
+                  "createdDateTime": "2025-10-16T01:06:10Z",
+                  "user": {
+                    "user": {
+                      "id": "u-aizawa",
+                      "displayName": "相沢 沙耶"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "tech-002",
+          "replyToId": null,
+          "createdDateTime": "2025-10-17T01:50:00Z",
+          "lastModifiedDateTime": "2025-10-17T01:50:00Z",
+          "messageType": "message",
+          "importance": "normal",
+          "subject": "ガイド用スクリーンショット依頼",
+          "from": {
+            "user": {
+              "id": "u-okamura",
+              "displayName": "岡村 沙良（マニュアル作成）",
+              "userPrincipalName": "sara.okamura@contoso.example"
+            }
+          },
+          "body": {
+            "contentType": "html",
+            "content": "<p><at id=\"0\">宮内 梓</at> さん<br/>ガイドに載せるスクリーンショットを差し替えたいので、最新ビルドの画面キャプチャを3枚ほど撮ってもらえますか？<br/>・トップ画面<br/>・分析条件の設定画面<br/>・結果出力画面</p>"
+          },
+          "mentions": [
+            {
+              "id": 0,
+              "mentioned": {
+                "user": {
+                  "id": "u-miyauchi",
+                  "displayName": "宮内 梓",
+                  "userPrincipalName": "azusa.miyauchi@contoso.example"
+                }
+              },
+              "displayName": "宮内 梓"
+            }
+          ],
+          "attachments": [],
+          "reactions": [],
+          "replies": [
+            {
+              "id": "tech-002-r1",
+              "replyToId": "tech-002",
+              "createdDateTime": "2025-10-17T02:05:00Z",
+              "lastModifiedDateTime": "2025-10-17T02:05:00Z",
+              "messageType": "message",
+              "importance": "normal",
+              "from": {
+                "user": {
+                  "id": "u-miyauchi",
+                  "displayName": "宮内 梓（UIエンジニア）",
+                  "userPrincipalName": "azusa.miyauchi@contoso.example"
+                }
+              },
+              "body": {
+                "contentType": "html",
+                "content": "<p>了解です。<br/>昼までに撮って共有します。スクショ用のデータは <code>demo_tourism_v3</code> を使います。</p>"
+              },
+              "attachments": [],
+              "mentions": [],
+              "reactions": []
+            },
+            {
+              "id": "tech-002-r2",
+              "replyToId": "tech-002",
+              "createdDateTime": "2025-10-17T02:20:00Z",
+              "lastModifiedDateTime": "2025-10-17T02:20:00Z",
+              "messageType": "message",
+              "importance": "normal",
+              "from": {
+                "user": {
+                  "id": "u-okamura",
+                  "displayName": "岡村 沙良（マニュアル作成）",
+                  "userPrincipalName": "sara.okamura@contoso.example"
+                }
+              },
+              "body": {
+                "contentType": "html",
+                "content": "<p>ありがとうございます！助かります🙌</p>"
+              },
+              "attachments": [],
+              "mentions": [],
+              "reactions": []
+            }
+          ]
+        },
+        {
+          "id": "tech-003",
+          "replyToId": null,
+          "createdDateTime": "2025-10-18T09:20:00Z",
+          "lastModifiedDateTime": "2025-10-18T09:20:00Z",
+          "messageType": "message",
+          "importance": "normal",
+          "subject": "週次クローズ",
+          "from": {
+            "user": {
+              "id": "u-aizawa",
+              "displayName": "相沢 沙耶（UXリーダー）",
+              "userPrincipalName": "saya.aizawa@contoso.example"
+            }
+          },
+          "body": {
+            "contentType": "html",
+            "content": "<p>🌟 1週間お疲れさまでした！<br/>今週はUIリニューアル・ヒアリング準備・資料整備と盛りだくさんでしたが、予定通り完了できました。<br/>来週は「説明会リハーサル」「操作ガイド最終版」「FAQ冊子印刷発注」が中心になります。<br/><br/>週報は月曜朝に共有予定です。よい週末を☕</p>"
+          },
+          "attachments": [],
+          "reactions": [
+            {
+              "reactionType": "like",
+              "createdDateTime": "2025-10-18T09:21:05Z",
+              "user": {
+                "user": {
+                  "id": "u-miyauchi",
+                  "displayName": "宮内 梓"
+                }
+              }
+            },
+            {
+              "reactionType": "heart",
+              "createdDateTime": "2025-10-18T09:21:18Z",
+              "user": {
+                "user": {
+                  "id": "u-fujii",
+                  "displayName": "藤井 凌"
+                }
+              }
+            },
+            {
+              "reactionType": "celebrate",
+              "createdDateTime": "2025-10-18T09:21:30Z",
+              "user": {
+                "user": {
+                  "id": "u-okamura",
+                  "displayName": "岡村 沙良"
+                }
+              }
+            }
+          ],
+          "replies": []
+        }
+      ]
+    }
+  ]
+}
+
+```
 ### outlook予定表第一週
+```
+想定される Outlook 予定（抜粋）
+
+UXデザイン進捗会議
+2025-10-14 (火) 10:00–11:30｜Teams オンライン
+出席: 相沢（主催）、宮内、北谷、長尾、岡村、藤井
+
+自治体Aヒアリング・質問最終確認ミーティング
+2025-10-15 (水) 09:30–10:00｜Teams オンライン
+出席: 相沢（主催）、長尾、北谷
+
+資料統合レビュー（マニュアル＋FAQ）
+2025-10-17 (金) 10:30–11:30｜Teams オンライン
+出席: 相沢（主催）、岡村、藤井
+
+UI修正版デプロイ後・動作確認ショートレビュー
+2025-10-17 (金) 12:30–13:00｜Teams オンライン
+出席: 宮内（主催）、相沢、北谷
+
+自治体A 現地ヒアリング
+2025-10-18 (土) 10:00–11:30｜オンサイト（市役所 第2会議室／仮）
+出席: 北谷（主催）、相沢、長尾、自治体A担当 3 名
+
+操作説明会リハーサル（会話に基づく翌週予定）
+2025-10-22 (水) 09:30–10:30｜第2会議室＋Teams
+出席: 相沢（主催）、高島、藤井、森田、宮内
+
+自治体向け操作説明会（本番）（会話に基づく翌週予定）
+2025-10-23 (木) 10:00–11:30（受付 09:30 開始）｜オンサイト（第2会議室）
+出席: 相沢（主催）、高島、藤井、小嶋、森田、来場者 25 名（自治体B/C/事業者）
+```
+```json
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Me/calendarView",
+  "value": [
+    {
+      "id": "evt-ux-1014",
+      "subject": "UXデザイン進捗会議",
+      "bodyPreview": "新UIデザイン（ダッシュボード/来訪者分析）の最終確認。デモ版を使用。",
+      "body": {
+        "contentType": "html",
+        "content": "<p>議題: 新UIデザイン最終確認 / 絞り込みUI / 指標上段固定</p><p>デモURL: https://portal-dev.uxdemo.internal/</p>"
+      },
+      "start": { "dateTime": "2025-10-14T10:00:00", "timeZone": "Asia/Tokyo" },
+      "end":   { "dateTime": "2025-10-14T11:30:00", "timeZone": "Asia/Tokyo" },
+      "location": {
+        "displayName": "Microsoft Teams 会議"
+      },
+      "isOnlineMeeting": true,
+      "onlineMeetingProvider": "teamsForBusiness",
+      "onlineMeeting": {
+        "joinUrl": "https://teams.microsoft.com/l/meetup-join/xxx-ux-1014"
+      },
+      "organizer": {
+        "emailAddress": {
+          "name": "相沢 沙耶",
+          "address": "saya.aizawa@contoso.example"
+        }
+      },
+      "attendees": [
+        { "type": "required", "emailAddress": { "name": "宮内 梓", "address": "azusa.miyauchi@contoso.example" } },
+        { "type": "required", "emailAddress": { "name": "北谷 優花", "address": "yuka.kitatani@contoso.example" } },
+        { "type": "optional", "emailAddress": { "name": "長尾 海斗", "address": "kaito.nagao@contoso.example" } },
+        { "type": "optional", "emailAddress": { "name": "岡村 沙良", "address": "sara.okamura@contoso.example" } },
+        { "type": "optional", "emailAddress": { "name": "藤井 凌", "address": "ryo.fujii@contoso.example" } }
+      ],
+      "categories": ["UX", "会議"],
+      "reminderMinutesBeforeStart": 10,
+      "isReminderOn": true
+    },
+    {
+      "id": "evt-qa-1015",
+      "subject": "自治体Aヒアリング・質問最終確認ミーティング",
+      "bodyPreview": "質問票ver2の最終確定（リアルタイム更新の必要性の選択肢追加）。",
+      "body": {
+        "contentType": "html",
+        "content": "<p>資料: 質問リスト_自治体A_ver2.xlsx</p>"
+      },
+      "start": { "dateTime": "2025-10-15T09:30:00", "timeZone": "Asia/Tokyo" },
+      "end":   { "dateTime": "2025-10-15T10:00:00", "timeZone": "Asia/Tokyo" },
+      "location": { "displayName": "Microsoft Teams 会議" },
+      "isOnlineMeeting": true,
+      "onlineMeetingProvider": "teamsForBusiness",
+      "onlineMeeting": { "joinUrl": "https://teams.microsoft.com/l/meetup-join/xxx-qa-1015" },
+      "organizer": { "emailAddress": { "name": "相沢 沙耶", "address": "saya.aizawa@contoso.example" } },
+      "attendees": [
+        { "type": "required", "emailAddress": { "name": "長尾 海斗", "address": "kaito.nagao@contoso.example" } },
+        { "type": "required", "emailAddress": { "name": "北谷 優花", "address": "yuka.kitatani@contoso.example" } }
+      ],
+      "categories": ["UX", "レビュー"],
+      "reminderMinutesBeforeStart": 5,
+      "isReminderOn": true
+    },
+    {
+      "id": "evt-doc-1017",
+      "subject": "資料統合レビュー（マニュアル＋FAQ）",
+      "bodyPreview": "操作ガイド ver0.8 と FAQ v0.4 を統合し16ページ構成へ。",
+      "body": {
+        "contentType": "html",
+        "content": "<p>資料: 操作ガイド_観光ポータル_v0.8.pdf / FAQ案_v0.4.docx</p>"
+      },
+      "start": { "dateTime": "2025-10-17T10:30:00", "timeZone": "Asia/Tokyo" },
+      "end":   { "dateTime": "2025-10-17T11:30:00", "timeZone": "Asia/Tokyo" },
+      "location": { "displayName": "Microsoft Teams 会議" },
+      "isOnlineMeeting": true,
+      "onlineMeetingProvider": "teamsForBusiness",
+      "onlineMeeting": { "joinUrl": "https://teams.microsoft.com/l/meetup-join/xxx-doc-1017" },
+      "organizer": { "emailAddress": { "name": "相沢 沙耶", "address": "saya.aizawa@contoso.example" } },
+      "attendees": [
+        { "type": "required", "emailAddress": { "name": "岡村 沙良", "address": "sara.okamura@contoso.example" } },
+        { "type": "required", "emailAddress": { "name": "藤井 凌", "address": "ryo.fujii@contoso.example" } }
+      ],
+      "categories": ["資料レビュー"],
+      "reminderMinutesBeforeStart": 10,
+      "isReminderOn": true
+    },
+    {
+      "id": "evt-check-1017",
+      "subject": "UI修正版デプロイ後・動作確認ショートレビュー",
+      "bodyPreview": "折りたたみ/上段固定/余白調整の軽微不具合確認。",
+      "body": {
+        "contentType": "html",
+        "content": "<p>対象: https://ux-portal.staging.internal/</p>"
+      },
+      "start": { "dateTime": "2025-10-17T12:30:00", "timeZone": "Asia/Tokyo" },
+      "end":   { "dateTime": "2025-10-17T13:00:00", "timeZone": "Asia/Tokyo" },
+      "location": { "displayName": "Microsoft Teams 会議" },
+      "isOnlineMeeting": true,
+      "onlineMeetingProvider": "teamsForBusiness",
+      "onlineMeeting": { "joinUrl": "https://teams.microsoft.com/l/meetup-join/xxx-check-1017" },
+      "organizer": { "emailAddress": { "name": "宮内 梓", "address": "azusa.miyauchi@contoso.example" } },
+      "attendees": [
+        { "type": "required", "emailAddress": { "name": "相沢 沙耶", "address": "saya.aizawa@contoso.example" } },
+        { "type": "required", "emailAddress": { "name": "北谷 優花", "address": "yuka.kitatani@contoso.example" } }
+      ],
+      "categories": ["検証"],
+      "reminderMinutesBeforeStart": 10,
+      "isReminderOn": true
+    },
+    {
+      "id": "evt-hearing-1018",
+      "subject": "自治体A 現地ヒアリング",
+      "bodyPreview": "観光課/商工課/データ推進室 への利用者ヒアリング。",
+      "body": {
+        "contentType": "html",
+        "content": "<p>アジェンダ: 操作性/視認性/データ更新頻度</p><p>会場: 市役所 第2会議室（仮）</p>"
+      },
+      "start": { "dateTime": "2025-10-18T10:00:00", "timeZone": "Asia/Tokyo" },
+      "end":   { "dateTime": "2025-10-18T11:30:00", "timeZone": "Asia/Tokyo" },
+      "location": {
+        "displayName": "市役所 第2会議室（仮）",
+        "address": {
+          "street": "",
+          "city": "",
+          "state": "",
+          "countryOrRegion": "Japan",
+          "postalCode": ""
+        }
+      },
+      "isOnlineMeeting": false,
+      "organizer": { "emailAddress": { "name": "北谷 優花", "address": "yuka.kitatani@contoso.example" } },
+      "attendees": [
+        { "type": "required", "emailAddress": { "name": "相沢 沙耶", "address": "saya.aizawa@contoso.example" } },
+        { "type": "required", "emailAddress": { "name": "長尾 海斗", "address": "kaito.nagao@contoso.example" } },
+        { "type": "required", "emailAddress": { "name": "自治体A 担当者", "address": "contact-a@gov.example" } }
+      ],
+      "categories": ["ヒアリング"],
+      "reminderMinutesBeforeStart": 30,
+      "isReminderOn": true
+    },
+    {
+      "id": "evt-rehearsal-1022",
+      "subject": "操作説明会リハーサル",
+      "bodyPreview": "デモ/ナレーション2名体制の通し確認。受付動線/機材チェック。",
+      "body": {
+        "contentType": "html",
+        "content": "<p>資料: 説明会スライド_構成案_v1.pptx</p>"
+      },
+      "start": { "dateTime": "2025-10-22T09:30:00", "timeZone": "Asia/Tokyo" },
+      "end":   { "dateTime": "2025-10-22T10:30:00", "timeZone": "Asia/Tokyo" },
+      "location": { "displayName": "第2会議室 + Microsoft Teams" },
+      "isOnlineMeeting": true,
+      "onlineMeetingProvider": "teamsForBusiness",
+      "onlineMeeting": { "joinUrl": "https://teams.microsoft.com/l/meetup-join/xxx-rehearsal-1022" },
+      "organizer": { "emailAddress": { "name": "相沢 沙耶", "address": "saya.aizawa@contoso.example" } },
+      "attendees": [
+        { "type": "required", "emailAddress": { "name": "高島 遼", "address": "ryo.takashima@contoso.example" } },
+        { "type": "required", "emailAddress": { "name": "藤井 凌", "address": "ryo.fujii@contoso.example" } },
+        { "type": "required", "emailAddress": { "name": "森田 佳奈", "address": "kana.morita@contoso.example" } },
+        { "type": "optional", "emailAddress": { "name": "宮内 梓", "address": "azusa.miyauchi@contoso.example" } }
+      ],
+      "categories": ["説明会"],
+      "reminderMinutesBeforeStart": 15,
+      "isReminderOn": true
+    },
+    {
+      "id": "evt-briefing-1023",
+      "subject": "自治体向け操作説明会（本番）",
+      "bodyPreview": "受付 09:30 / 本編 10:00–11:30。ダミーデータでデモ実施、Q&A あり。",
+      "body": {
+        "contentType": "html",
+        "content": "<p>進行: 概要→デモ→Q&A</p><p>問い合わせ: support@contoso.example</p>"
+      },
+      "start": { "dateTime": "2025-10-23T10:00:00", "timeZone": "Asia/Tokyo" },
+      "end":   { "dateTime": "2025-10-23T11:30:00", "timeZone": "Asia/Tokyo" },
+      "location": { "displayName": "第2会議室（オンサイト）" },
+      "isOnlineMeeting": false,
+      "organizer": { "emailAddress": { "name": "高島 遼", "address": "ryo.takashima@contoso.example" } },
+      "attendees": [
+        { "type": "required", "emailAddress": { "name": "相沢 沙耶", "address": "saya.aizawa@contoso.example" } },
+        { "type": "required", "emailAddress": { "name": "藤井 凌", "address": "ryo.fujii@contoso.example" } },
+        { "type": "required", "emailAddress": { "name": "森田 佳奈", "address": "kana.morita@contoso.example" } },
+        { "type": "optional", "emailAddress": { "name": "小嶋 翔", "address": "sho.kojima@contoso.example" } }
+      ],
+      "categories": ["説明会", "対外イベント"],
+      "reminderMinutesBeforeStart": 30,
+      "isReminderOn": true
+    }
+  ]
+}
+
+```
 ## 📘 第2週（10月20日週）
-### 🗓 会議③：AI分析チーム合同データ連携会議
-### 🗓 会議④：第4週チーム定例
+### 📝 議事録③：UX改善・利用分析共有会
+```
+📝 議事録③：UX改善・利用分析共有会
+
+開催日時： 2025年10月21日（月） 10:00〜11:30
+形式： Teamsオンライン
+出席者： 相沢、菅原、宮内、岡村、森田
+議題：
+
+利用ログ分析結果の共有
+
+利用頻度が低い機能の改善案
+
+問い合わせ対応傾向の共有
+
+議事内容
+
+① 利用ログ分析結果
+
+菅原：10/1〜10/15分のアクセスログを分析。
+
+平均滞在時間：6.2分 → 5.1分（微減）
+
+「レポート出力」機能の利用率：14%（想定より低い）
+
+「比較分析」画面は平均滞在時間が長く、UI改善の効果あり。
+
+相沢：「レポート出力」ボタンの配置と文言を改善案として提示（“ダウンロード”表記へ変更）。
+
+② 改善案
+
+宮内：ヘッダー部に「マイレポート」メニューを追加することで分かりやすくする案。
+
+岡村：マニュアルにも統一表記が必要。
+
+決定事項：次回デプロイ（10/28）でUI変更を反映。
+
+③ 問い合わせ傾向
+
+森田：最近の問い合わせ上位は「ログインエラー」「パスワード再発行」関連。
+
+相沢：FAQとログイン画面へのリンクを改善する方向で対応。
+```
+### 📝 議事録④：実証現場連携ミーティング
+```
+📝 議事録④：実証現場連携ミーティング
+
+開催日時： 2025年10月24日（木） 13:00〜15:00
+形式： オンサイト＋オンライン併用
+出席者： 相沢、前田、西原、橘、高島、小嶋
+議題：
+
+現地検証イベント（11/2〜11/3）の進行計画
+
+PR動画・展示ブース準備
+
+実証時の利用記録・アンケート設計
+
+議事内容
+
+① 現地イベント進行計画
+
+前田：来訪者200名を想定。実証アプリの試用コーナーを3ブース設置。
+
+橘：機材搬入は前日11/1午後に実施予定。
+
+高島：広報資料は自治体提供素材＋NEC側制作物を統一。
+
+② PR動画・展示ブース
+
+西原：完成版PR動画（2分）をTeamsに共有。現地上映に合わせ音量調整済。
+
+相沢：QRコード経由でWeb版デモに誘導する導線を設置。
+
+決定事項：展示配置を10/29現地下見時に最終確認。
+
+③ 利用記録・アンケート
+
+前田：タブレットを用いた簡易アンケートを試験導入。
+
+相沢：5段階評価＋自由記述で“使いやすさ”“見やすさ”“理解度”を測定。
+
+小嶋：回収率を上げるため出口誘導時に案内する。
+```
+
+### 📝 議事録⑤：チーム全体レビュー会
+```
+📝 議事録⑤：チーム全体レビュー会
+
+開催日時： 2025年10月25日（金） 16:00〜18:00
+形式： Teams＋会議室B
+出席者： 全15名
+議題：
+
+第4週活動報告
+
+次週の重点タスク整理
+
+新規課題の共有（問い合わせ自動化／UIデザイン評価）
+
+議事内容
+
+① 活動報告サマリ
+
+相沢：全体スケジュール進捗率 82%。
+
+各担当の主な成果：
+
+UI改修完了（宮内）
+
+操作説明会無事終了（高島・藤井）
+
+マニュアルv1.0リリース（岡村）
+
+問い合わせ対応件数 前週比−30%（森田）
+
+利用分析レポート配信開始（菅原）
+
+② 次週重点タスク
+
+タスク	担当	期限
+UI改修反映（マイレポート機能）	宮内・河合	10/28
+現地実証リハーサル準備	前田・橘	10/31
+PR動画Web掲載	西原・高島	10/30
+操作ガイド英語版作成	岡村・藤井	11/2
+問い合わせ分析自動化案検討	森田・菅原	11/4
+
+③ 新規課題
+
+森田：問い合わせ対応工数が依然として高い。Chatbot化を検討。
+
+相沢：AI分析チームと連携し、FAQ自動応答のPoCを依頼予定。
+
+河合：デザイン評価を定量化する指標（SUSスコアなど）導入提案。
+
+相沢：11月からSUS評価試験を段階導入する方針を承認。
+```
+
 ### teamsでの会話内容
+```
+1) タスクの流れ（時系列）
+
+10/21（依頼発出）
+
+UI文言変更（「レポート出力」→「ダウンロード」）、マイレポート導線新設を正式依頼。
+
+マニュアル改訂・計測キー新設も同時並行でキックオフ。
+
+10/24（現地実証の最終固めにシフト）
+
+導線図・PR動画・アンケート・誘導トークなど、現場起点の実務タスクへ作業領域が拡張。
+
+オンライン改善（UI/計測）からオフライン運用準備へも重心が移動。
+
+10/25（成果確定・週次レビュー）
+
+マニュアルv1.0リリースでドキュメント面が完了域へ。
+
+週次ではKPI（問い合わせ-30%）を確認し、次週はデプロイ＆実証準備に集中する方針に。
+
+10/26（RC最終確認）
+
+UI改修がRC段階に到達。既知事象を整理し、10/28 09:00本番反映を確定。
+
+10/28（本番反映→初日KPI計測）
+
+リリース完了後、初日速報でCTR +14.8%、ヘルプ遷移 -7.2% を確認。以降、継続監視に移行。
+```
+```
+📰 一般（General）— 新たな作業依頼・アナウンス
+
+2025/10/21 09:15｜@相沢 沙耶（UXリーダー）
+件名：【依頼】10/28反映：レポート出力ボタン表記変更＆マイレポート導線
+@宮内 梓 さん、@河合 悠 さん
+議事録③のとおり、10/28デプロイで以下をお願いします。
+
+「レポート出力」→ 「ダウンロード」 に表記統一（全画面）
+
+ヘッダーに 「マイレポート」 メニュー追加（一覧／新規作成への導線）
+関連するマニュアル文言も合わせて変更します。@岡村 沙良 さん、文言差分のドラフトを本日中に共有ください。
+@菅原 渉 さん、変更後のクリック計測（旧ボタン→新ボタン）比較用に、イベント計測キーを新設お願いします。
+
+2025/10/21 09:28｜@宮内 梓（UIエンジニア）（返信）
+了解です。画面影響範囲を洗い出してFigmaに反映→昼までにキャプチャ共有します。
+@河合 悠 さん、ヘッダー導線の権限別表示（閲覧のみ／編集可）ルール、既存仕様踏襲でよいですよね？
+
+2025/10/21 09:31｜@河合 悠（UI/FE）（返信）
+はい、既存踏襲でOKです。編集不可ユーザーは「新規作成」を非活性＋ツールチップ表示にします。
+
+2025/10/21 09:35｜@岡村 沙良（マニュアル）（返信）
+文言差分案を午後イチで投下します。英語版は@藤井 凌 さんと分担して10/30ドラフト化で進めます。
+
+2025/10/21 09:37｜@菅原 渉（利用分析）（返信）
+イベント計測キーは ui_download_click_v2 / nav_myreport_open を新設。旧キーは当面残して両取り計測にします。ダッシュボードは10/29更新予定。
+
+2025/10/24 10:05｜@相沢 沙耶
+件名：【依頼】現地イベント（11/2–11/3）周り最終固め
+@前田 恵 さん、@橘 颯太 さん、@高島 遼 さん、@西原 亮 さん、@小嶋 真央 さん
+
+来場者想定200名。ブース3箇所の導線図アップお願いします（10/29現地下見のベース）
+
+PR動画2分版：Web掲出＆会場ループ再生の両対応（音量・字幕確認）
+
+アンケート：タブレット版フォーム最終版とQR掲示物（A3/卓上）のデータ
+
+退出導線でのアンケート誘導トークスクリプト作成
+
+2025/10/24 10:18｜@前田 恵（実証コーディネータ）（返信）
+導線図ドラフト（PDF）をアップしました。@橘 颯太 さん、機材動線（前日搬入11/1午後）重ね合わせお願いします。
+
+2025/10/24 10:24｜@西原 亮（広報）（返信）
+PR動画は最終版を「ファイル」タブに置きました。Web掲載向けのサムネ2種（明暗）も同梱。@高島 遼 さん、掲載文言チェックお願いします。
+
+2025/10/24 10:30｜@小嶋 真央（会場運営）（返信）
+アンケート誘導の短い口上を3パターン作りました（30秒/15秒/ワンフレーズ）。@相沢 さん、ご確認を。
+
+2025/10/25 18:25｜@岡村 沙良
+件名：【完了報告】操作マニュアル v1.0 リリース
+議事録⑤のタスク完了です。最新版PDF/オンラインヘルプ公開しました。
+
+変更点：ボタン表記統一、マイレポート導線、FAQリンク強化
+
+次回：英語版ドラフト 10/30、確定 11/2
+@相沢 さん、ご確認ください。
+
+2025/10/25 18:33｜@相沢 沙耶（返信）
+確認しました。ありがとうございます。英語版もこのトーンでお願いします。
+
+📅 定例・進捗報告 — 週次サマリ・課題・予定
+
+2025/10/25 09:00｜@相沢 沙耶
+件名：【週次】UX・顧客連携チーム 進捗サマリ（10/20週）
+
+進捗率：82%（UI改修／マニュアルv1.0／説明会完了）
+
+主要KPI：問い合わせ件数 前週比 -30%（ログイン関連FAQリンク強化が奏功）
+
+来週重点：10/28 UI改修反映、11/2–3 実証準備、PR動画Web公開、英語版ガイド草案
+
+ブロッカー／リスク
+
+ログインエラー一部再現（SSO周り）：@森田 直樹 さん、原因切り分け中（ID連携の境界）
+
+SUS評価試験のサンプリング設計：@河合 悠 さん、@藤井 凌 さんと初回設計（11月段階導入）
+
+現地回線帯域の不確実性：@橘 颯太 さん、現地Wi-Fi実測（10/29下見時）
+
+2025/10/25 09:12｜@森田 直樹（サポート）
+【問い合わせ傾向】
+
+上位：①ログインエラー ②パスワード再発行 ③アカウント権限
+
+即効対策：ログイン画面にFAQを目立つ位置でリンク、再発行フローの説明を簡素化
+
+次の施策：チャットボットPoCで一次回答（想定ヒットFAQ 20件）
+
+2025/10/25 09:20｜@菅原 渉
+【利用分析】
+
+「比較分析」画面の滞在長は改善維持。
+
+「レポート出力→ダウンロード」改名のABは、10/28以降に効果測定（CTR／CVR／離脱）。
+
+2025/10/25 17:45｜@高島 遼（広報・説明会）
+【説明会】
+
+本日の操作説明会は予定どおり終了。質問は「出力形式」「共有方法」が中心。録画とQAログを「ファイル」タブに格納済み。
+
+次回の案内メールは10/30送付予定。@西原 亮 さん、PR文面の最終校正お願いします。
+
+💬 技術・課題共有 — 仕様調整・PoC・運用実務
+
+2025/10/21 14:10｜@森田 直樹
+件名：【相談】ログインエラーの再現条件について（FAQ強化前提）
+@宮内 梓 さん、ログイン画面のFAQリンク位置は右列上段で問題ないですか？
+また、SSOトークン期限切れ→再認証時の文言を短文化したいです（現状3行→1行）。
+@相沢 沙耶 さん、文言方針OKなら私の方で候補2案作ります。
+
+2025/10/21 14:22｜@宮内 梓（返信）
+UI的には右列上段でOKです。アクセシビリティの観点でキーボードフォーカス順も調整しておきます。
+
+2025/10/21 14:30｜@相沢 沙耶（返信）
+短文化の方向性賛成。案2つ、今日中にもらえると助かります。
+
+2025/10/22 11:05｜@菅原 渉
+件名：【計測設計】「ダウンロード」表記変更の効果検証
+
+10/28以降、ui_download_click_v2 の日次CTRを追跡
+
+目標：CTR +20%／「ヘルプ遷移率 -10%」（迷いが減ればヘルプ参照が減る想定）
+
+30日間トラッキング。SUSとの相関は別途分析します。
+@相沢 さん、KPI妥当性の確認お願いします。
+
+2025/10/22 11:18｜@相沢 沙耶（返信）
+妥当です。30日観測でお願いします。中間レビューを11/12の週に設定しましょう。
+
+2025/10/23 16:40｜@河合 悠
+件名：【SUS導入】設計ドラフト共有
+
+対象：業務担当ユーザー200名からロールごとにサンプリング
+
+実施：11月前半オンボーディング後に2回（初回／2週後）
+
+回答導線：アプリ内バナー＋メール
+@藤井 凌 さん、設問表現の英語版レビューをお願いできますか？
+
+2025/10/23 16:52｜@藤井 凌（研修）（返信）
+英語版レビュー対応します。米英ミックス表現は避け、米式に統一します。
+
+2025/10/24 13:15｜@西原 亮
+件名：【PR動画】会場再生＆Web掲載要件確認
+
+会場：音量–12dB基準、ループON、黒→黒トランジション
+
+Web：サムネ明暗2種、メタ情報（title/description）下書き済
+@高島 遼 さん、掲載ページの導入文＆CTA文言、15:00までにご確認を。
+
+2025/10/24 13:26｜@高島 遼（返信）
+OKです。CTAは「デモで試す（無料）」に統一。PR内のQRからWeb版デモに遷移する動線を強調しましょう。
+
+2025/10/24 18:40｜@橘 颯太（現地支援）
+件名：【現地テスト】ネットワークと電源系の確認事項
+
+10/29下見で帯域計測（上り/下り・同時接続時）
+
+電源タップ：各ブース6口×3、予備2
+
+予備端末：タブレット4台、モバイルルータ2台
+@前田 恵 さん、当日の配置図に電源系メモ追記お願いします。
+
+2025/10/24 18:55｜@前田 恵（返信）
+追記しました。搬入チェックリストも併せて更新済みです。
+
+2025/10/25 11:10｜@森田 直樹
+件名：【PoC提案】FAQ自動応答チャットボット
+
+対象：上位FAQ20件（ログイン／再発行／権限／出力形式）
+
+導線：ログイン画面・ヘルプ・問い合わせフォーム
+
+目標：一次回答率 60%、応答時間 <5秒
+@菅原 渉 さん、FAQのヒット率トラッキングをお願いします。@相沢 沙耶 さん、PoC期間は11/4–11/22を想定。
+
+2025/10/25 11:24｜@菅原 渉（返信）
+ヒット率は faq_bot_match としてイベント定義します。誤回答フィードバック用の faq_bot_feedback も併設します。
+
+2025/10/25 11:30｜@相沢 沙耶（返信）
+承認です。ローンチ前に想定質問と回答の整合レビューを1回入れましょう（11/1午前で設定）。
+
+2025/10/26 09:05｜@宮内 梓
+件名：【最終確認】10/28 UI改修リリース候補（RC）
+
+表記変更・マイレポ導線・FAQリンク位置：RC反映済み
+
+権限別表示／フォーカス順：OK
+
+既知事象：IEモード時のアイコン描画（影響軽微）
+@相沢 さん、@河合 さん、RCの最終チェックをお願いします。
+
+2025/10/26 09:22｜@河合 悠（返信）
+チェック完了。問題なし。IEモードは回避策（PNGフォールバック）を次リリースで入れます。
+
+2025/10/26 09:30｜@相沢 沙耶（返信）
+承知。10/28 09:00の反映で進めます。告知文（変更点＋影響範囲）を本日午後「一般」チャネルに掲出します。
+
+```
+```json
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('team-nec-kanko-ux')/channels/messages",
+  "team": {
+    "id": "team-nec-kanko-ux",
+    "displayName": "NEC観光DX基盤構築プロジェクト（UX・顧客連携チーム）"
+  },
+  "fetchedAtUtc": "2025-10-27T18:00:00Z",
+  "channels": [
+    {
+      "id": "19:general@thread.tacv2",
+      "displayName": "📰 一般（General）",
+      "messages": [
+        {
+          "id": "gen-20251021-001",
+          "replyToId": null,
+          "createdDateTime": "2025-10-21T00:15:00Z",
+          "lastModifiedDateTime": "2025-10-21T00:15:00Z",
+          "messageType": "message",
+          "importance": "normal",
+          "subject": "【依頼】10/28反映：レポート出力ボタン表記変更＆マイレポート導線",
+          "from": {
+            "user": {
+              "id": "u-aizawa",
+              "displayName": "相沢 沙耶（UXリーダー）",
+              "userPrincipalName": "saya.aizawa@contoso.com"
+            }
+          },
+          "body": {
+            "contentType": "html",
+            "content": "<div>議事録③のとおり、10/28デプロイで以下をお願いします。<br/><br/>・「レポート出力」→ <b>「ダウンロード」</b> に表記統一（全画面）<br/>・ヘッダーに <b>「マイレポート」</b> メニュー追加（一覧／新規作成への導線）<br/><br/>関連するマニュアル文言も合わせて変更します。<at id=\"0\">@岡村 沙良</at> さん、文言差分のドラフトを本日中に共有ください。<br/><at id=\"1\">@菅原 渉</at> さん、変更後のクリック計測（旧ボタン→新ボタン）比較用に、イベント計測キーを新設お願いします。</div>"
+          },
+          "mentions": [
+            { "id": 0, "mentionText": "岡村 沙良", "mentioned": { "user": { "id": "u-okamura", "displayName": "岡村 沙良", "userPrincipalName": "sara.okamura@contoso.com" } } },
+            { "id": 1, "mentionText": "菅原 渉", "mentioned": { "user": { "id": "u-sugawara", "displayName": "菅原 渉", "userPrincipalName": "wataru.sugawara@contoso.com" } } }
+          ],
+          "replies": [
+            {
+              "id": "gen-20251021-001-r1",
+              "replyToId": "gen-20251021-001",
+              "createdDateTime": "2025-10-21T00:28:00Z",
+              "lastModifiedDateTime": "2025-10-21T00:28:00Z",
+              "messageType": "message",
+              "from": { "user": { "id": "u-miyauchi", "displayName": "宮内 梓（UIエンジニア）", "userPrincipalName": "azusa.miyauchi@contoso.com" } },
+              "body": {
+                "contentType": "html",
+                "content": "<div>了解です。画面影響範囲を洗い出してFigmaに反映→昼までにキャプチャ共有します。<br/><at id=\"0\">@河合 悠</at> さん、ヘッダー導線の権限別表示（閲覧のみ／編集可）ルール、既存仕様踏襲でよいですよね？</div>"
+              },
+              "mentions": [
+                { "id": 0, "mentionText": "河合 悠", "mentioned": { "user": { "id": "u-kawai", "displayName": "河合 悠（UI/FE）", "userPrincipalName": "yu.kawai@contoso.com" } } }
+              ]
+            },
+            {
+              "id": "gen-20251021-001-r2",
+              "replyToId": "gen-20251021-001",
+              "createdDateTime": "2025-10-21T00:31:00Z",
+              "lastModifiedDateTime": "2025-10-21T00:31:00Z",
+              "messageType": "message",
+              "from": { "user": { "id": "u-kawai", "displayName": "河合 悠（UI/FE）", "userPrincipalName": "yu.kawai@contoso.com" } },
+              "body": { "contentType": "html", "content": "<div>はい、既存踏襲でOKです。編集不可ユーザーは「新規作成」を非活性＋ツールチップ表示にします。</div>" }
+            },
+            {
+              "id": "gen-20251021-001-r3",
+              "replyToId": "gen-20251021-001",
+              "createdDateTime": "2025-10-21T00:35:00Z",
+              "lastModifiedDateTime": "2025-10-21T00:35:00Z",
+              "messageType": "message",
+              "from": { "user": { "id": "u-okamura", "displayName": "岡村 沙良（マニュアル）", "userPrincipalName": "sara.okamura@contoso.com" } },
+              "body": { "contentType": "html", "content": "<div>文言差分案を午後イチで投下します。英語版は<at id=\"0\">@藤井 凌</at> さんと分担して10/30ドラフト化で進めます。</div>" },
+              "mentions": [
+                { "id": 0, "mentionText": "藤井 凌", "mentioned": { "user": { "id": "u-fujii", "displayName": "藤井 凌（研修）", "userPrincipalName": "ryo.fujii@contoso.com" } } }
+              ]
+            },
+            {
+              "id": "gen-20251021-001-r4",
+              "replyToId": "gen-20251021-001",
+              "createdDateTime": "2025-10-21T00:37:00Z",
+              "lastModifiedDateTime": "2025-10-21T00:37:00Z",
+              "messageType": "message",
+              "from": { "user": { "id": "u-sugawara", "displayName": "菅原 渉（利用分析）", "userPrincipalName": "wataru.sugawara@contoso.com" } },
+              "body": { "contentType": "html", "content": "<div>イベント計測キーは <code>ui_download_click_v2</code> / <code>nav_myreport_open</code> を新設。旧キーは当面残して両取り計測にします。ダッシュボードは10/29更新予定。</div>" }
+            }
+          ]
+        },
+        {
+          "id": "gen-20251024-001",
+          "replyToId": null,
+          "createdDateTime": "2025-10-24T01:05:00Z",
+          "lastModifiedDateTime": "2025-10-24T01:05:00Z",
+          "messageType": "message",
+          "importance": "normal",
+          "subject": "【依頼】現地イベント（11/2–11/3）周り最終固め",
+          "from": { "user": { "id": "u-aizawa", "displayName": "相沢 沙耶（UXリーダー）", "userPrincipalName": "saya.aizawa@contoso.com" } },
+          "body": {
+            "contentType": "html",
+            "content": "<div><at id=\"0\">@前田 恵</at> さん、<at id=\"1\">@橘 颯太</at> さん、<at id=\"2\">@高島 遼</at> さん、<at id=\"3\">@西原 亮</at> さん、<at id=\"4\">@小嶋 真央</at> さん<br/><br/>・来場者想定200名。ブース3箇所の導線図アップお願いします（10/29現地下見のベース）<br/>・PR動画2分版：Web掲出＆会場ループ再生の両対応（音量・字幕確認）<br/>・アンケート：タブレット版フォーム最終版とQR掲示物（A3/卓上）のデータ<br/>・退出導線でのアンケート誘導トークスクリプト作成</div>"
+          },
+          "mentions": [
+            { "id": 0, "mentionText": "前田 恵", "mentioned": { "user": { "id": "u-maeda", "displayName": "前田 恵（実証コーディネータ）", "userPrincipalName": "megumi.maeda@contoso.com" } } },
+            { "id": 1, "mentionText": "橘 颯太", "mentioned": { "user": { "id": "u-tachibana", "displayName": "橘 颯太（現地支援）", "userPrincipalName": "sota.tachibana@contoso.com" } } },
+            { "id": 2, "mentionText": "高島 遼", "mentioned": { "user": { "id": "u-takashima", "displayName": "高島 遼（広報・説明会）", "userPrincipalName": "ryo.takashima@contoso.com" } } },
+            { "id": 3, "mentionText": "西原 亮", "mentioned": { "user": { "id": "u-nishihara", "displayName": "西原 亮（広報）", "userPrincipalName": "ryo.nishihara@contoso.com" } } },
+            { "id": 4, "mentionText": "小嶋 真央", "mentioned": { "user": { "id": "u-kojima", "displayName": "小嶋 真央（会場運営）", "userPrincipalName": "mao.kojima@contoso.com" } } }
+          ],
+          "replies": [
+            {
+              "id": "gen-20251024-001-r1",
+              "replyToId": "gen-20251024-001",
+              "createdDateTime": "2025-10-24T01:18:00Z",
+              "lastModifiedDateTime": "2025-10-24T01:18:00Z",
+              "messageType": "message",
+              "from": { "user": { "id": "u-maeda", "displayName": "前田 恵（実証コーディネータ）", "userPrincipalName": "megumi.maeda@contoso.com" } },
+              "body": { "contentType": "html", "content": "<div>導線図ドラフト（PDF）をアップしました。<at id=\"0\">@橘 颯太</at> さん、機材動線（前日搬入11/1午後）重ね合わせお願いします。</div>" },
+              "mentions": [
+                { "id": 0, "mentionText": "橘 颯太", "mentioned": { "user": { "id": "u-tachibana", "displayName": "橘 颯太（現地支援）", "userPrincipalName": "sota.tachibana@contoso.com" } } }
+              ]
+            },
+            {
+              "id": "gen-20251024-001-r2",
+              "replyToId": "gen-20251024-001",
+              "createdDateTime": "2025-10-24T01:24:00Z",
+              "lastModifiedDateTime": "2025-10-24T01:24:00Z",
+              "messageType": "message",
+              "from": { "user": { "id": "u-nishihara", "displayName": "西原 亮（広報）", "userPrincipalName": "ryo.nishihara@contoso.com" } },
+              "body": { "contentType": "html", "content": "<div>PR動画は最終版を「ファイル」タブに置きました。Web掲載向けのサムネ2種（明暗）も同梱。<at id=\"0\">@高島 遼</at> さん、掲載文言チェックお願いします。</div>" },
+              "mentions": [
+                { "id": 0, "mentionText": "高島 遼", "mentioned": { "user": { "id": "u-takashima", "displayName": "高島 遼（広報・説明会）", "userPrincipalName": "ryo.takashima@contoso.com" } } }
+              ]
+            },
+            {
+              "id": "gen-20251024-001-r3",
+              "replyToId": "gen-20251024-001",
+              "createdDateTime": "2025-10-24T01:30:00Z",
+              "lastModifiedDateTime": "2025-10-24T01:30:00Z",
+              "messageType": "message",
+              "from": { "user": { "id": "u-kojima", "displayName": "小嶋 真央（会場運営）", "userPrincipalName": "mao.kojima@contoso.com" } },
+              "body": { "contentType": "html", "content": "<div>アンケート誘導の短い口上を3パターン作りました（30秒/15秒/ワンフレーズ）。<at id=\"0\">@相沢 沙耶</at> さん、ご確認を。</div>" },
+              "mentions": [
+                { "id": 0, "mentionText": "相沢 沙耶", "mentioned": { "user": { "id": "u-aizawa", "displayName": "相沢 沙耶（UXリーダー）", "userPrincipalName": "saya.aizawa@contoso.com" } } }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "gen-20251025-001",
+          "replyToId": null,
+          "createdDateTime": "2025-10-25T09:25:00Z",
+          "lastModifiedDateTime": "2025-10-25T09:25:00Z",
+          "messageType": "message",
+          "importance": "normal",
+          "subject": "【完了報告】操作マニュアル v1.0 リリース",
+          "from": { "user": { "id": "u-okamura", "displayName": "岡村 沙良（マニュアル）", "userPrincipalName": "sara.okamura@contoso.com" } },
+          "body": {
+            "contentType": "html",
+            "content": "<div>議事録⑤のタスク完了です。最新版PDF/オンラインヘルプ公開しました。<br/><br/>変更点：ボタン表記統一、マイレポート導線、FAQリンク強化<br/>次回：英語版ドラフト 10/30、確定 11/2<br/><at id=\"0\">@相沢 沙耶</at> さん、ご確認ください。</div>"
+          },
+          "mentions": [
+            { "id": 0, "mentionText": "相沢 沙耶", "mentioned": { "user": { "id": "u-aizawa", "displayName": "相沢 沙耶（UXリーダー）", "userPrincipalName": "saya.aizawa@contoso.com" } } }
+          ],
+          "replies": [
+            {
+              "id": "gen-20251025-001-r1",
+              "replyToId": "gen-20251025-001",
+              "createdDateTime": "2025-10-25T09:33:00Z",
+              "lastModifiedDateTime": "2025-10-25T09:33:00Z",
+              "messageType": "message",
+              "from": { "user": { "id": "u-aizawa", "displayName": "相沢 沙耶（UXリーダー）", "userPrincipalName": "saya.aizawa@contoso.com" } },
+              "body": { "contentType": "html", "content": "<div>確認しました。ありがとうございます。英語版もこのトーンでお願いします。</div>" }
+            }
+          ]
+        },
+        {
+          "id": "gen-20251028-001",
+          "replyToId": null,
+          "createdDateTime": "2025-10-28T01:20:00Z",
+          "lastModifiedDateTime": "2025-10-28T01:20:00Z",
+          "messageType": "message",
+          "importance": "normal",
+          "subject": "【完了報告】UI改修デプロイ反映済（10/28 09:05）",
+          "from": { "user": { "id": "u-miyauchi", "displayName": "宮内 梓（UIエンジニア）", "userPrincipalName": "azusa.miyauchi@contoso.com" } },
+          "body": {
+            "contentType": "html",
+            "content": "<div>「ダウンロード」表記／「マイレポート」導線／FAQリンクの位置変更を本番反映しました。<br/>監視中：クリック計測・離脱率・問い合わせ件数（初日スパイク対応）<br/><at id=\"0\">@菅原 渉</at> さん、初日のKPI速報を夕方共有願います。</div>"
+          },
+          "mentions": [
+            { "id": 0, "mentionText": "菅原 渉", "mentioned": { "user": { "id": "u-sugawara", "displayName": "菅原 渉（利用分析）", "userPrincipalName": "wataru.sugawara@contoso.com" } } }
+          ],
+          "replies": [
+            {
+              "id": "gen-20251028-001-r1",
+              "replyToId": "gen-20251028-001",
+              "createdDateTime": "2025-10-28T09:10:00Z",
+              "lastModifiedDateTime": "2025-10-28T09:10:00Z",
+              "messageType": "message",
+              "from": { "user": { "id": "u-sugawara", "displayName": "菅原 渉（利用分析）", "userPrincipalName": "wataru.sugawara@contoso.com" } },
+              "body": { "contentType": "html", "content": "<div>初日速報：<br/>・<code>ui_download_click_v2</code> CTR：前週平均比 <b>+14.8%</b><br/>・ヘルプ遷移率：<b>-7.2%</b><br/>・問い合わせ件数（ログイン関連）：平常範囲内<br/>引き続きトレンドを追います。</div>" }
+            },
+            {
+              "id": "gen-20251028-001-r2",
+              "replyToId": "gen-20251028-001",
+              "createdDateTime": "2025-10-28T09:18:00Z",
+              "lastModifiedDateTime": "2025-10-28T09:18:00Z",
+              "messageType": "message",
+              "from": { "user": { "id": "u-aizawa", "displayName": "相沢 沙耶（UXリーダー）", "userPrincipalName": "saya.aizawa@contoso.com" } },
+              "body": { "contentType": "html", "content": "<div>グッドスタート。明日も朝イチで追跡お願いします。</div>" }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "19:schedule@thread.tacv2",
+      "displayName": "📅 定例・進捗報告",
+      "messages": [
+        {
+          "id": "sch-20251025-001",
+          "replyToId": null,
+          "createdDateTime": "2025-10-25T00:00:00Z",
+          "lastModifiedDateTime": "2025-10-25T00:00:00Z",
+          "messageType": "message",
+          "importance": "normal",
+          "subject": "【週次】UX・顧客連携チーム 進捗サマリ（10/20週）",
+          "from": { "user": { "id": "u-aizawa", "displayName": "相沢 沙耶（UXリーダー）", "userPrincipalName": "saya.aizawa@contoso.com" } },
+          "body": {
+            "contentType": "html",
+            "content": "<div>進捗率：<b>82%</b>（UI改修／マニュアルv1.0／説明会完了）<br/>主要KPI：問い合わせ件数 前週比 <b>-30%</b>（ログイン関連FAQリンク強化が奏功）<br/>来週重点：10/28 UI改修反映、11/2–3 実証準備、PR動画Web公開、英語版ガイド草案<br/><br/>ブロッカー／リスク<br/>1) ログインエラー一部再現（SSO周り）：<at id=\"0\">@森田 直樹</at> さん、原因切り分け中（ID連携の境界）<br/>2) SUS評価試験のサンプリング設計：<at id=\"1\">@河合 悠</at> さん、<at id=\"2\">@藤井 凌</at> さんと初回設計（11月段階導入）<br/>3) 現地回線帯域の不確実性：<at id=\"3\">@橘 颯太</at> さん、現地Wi-Fi実測（10/29下見時）</div>"
+          },
+          "mentions": [
+            { "id": 0, "mentionText": "森田 直樹", "mentioned": { "user": { "id": "u-morita", "displayName": "森田 直樹（サポート）", "userPrincipalName": "naoki.morita@contoso.com" } } },
+            { "id": 1, "mentionText": "河合 悠", "mentioned": { "user": { "id": "u-kawai", "displayName": "河合 悠（UI/FE）", "userPrincipalName": "yu.kawai@contoso.com" } } },
+            { "id": 2, "mentionText": "藤井 凌", "mentioned": { "user": { "id": "u-fujii", "displayName": "藤井 凌（研修）", "userPrincipalName": "ryo.fujii@contoso.com" } } },
+            { "id": 3, "mentionText": "橘 颯太", "mentioned": { "user": { "id": "u-tachibana", "displayName": "橘 颯太（現地支援）", "userPrincipalName": "sota.tachibana@contoso.com" } } }
+          ],
+          "replies": [
+            {
+              "id": "sch-20251025-001-r1",
+              "replyToId": "sch-20251025-001",
+              "createdDateTime": "2025-10-25T00:12:00Z",
+              "lastModifiedDateTime": "2025-10-25T00:12:00Z",
+              "messageType": "message",
+              "from": { "user": { "id": "u-morita", "displayName": "森田 直樹（サポート）", "userPrincipalName": "naoki.morita@contoso.com" } },
+              "body": {
+                "contentType": "html",
+                "content": "<div>【問い合わせ傾向】<br/>上位：①ログインエラー ②パスワード再発行 ③アカウント権限<br/>即効対策：ログイン画面にFAQを目立つ位置でリンク、再発行フローの説明を簡素化<br/>次の施策：チャットボットPoCで一次回答（想定ヒットFAQ 20件）</div>"
+              }
+            },
+            {
+              "id": "sch-20251025-001-r2",
+              "replyToId": "sch-20251025-001",
+              "createdDateTime": "2025-10-25T00:20:00Z",
+              "lastModifiedDateTime": "2025-10-25T00:20:00Z",
+              "messageType": "message",
+              "from": { "user": { "id": "u-sugawara", "displayName": "菅原 渉（利用分析）", "userPrincipalName": "wataru.sugawara@contoso.com" } },
+              "body": { "contentType": "html", "content": "<div>【利用分析】<br/>「比較分析」画面の滞在長は改善維持。<br/>「レポート出力→ダウンロード」改名のABは、10/28以降に効果測定（CTR／CVR／離脱）。</div>" }
+            },
+            {
+              "id": "sch-20251025-001-r3",
+              "replyToId": "sch-20251025-001",
+              "createdDateTime": "2025-10-25T08:45:00Z",
+              "lastModifiedDateTime": "2025-10-25T08:45:00Z",
+              "messageType": "message",
+              "from": { "user": { "id": "u-takashima", "displayName": "高島 遼（広報・説明会）", "userPrincipalName": "ryo.takashima@contoso.com" } },
+              "body": { "contentType": "html", "content": "<div>【説明会】<br/>本日の操作説明会は予定どおり終了。質問は「出力形式」「共有方法」が中心。録画とQAログを「ファイル」タブに格納済み。<br/>次回の案内メールは10/30送付予定。<at id=\"0\">@西原 亮</at> さん、PR文面の最終校正お願いします。</div>" },
+              "mentions": [
+                { "id": 0, "mentionText": "西原 亮", "mentioned": { "user": { "id": "u-nishihara", "displayName": "西原 亮（広報）", "userPrincipalName": "ryo.nishihara@contoso.com" } } }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "19:issues@thread.tacv2",
+      "displayName": "💬 技術・課題共有",
+      "messages": [
+        {
+          "id": "iss-20251021-001",
+          "replyToId": null,
+          "createdDateTime": "2025-10-21T05:10:00Z",
+          "lastModifiedDateTime": "2025-10-21T05:10:00Z",
+          "messageType": "message",
+          "importance": "normal",
+          "subject": "【相談】ログインエラーの再現条件について（FAQ強化前提）",
+          "from": { "user": { "id": "u-morita", "displayName": "森田 直樹（サポート）", "userPrincipalName": "naoki.morita@contoso.com" } },
+          "body": {
+            "contentType": "html",
+            "content": "<div><at id=\"0\">@宮内 梓</at> さん、ログイン画面のFAQリンク位置は右列上段で問題ないですか？<br/>また、SSOトークン期限切れ→再認証時の文言を短文化したいです（現状3行→1行）。<br/><at id=\"1\">@相沢 沙耶</at> さん、文言方針OKなら私の方で候補2案作ります。</div>"
+          },
+          "mentions": [
+            { "id": 0, "mentionText": "宮内 梓", "mentioned": { "user": { "id": "u-miyauchi", "displayName": "宮内 梓（UIエンジニア）", "userPrincipalName": "azusa.miyauchi@contoso.com" } } },
+            { "id": 1, "mentionText": "相沢 沙耶", "mentioned": { "user": { "id": "u-aizawa", "displayName": "相沢 沙耶（UXリーダー）", "userPrincipalName": "saya.aizawa@contoso.com" } } }
+          ],
+          "replies": [
+            {
+              "id": "iss-20251021-001-r1",
+              "replyToId": "iss-20251021-001",
+              "createdDateTime": "2025-10-21T05:22:00Z",
+              "lastModifiedDateTime": "2025-10-21T05:22:00Z",
+              "messageType": "message",
+              "from": { "user": { "id": "u-miyauchi", "displayName": "宮内 梓（UIエンジニア）", "userPrincipalName": "azusa.miyauchi@contoso.com" } },
+              "body": { "contentType": "html", "content": "<div>UI的には右列上段でOKです。アクセシビリティの観点でキーボードフォーカス順も調整しておきます。</div>" }
+            },
+            {
+              "id": "iss-20251021-001-r2",
+              "replyToId": "iss-20251021-001",
+              "createdDateTime": "2025-10-21T05:30:00Z",
+              "lastModifiedDateTime": "2025-10-21T05:30:00Z",
+              "messageType": "message",
+              "from": { "user": { "id": "u-aizawa", "displayName": "相沢 沙耶（UXリーダー）", "userPrincipalName": "saya.aizawa@contoso.com" } },
+              "body": { "contentType": "html", "content": "<div>短文化の方向性賛成。案2つ、今日中にもらえると助かります。</div>" }
+            }
+          ]
+        },
+        {
+          "id": "iss-20251022-001",
+          "replyToId": null,
+          "createdDateTime": "2025-10-22T02:05:00Z",
+          "lastModifiedDateTime": "2025-10-22T02:05:00Z",
+          "messageType": "message",
+          "importance": "normal",
+          "subject": "【計測設計】「ダウンロード」表記変更の効果検証",
+          "from": { "user": { "id": "u-sugawara", "displayName": "菅原 渉（利用分析）", "userPrincipalName": "wataru.sugawara@contoso.com" } },
+          "body": {
+            "contentType": "html",
+            "content": "<div>10/28以降、<code>ui_download_click_v2</code> の日次CTRを追跡<br/>目標：CTR <b>+20%</b>／「ヘルプ遷移率 <b>-10%</b>」（迷いが減ればヘルプ参照が減る想定）<br/>30日間トラッキング。SUSとの相関は別途分析します。<br/><at id=\"0\">@相沢 沙耶</at> さん、KPI妥当性の確認お願いします。</div>"
+          },
+          "mentions": [
+            { "id": 0, "mentionText": "相沢 沙耶", "mentioned": { "user": { "id": "u-aizawa", "displayName": "相沢 沙耶（UXリーダー）", "userPrincipalName": "saya.aizawa@contoso.com" } } }
+          ],
+          "replies": [
+            {
+              "id": "iss-20251022-001-r1",
+              "replyToId": "iss-20251022-001",
+              "createdDateTime": "2025-10-22T02:18:00Z",
+              "lastModifiedDateTime": "2025-10-22T02:18:00Z",
+              "messageType": "message",
+              "from": { "user": { "id": "u-aizawa", "displayName": "相沢 沙耶（UXリーダー）", "userPrincipalName": "saya.aizawa@contoso.com" } },
+              "body": { "contentType": "html", "content": "<div>妥当です。30日観測でお願いします。中間レビューを11/12の週に設定しましょう。</div>" }
+            }
+          ]
+        },
+        {
+          "id": "iss-20251023-001",
+          "replyToId": null,
+          "createdDateTime": "2025-10-23T07:40:00Z",
+          "lastModifiedDateTime": "2025-10-23T07:40:00Z",
+          "messageType": "message",
+          "importance": "normal",
+          "subject": "【SUS導入】設計ドラフト共有",
+          "from": { "user": { "id": "u-kawai", "displayName": "河合 悠（UI/FE）", "userPrincipalName": "yu.kawai@contoso.com" } },
+          "body": {
+            "contentType": "html",
+            "content": "<div>対象：業務担当ユーザー200名からロールごとにサンプリング<br/>実施：11月前半オンボーディング後に2回（初回／2週後）<br/>回答導線：アプリ内バナー＋メール<br/><at id=\"0\">@藤井 凌</at> さん、設問表現の英語版レビューをお願いできますか？</div>"
+          },
+          "mentions": [
+            { "id": 0, "mentionText": "藤井 凌", "mentioned": { "user": { "id": "u-fujii", "displayName": "藤井 凌（研修）", "userPrincipalName": "ryo.fujii@contoso.com" } } }
+          ],
+          "replies": [
+            {
+              "id": "iss-20251023-001-r1",
+              "replyToId": "iss-20251023-001",
+              "createdDateTime": "2025-10-23T07:52:00Z",
+              "lastModifiedDateTime": "2025-10-23T07:52:00Z",
+              "messageType": "message",
+              "from": { "user": { "id": "u-fujii", "displayName": "藤井 凌（研修）", "userPrincipalName": "ryo.fujii@contoso.com" } },
+              "body": { "contentType": "html", "content": "<div>英語版レビュー対応します。米英ミックス表現は避け、米式に統一します。</div>" }
+            }
+          ]
+        },
+        {
+          "id": "iss-20251024-001",
+          "replyToId": null,
+          "createdDateTime": "2025-10-24T04:15:00Z",
+          "lastModifiedDateTime": "2025-10-24T04:15:00Z",
+          "messageType": "message",
+          "importance": "normal",
+          "subject": "【PR動画】会場再生＆Web掲載要件確認",
+          "from": { "user": { "id": "u-nishihara", "displayName": "西原 亮（広報）", "userPrincipalName": "ryo.nishihara@contoso.com" } },
+          "body": {
+            "contentType": "html",
+            "content": "<div>会場：音量–12dB基準、ループON、黒→黒トランジション<br/>Web：サムネ明暗2種、メタ情報（title/description）下書き済<br/><at id=\"0\">@高島 遼</at> さん、掲載ページの導入文＆CTA文言、15:00までにご確認を。</div>"
+          },
+          "mentions": [
+            { "id": 0, "mentionText": "高島 遼", "mentioned": { "user": { "id": "u-takashima", "displayName": "高島 遼（広報・説明会）", "userPrincipalName": "ryo.takashima@contoso.com" } } }
+          ],
+          "replies": [
+            {
+              "id": "iss-20251024-001-r1",
+              "replyToId": "iss-20251024-001",
+              "createdDateTime": "2025-10-24T04:26:00Z",
+              "lastModifiedDateTime": "2025-10-24T04:26:00Z",
+              "messageType": "message",
+              "from": { "user": { "id": "u-takashima", "displayName": "高島 遼（広報・説明会）", "userPrincipalName": "ryo.takashima@contoso.com" } },
+              "body": { "contentType": "html", "content": "<div>OKです。CTAは「デモで試す（無料）」に統一。PR内のQRからWeb版デモに遷移する動線を強調しましょう。</div>" }
+            }
+          ]
+        },
+        {
+          "id": "iss-20251024-002",
+          "replyToId": null,
+          "createdDateTime": "2025-10-24T09:40:00Z",
+          "lastModifiedDateTime": "2025-10-24T09:40:00Z",
+          "messageType": "message",
+          "importance": "normal",
+          "subject": "【現地テスト】ネットワークと電源系の確認事項",
+          "from": { "user": { "id": "u-tachibana", "displayName": "橘 颯太（現地支援）", "userPrincipalName": "sota.tachibana@contoso.com" } },
+          "body": {
+            "contentType": "html",
+            "content": "<div>10/29下見で帯域計測（上り/下り・同時接続時）<br/>電源タップ：各ブース6口×3、予備2<br/>予備端末：タブレット4台、モバイルルータ2台<br/><at id=\"0\">@前田 恵</at> さん、当日の配置図に電源系メモ追記お願いします。</div>"
+          },
+          "mentions": [
+            { "id": 0, "mentionText": "前田 恵", "mentioned": { "user": { "id": "u-maeda", "displayName": "前田 恵（実証コーディネータ）", "userPrincipalName": "megumi.maeda@contoso.com" } } }
+          ],
+          "replies": [
+            {
+              "id": "iss-20251024-002-r1",
+              "replyToId": "iss-20251024-002",
+              "createdDateTime": "2025-10-24T09:55:00Z",
+              "lastModifiedDateTime": "2025-10-24T09:55:00Z",
+              "messageType": "message",
+              "from": { "user": { "id": "u-maeda", "displayName": "前田 恵（実証コーディネータ）", "userPrincipalName": "megumi.maeda@contoso.com" } },
+              "body": { "contentType": "html", "content": "<div>追記しました。搬入チェックリストも併せて更新済みです。</div>" }
+            }
+          ]
+        },
+        {
+          "id": "iss-20251025-001",
+          "replyToId": null,
+          "createdDateTime": "2025-10-25T02:10:00Z",
+          "lastModifiedDateTime": "2025-10-25T02:10:00Z",
+          "messageType": "message",
+          "importance": "normal",
+          "subject": "【PoC提案】FAQ自動応答チャットボット",
+          "from": { "user": { "id": "u-morita", "displayName": "森田 直樹（サポート）", "userPrincipalName": "naoki.morita@contoso.com" } },
+          "body": {
+            "contentType": "html",
+            "content": "<div>対象：上位FAQ20件（ログイン／再発行／権限／出力形式）<br/>導線：ログイン画面・ヘルプ・問い合わせフォーム<br/>目標：一次回答率 <b>60%</b>、応答時間 <b>&lt;5秒</b><br/><at id=\"0\">@菅原 渉</at> さん、FAQのヒット率トラッキングをお願いします。<at id=\"1\">@相沢 沙耶</at> さん、PoC期間は11/4–11/22を想定。</div>"
+          },
+          "mentions": [
+            { "id": 0, "mentionText": "菅原 渉", "mentioned": { "user": { "id": "u-sugawara", "displayName": "菅原 渉（利用分析）", "userPrincipalName": "wataru.sugawara@contoso.com" } } },
+            { "id": 1, "mentionText": "相沢 沙耶", "mentioned": { "user": { "id": "u-aizawa", "displayName": "相沢 沙耶（UXリーダー）", "userPrincipalName": "saya.aizawa@contoso.com" } } }
+          ],
+          "replies": [
+            {
+              "id": "iss-20251025-001-r1",
+              "replyToId": "iss-20251025-001",
+              "createdDateTime": "2025-10-25T02:24:00Z",
+              "lastModifiedDateTime": "2025-10-25T02:24:00Z",
+              "messageType": "message",
+              "from": { "user": { "id": "u-sugawara", "displayName": "菅原 渉（利用分析）", "userPrincipalName": "wataru.sugawara@contoso.com" } },
+              "body": { "contentType": "html", "content": "<div>ヒット率は <code>faq_bot_match</code> としてイベント定義します。誤回答フィードバック用の <code>faq_bot_feedback</code> も併設します。</div>" }
+            },
+            {
+              "id": "iss-20251025-001-r2",
+              "replyToId": "iss-20251025-001",
+              "createdDateTime": "2025-10-25T02:30:00Z",
+              "lastModifiedDateTime": "2025-10-25T02:30:00Z",
+              "messageType": "message",
+              "from": { "user": { "id": "u-aizawa", "displayName": "相沢 沙耶（UXリーダー）", "userPrincipalName": "saya.aizawa@contoso.com" } },
+              "body": { "contentType": "html", "content": "<div>承認です。ローンチ前に想定質問と回答の整合レビューを1回入れましょう（11/1午前で設定）。</div>" }
+            }
+          ]
+        },
+        {
+          "id": "iss-20251026-001",
+          "replyToId": null,
+          "createdDateTime": "2025-10-26T00:05:00Z",
+          "lastModifiedDateTime": "2025-10-26T00:05:00Z",
+          "messageType": "message",
+          "importance": "normal",
+          "subject": "【最終確認】10/28 UI改修リリース候補（RC）",
+          "from": { "user": { "id": "u-miyauchi", "displayName": "宮内 梓（UIエンジニア）", "userPrincipalName": "azusa.miyauchi@contoso.com" } },
+          "body": {
+            "contentType": "html",
+            "content": "<div>表記変更・マイレポ導線・FAQリンク位置：RC反映済み<br/>権限別表示／フォーカス順：OK<br/>既知事象：IEモード時のアイコン描画（影響軽微）<br/><at id=\"0\">@相沢 沙耶</at> さん、<at id=\"1\">@河合 悠</at> さん、RCの最終チェックをお願いします。</div>"
+          },
+          "mentions": [
+            { "id": 0, "mentionText": "相沢 沙耶", "mentioned": { "user": { "id": "u-aizawa", "displayName": "相沢 沙耶（UXリーダー）", "userPrincipalName": "saya.aizawa@contoso.com" } } },
+            { "id": 1, "mentionText": "河合 悠", "mentioned": { "user": { "id": "u-kawai", "displayName": "河合 悠（UI/FE）", "userPrincipalName": "yu.kawai@contoso.com" } } }
+          ],
+          "replies": [
+            {
+              "id": "iss-20251026-001-r1",
+              "replyToId": "iss-20251026-001",
+              "createdDateTime": "2025-10-26T00:22:00Z",
+              "lastModifiedDateTime": "2025-10-26T00:22:00Z",
+              "messageType": "message",
+              "from": { "user": { "id": "u-kawai", "displayName": "河合 悠（UI/FE）", "userPrincipalName": "yu.kawai@contoso.com" } },
+              "body": { "contentType": "html", "content": "<div>チェック完了。問題なし。IEモードは回避策（PNGフォールバック）を次リリースで入れます。</div>" }
+            },
+            {
+              "id": "iss-20251026-001-r2",
+              "replyToId": "iss-20251026-001",
+              "createdDateTime": "2025-10-26T00:30:00Z",
+              "lastModifiedDateTime": "2025-10-26T00:30:00Z",
+              "messageType": "message",
+              "from": { "user": { "id": "u-aizawa", "displayName": "相沢 沙耶（UXリーダー）", "userPrincipalName": "saya.aizawa@contoso.com" } },
+              "body": { "contentType": "html", "content": "<div>承知。10/28 09:00の反映で進めます。告知文（変更点＋影響範囲）を本日午後「一般」チャネルに掲出します。</div>" }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+
+```
+
+
 ### outlook予定表第二週
+```
+想定される予定（人間向けサマリ）
+
+10/21(火) 10:30–11:00　UI文言＆導線 仕様すり合わせ（相沢・宮内・河合・岡村・菅原）
+
+10/24(金) 13:00–15:00　現地イベント最終固め（ハイブリッド：相沢・前田・橘・高島・西原・小嶋）
+
+10/25(土) 09:00–09:45　UX週次進捗報告（相沢→全員、森田・菅原・高島の報告あり）
+
+10/26(日) 16:00–16:30　10/28リリースRC最終確認（相沢・宮内・河合）
+
+10/28(火) 08:30–09:30　UI改修リリースウィンドウ（相沢・宮内・河合・菅原）
+
+10/29(水) 14:00–16:00　現地下見：導線・帯域・電源確認（前田・橘・小嶋 他）
+
+11/01(土) 09:00–09:45　FAQボット想定Q&A整合レビュー（相沢・森田・菅原）
+
+11/02(日) 終日　実証イベント Day1（オンサイト）
+
+11/03(月) 終日　実証イベント Day2（オンサイト）
+
+11/12(水) 16:00–17:00　中間KPIレビュー（CTR/SUS、相沢・菅原・河合・藤井）
+```
+```json
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('saya.aizawa%40contoso.com')/calendarView",
+  "value": [
+    {
+      "id": "cal-20251021-a",
+      "subject": "UI文言＆導線 仕様すり合わせ（10/28反映）",
+      "bodyPreview": "「レポート出力→ダウンロード」「マイレポート」導線、権限別表示、計測キー整合",
+      "body": {
+        "contentType": "HTML",
+        "content": "<p>議事録③に基づくUI文言変更と導線追加の仕様最終確認。<br/>・文言統一<br/>・ヘッダー「マイレポート」<br/>・権限別表示/フォーカス順<br/>・計測キー命名</p>"
+      },
+      "start": { "dateTime": "2025-10-21T10:30:00", "timeZone": "Asia/Tokyo" },
+      "end":   { "dateTime": "2025-10-21T11:00:00", "timeZone": "Asia/Tokyo" },
+      "location": { "displayName": "Microsoft Teams 会議" },
+      "isAllDay": false,
+      "showAs": "busy",
+      "organizer": { "emailAddress": { "name": "相沢 沙耶", "address": "saya.aizawa@contoso.com" } },
+      "attendees": [
+        { "type": "required", "emailAddress": { "name": "宮内 梓", "address": "azusa.miyauchi@contoso.com" } },
+        { "type": "required", "emailAddress": { "name": "河合 悠", "address": "yu.kawai@contoso.com" } },
+        { "type": "optional", "emailAddress": { "name": "岡村 沙良", "address": "sara.okamura@contoso.com" } },
+        { "type": "optional", "emailAddress": { "name": "菅原 渉", "address": "wataru.sugawara@contoso.com" } }
+      ],
+      "onlineMeetingUrl": "https://teams.microsoft.com/l/meetup-join/...",
+      "reminderMinutesBeforeStart": 10
+    },
+    {
+      "id": "cal-20251024-b",
+      "subject": "現地イベント最終固め（導線/PR/アンケ）",
+      "bodyPreview": "導線図・PR動画・アンケフォーム・誘導トークの最終調整（11/2–11/3に向けて）",
+      "body": {
+        "contentType": "HTML",
+        "content": "<p>来場者200名想定。ブース3箇所の導線、PR2分版(会場/WEB)、アンケQR掲示物、誘導トーク確認。</p>"
+      },
+      "start": { "dateTime": "2025-10-24T13:00:00", "timeZone": "Asia/Tokyo" },
+      "end":   { "dateTime": "2025-10-24T15:00:00", "timeZone": "Asia/Tokyo" },
+      "location": { "displayName": "会議室B + Teams" },
+      "isAllDay": false,
+      "showAs": "busy",
+      "organizer": { "emailAddress": { "name": "相沢 沙耶", "address": "saya.aizawa@contoso.com" } },
+      "attendees": [
+        { "type": "required", "emailAddress": { "name": "前田 恵", "address": "megumi.maeda@contoso.com" } },
+        { "type": "required", "emailAddress": { "name": "橘 颯太", "address": "sota.tachibana@contoso.com" } },
+        { "type": "required", "emailAddress": { "name": "高島 遼", "address": "ryo.takashima@contoso.com" } },
+        { "type": "required", "emailAddress": { "name": "西原 亮", "address": "ryo.nishihara@contoso.com" } },
+        { "type": "required", "emailAddress": { "name": "小嶋 真央", "address": "mao.kojima@contoso.com" } }
+      ],
+      "onlineMeetingUrl": "https://teams.microsoft.com/l/meetup-join/...",
+      "reminderMinutesBeforeStart": 15
+    },
+    {
+      "id": "cal-20251025-c",
+      "subject": "UX週次進捗報告（10/20週）",
+      "bodyPreview": "進捗82%、問い合わせ-30%。来週は10/28反映と実証準備。",
+      "body": {
+        "contentType": "HTML",
+        "content": "<p>主要KPIとブロッカー確認。各担当からショート報告。</p>"
+      },
+      "start": { "dateTime": "2025-10-25T09:00:00", "timeZone": "Asia/Tokyo" },
+      "end":   { "dateTime": "2025-10-25T09:45:00", "timeZone": "Asia/Tokyo" },
+      "location": { "displayName": "Microsoft Teams 会議" },
+      "isAllDay": false,
+      "showAs": "busy",
+      "organizer": { "emailAddress": { "name": "相沢 沙耶", "address": "saya.aizawa@contoso.com" } },
+      "attendees": [
+        { "type": "required", "emailAddress": { "name": "森田 直樹", "address": "naoki.morita@contoso.com" } },
+        { "type": "required", "emailAddress": { "name": "菅原 渉", "address": "wataru.sugawara@contoso.com" } },
+        { "type": "required", "emailAddress": { "name": "高島 遼", "address": "ryo.takashima@contoso.com" } }
+      ],
+      "onlineMeetingUrl": "https://teams.microsoft.com/l/meetup-join/...",
+      "reminderMinutesBeforeStart": 10
+    },
+    {
+      "id": "cal-20251026-d",
+      "subject": "10/28リリースRC最終確認",
+      "bodyPreview": "表記変更・マイレポ導線・FAQ位置・権限別表示・既知事象を最終チェック",
+      "body": {
+        "contentType": "HTML",
+        "content": "<p>RC承認とGo/No-Go判断。IEモードの代替アイコンは次版対応で合意。</p>"
+      },
+      "start": { "dateTime": "2025-10-26T16:00:00", "timeZone": "Asia/Tokyo" },
+      "end":   { "dateTime": "2025-10-26T16:30:00", "timeZone": "Asia/Tokyo" },
+      "location": { "displayName": "Microsoft Teams 会議" },
+      "isAllDay": false,
+      "showAs": "busy",
+      "organizer": { "emailAddress": { "name": "相沢 沙耶", "address": "saya.aizawa@contoso.com" } },
+      "attendees": [
+        { "type": "required", "emailAddress": { "name": "宮内 梓", "address": "azusa.miyauchi@contoso.com" } },
+        { "type": "required", "emailAddress": { "name": "河合 悠", "address": "yu.kawai@contoso.com" } }
+      ],
+      "onlineMeetingUrl": "https://teams.microsoft.com/l/meetup-join/...",
+      "reminderMinutesBeforeStart": 5
+    },
+    {
+      "id": "cal-20251028-e",
+      "subject": "本番反映：UI改修リリースウィンドウ（監視含む）",
+      "bodyPreview": "09:05反映。CTR/離脱/問い合わせの初日監視と速報連携。",
+      "body": {
+        "contentType": "HTML",
+        "content": "<p>対象：ダウンロード表記、マイレポ導線、FAQリンク位置。計測キーv2で計測。</p>"
+      },
+      "start": { "dateTime": "2025-10-28T08:30:00", "timeZone": "Asia/Tokyo" },
+      "end":   { "dateTime": "2025-10-28T09:30:00", "timeZone": "Asia/Tokyo" },
+      "location": { "displayName": "Microsoft Teams 会議" },
+      "isAllDay": false,
+      "showAs": "busy",
+      "organizer": { "emailAddress": { "name": "宮内 梓", "address": "azusa.miyauchi@contoso.com" } },
+      "attendees": [
+        { "type": "required", "emailAddress": { "name": "相沢 沙耶", "address": "saya.aizawa@contoso.com" } },
+        { "type": "required", "emailAddress": { "name": "河合 悠", "address": "yu.kawai@contoso.com" } },
+        { "type": "required", "emailAddress": { "name": "菅原 渉", "address": "wataru.sugawara@contoso.com" } }
+      ],
+      "onlineMeetingUrl": "https://teams.microsoft.com/l/meetup-join/...",
+      "reminderMinutesBeforeStart": 10
+    },
+    {
+      "id": "cal-20251029-f",
+      "subject": "現地下見：導線/帯域/電源確認",
+      "bodyPreview": "ブース配置・来客導線、帯域実測、電源口・予備端末確認。",
+      "body": {
+        "contentType": "HTML",
+        "content": "<p>チェックリスト：導線図確定、上り/下り実測、同時接続テスト、電源タップ/予備端末確認。</p>"
+      },
+      "start": { "dateTime": "2025-10-29T14:00:00", "timeZone": "Asia/Tokyo" },
+      "end":   { "dateTime": "2025-10-29T16:00:00", "timeZone": "Asia/Tokyo" },
+      "location": { "displayName": "イベント会場（非公開）" },
+      "isAllDay": false,
+      "showAs": "busy",
+      "organizer": { "emailAddress": { "name": "前田 恵", "address": "megumi.maeda@contoso.com" } },
+      "attendees": [
+        { "type": "required", "emailAddress": { "name": "橘 颯太", "address": "sota.tachibana@contoso.com" } },
+        { "type": "required", "emailAddress": { "name": "小嶋 真央", "address": "mao.kojima@contoso.com" } }
+      ],
+      "reminderMinutesBeforeStart": 30
+    },
+    {
+      "id": "cal-20251101-g",
+      "subject": "FAQボット：想定Q&A整合レビュー",
+      "bodyPreview": "PoCローンチ前に上位FAQ20件の応答整合を確認。",
+      "body": {
+        "contentType": "HTML",
+        "content": "<p>対象：ログイン/再発行/権限/出力形式。ヒット率・誤回答フィードバックも確認。</p>"
+      },
+      "start": { "dateTime": "2025-11-01T09:00:00", "timeZone": "Asia/Tokyo" },
+      "end":   { "dateTime": "2025-11-01T09:45:00", "timeZone": "Asia/Tokyo" },
+      "location": { "displayName": "Microsoft Teams 会議" },
+      "isAllDay": false,
+      "showAs": "busy",
+      "organizer": { "emailAddress": { "name": "相沢 沙耶", "address": "saya.aizawa@contoso.com" } },
+      "attendees": [
+        { "type": "required", "emailAddress": { "name": "森田 直樹", "address": "naoki.morita@contoso.com" } },
+        { "type": "required", "emailAddress": { "name": "菅原 渉", "address": "wataru.sugawara@contoso.com" } }
+      ],
+      "reminderMinutesBeforeStart": 10
+    },
+    {
+      "id": "cal-20251102-h",
+      "subject": "実証イベント Day1",
+      "bodyPreview": "来訪者200名想定／ブース3。アンケ誘導とPR動画ループ再生。",
+      "body": { "contentType": "HTML", "content": "<p>現地運営：受付/導線/アンケ/機材/回線。</p>" },
+      "start": { "dateTime": "2025-11-02T00:00:00", "timeZone": "Asia/Tokyo" },
+      "end":   { "dateTime": "2025-11-03T00:00:00", "timeZone": "Asia/Tokyo" },
+      "location": { "displayName": "イベント会場（非公開）" },
+      "isAllDay": true,
+      "showAs": "oof",
+      "organizer": { "emailAddress": { "name": "前田 恵", "address": "megumi.maeda@contoso.com" } },
+      "attendees": [
+        { "type": "optional", "emailAddress": { "name": "相沢 沙耶", "address": "saya.aizawa@contoso.com" } }
+      ]
+    },
+    {
+      "id": "cal-20251103-i",
+      "subject": "実証イベント Day2",
+      "bodyPreview": "Day2運営。回収率向上施策の当日反映（出口誘導強化）。",
+      "body": { "contentType": "HTML", "content": "<p>終日運営。終了後撤収・機材返却。</p>" },
+      "start": { "dateTime": "2025-11-03T00:00:00", "timeZone": "Asia/Tokyo" },
+      "end":   { "dateTime": "2025-11-04T00:00:00", "timeZone": "Asia/Tokyo" },
+      "location": { "displayName": "イベント会場（非公開）" },
+      "isAllDay": true,
+      "showAs": "oof",
+      "organizer": { "emailAddress": { "name": "前田 恵", "address": "megumi.maeda@contoso.com" } },
+      "attendees": [
+        { "type": "optional", "emailAddress": { "name": "相沢 沙耶", "address": "saya.aizawa@contoso.com" } }
+      ]
+    },
+    {
+      "id": "cal-20251112-j",
+      "subject": "中間KPIレビュー（CTR/SUS/問い合わせ）",
+      "bodyPreview": "表記変更効果・離脱・問い合わせ、SUS一次の所見共有。",
+      "body": {
+        "contentType": "HTML",
+        "content": "<p>10/28〜の30日計測の中間レビュー。改善バックログ更新。</p>"
+      },
+      "start": { "dateTime": "2025-11-12T16:00:00", "timeZone": "Asia/Tokyo" },
+      "end":   { "dateTime": "2025-11-12T17:00:00", "timeZone": "Asia/Tokyo" },
+      "location": { "displayName": "Microsoft Teams 会議" },
+      "isAllDay": false,
+      "showAs": "busy",
+      "organizer": { "emailAddress": { "name": "相沢 沙耶", "address": "saya.aizawa@contoso.com" } },
+      "attendees": [
+        { "type": "required", "emailAddress": { "name": "菅原 渉", "address": "wataru.sugawara@contoso.com" } },
+        { "type": "required", "emailAddress": { "name": "河合 悠", "address": "yu.kawai@contoso.com" } },
+        { "type": "optional", "emailAddress": { "name": "藤井 凌", "address": "ryo.fujii@contoso.com" } }
+      ],
+      "onlineMeetingUrl": "https://teams.microsoft.com/l/meetup-join/...",
+      "reminderMinutesBeforeStart": 15
+    }
+  ]
+}
+
+```
 
 # ⑥ 行政・自治体連携チーム（新設）
 ## 📘 第1週（10月13日週）
