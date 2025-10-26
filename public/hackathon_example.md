@@ -29,15 +29,14 @@ ignorePublish: false
   - [■ 運用方針（抜粋）](#-運用方針抜粋)
 - [① プロジェクトマネジメントオフィス（PMO）](#-プロジェクトマネジメントオフィスpmo-1)
   - [📘 第1週（10月13日週）](#-第1週10月13日週)
-    - [会議①：PMO定例会議](#会議pmo定例会議)
-    - [会議②：リスク対策検討ミーティング](#会議リスク対策検討ミーティング)
+    - [🗓️ 会議①：第18回 PMO定例ミーティング](#️-会議第18回-pmo定例ミーティング)
+    - [🗓️ 会議②：対外報告準備ミーティング（新規発生業務）](#️-会議対外報告準備ミーティング新規発生業務)
     - [teamsでの会話内容](#teamsでの会話内容)
     - [outlook予定表第一週](#outlook予定表第一週)
   - [📘 第2週（10月20日週）](#-第2週10月20日週)
-    - [会議③：全体推進会議（行政・NEC合同）](#会議全体推進会議行政nec合同)
-    - [会議④：成果物レビュー会議（PMO＋品質チーム）](#会議成果物レビュー会議pmo品質チーム)
+    - [🗓️ 会議③：第19回 PMO定例＋全体会議リハーサル](#️-会議第19回-pmo定例全体会議リハーサル)
+    - [🗓️ 会議④：全体会議報告後レビュー](#️-会議全体会議報告後レビュー)
     - [teamsでの会話内容](#teamsでの会話内容-1)
-    - [outlook予定表第二週](#outlook予定表第二週)
 - [② データ基盤構築チーム（三宅チーム）](#-データ基盤構築チーム三宅チーム-1)
   - [📘 第1週（10月13日週）](#-第1週10月13日週-1)
     - [会議①：データ基盤チーム週次定例（第3週）](#会議データ基盤チーム週次定例第3週)
@@ -48,7 +47,7 @@ ignorePublish: false
     - [🗓 会議③：AI分析チーム合同データ連携会議](#-会議ai分析チーム合同データ連携会議)
     - [🗓 会議④：第4週チーム定例](#-会議第4週チーム定例)
   - [teamsでの会話内容](#teamsでの会話内容-3)
-  - [outlook予定表第二週](#outlook予定表第二週-1)
+  - [outlook予定表第二週](#outlook予定表第二週)
 - [③ AI分析チーム（藤原チーム）](#-ai分析チーム藤原チーム-1)
   - [📘 第1週（10月13日週）](#-第1週10月13日週-2)
     - [【第1週】AIモデル開発定例（第23回）](#第1週aiモデル開発定例第23回)
@@ -59,7 +58,7 @@ ignorePublish: false
     - [【第2週】AI分析チーム定例（第24回）](#第2週ai分析チーム定例第24回)
     - [【第2週】AI×データ基盤連携会議（合同）](#第2週aiデータ基盤連携会議合同)
     - [teamsでの会話内容](#teamsでの会話内容-5)
-    - [outlook予定表第二週](#outlook予定表第二週-2)
+    - [outlook予定表第二週](#outlook予定表第二週-1)
 - [④ システム運用・セキュリティチーム（井原チーム）](#-システム運用セキュリティチーム井原チーム-1)
   - [📘 第1週（10月13日週）](#-第1週10月13日週-3)
     - [🗓️ 第12回 運用定例会議（10月14日開催）](#️-第12回-運用定例会議10月14日開催)
@@ -70,7 +69,7 @@ ignorePublish: false
     - [🗓️ 第14回 運用・セキュリティ定例（10月21日開催）](#️-第14回-運用セキュリティ定例10月21日開催)
     - [🗓️ 第15回 障害・改善レビュー会（10月24日開催）](#️-第15回-障害改善レビュー会10月24日開催)
     - [teamsでの会話内容](#teamsでの会話内容-7)
-    - [outlook予定表第二週](#outlook予定表第二週-3)
+    - [outlook予定表第二週](#outlook予定表第二週-2)
 - [⑤ UX・顧客連携チーム（相沢チーム）](#-ux顧客連携チーム相沢チーム-1)
   - [📘 第1週（10月13日週）](#-第1週10月13日週-4)
     - [📝 議事録①：UXデザイン進捗会議](#-議事録uxデザイン進捗会議)
@@ -82,7 +81,7 @@ ignorePublish: false
     - [📝 議事録④：実証現場連携ミーティング](#-議事録実証現場連携ミーティング)
     - [📝 議事録⑤：チーム全体レビュー会](#-議事録チーム全体レビュー会)
     - [teamsでの会話内容](#teamsでの会話内容-9)
-    - [outlook予定表第二週](#outlook予定表第二週-4)
+    - [outlook予定表第二週](#outlook予定表第二週-3)
 - [⑥ 行政・自治体連携チーム（新設）](#-行政自治体連携チーム新設-1)
   - [📘 第1週（10月13日週）](#-第1週10月13日週-5)
     - [議事録①：自治体連携・定例 #12](#議事録自治体連携定例-12)
@@ -97,7 +96,7 @@ ignorePublish: false
     - [議事録⑦：広報・発表調整会 #02](#議事録広報発表調整会-02)
     - [議事録⑦：広報・発表調整会 #02](#議事録広報発表調整会-02-1)
     - [teamsでの会話内容](#teamsでの会話内容-11)
-    - [outlook予定表第二週](#outlook予定表第二週-5)
+    - [outlook予定表第二週](#outlook予定表第二週-4)
 - [⑦ 品質保証・テスト支援チーム（新設）](#-品質保証テスト支援チーム新設-1)
   - [📘 第1週（10月13日週）](#-第1週10月13日週-6)
     - [📝 議事録①：品質保証・定例ミーティング（第8回）](#-議事録品質保証定例ミーティング第8回)
@@ -108,7 +107,7 @@ ignorePublish: false
     - [📝 議事録③：品質横断定例＋QAレビュー（第9回）](#-議事録品質横断定例qaレビュー第9回)
     - [📝 議事録④：監査準備タスク整理ミーティング](#-議事録監査準備タスク整理ミーティング)
     - [teamsでの会話内容](#teamsでの会話内容-13)
-    - [outlook予定表第二週](#outlook予定表第二週-6)
+    - [outlook予定表第二週](#outlook予定表第二週-5)
 
 
 # ハッカソンでシステム検証のためのPJ例を作成する。
@@ -380,1216 +379,388 @@ UI改善、現地検証、利用者教育、広報・展示対応を行う。
 
 # ① プロジェクトマネジメントオフィス（PMO）
 
+```
+🧾 まとめ（2週間の動き）
+週	主なテーマ	新規発生業務	成果物
+第1週（10/13〜10/17）	月次報告書作成／リスク管理	外部API仕様変更対応	月次報告書（日英版）完成
+第2週（10/20〜10/24）	全体会議実施・監査準備	顧客要望対応・監査準備開始	顧客向け全体報告完了／監査タスクリスト起案
+```
 
 ## 📘 第1週（10月13日週） 
 
-### 会議①：PMO定例会議
+### 🗓️ 会議①：第18回 PMO定例ミーティング
 
 ```
-日時： 2025年10月13日（月）10:00〜11:30
-場所： Teams「PMO_定例」チャンネル
-出席者：
-石田（PM）、西川（品質）、森岡（契約）、松下（進捗）、竹田（コスト）、原口（成果物）、李（補佐）、中嶋（リスク）、三田村（コミュニケーション）、宮野（事務）
+🗓️ 会議①：第18回 PMO定例ミーティング
 
-■ 議題一覧
+開催日：2025年10月14日（火） 10:00〜11:30
+場所：Teamsオンライン（PMOチャンネル）
+出席者：石田、西川、森岡、松下、竹田、原口、李、中嶋、三田村、宮野
 
-各チーム進捗報告（AI／基盤／UX／運用）
+議題
 
-リスク・課題管理表の更新
+進捗報告（各チーム進捗・遅延タスク）
 
-顧客向け月次報告書（10月分）進捗
+品質関連（テスト支援チームとの連携）
 
-契約・支払関連の整理
+リスクレジスタ更新（#12自治体B遅延対応）
 
-次回全体会議の準備
-
-■ 議事概要
-
-（1）各チーム進捗報告
-
-三宅チーム（データ基盤）：交通事業者データの連携スキーマ確定、API v2.0テスト中。
-
-藤原チーム（AI分析）：モデル精度（RMSE 0.18）改善、PoC2開始準備。
-
-井原チーム（運用）：稼働率99.4％維持、バックアップ設定変更要。
-
-相沢チーム（UX）：ダッシュボードUI改善案デモ予定（来週）。
-
-（2）リスク・課題
-
-自治体Bのデータ提供遅延（2週間遅れ見込み）。→ リスクレベル「中」継続。
-
-Azureリソースコスト上昇（＋7％）。→ コスト管理チームが見積再算定。
-
-（3）月次報告書
-
-草案版を原口が作成済み。データ基盤チーム進捗グラフ追記予定（松下対応）。
-
-（4）契約関連
-
-追加PoC契約書（大学研究機関との協定）を森岡が行政側に提出。承認待ち。
-
-（5）全体会議準備
-
-顧客事務局との次回「全体推進会議」10/22(水)の資料作成担当を確定。
-
-各チーム概要：石田
-
-成果報告：西川
-
-課題・リスク：中嶋
-
-コスト見通し：竹田
-
-■ 決定事項
-
-月次報告書提出締切：10月17日（金）午前中
-
-リスク#12「データ提供遅延」対応方針を再協議（10/20まで）
-
-Azureコスト見直し提案を10/16の運用会議で提示
-
-■ ToDoリスト
-担当	内容	期限
-松下	各チーム進捗表を最新版に更新（共有フォルダへ）	10/15
-竹田	コスト試算再計算（クラウド費）	10/16
-原口	月次報告書ドラフト完成	10/17
-中嶋	リスクレジスタ更新（#12, #14）	10/16
-石田	全体推進会議資料レビュー	10/21
-```
-
-### 会議②：リスク対策検討ミーティング
-
-```
-日時： 2025年10月16日（木）14:00〜15:00
-場所： Teams「PMO_Risk」チャンネル
-出席者： 石田、西川、中嶋、森岡、竹田、松下
-
-■ 議題
-
-自治体Bデータ遅延対応
-
-システム監査結果報告（SOC監査）
-
-次期リスクレビュー体制の再編
-
-■ 議事概要
-
-自治体Bデータ遅延
-
-データ納品が11月初旬へ延期。AIチームの再学習工程に影響。
-
-一時的に既存モデルでPoC継続、納品後に再学習対応。
-
-調整窓口を森岡が担当し、自治体側に再スケジュール案を提示予定。
-
-SOC監査結果
-
-軽微な指摘2件（アクセス権限設定・パスワードポリシー更新漏れ）。
-
-井原チームが10/20までに修正完了予定。
-
-リスクレビュー体制
-
-中嶋を中心に、週次更新から**自動レポート化（Power BI）**に移行検討。
-
-■ 決定事項
-
-自治体B対応を「緊急度：中」から「高」へ変更。
-
-Power BI連携テストを10月末までに実施。
-
-■ ToDo
-担当	内容	期限
-森岡	自治体Bへ新スケジュール提示	10/18
-中嶋	リスクレポート自動化設計書	10/25
-西川	監査指摘事項の対応完了報告	10/20
-```
-
-### teamsでの会話内容
-
-```
-📰 一般（General）
-📢【PMO連絡】10月第3週 定例関連連絡
-
-投稿者： 石田 智久（PM）
-投稿日： 2025年10月13日（月）09:05
-
-各位
-
-おはようございます。今週のPMO定例（10:00〜）で扱う主な議題を共有します。
-
-各チーム進捗（AI／基盤／UX／運用）
-
-リスク#12（自治体Bデータ遅延）対応方針
-
-10月分月次報告書進捗
+10月度月次報告書ドラフト確認
 
 次回全体会議（10/22）準備
 
-定例後に議事録をこのチャネルへ共有予定です。
+議事内容
+① 全体進捗共有（松下）
 
-@西川麻衣 さん、品質・課題部分のサマリを会議後追記お願いします。
+各チームの進捗率：
 
-🟢 返信：西川 麻衣（品質PM）
+データ基盤：82%（API疎通確認中）
 
-承知しました。議事録フォーマットに沿って更新します。午後までに共有します。
+AI分析：76%（モデル精度検証フェーズ）
 
-📎【資料共有】月次報告書（草案版）
+UX：71%（利用者教育マニュアル整備中）
 
-投稿者： 原口 由香（成果物統括）
-投稿日： 2025年10月14日（火）16:40
+品質保証：85%（QScore試行導入）
 
-月次報告書（10月分）の**草案版（v0.8）**をアップロードしました。
+全体進捗平均：78.5%（計画比−2.3pt）
 
-📁 共有フォルダへのリンク
+松下：「データ基盤のETL更新が1週遅れ。外部委託先（アルファ社）からのスクリプト納品が遅延中」
+石田：「契約担当の森岡さん、納期調整の連絡を進めて」
+森岡：「了解。今週中に補足契約書案を提示します」
 
-@松下翔太 さん、進捗グラフデータ更新をお願いします。
-@西川麻衣 さん、品質指標（テスト進捗）部分を追記予定で問題ありませんか？
+② 品質・テスト関連（西川）
 
-🟢 返信：松下 翔太（スケジュール管理）
+QScore（品質スコア）を試験導入中。
 
-了解しました。AIチーム・基盤チームからの最新進捗（10/13時点）を反映して明朝までにグラフ更新します。
+第1弾テスト対象：UXチームの画面更新モジュール（UIコード／レスポンス）
 
-🟢 返信：西川 麻衣
+テスト結果レポート提出予定：10/17（金）
 
-はい、品質データを10/15午前中に反映します。
+西川：「テスト支援チームとの連携で指標を可視化したい。実施後の傾向を分析して次期リリース計画に反映します。」
+原口：「ドキュメントレビューにもQScore項目を追加します。納品管理表も更新しておきます。」
 
-✅【報告】Azureコスト見直し試算完了
+③ リスクレジスタ更新（中嶋）
 
-投稿者： 竹田 隆（コスト管理）
-投稿日： 2025年10月17日（金）11:30
+新規登録：
 
-Azure利用料の再試算が完了しました。
+#17 外部API仕様変更に伴う修正遅延リスク（中リスク）
 
-コスト上昇要因：ログアーカイブ領域の肥大化（＋7%）
+継続対応：
 
-対策案：ストレージ階層を「Hot→Cool」へ一部移行で▲4%削減見込み
+#12 自治体Bデータ遅延 → 再送日確定（10/18）
 
-詳細レポートを添付しました。
-📎 Azure_Cost_Review_20251017.xlsx
+対策：リリーススケジュールに3日間のバッファを確保
 
-@井原 俊介 さん、10/16運用会議での提案内容と整合性を再確認お願いします。
+中嶋：「外部APIの変更によりETLマッピング再設計の可能性あり。リスクレベルは中→要監視。」
+竹田：「コスト面でも影響を見積もり中。外注工数＋8h想定。」
 
-🟢 返信：井原 俊介（運用チームリーダー）
+④ 月次報告書ドラフト確認（原口）
 
-ありがとうございます。運用側で検証済み、内容問題ありません。来週から試行導入します。
+各チーム報告セクションを反映済み。
 
-📅 定例・進捗報告
-🧩【共有】10/13 PMO定例議事録（要約）
+英語版報告書は李が翻訳対応中。
 
-投稿者： 松下 翔太（進捗管理）
-投稿日： 2025年10月13日（月）13:40
+PMレビュー版提出予定：10/16（木）
 
-PMO定例（10:00〜11:30）の議事録を共有します。
+李：「報告書内のKPI説明（英語訳）が曖昧な部分を確認中。特に‘Service Readiness’の訳語を統一します。」
 
-主な決定事項：
+⑤ 次回全体会議（10/22）準備（宮野）
 
-月次報告書締切：10/17(金) 午前中
+会議資料構成：
 
-Azureコスト見直し提案：10/16 運用会議で提示
+各チーム進捗（WBS形式）
 
-リスク#12「データ提供遅延」：10/20再協議
+品質報告（QScore）
 
-詳細版はこちらのリンク
-をご確認ください。
+リスク・課題一覧
 
-🟢 返信：藤原 達也（AI分析リーダー）
+顧客報告用サマリスライド
 
-ありがとうございます。AIチーム側ではデータ遅延影響を整理中。PoC工程の再スケジュール案を今週中に共有します。
+資料提出期限：10/18（土）
 
-🟢 返信：相沢 美帆（UXチーム）
+決定事項
 
-ダッシュボードUI改善案のデモ準備進んでいます。来週月曜の全体会議で画面共有予定です。
+補足契約書（ETL遅延対応）は森岡が10/18までに草案提示。
 
-⚠️【進捗報告】リスク#12自治体Bデータ遅延対応
+月次報告書ドラフトは10/16提出・10/17英語版確定。
 
-投稿者： 中嶋 陽介（リスク管理）
-投稿日： 2025年10月16日（木）09:00
+全体会議資料を10/18までに宮野がPMO共有フォルダへ格納。
 
-本日のリスク対策ミーティング（14:00〜）前に現状整理します。
-
-データ納品予定：11月初旬
-
-影響：AI再学習スケジュール（PoC2開始延期リスク）
-
-暫定対応：既存モデルでPoC継続
-
-会議で「緊急度：中→高」への変更提案予定です。
-
-@森岡 翔 さん、自治体側への再スケジュール提示資料のドラフト、準備状況教えてください。
-
-🟢 返信：森岡 翔（契約・調整担当）
-
-ドラフト版は完成済みです。13:00に自治体側担当へ送付予定。正式合意を週明けに見込み。
-
-🗓️【完了報告】月次報告書ドラフト提出
-
-投稿者： 原口 由香（成果物統括）
-投稿日： 2025年10月17日（金）10:20
-
-月次報告書（10月分）を提出完了しました。
-
-@石田 智久 さん @西川 麻衣 さん
-ご確認お願いします。10/22全体推進会議の資料への反映は完了済みです。
-
-🟢 返信：石田 智久（PM）
-
-確認しました。内容問題なしです。お疲れさまでした。
-
-💬 技術・課題共有
-💡【技術相談】Power BI リスクレポート自動化
-
-投稿者： 中嶋 陽介（リスク管理）
-投稿日： 2025年10月16日（木）17:10
-
-@三宅 俊介 さん
-データ基盤チームで管理している「リスク管理Excel（SharePoint）」をPower BIで自動更新できるようにしたいです。
-
-現在の課題：
-
-Excelファイルのパス固定ができず、更新時にデータソースが切れる
-
-何か設定上のベストプラクティスありますか？
-
-🟢 返信：三宅 俊介（データ基盤リーダー）
-
-あります。SharePoint上のExcelは「ドキュメントライブラリ→Excel→接続→リンクをコピー→?web=1」を削除したURLをPower BI側に設定してください。
-
-次回のPMOリスク会議までにサンプルレポートを作ってもOKです。
-
-🟢 返信：中嶋 陽介
-
-ありがとうございます！10/25までに試作レポート版を共有します。
-
-🧠【AI分析】再学習スケジュール変更の影響確認
-
-投稿者： 藤原 達也（AI分析リーダー）
-投稿日： 2025年10月17日（金）14:00
-
-自治体Bデータ納品遅延の件で、AIモデル再学習スケジュールを再整理しました。
-
-既存モデルでPoC2継続（10/18〜10/31）
-
-再学習工程を11/4開始に変更予定
-
-@松下翔太 さん、進捗管理表への反映お願いします。
-@西川麻衣 さん、精度評価KPIの追記項目を再確認お願いします。
-
-🟢 返信：松下 翔太
-
-承知しました。本日の進捗表に反映します。
-
-🟢 返信：西川 麻衣
-
-KPI定義に変更はなし。再学習後に再評価します。
-
-🧾【完了報告】SOC監査対応
-
-投稿者： 井原 俊介（運用チームリーダー）
-投稿日： 2025年10月20日（月）09:10
-
-@西川麻衣 さん
-SOC監査で指摘のあった2件（アクセス権限／パスワードポリシー）は、10/19付で修正完了しました。
-
-修正証跡（スクリーンショット＋設定履歴）をBoxにアップ済みです。
-
-🟢 返信：西川 麻衣
-
-確認しました。品質レポート更新に反映します。迅速な対応ありがとうございました。
-```
-```
-{
-  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('team-obsdx')/channels/messages",
-  "team": {
-    "id": "team-obsdx",
-    "displayName": "観光DX基盤構築プロジェクト（NEC主導）"
-  },
-  "fetchedAtUtc": "2025-10-27T16:00:00Z",
-  "channels": [
-    {
-      "id": "19:general@thread.tacv2",
-      "displayName": "一般（General）",
-      "messages": [
-        {
-          "id": "msg-gen-001",
-          "replyToId": null,
-          "createdDateTime": "2025-10-13T00:05:00Z",
-          "lastModifiedDateTime": "2025-10-13T00:05:00Z",
-          "messageType": "message",
-          "subject": "【PMO連絡】10月第3週 定例関連連絡",
-          "from": {
-            "user": {
-              "id": "u-ishida",
-              "displayName": "石田 智久（PM）",
-              "userPrincipalName": "tomohisa.ishida@contoso.com"
-            }
-          },
-          "body": {
-            "contentType": "html",
-            "content": "<p>各位</p><p>おはようございます。今週のPMO定例（10:00〜）で扱う主な議題を共有します。</p><ul><li>各チーム進捗（AI／基盤／UX／運用）</li><li>リスク#12（自治体Bデータ遅延）対応方針</li><li>10月分月次報告書進捗</li><li>次回全体会議（10/22）準備</li></ul><p>定例後に議事録をこのチャネルへ共有予定です。</p><p><at id=\"0\">西川麻衣</at> さん、品質・課題部分のサマリを会議後追記お願いします。</p>"
-          },
-          "mentions": [
-            {
-              "id": 0,
-              "mentioned": {
-                "user": {
-                  "id": "u-nishikawa",
-                  "displayName": "西川 麻衣（品質PM）",
-                  "userPrincipalName": "mai.nishikawa@contoso.com"
-                }
-              },
-              "mentionText": "西川麻衣"
-            }
-          ],
-          "attachments": [],
-          "reactions": [],
-          "replies": [
-            {
-              "id": "msg-gen-001-r1",
-              "replyToId": "msg-gen-001",
-              "createdDateTime": "2025-10-13T01:10:00Z",
-              "lastModifiedDateTime": "2025-10-13T01:10:00Z",
-              "messageType": "message",
-              "from": {
-                "user": {
-                  "id": "u-nishikawa",
-                  "displayName": "西川 麻衣（品質PM）",
-                  "userPrincipalName": "mai.nishikawa@contoso.com"
-                }
-              },
-              "body": {
-                "contentType": "html",
-                "content": "<p>承知しました。議事録フォーマットに沿って更新します。午後までに共有します。</p>"
-              },
-              "mentions": [],
-              "attachments": [],
-              "reactions": []
-            }
-          ]
-        },
-        {
-          "id": "msg-gen-002",
-          "replyToId": null,
-          "createdDateTime": "2025-10-14T07:40:00Z",
-          "lastModifiedDateTime": "2025-10-14T07:40:00Z",
-          "messageType": "message",
-          "subject": "【資料共有】月次報告書（草案版）",
-          "from": {
-            "user": {
-              "id": "u-haraguchi",
-              "displayName": "原口 由香（成果物統括）",
-              "userPrincipalName": "yuka.haraguchi@contoso.com"
-            }
-          },
-          "body": {
-            "contentType": "html",
-            "content": "<p>月次報告書（10月分）の<b>草案版（v0.8）</b>をアップロードしました。</p><p><a href=\"https://contoso.sharepoint.com/sites/dx/Shared%20Documents/Reports/2025-10\">共有フォルダへのリンク</a></p><p><at id=\"0\">松下翔太</at> さん、進捗グラフデータ更新をお願いします。<br/><at id=\"1\">西川麻衣</at> さん、品質指標（テスト進捗）部分を追記予定で問題ありませんか？</p>"
-          },
-          "mentions": [
-            {
-              "id": 0,
-              "mentioned": {
-                "user": { "id": "u-matsushita", "displayName": "松下 翔太（スケジュール管理）", "userPrincipalName": "shota.matsushita@contoso.com" }
-              },
-              "mentionText": "松下翔太"
-            },
-            {
-              "id": 1,
-              "mentioned": {
-                "user": { "id": "u-nishikawa", "displayName": "西川 麻衣（品質PM）", "userPrincipalName": "mai.nishikawa@contoso.com" }
-              },
-              "mentionText": "西川麻衣"
-            }
-          ],
-          "attachments": [
-            {
-              "id": "att-001",
-              "contentType": "reference",
-              "name": "共有フォルダへのリンク",
-              "contentUrl": "https://contoso.sharepoint.com/sites/dx/Shared%20Documents/Reports/2025-10"
-            }
-          ],
-          "reactions": [],
-          "replies": [
-            {
-              "id": "msg-gen-002-r1",
-              "replyToId": "msg-gen-002",
-              "createdDateTime": "2025-10-14T08:05:00Z",
-              "lastModifiedDateTime": "2025-10-14T08:05:00Z",
-              "messageType": "message",
-              "from": {
-                "user": { "id": "u-matsushita", "displayName": "松下 翔太（スケジュール管理）", "userPrincipalName": "shota.matsushita@contoso.com" }
-              },
-              "body": { "contentType": "html", "content": "<p>了解しました。AIチーム・基盤チームからの最新進捗（10/13時点）を反映して明朝までにグラフ更新します。</p>" },
-              "mentions": [],
-              "attachments": [],
-              "reactions": []
-            },
-            {
-              "id": "msg-gen-002-r2",
-              "replyToId": "msg-gen-002",
-              "createdDateTime": "2025-10-14T08:10:00Z",
-              "lastModifiedDateTime": "2025-10-14T08:10:00Z",
-              "messageType": "message",
-              "from": {
-                "user": { "id": "u-nishikawa", "displayName": "西川 麻衣（品質PM）", "userPrincipalName": "mai.nishikawa@contoso.com" }
-              },
-              "body": { "contentType": "html", "content": "<p>はい、品質データを10/15午前中に反映します。</p>" },
-              "mentions": [],
-              "attachments": [],
-              "reactions": []
-            }
-          ]
-        },
-        {
-          "id": "msg-gen-003",
-          "replyToId": null,
-          "createdDateTime": "2025-10-17T02:30:00Z",
-          "lastModifiedDateTime": "2025-10-17T02:30:00Z",
-          "messageType": "message",
-          "subject": "【報告】Azureコスト見直し試算完了",
-          "from": {
-            "user": { "id": "u-takeda", "displayName": "竹田 隆（コスト管理）", "userPrincipalName": "takashi.takeda@contoso.com" }
-          },
-          "body": {
-            "contentType": "html",
-            "content": "<p>Azure利用料の再試算が完了しました。</p><p>コスト上昇要因：ログアーカイブ領域の肥大化（＋7%）<br/>対策案：ストレージ階層を「Hot→Cool」へ一部移行で▲4%削減見込み</p><p>詳細レポートを添付しました。</p><p><at id=\"0\">井原 俊介</at> さん、10/16運用会議での提案内容と整合性を再確認お願いします。</p>"
-          },
-          "mentions": [
-            {
-              "id": 0,
-              "mentioned": { "user": { "id": "u-ihara", "displayName": "井原 俊介（運用チームリーダー）", "userPrincipalName": "shunsuke.ihara@contoso.com" } },
-              "mentionText": "井原 俊介"
-            }
-          ],
-          "attachments": [
-            {
-              "id": "att-002",
-              "contentType": "fileReference",
-              "name": "Azure_Cost_Review_20251017.xlsx",
-              "contentUrl": "https://contoso.box.com/file/1234567890",
-              "thumbnailUrl": null
-            }
-          ],
-          "replies": [
-            {
-              "id": "msg-gen-003-r1",
-              "replyToId": "msg-gen-003",
-              "createdDateTime": "2025-10-17T03:00:00Z",
-              "lastModifiedDateTime": "2025-10-17T03:00:00Z",
-              "messageType": "message",
-              "from": { "user": { "id": "u-ihara", "displayName": "井原 俊介（運用チームリーダー）", "userPrincipalName": "shunsuke.ihara@contoso.com" } },
-              "body": { "contentType": "html", "content": "<p>ありがとうございます。運用側で検証済み、内容問題ありません。来週から試行導入します。</p>" },
-              "mentions": [],
-              "attachments": [],
-              "reactions": []
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "19:status@thread.tacv2",
-      "displayName": "定例・進捗報告",
-      "messages": [
-        {
-          "id": "msg-sta-001",
-          "replyToId": null,
-          "createdDateTime": "2025-10-13T04:40:00Z",
-          "lastModifiedDateTime": "2025-10-13T04:40:00Z",
-          "messageType": "message",
-          "subject": "【共有】10/13 PMO定例議事録（要約）",
-          "from": { "user": { "id": "u-matsushita", "displayName": "松下 翔太（進捗管理）", "userPrincipalName": "shota.matsushita@contoso.com" } },
-          "body": {
-            "contentType": "html",
-            "content": "<p>PMO定例（10:00〜11:30）の議事録を共有します。</p><p><b>主な決定事項：</b></p><ul><li>月次報告書締切：10/17(金) 午前中</li><li>Azureコスト見直し提案：10/16 運用会議で提示</li><li>リスク#12「データ提供遅延」：10/20再協議</li></ul><p>詳細版はこちらのリンクをご確認ください。</p>"
-          },
-          "attachments": [
-            {
-              "id": "att-003",
-              "contentType": "reference",
-              "name": "議事録詳細",
-              "contentUrl": "https://contoso.sharepoint.com/sites/dx/Shared%20Documents/Minutes/PMO_20251013.pdf"
-            }
-          ],
-          "replies": [
-            {
-              "id": "msg-sta-001-r1",
-              "replyToId": "msg-sta-001",
-              "createdDateTime": "2025-10-13T05:00:00Z",
-              "lastModifiedDateTime": "2025-10-13T05:00:00Z",
-              "messageType": "message",
-              "from": { "user": { "id": "u-fujiwara", "displayName": "藤原 達也（AI分析リーダー）", "userPrincipalName": "tatsuya.fujiwara@contoso.com" } },
-              "body": { "contentType": "html", "content": "<p>ありがとうございます。AIチーム側ではデータ遅延影響を整理中。PoC工程の再スケジュール案を今週中に共有します。</p>" },
-              "attachments": [],
-              "reactions": []
-            },
-            {
-              "id": "msg-sta-001-r2",
-              "replyToId": "msg-sta-001",
-              "createdDateTime": "2025-10-13T05:05:00Z",
-              "lastModifiedDateTime": "2025-10-13T05:05:00Z",
-              "messageType": "message",
-              "from": { "user": { "id": "u-aizawa", "displayName": "相沢 美帆（UXチーム）", "userPrincipalName": "miho.aizawa@contoso.com" } },
-              "body": { "contentType": "html", "content": "<p>ダッシュボードUI改善案のデモ準備進んでいます。来週月曜の全体会議で画面共有予定です。</p>" },
-              "attachments": [],
-              "reactions": []
-            }
-          ]
-        },
-        {
-          "id": "msg-sta-002",
-          "replyToId": null,
-          "createdDateTime": "2025-10-16T00:00:00Z",
-          "lastModifiedDateTime": "2025-10-16T00:00:00Z",
-          "messageType": "message",
-          "subject": "【進捗報告】リスク#12自治体Bデータ遅延対応",
-          "from": { "user": { "id": "u-nakajima", "displayName": "中嶋 陽介（リスク管理）", "userPrincipalName": "yosuke.nakajima@contoso.com" } },
-          "body": {
-            "contentType": "html",
-            "content": "<p>本日のリスク対策ミーティング（14:00〜）前に現状整理します。</p><ul><li>データ納品予定：11月初旬</li><li>影響：AI再学習スケジュール（PoC2開始延期リスク）</li><li>暫定対応：既存モデルでPoC継続</li></ul><p>会議で「緊急度：中→高」への変更提案予定です。</p><p><at id=\"0\">森岡 翔</at> さん、自治体側への再スケジュール提示資料のドラフト、準備状況教えてください。</p>"
-          },
-          "mentions": [
-            {
-              "id": 0,
-              "mentioned": { "user": { "id": "u-morioka", "displayName": "森岡 翔（契約・調整担当）", "userPrincipalName": "sho.morioka@contoso.com" } },
-              "mentionText": "森岡 翔"
-            }
-          ],
-          "attachments": [],
-          "replies": [
-            {
-              "id": "msg-sta-002-r1",
-              "replyToId": "msg-sta-002",
-              "createdDateTime": "2025-10-16T04:00:00Z",
-              "lastModifiedDateTime": "2025-10-16T04:00:00Z",
-              "messageType": "message",
-              "from": { "user": { "id": "u-morioka", "displayName": "森岡 翔（契約・調整担当）", "userPrincipalName": "sho.morioka@contoso.com" } },
-              "body": { "contentType": "html", "content": "<p>ドラフト版は完成済みです。13:00に自治体側担当へ送付予定。正式合意を週明けに見込み。</p>" },
-              "attachments": [],
-              "reactions": []
-            }
-          ]
-        },
-        {
-          "id": "msg-sta-003",
-          "replyToId": null,
-          "createdDateTime": "2025-10-17T01:20:00Z",
-          "lastModifiedDateTime": "2025-10-17T01:20:00Z",
-          "messageType": "message",
-          "subject": "【完了報告】月次報告書ドラフト提出",
-          "from": { "user": { "id": "u-haraguchi", "displayName": "原口 由香（成果物統括）", "userPrincipalName": "yuka.haraguchi@contoso.com" } },
-          "body": {
-            "contentType": "html",
-            "content": "<p>月次報告書（10月分）を提出完了しました。</p><p><at id=\"0\">石田 智久</at> さん <at id=\"1\">西川 麻衣</at> さん ご確認お願いします。10/22全体推進会議の資料への反映は完了済みです。</p>"
-          },
-          "mentions": [
-            { "id": 0, "mentioned": { "user": { "id": "u-ishida", "displayName": "石田 智久（PM）", "userPrincipalName": "tomohisa.ishida@contoso.com" } }, "mentionText": "石田 智久" },
-            { "id": 1, "mentioned": { "user": { "id": "u-nishikawa", "displayName": "西川 麻衣（品質PM）", "userPrincipalName": "mai.nishikawa@contoso.com" } }, "mentionText": "西川 麻衣" }
-          ],
-          "attachments": [],
-          "replies": [
-            {
-              "id": "msg-sta-003-r1",
-              "replyToId": "msg-sta-003",
-              "createdDateTime": "2025-10-17T01:35:00Z",
-              "lastModifiedDateTime": "2025-10-17T01:35:00Z",
-              "messageType": "message",
-              "from": { "user": { "id": "u-ishida", "displayName": "石田 智久（PM）", "userPrincipalName": "tomohisa.ishida@contoso.com" } },
-              "body": { "contentType": "html", "content": "<p>確認しました。内容問題なしです。お疲れさまでした。</p>" },
-              "attachments": [],
-              "reactions": []
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "19:tech@thread.tacv2",
-      "displayName": "技術・課題共有",
-      "messages": [
-        {
-          "id": "msg-tech-001",
-          "replyToId": null,
-          "createdDateTime": "2025-10-16T08:10:00Z",
-          "lastModifiedDateTime": "2025-10-16T08:10:00Z",
-          "messageType": "message",
-          "subject": "【技術相談】Power BI リスクレポート自動化",
-          "from": { "user": { "id": "u-nakajima", "displayName": "中嶋 陽介（リスク管理）", "userPrincipalName": "yosuke.nakajima@contoso.com" } },
-          "body": {
-            "contentType": "html",
-            "content": "<p><at id=\"0\">三宅 俊介</at> さん</p><p>データ基盤チームで管理している「リスク管理Excel（SharePoint）」をPower BIで自動更新できるようにしたいです。</p><p><b>現在の課題：</b></p><ul><li>Excelファイルのパス固定ができず、更新時にデータソースが切れる</li><li>何か設定上のベストプラクティスありますか？</li></ul>"
-          },
-          "mentions": [
-            { "id": 0, "mentioned": { "user": { "id": "u-miyake", "displayName": "三宅 俊介（データ基盤リーダー）", "userPrincipalName": "shunsuke.miyake@contoso.com" } }, "mentionText": "三宅 俊介" }
-          ],
-          "attachments": [],
-          "replies": [
-            {
-              "id": "msg-tech-001-r1",
-              "replyToId": "msg-tech-001",
-              "createdDateTime": "2025-10-16T08:25:00Z",
-              "lastModifiedDateTime": "2025-10-16T08:25:00Z",
-              "messageType": "message",
-              "from": { "user": { "id": "u-miyake", "displayName": "三宅 俊介（データ基盤リーダー）", "userPrincipalName": "shunsuke.miyake@contoso.com" } },
-              "body": {
-                "contentType": "html",
-                "content": "<p>あります。SharePoint上のExcelは「ドキュメントライブラリ→Excel→接続→リンクをコピー→?web=1」を削除したURLをPower BI側に設定してください。</p><p>次回のPMOリスク会議までにサンプルレポートを作ってもOKです。</p>"
-              },
-              "attachments": [],
-              "reactions": []
-            },
-            {
-              "id": "msg-tech-001-r2",
-              "replyToId": "msg-tech-001",
-              "createdDateTime": "2025-10-16T08:30:00Z",
-              "lastModifiedDateTime": "2025-10-16T08:30:00Z",
-              "messageType": "message",
-              "from": { "user": { "id": "u-nakajima", "displayName": "中嶋 陽介（リスク管理）", "userPrincipalName": "yosuke.nakajima@contoso.com" } },
-              "body": { "contentType": "html", "content": "<p>ありがとうございます！10/25までに試作レポート版を共有します。</p>" },
-              "attachments": [],
-              "reactions": []
-            }
-          ]
-        },
-        {
-          "id": "msg-tech-002",
-          "replyToId": null,
-          "createdDateTime": "2025-10-17T05:00:00Z",
-          "lastModifiedDateTime": "2025-10-17T05:00:00Z",
-          "messageType": "message",
-          "subject": "【AI分析】再学習スケジュール変更の影響確認",
-          "from": { "user": { "id": "u-fujiwara", "displayName": "藤原 達也（AI分析リーダー）", "userPrincipalName": "tatsuya.fujiwara@contoso.com" } },
-          "body": {
-            "contentType": "html",
-            "content": "<p>自治体Bデータ納品遅延の件で、AIモデル再学習スケジュールを再整理しました。</p><ul><li>既存モデルでPoC2継続（10/18〜10/31）</li><li>再学習工程を11/4開始に変更予定</li></ul><p><at id=\"0\">松下翔太</at> さん、進捗管理表への反映お願いします。<br/><at id=\"1\">西川麻衣</at> さん、精度評価KPIの追記項目を再確認お願いします。</p>"
-          },
-          "mentions": [
-            { "id": 0, "mentioned": { "user": { "id": "u-matsushita", "displayName": "松下 翔太（スケジュール管理）", "userPrincipalName": "shota.matsushita@contoso.com" } }, "mentionText": "松下翔太" },
-            { "id": 1, "mentioned": { "user": { "id": "u-nishikawa", "displayName": "西川 麻衣（品質PM）", "userPrincipalName": "mai.nishikawa@contoso.com" } }, "mentionText": "西川麻衣" }
-          ],
-          "attachments": [],
-          "replies": [
-            {
-              "id": "msg-tech-002-r1",
-              "replyToId": "msg-tech-002",
-              "createdDateTime": "2025-10-17T05:10:00Z",
-              "lastModifiedDateTime": "2025-10-17T05:10:00Z",
-              "messageType": "message",
-              "from": { "user": { "id": "u-matsushita", "displayName": "松下 翔太（スケジュール管理）", "userPrincipalName": "shota.matsushita@contoso.com" } },
-              "body": { "contentType": "html", "content": "<p>承知しました。本日の進捗表に反映します。</p>" },
-              "attachments": [],
-              "reactions": []
-            },
-            {
-              "id": "msg-tech-002-r2",
-              "replyToId": "msg-tech-002",
-              "createdDateTime": "2025-10-17T05:12:00Z",
-              "lastModifiedDateTime": "2025-10-17T05:12:00Z",
-              "messageType": "message",
-              "from": { "user": { "id": "u-nishikawa", "displayName": "西川 麻衣（品質PM）", "userPrincipalName": "mai.nishikawa@contoso.com" } },
-              "body": { "contentType": "html", "content": "<p>KPI定義に変更はなし。再学習後に再評価します。</p>" },
-              "attachments": [],
-              "reactions": []
-            }
-          ]
-        },
-        {
-          "id": "msg-tech-003",
-          "replyToId": null,
-          "createdDateTime": "2025-10-20T00:10:00Z",
-          "lastModifiedDateTime": "2025-10-20T00:10:00Z",
-          "messageType": "message",
-          "subject": "【完了報告】SOC監査対応",
-          "from": { "user": { "id": "u-ihara", "displayName": "井原 俊介（運用チームリーダー）", "userPrincipalName": "shunsuke.ihara@contoso.com" } },
-          "body": {
-            "contentType": "html",
-            "content": "<p><at id=\"0\">西川麻衣</at> さん</p><p>SOC監査で指摘のあった2件（アクセス権限／パスワードポリシー）は、10/19付で修正完了しました。</p><p>修正証跡（スクリーンショット＋設定履歴）をBoxにアップ済みです。</p>"
-          },
-          "mentions": [
-            { "id": 0, "mentioned": { "user": { "id": "u-nishikawa", "displayName": "西川 麻衣（品質PM）", "userPrincipalName": "mai.nishikawa@contoso.com" } }, "mentionText": "西川麻衣" }
-          ],
-          "attachments": [
-            {
-              "id": "att-004",
-              "contentType": "reference",
-              "name": "監査対応証跡",
-              "contentUrl": "https://contoso.box.com/folder/87654321"
-            }
-          ],
-          "replies": [
-            {
-              "id": "msg-tech-003-r1",
-              "replyToId": "msg-tech-003",
-              "createdDateTime": "2025-10-20T00:25:00Z",
-              "lastModifiedDateTime": "2025-10-20T00:25:00Z",
-              "messageType": "message",
-              "from": { "user": { "id": "u-nishikawa", "displayName": "西川 麻衣（品質PM）", "userPrincipalName": "mai.nishikawa@contoso.com" } },
-              "body": { "contentType": "html", "content": "<p>確認しました。品質レポート更新に反映します。迅速な対応ありがとうございました。</p>" },
-              "attachments": [],
-              "reactions": []
-            }
-          ]
-        }
-      ]
-    }
-  ]
-}
-
-```
-
-### outlook予定表第一週
-
-```
-✅ 想定されるOutlook予定（抜粋）
-
-PMO定例会議
-
-日時: 2025-10-13 (月) 10:00–11:30
-
-参加: 石田（主催）、西川、森岡、松下、竹田、原口、李、中嶋、三田村、宮野
-
-開催: Microsoft Teams（PMO_定例）
-
-メモ: 当日の議題共有・リスク#12・月次報告・10/22全体推進会議準備
-
-リスク対策検討ミーティング
-
-日時: 2025-10-16 (木) 14:00–15:00
-
-参加: 石田、西川、中嶋、森岡、竹田、松下
-
-開催: Microsoft Teams（PMO_Risk）
-
-メモ: 自治体Bデータ遅延対応（緊急度：中→高）、SOC監査対応、リスクレポート自動化
-
-全体推進会議
-
-日時: 2025-10-22 (水) 10:00–11:30
-
-参加: PMO＋各チームリーダー（約15名）
-
-開催: Microsoft Teams（全体推進会議）
-
-メモ: 10月分月次報告／各チーム進捗／リスク・コスト見通し／UXデモ共有
-
-月次報告書 提出締切（ドラフト）
-
-形式: 終日予定（リマインダー 09:00）
-
-日付: 2025-10-17 (金)
-
-参加: 原口（担当）、石田／西川（確認）
-
-メモ: ドラフト提出・10/22向け資料反映
-```
-
-```json
-{
-  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#me/calendarView",
-  "value": [
-    {
-      "id": "evt-pmo-20251013",
-      "subject": "PMO定例会議",
-      "bodyPreview": "各チーム進捗／リスク#12／月次報告／10/22全体推進会議準備",
-      "body": {
-        "contentType": "html",
-        "content": "<p>PMO定例。議題：各チーム進捗、リスク#12（自治体Bデータ遅延）、10月分月次報告、10/22全体推進会議準備。</p>"
-      },
-      "organizer": {
-        "emailAddress": { "name": "石田 智久（PM）", "address": "tomohisa.ishida@contoso.com" }
-      },
-      "attendees": [
-        { "type": "required", "emailAddress": { "name": "西川 麻衣（品質PM）", "address": "mai.nishikawa@contoso.com" } },
-        { "type": "required", "emailAddress": { "name": "森岡 翔", "address": "sho.morioka@contoso.com" } },
-        { "type": "required", "emailAddress": { "name": "松下 翔太", "address": "shota.matsushita@contoso.com" } },
-        { "type": "required", "emailAddress": { "name": "竹田 隆", "address": "takashi.takeda@contoso.com" } },
-        { "type": "required", "emailAddress": { "name": "原口 由香", "address": "yuka.haraguchi@contoso.com" } },
-        { "type": "optional", "emailAddress": { "name": "李 芳蘭", "address": "foran.lee@contoso.com" } },
-        { "type": "required", "emailAddress": { "name": "中嶋 陽介", "address": "yosuke.nakajima@contoso.com" } },
-        { "type": "optional", "emailAddress": { "name": "三田村 啓", "address": "kei.mitamura@contoso.com" } },
-        { "type": "optional", "emailAddress": { "name": "宮野 春香", "address": "haruka.miyano@contoso.com" } }
-      ],
-      "start": { "dateTime": "2025-10-13T10:00:00", "timeZone": "Tokyo Standard Time" },
-      "end":   { "dateTime": "2025-10-13T11:30:00", "timeZone": "Tokyo Standard Time" },
-      "location": { "displayName": "Microsoft Teams（PMO_定例）" },
-      "isOnlineMeeting": true,
-      "onlineMeetingProvider": "teamsForBusiness",
-      "onlineMeeting": {
-        "joinUrl": "https://teams.microsoft.com/l/meetup-join/19%3apmo-regular%40thread.tacv2/..."
-      },
-      "categories": [ "PMO", "定例" },
-      "transactionId": "a1b2c3d4-pmo-20251013"
-    },
-    {
-      "id": "evt-risk-20251016",
-      "subject": "リスク対策検討ミーティング",
-      "bodyPreview": "自治体Bデータ遅延／SOC監査／リスクレポート自動化",
-      "body": {
-        "contentType": "html",
-        "content": "<p>アジェンダ：自治体Bデータ遅延対応（緊急度：中→高）、SOC監査の指摘2件の対応、Power BIによるリスクレポート自動化。</p>"
-      },
-      "organizer": {
-        "emailAddress": { "name": "石田 智久（PM）", "address": "tomohisa.ishida@contoso.com" }
-      },
-      "attendees": [
-        { "type": "required", "emailAddress": { "name": "西川 麻衣（品質PM）", "address": "mai.nishikawa@contoso.com" } },
-        { "type": "required", "emailAddress": { "name": "中嶋 陽介", "address": "yosuke.nakajima@contoso.com" } },
-        { "type": "required", "emailAddress": { "name": "森岡 翔", "address": "sho.morioka@contoso.com" } },
-        { "type": "required", "emailAddress": { "name": "竹田 隆", "address": "takashi.takeda@contoso.com" } },
-        { "type": "required", "emailAddress": { "name": "松下 翔太", "address": "shota.matsushita@contoso.com" } }
-      ],
-      "start": { "dateTime": "2025-10-16T14:00:00", "timeZone": "Tokyo Standard Time" },
-      "end":   { "dateTime": "2025-10-16T15:00:00", "timeZone": "Tokyo Standard Time" },
-      "location": { "displayName": "Microsoft Teams（PMO_Risk）" },
-      "isOnlineMeeting": true,
-      "onlineMeetingProvider": "teamsForBusiness",
-      "onlineMeeting": {
-        "joinUrl": "https://teams.microsoft.com/l/meetup-join/19%3apmo-risk%40thread.tacv2/..."
-      },
-      "categories": [ "リスク", "PMO" ],
-      "transactionId": "a1b2c3d4-risk-20251016"
-    },
-    {
-      "id": "evt-allhands-20251022",
-      "subject": "全体推進会議",
-      "bodyPreview": "10月月次報告・各チーム進捗・リスク・コスト見通し・UXデモ",
-      "body": {
-        "contentType": "html",
-        "content": "<p>10/22 全体推進会議。各チーム進捗・月次報告・リスク/コスト見通し、UXデモ共有。</p>"
-      },
-      "organizer": {
-        "emailAddress": { "name": "石田 智久（PM）", "address": "tomohisa.ishida@contoso.com" }
-      },
-      "attendees": [
-        { "type": "required", "emailAddress": { "name": "各チームリーダー", "address": "leaders@contoso.com" } },
-        { "type": "optional", "emailAddress": { "name": "品質PM（西川）", "address": "mai.nishikawa@contoso.com" } }
-      ],
-      "start": { "dateTime": "2025-10-22T10:00:00", "timeZone": "Tokyo Standard Time" },
-      "end":   { "dateTime": "2025-10-22T11:30:00", "timeZone": "Tokyo Standard Time" },
-      "location": { "displayName": "Microsoft Teams（全体推進会議）" },
-      "isOnlineMeeting": true,
-      "onlineMeetingProvider": "teamsForBusiness",
-      "onlineMeeting": {
-        "joinUrl": "https://teams.microsoft.com/l/meetup-join/19%3aallhands%40thread.tacv2/..."
-      },
-      "categories": [ "全体会議" ],
-      "transactionId": "a1b2c3d4-allhands-20251022"
-    },
-    {
-      "id": "evt-deadline-20251017",
-      "subject": "（締切）月次報告書ドラフト提出",
-      "bodyPreview": "原口→提出／石田・西川→確認。10/22資料へ反映。",
-      "body": {
-        "contentType": "html",
-        "content": "<p>原口：ドラフト提出。石田/西川：確認。10/22全体推進会議資料に反映。</p>"
-      },
-      "organizer": {
-        "emailAddress": { "name": "原口 由香（成果物統括）", "address": "yuka.haraguchi@contoso.com" }
-      },
-      "attendees": [
-        { "type": "optional", "emailAddress": { "name": "石田 智久（PM）", "address": "tomohisa.ishida@contoso.com" } },
-        { "type": "optional", "emailAddress": { "name": "西川 麻衣（品質PM）", "address": "mai.nishikawa@contoso.com" } }
-      ],
-      "isAllDay": true,
-      "start": { "dateTime": "2025-10-17", "timeZone": "Tokyo Standard Time" },
-      "end":   { "dateTime": "2025-10-18", "timeZone": "Tokyo Standard Time" },
-      "reminderMinutesBeforeStart": 60,
-      "location": { "displayName": "リマインダー" },
-      "categories": [ "締切", "PMO" ],
-      "transactionId": "a1b2c3d4-deadline-20251017"
-    }
-  ]
-}
-
-```
-
-## 📘 第2週（10月20日週）
-
-### 会議③：全体推進会議（行政・NEC合同）
-
-```
-日時： 2025年10月22日（水）14:00〜16:00
-場所： オンライン（Teams）
-出席者：
-行政事務局3名、NEC PMO 10名、各チームリーダー（AI／基盤／運用／UX）
-
-■ 議題
-
-10月進捗報告（全体進行率68％）
-
-PoC進行計画（第2フェーズ）
-
-リスク・コスト見通し
-
-顧客側要望事項（分析レポート頻度・ダッシュボード機能追加）
-
-■ 議事概要
-
-進捗報告
-
-データ基盤：交通系データの連携完了、宿泊データは11月へずれ込み。
-
-AI分析：モデル精度改善（RMSE 0.15）、SHAP分析の自治体B事例を提示。
-
-UX：利用者アンケート回答率72％、UI改善案（ナビ機能）検討中。
-
-PoC第2フェーズ
-
-11月〜1月実施予定。参加自治体を7→9へ拡大。
-
-NEC側：AIモデル改修＋ダッシュボード統合（中谷・相沢担当）。
-
-コスト見通し
-
-クラウドコストは9月比＋5％。竹田が10月補正見積を提示。
-
-行政側了承済み、11月請求に反映。
-
-要望事項
-
-行政側より「宿泊需要予測レポート」を月次から隔週配信へ要望。
-
-藤原チームに分析サイクル短縮を指示。
-
-■ 決定事項
-
-PoC第2フェーズ実施期間：11/1〜1/31
-
-ダッシュボード機能追加（ナビ・フィルタ強化）→ 12月末実装
-
-次回合同会議：11月26日（水）14:00
-
-■ ToDo
+アクションアイテム
 担当	内容	期限
-石田	議事録・報告書提出（行政側へ）	10/24
-藤原	レポート更新サイクル短縮案	10/30
-相沢	ダッシュボード機能要件まとめ	10/27
-竹田	予算補正資料提出	10/25
-西川	品質計画書更新（PoC第2期版）	10/28
+森岡	補足契約書案作成	10/18
+西川	QScoreテスト結果共有	10/17
+原口・李	月次報告書（日英版）完成	10/17
+松下	全体進捗グラフ更新	10/18
+宮野	会議資料集約・体裁調整	10/18
 ```
 
-### 会議④：成果物レビュー会議（PMO＋品質チーム）
+### 🗓️ 会議②：対外報告準備ミーティング（新規発生業務）
 
 ```
-日時： 2025年10月24日（金）13:00〜14:30
-出席者： 西川、原口、石田、宮野、李、望月（QAリーダー）
+🗓️ 会議②：対外報告準備ミーティング（新規発生業務）
 
-■ 議題
+開催日：2025年10月17日（金） 14:00〜15:30
+場所：NEC本社 第5会議室＋Teams
+出席者：石田、西川、原口、李、三田村、宮野
 
-データ基盤API v2.0設計書レビュー
+議題
 
-AIモデル精度報告書レビュー
+顧客向け月次報告プレゼンの構成確認
 
-ドキュメント版管理ルール更新
+スライド体裁（社外公開版）の整備
 
-■ 議事概要
+想定質疑・回答整理
 
-API v2.0設計書
+議事内容
 
-REST構成→GraphQLハイブリッド案が提示。
+原口：「報告書の本文をスライド化する際、数字が多くて見づらい。グラフ中心に再構成したい。」
 
-認証部分に不備（トークン更新手順）あり。再提出依頼。
+西川：「品質指標部分は棒グラフ＋トレンド線を入れることで改善傾向を見せられます。」
 
-AIモデル精度報告書
+石田：「顧客は“改善の継続性”を重視する。単月数値だけでなく、QScoreの3カ月推移を載せて。」
 
-本田作成版を確認。グラフ体裁修正指示。
+李：「翻訳も進めています。‘Quality Assurance Index’を正式名称にします。」
+三田村：「全体会議当日の配信・Teamsチャネル整理は私が担当します。」
+宮野：「発表者ごとの発言順もスライドノートにまとめます。」
 
-顧客向け資料は簡略版＋技術付録形式へ変更。
+決定事項
 
-版管理ルール
+グラフ中心構成で資料再編（原口・西川）
 
-Teams共有→SharePointへの正式移行を決定。
+英語版発表資料は10/20午前までに完成（李）
 
-原口がフォルダ構造案を10/28に提示予定。
-
-■ 決定事項
-
-API設計書再提出期限：10月29日（水）
-
-モデル報告書提出：10月28日（火）
-
-成果物格納先：SharePoint正式運用へ移行
-
-■ ToDo
-担当	内容	期限
-原口	SharePointフォルダ構成案提示	10/28
-西川	API設計書レビュー追記	10/29
-宮野	成果物管理マニュアル更新	10/30
+発表者：石田（全体）、西川（品質）、松下（進捗）、竹田（コスト）
 ```
+
 ### teamsでの会話内容
+```
+📋 Teams全体まとめ（10月第3週）
+チャネル	主な話題	新規／継続	完了状況
+📰 一般	PMO定例の作業依頼・進捗報告	継続業務	各担当者が期限通り対応完了
+📅 定例・進捗報告	進捗率更新・QScoreレポート共有	継続＋改善業務	全体進捗79.5%に上昇
+💬 技術・課題共有	外部API仕様変更対応（リスク#17）	新規発生業務	ETL修正・テスト準備済み
+💬 技術・課題共有	全体会議資料準備	継続業務	英語版資料を含めすべて完了
+```
 
 ```
+💬 Microsoft Teams チャット再現
+チーム名：🏢 NEC観光DX基盤構築プロジェクト（全体）
 📰 一般（General）
+スレッド①：10月第3週の作業依頼・共有（10/14投稿）
 
-📢 石田 智久（統括PM）
+投稿者：石田 智久（統括PM）｜2025年10月14日（火） 13:05
 
-【全体共有】10月第4週の連絡事項
+各位
+本日のPMO定例（10/14）で決まった事項を共有します。
+それぞれ該当者は今週中の対応をお願いします。
 
-・全体進捗報告資料（10月度）を共有しました。
-・10/22の**全体推進会議（行政合同）**で承認されたPoC第2フェーズ計画について、各チームでのタスク登録をお願いします。
-・会議資料・議事録は以下に格納済みです。
-📎 SharePoint > 会議資料 > 2025_10_22_合同会議
+@森岡 翔 さん：補足契約書（ETL遅延対応）案の作成（期限：10/18）
 
-@西川麻衣 さん、品質計画書の第2期版、10/28までにドラフト共有をお願いします。
+@西川 麻衣 さん：QScoreテスト結果の報告資料まとめ（期限：10/17）
 
-💬 西川 麻衣（品質PM）
+@原口 由香 さん、@李 芳蘭 さん：月次報告書（日英版）最終版の提出（10/17）
 
-承知しました。第2期版のテンプレートは前回と同様のフォーマットで進めます。
-10/26までに初稿をこちらのチャネルで共有予定です。
+@松下 翔太 さん：全体進捗グラフを最新版に更新（10/18）
 
-📎 原口 由香（成果物統括）
+@宮野 里桜 さん：全体会議（10/22）資料の集約（10/18）
 
-SharePoint移行に向けた**フォルダ構成案（ドラフト）**をアップしました。
+進捗・完了報告はこのスレッドに返信でお願いします。
+※次回全体会議資料はTeams「📅定例・進捗報告」チャネルにまとめ予定です。
 
-📄 成果物管理構成案_v1.0.xlsx
+返信：西川 麻衣｜10/15（水） 09:30
 
-各チームからの格納ルール意見を募集中です。@宮野 さん、ドキュメント管理マニュアルの更新版との整合も確認お願いします。
+@石田 さん
+QScoreテストレポートの集計完了しました。
+UXチームの改善傾向が明確に出ています（平均スコア＋6pt）。
+資料は明日午前にドラフトを共有します。
 
-🗣️ 石田 智久（統括PM）
+返信：森岡 翔｜10/15（水） 14:20
 
-ありがとうございます。
-SharePoint運用ルールは10/30のPMOレビュー会議で確定します。
-各チーム、確認・コメントを10/28までにお願いします。
+補足契約書案を法務チェック中です。
+@石田 さん、@竹田 さん、コスト影響（＋8h工数）を追記しました。
+法務確認完了次第、PMOフォルダに格納します。
+
+返信：原口 由香｜10/16（木） 10:05
+
+報告書の本文完成しました。
+@李 さんに英語版セクション（KPI訳語）を回しています。
+「Service Readiness」は「System Preparedness」に統一する方向で進めます。
+
+返信：李 芳蘭｜10/16（木） 15:40
+
+@原口 さん 翻訳部分完了しました。
+英語版報告書、PMレビュー用に格納しました。
+📁 /Documents/PMO/Reports/202510_Monthly_EN.pdf
+
+返信：宮野 里桜｜10/17（金） 18:05
+
+全体会議資料のテンプレート整えました。
+各チームリーダーへのリマインドを月曜（10/20）朝に送ります。
+
+返信：石田 智久｜10/18（土） 09:15
+
+みなさん対応ありがとうございました。
+これで全体会議（10/22）の準備に入れます。
+来週は顧客報告リハーサルも控えていますので、引き続きよろしくお願いします。
 
 📅 定例・進捗報告
+スレッド②：全体進捗共有（10/16更新）
 
-🗓️ 松下 翔太（スケジュール管理）
+投稿者：松下 翔太（スケジュール管理）｜2025年10月16日（木） 09:10
 
-【進捗サマリ／10月20日週】
+@PMOメンバー 各位
+10/14時点の最新進捗を更新しました。
 
-全体進行率：68％ → 71％へ上昇見込み
+チーム	進捗率	コメント
+データ基盤	82%	ETL更新遅延。外部委託側で調整中。
+AI分析	76%	モデル精度検証フェーズ中。
+UX	71%	マニュアル整備＋UI改善。
+品質保証	85%	QScore導入試行。
+全体平均	78.5%（−2.3pt）	小幅遅れ、回復見込みあり。
 
-PoC第2フェーズ準備進行中（データ連携完了率 80％）
+@三田村 圭吾 さん
+全体ダッシュボードのグラフ更新をお願いできますか？
+10/18の全体資料提出に間に合わせたいです。
 
-次週（10/27週）はAI・UX両チームで統合テスト開始予定
+返信：三田村 圭吾｜10/16（木） 13:50
 
-@藤原 さん、AIモデル更新スケジュールの確定版、こちらに共有お願いできますか？
+@松下 さん 承知しました。
+最新進捗グラフをPower BIで再描画中です。
+AIチームの数値を反映したら共有します（本日中予定）。
 
-🤖 藤原 慎（AI分析リーダー）
+返信：藤原 慎（AI分析）｜10/16（木） 14:15
 
-はい、こちらになります👇
+AIチーム側の最新進捗は 79% に更新可能です。
+精度93.4%を達成、最終調整段階です。
+@松下 さん 修正版で反映お願いします。
 
-AIモデル更新スケジュール（PoC第2期）
+返信：松下 翔太｜10/16（木） 15:10
 
-10/25〜10/29：データ再学習（交通・宿泊統合版）
+了解しました。全体平均 79.5% に上方修正します。
+更新版をPMOフォルダに上げます。
 
-10/30：RMSE検証・SHAP再解析
+返信：石田 智久｜10/17（金） 09:00
 
-10/31：行政側レビュー資料作成（本田担当）
+良い流れです。
+全体会議の資料では「改善傾向が見られる」として報告予定です。
 
-10/27に暫定モデルを共有予定です。
+スレッド③：QScoreレポート共有（10/17）
 
-🧩 相沢 美里（UX・顧客連携リーダー）
+投稿者：西川 麻衣（品質PM）｜2025年10月17日（金） 10:00
 
-@藤原 さん
-SHAP解析結果の出力形式、UI側でも可視化したいので、JSON形式での出力にしてもらえますか？
-ダッシュボード連携の部分（ナビ・フィルタ強化）を私と中谷で実装中です。
+@全員
+QScore試行の第1回結果を共有します。
+📎 QScore_Report_UX_20251017.pdf
 
-🤖 藤原 慎（AI分析リーダー）
+概要：
 
-承知しました。JSON出力対応は10/26夜に反映します。
-UI側での描画用サンプルデータも合わせて共有します。
+対象：UXチーム「レポート出力」機能
 
-💰 竹田 隆（コスト管理）
+評価項目：UI応答時間・コード品質・テスト通過率
 
-【報告】
-10月補正見積を本日行政側に提出済みです。
-クラウドコスト上昇分（＋5％）も了承済み。
-11月請求に反映されます。
+結果：総合スコア 74 → 80 (+6pt)
 
-📋 西川 麻衣（品質PM）
+改善要因：非同期処理化による応答速度短縮
 
-品質計画書（PoC第2期）ドラフトをアップしました。
+@相沢 沙耶 さん
+次の対象として「比較分析」画面の測定をお願いしたいです。
+来週水曜までにテストスクリプトを共有ください。
 
-📎 品質計画書_PoC2期draft_20251025.docx
+返信：相沢 沙耶（UXリーダー）｜10/17（金） 10:20
 
-@石田 さん、@原口 さん、レビューお願いします。
-次回のPMO＋品質チーム会議（10/24）で確定予定です。
+@西川 さん 承知しました。
+スクリプト修正版を準備中です。
+週明け（10/21）午前に共有予定です。
+
+返信：望月 俊（品質保証）｜10/17（金） 10:25
+
+QScoreレポート確認しました。
+品質指標の一部を品質チームの統合ダッシュボードに反映します。
+来週の品質会議（10/24）で共有予定です。
 
 💬 技術・課題共有
+スレッド④：外部API仕様変更対応（リスク#17）
 
-💬 宮野 翔（QAチーム）
+投稿者：中嶋 拓真（リスク分析官）｜2025年10月16日（木） 16:45
 
-API v2.0のレビュー結果を共有します。
+皆さん
+リスク#17（外部API仕様変更）について報告します。
 
-GraphQLハイブリッド構成：可
+API提供元の仕様変更が確定：
 
-認証処理：トークン更新手順に不備あり（要修正）
+日時形式が YYYY/MM/DD → YYYY-MM-DDTHH:MM:SS に変更
 
-バージョン管理：リクエストスキーマにschemaVersionを追加推奨
+フィールド名 visit_date → used_date に変更
 
-@中谷 さん、修正版の設計書は10/29提出で問題ないでしょうか？
+@木下 俊輔 さん（データ基盤）
+ETLマッピング修正、影響範囲確認お願いします。
+@橋本 翼 さん（品質管理） にもレビュー依頼を出しています。
 
-🧑‍💻 中谷 悠（基盤チーム）
+返信：木下 俊輔（データ基盤）｜10/16（木） 17:10
+
+@中嶋 さん
+確認しました。ETLのスキーマ修正を行います。
+再送予定（10/18）のデータで再テストを実施予定です。
+Airflowジョブ側もパラメータ変更を反映します。
+
+返信：橋本 翼（品質管理）｜10/16（木） 17:25
+
+@木下 さん
+確認用テストケースをこちらで作成します。
+明日午前までに共有予定。
+ETL通過後にログ整合性も検証します。
+
+返信：中嶋 拓真｜10/17（金） 09:00
+
+対応ありがとうございます。
+この件は「中リスク」→「監視中」に変更してリスクレジスタを更新します。
+
+スレッド⑤：全体会議準備タスク（10/18）
+
+投稿者：宮野 里桜（PMOアシスタント）｜2025年10月18日（土） 09:10
+
+@全員
+全体会議（10/22）用の資料提出が本日締切です。
+以下の進捗を確認します：
+
+✅ QScoreレポート（@西川 さん）
+
+✅ 英語版月次報告書（@李 さん）
+
+🔄 全体進捗グラフ（@松下 さん）
+
+🔄 リスク一覧更新（@中嶋 さん）
+
+⏳ 顧客向けスライド英語版（@原口 さん）
+
+@原口 さん、進捗いかがですか？
+
+返信：原口 由香｜10/18（土） 09:30
 
 @宮野 さん
-承知しました。修正対応中です。
-schemaVersionはリクエストヘッダで対応予定。
-明日（10/26）テスト環境で認証確認を行います。
+スライド最終確認中です。
+英語表現のチェックを @李 さんと並行しています。
+10:30までにアップします。
 
-💬 望月 亮（QAリーダー）
+返信：李 芳蘭｜10/18（土） 09:45
 
-補足します。
-テスト観点では、GraphQLリクエストのパラメータ検証ロジックを追加します。
-QAチーム内で共通テストケースを10/27に共有予定です。
+確認完了しました。
+誤訳修正と用語統一を反映しました。
+最終版 Presentation_ENG_20251022.pptx を共有しました。
 
-💬 本田 一樹（AIチーム）
+返信：宮野 里桜｜10/18（土） 10:00
 
-モデル精度報告書（ドラフト）を更新しました。
+全資料受領しました。
+PMOフォルダに集約完了です。
+@石田 さん、最終版としてご確認ください。
 
-📄 Model_Accuracy_Report_v2.1.pdf
-
-RMSE: 0.152 → 0.147 に改善。
-SHAP可視化グラフを刷新し、自治体Bの事例を追記しています。
-@西川 さん、体裁確認お願いします。
-
-📊 西川 麻衣（品質PM）
+返信：石田 智久｜10/18（土） 10:15
 
 確認しました。
-グラフ凡例の日本語化をお願いします。
-併せて、顧客向け報告書は「概要＋付録」形式で提出予定なので、概要版は10/28までに共有ください。
-
-💬 相沢 美里（UX・顧客連携リーダー）
-
-@本田 さん、SHAP結果の可視化部分、UIデザインに反映しました。
-ナビ機能のプロトタイプを今週中に共有予定です。
-
-📎 Dashboard_NaviPrototype_v0.3.mp4
-
-✅ 石田 智久（統括PM）
-
-各担当ありがとうございます。
-この週のタスク進捗をまとめると以下になります：
-
-PoC第2期スケジュール確定 ✅
-
-SharePoint運用開始準備中（原口・宮野）🔄
-
-モデル精度報告書：最終化中（本田・西川）🔄
-
-ダッシュボード改修：UI設計完了、実装中（相沢・中谷）🔄
-
-次回：全体進捗レビュー 10/28（火）午前10:00〜
-進捗更新をこのチャネルに投稿してください。
-
-🔚（週末まとめ投稿）
-
-🗓️ 松下 翔太（スケジュール管理）
-
-【週末報告まとめ／10月25日時点】
-
-全体進行率：71％
-
-PoC2期タスク登録完了
-
-成果物レビュー進行中（API・モデル）
-
-SharePoint運用開始準備：原口チーム完了報告
-
-来週から統合テスト移行に入ります。
-各チーム、テスト観点の再確認をお願いします。
+全体会議用の資料はこれで確定とします。
+各チーム代表者には別途アナウンス予定です。
+お疲れさまでした！
 ```
 ```
 {
@@ -1598,709 +769,1818 @@ SharePoint運用開始準備：原口チーム完了報告
     "id": "team-nec-kanko-dx",
     "displayName": "NEC観光DX基盤構築プロジェクト（全体）"
   },
+  "fetchedAtUtc": "2025-10-27T19:00:00Z",
   "channels": [
     {
       "id": "19:general@thread.tacv2",
       "displayName": "📰 一般（General）",
       "messages": [
         {
-          "id": "msg-gen-001",
+          "id": "gen-20251014-1305",
           "replyToId": null,
-          "createdDateTime": "2025-10-22T09:30:00Z",
-          "lastModifiedDateTime": "2025-10-22T09:30:00Z",
+          "etag": "W/\"gen-20251014-1305\"",
           "messageType": "message",
+          "createdDateTime": "2025-10-14T04:05:00Z",
+          "lastModifiedDateTime": "2025-10-14T04:05:00Z",
           "importance": "normal",
-          "subject": "【全体共有】10月第4週の連絡事項",
+          "subject": "10月第3週：PMO定例の作業依頼・共有",
           "from": {
             "user": {
               "id": "u-ishida",
               "displayName": "石田 智久（統括PM）",
-              "userPrincipalName": "tomohisa.ishida@contoso.com"
+              "userIdentityType": "aadUser"
             }
           },
           "body": {
             "contentType": "html",
-            "content": "<div>【全体共有】10月第4週の連絡事項</div><div><br/></div><div>・全体進捗報告資料（10月度）を共有しました。</div><div>・10/22の<strong>全体推進会議（行政合同）</strong>で承認されたPoC第2フェーズ計画について、各チームでのタスク登録をお願いします。</div><div>・会議資料・議事録は以下に格納済みです。</div><div>📎 <a href=\"https://sharepoint.contoso.com/pmo/meetings/20251022\">SharePoint &gt; 会議資料 &gt; 2025_10_22_合同会議</a></div><div><br/></div><div><at id=\"0\">西川 麻衣</at> さん、品質計画書の第2期版、10/28までにドラフト共有をお願いします。</div>"
+            "content": "<p>各位<br/>本日のPMO定例（10/14）で決まった事項を共有します。該当者は今週中の対応をお願いします。</p><ul><li><at id=\"0\">森岡 翔</at>：補足契約書（ETL遅延対応）案の作成（期限：10/18）</li><li><at id=\"1\">西川 麻衣</at>：QScoreテスト結果の報告資料まとめ（期限：10/17）</li><li><at id=\"2\">原口 由香</at>、<at id=\"3\">李 芳蘭</at>：月次報告書（日英版）最終版の提出（10/17）</li><li><at id=\"4\">松下 翔太</at>：全体進捗グラフを最新版に更新（10/18）</li><li><at id=\"5\">宮野 里桜</at>：全体会議（10/22）資料の集約（10/18）</li></ul><p>進捗・完了報告はこのスレッドに返信でお願いします。<br/>※次回全体会議資料はTeams「📅定例・進捗報告」チャネルにまとめ予定です。</p>"
           },
           "mentions": [
-            {
-              "id": 0,
-              "mentionText": "西川 麻衣",
-              "mentioned": {
-                "user": {
-                  "id": "u-nishikawa",
-                  "displayName": "西川 麻衣（品質PM）",
-                  "userPrincipalName": "mai.nishikawa@contoso.com"
-                }
-              }
-            }
+            { "id": 0, "mentioned": { "user": { "id": "u-morioka", "displayName": "森岡 翔" } }, "mentionText": "森岡 翔" },
+            { "id": 1, "mentioned": { "user": { "id": "u-nishikawa", "displayName": "西川 麻衣" } }, "mentionText": "西川 麻衣" },
+            { "id": 2, "mentioned": { "user": { "id": "u-haraguchi", "displayName": "原口 由香" } }, "mentionText": "原口 由香" },
+            { "id": 3, "mentioned": { "user": { "id": "u-li", "displayName": "李 芳蘭" } }, "mentionText": "李 芳蘭" },
+            { "id": 4, "mentioned": { "user": { "id": "u-matsushita", "displayName": "松下 翔太" } }, "mentionText": "松下 翔太" },
+            { "id": 5, "mentioned": { "user": { "id": "u-miyano", "displayName": "宮野 里桜" } }, "mentionText": "宮野 里桜" }
           ],
-          "attachments": [
-            {
-              "id": "att-001",
-              "contentType": "reference",
-              "name": "2025_10_22_合同会議",
-              "contentUrl": "https://sharepoint.contoso.com/pmo/meetings/20251022"
-            }
-          ],
+          "reactions": [],
+          "attachments": [],
           "replies": [
             {
-              "id": "msg-gen-001-r1",
-              "replyToId": "msg-gen-001",
-              "createdDateTime": "2025-10-22T10:05:00Z",
-              "lastModifiedDateTime": "2025-10-22T10:05:00Z",
+              "id": "gen-20251015-0930-r1",
+              "replyToId": "gen-20251014-1305",
+              "createdDateTime": "2025-10-15T00:30:00Z",
+              "lastModifiedDateTime": "2025-10-15T00:30:00Z",
               "messageType": "message",
+              "importance": "normal",
               "from": {
                 "user": {
                   "id": "u-nishikawa",
                   "displayName": "西川 麻衣（品質PM）",
-                  "userPrincipalName": "mai.nishikawa@contoso.com"
+                  "userIdentityType": "aadUser"
                 }
               },
               "body": {
                 "contentType": "html",
-                "content": "<div>承知しました。第2期版のテンプレートは前回と同様のフォーマットで進めます。10/26までに初稿をこちらのチャネルで共有予定です。</div>"
-              }
-            }
-          ]
-        },
-        {
-          "id": "msg-gen-002",
-          "replyToId": null,
-          "createdDateTime": "2025-10-25T01:40:00Z",
-          "lastModifiedDateTime": "2025-10-25T01:40:00Z",
-          "messageType": "message",
-          "importance": "normal",
-          "subject": "SharePoint移行：フォルダ構成案（ドラフト）共有",
-          "from": {
-            "user": {
-              "id": "u-haraguchi",
-              "displayName": "原口 由香（成果物統括）",
-              "userPrincipalName": "yuka.haraguchi@contoso.com"
-            }
-          },
-          "body": {
-            "contentType": "html",
-            "content": "<div>SharePoint移行に向けた<strong>フォルダ構成案（ドラフト）</strong>をアップしました。</div><div><br/></div><div>📄 成果物管理構成案_v1.0.xlsx</div><div><br/></div><div>各チームからの格納ルール意見を募集中です。<at id=\"0\">宮野 翔</at> さん、ドキュメント管理マニュアルの更新版との整合も確認お願いします。</div>"
-          },
-          "mentions": [
+                "content": "<p><at id=\"0\">石田 智久</at> さん<br/>QScoreテストレポートの集計完了しました。UXチームの改善傾向が明確に出ています（平均スコア＋6pt）。資料は明日午前にドラフトを共有します。</p>"
+              },
+              "mentions": [
+                { "id": 0, "mentioned": { "user": { "id": "u-ishida", "displayName": "石田 智久" } }, "mentionText": "石田 智久" }
+              ],
+              "attachments": []
+            },
             {
-              "id": 0,
-              "mentionText": "宮野 翔",
-              "mentioned": {
+              "id": "gen-20251015-1420-r2",
+              "replyToId": "gen-20251014-1305",
+              "createdDateTime": "2025-10-15T05:20:00Z",
+              "lastModifiedDateTime": "2025-10-15T05:20:00Z",
+              "messageType": "message",
+              "importance": "normal",
+              "from": {
+                "user": {
+                  "id": "u-morioka",
+                  "displayName": "森岡 翔（契約・調整）",
+                  "userIdentityType": "aadUser"
+                }
+              },
+              "body": {
+                "contentType": "html",
+                "content": "<p>補足契約書案を法務チェック中です。<br/><at id=\"0\">石田</at> さん、<at id=\"1\">竹田</at> さん、コスト影響（＋8h工数）を追記しました。法務確認完了次第、PMOフォルダに格納します。</p>"
+              },
+              "mentions": [
+                { "id": 0, "mentioned": { "user": { "id": "u-ishida", "displayName": "石田 智久" } }, "mentionText": "石田" },
+                { "id": 1, "mentioned": { "user": { "id": "u-takeda", "displayName": "竹田 隆" } }, "mentionText": "竹田" }
+              ],
+              "attachments": []
+            },
+            {
+              "id": "gen-20251016-1005-r3",
+              "replyToId": "gen-20251014-1305",
+              "createdDateTime": "2025-10-16T01:05:00Z",
+              "lastModifiedDateTime": "2025-10-16T01:05:00Z",
+              "messageType": "message",
+              "from": {
+                "user": {
+                  "id": "u-haraguchi",
+                  "displayName": "原口 由香（成果物統括）",
+                  "userIdentityType": "aadUser"
+                }
+              },
+              "body": {
+                "contentType": "html",
+                "content": "<p>報告書の本文完成しました。<br/><at id=\"0\">李</at> さんに英語版セクション（KPI訳語）を回しています。<br/>「Service Readiness」は「System Preparedness」に統一する方向で進めます。</p>"
+              },
+              "mentions": [
+                { "id": 0, "mentioned": { "user": { "id": "u-li", "displayName": "李 芳蘭" } }, "mentionText": "李" }
+              ],
+              "attachments": []
+            },
+            {
+              "id": "gen-20251016-1540-r4",
+              "replyToId": "gen-20251014-1305",
+              "createdDateTime": "2025-10-16T06:40:00Z",
+              "lastModifiedDateTime": "2025-10-16T06:40:00Z",
+              "messageType": "message",
+              "from": {
+                "user": {
+                  "id": "u-li",
+                  "displayName": "李 芳蘭（PMO補佐）",
+                  "userIdentityType": "aadUser"
+                }
+              },
+              "body": {
+                "contentType": "html",
+                "content": "<p><at id=\"0\">原口 由香</at> さん 翻訳部分完了しました。英語版報告書、PMレビュー用に格納しました。<br/>📁 /Documents/PMO/Reports/202510_Monthly_EN.pdf</p>"
+              },
+              "mentions": [
+                { "id": 0, "mentioned": { "user": { "id": "u-haraguchi", "displayName": "原口 由香" } }, "mentionText": "原口 由香" }
+              ],
+              "attachments": []
+            },
+            {
+              "id": "gen-20251017-1805-r5",
+              "replyToId": "gen-20251014-1305",
+              "createdDateTime": "2025-10-17T09:05:00Z",
+              "lastModifiedDateTime": "2025-10-17T09:05:00Z",
+              "messageType": "message",
+              "from": {
                 "user": {
                   "id": "u-miyano",
-                  "displayName": "宮野 翔（QA）",
-                  "userPrincipalName": "sho.miyano@contoso.com"
+                  "displayName": "宮野 里桜（PMOアシスタント）",
+                  "userIdentityType": "aadUser"
                 }
-              }
-            }
-          ],
-          "attachments": [
+              },
+              "body": {
+                "contentType": "html",
+                "content": "<p>全体会議資料のテンプレート整えました。各チームリーダーへのリマインドを月曜（10/20）朝に送ります。</p>"
+              },
+              "mentions": [],
+              "attachments": []
+            },
             {
-              "id": "att-002",
-              "contentType": "reference",
-              "name": "成果物管理構成案_v1.0.xlsx",
-              "contentUrl": "https://sharepoint.contoso.com/pmo/docs/成果物管理構成案_v1.0.xlsx"
-            }
-          ],
-          "replies": [
-            {
-              "id": "msg-gen-002-r1",
-              "replyToId": "msg-gen-002",
-              "createdDateTime": "2025-10-25T02:05:00Z",
-              "lastModifiedDateTime": "2025-10-25T02:05:00Z",
+              "id": "gen-20251018-0915-r6",
+              "replyToId": "gen-20251014-1305",
+              "createdDateTime": "2025-10-18T00:15:00Z",
+              "lastModifiedDateTime": "2025-10-18T00:15:00Z",
               "messageType": "message",
               "from": {
                 "user": {
                   "id": "u-ishida",
                   "displayName": "石田 智久（統括PM）",
-                  "userPrincipalName": "tomohisa.ishida@contoso.com"
+                  "userIdentityType": "aadUser"
                 }
               },
               "body": {
                 "contentType": "html",
-                "content": "<div>ありがとうございます。SharePoint運用ルールは<strong>10/30のPMOレビュー会議</strong>で確定します。各チーム、確認・コメントを<strong>10/28</strong>までにお願いします。</div>"
-              }
+                "content": "<p>みなさん対応ありがとうございました。これで全体会議（10/22）の準備に入れます。来週は顧客報告リハーサルも控えていますので、引き続きよろしくお願いします。</p>"
+              },
+              "mentions": [],
+              "attachments": []
             }
           ]
         }
       ]
     },
     {
-      "id": "19:progress@thread.tacv2",
+      "id": "19:weekly@thread.tacv2",
       "displayName": "📅 定例・進捗報告",
       "messages": [
         {
-          "id": "msg-prog-001",
+          "id": "wkly-20251016-0910",
           "replyToId": null,
-          "createdDateTime": "2025-10-23T00:30:00Z",
-          "lastModifiedDateTime": "2025-10-23T00:30:00Z",
+          "etag": "W/\"wkly-20251016-0910\"",
           "messageType": "message",
+          "createdDateTime": "2025-10-16T00:10:00Z",
+          "lastModifiedDateTime": "2025-10-16T00:10:00Z",
           "importance": "normal",
-          "subject": "【進捗サマリ／10月20日週】",
+          "subject": "全体進捗共有（10/16更新）",
           "from": {
             "user": {
               "id": "u-matsushita",
               "displayName": "松下 翔太（スケジュール管理）",
-              "userPrincipalName": "shota.matsushita@contoso.com"
+              "userIdentityType": "aadUser"
             }
           },
           "body": {
             "contentType": "html",
-            "content": "<div>【進捗サマリ／10月20日週】</div><div><br/></div><div>・全体進行率：68％ → 71％へ上昇見込み</div><div>・PoC第2フェーズ準備進行中（データ連携完了率 80％）</div><div>・次週（10/27週）はAI・UX両チームで<strong>統合テスト開始</strong>予定</div><div><br/></div><div><at id=\"0\">藤原 慎</at> さん、AIモデル更新スケジュールの確定版、こちらに共有お願いできますか？</div>"
+            "content": "<p><at id=\"0\">PMOメンバー</at> 各位<br/>10/14時点の最新進捗を更新しました。</p><table><thead><tr><th>チーム</th><th>進捗率</th><th>コメント</th></tr></thead><tbody><tr><td>データ基盤</td><td>82%</td><td>ETL更新遅延。外部委託側で調整中。</td></tr><tr><td>AI分析</td><td>76%</td><td>モデル精度検証フェーズ中。</td></tr><tr><td>UX</td><td>71%</td><td>マニュアル整備＋UI改善。</td></tr><tr><td>品質保証</td><td>85%</td><td>QScore導入試行。</td></tr><tr><td><b>全体平均</b></td><td><b>78.5%（−2.3pt）</b></td><td>小幅遅れ、回復見込みあり。</td></tr></tbody></table><p><at id=\"1\">三田村 圭吾</at> さん 全体ダッシュボードのグラフ更新をお願いできますか？10/18の全体資料提出に間に合わせたいです。</p>"
           },
           "mentions": [
-            {
-              "id": 0,
-              "mentionText": "藤原 慎",
-              "mentioned": {
-                "user": {
-                  "id": "u-fujiwara",
-                  "displayName": "藤原 慎（AI分析リーダー）",
-                  "userPrincipalName": "makoto.fujiwara@contoso.com"
-                }
-              }
-            }
+            { "id": 0, "mentioned": { "conversation": { "id": "19:weekly@thread.tacv2" } }, "mentionText": "PMOメンバー" },
+            { "id": 1, "mentioned": { "user": { "id": "u-mitamura", "displayName": "三田村 圭吾" } }, "mentionText": "三田村 圭吾" }
           ],
+          "attachments": [],
           "replies": [
             {
-              "id": "msg-prog-001-r1",
-              "replyToId": "msg-prog-001",
-              "createdDateTime": "2025-10-23T01:00:00Z",
-              "lastModifiedDateTime": "2025-10-23T01:00:00Z",
+              "id": "wkly-20251016-1350-r1",
+              "replyToId": "wkly-20251016-0910",
+              "createdDateTime": "2025-10-16T04:50:00Z",
+              "lastModifiedDateTime": "2025-10-16T04:50:00Z",
+              "messageType": "message",
+              "from": {
+                "user": {
+                  "id": "u-mitamura",
+                  "displayName": "三田村 圭吾（コミュニケーション）",
+                  "userIdentityType": "aadUser"
+                }
+              },
+              "body": {
+                "contentType": "html",
+                "content": "<p><at id=\"0\">松下</at> さん 承知しました。最新進捗グラフをPower BIで再描画中です。AIチームの数値を反映したら共有します（本日中予定）。</p>"
+              },
+              "mentions": [
+                { "id": 0, "mentioned": { "user": { "id": "u-matsushita", "displayName": "松下 翔太" } }, "mentionText": "松下" }
+              ]
+            },
+            {
+              "id": "wkly-20251016-1415-r2",
+              "replyToId": "wkly-20251016-0910",
+              "createdDateTime": "2025-10-16T05:15:00Z",
+              "lastModifiedDateTime": "2025-10-16T05:15:00Z",
               "messageType": "message",
               "from": {
                 "user": {
                   "id": "u-fujiwara",
-                  "displayName": "藤原 慎（AI分析リーダー）",
-                  "userPrincipalName": "makoto.fujiwara@contoso.com"
+                  "displayName": "藤原 慎（AI分析）",
+                  "userIdentityType": "aadUser"
                 }
               },
               "body": {
                 "contentType": "html",
-                "content": "<div>はい、こちらになります👇</div><div><br/></div><div><strong>AIモデル更新スケジュール（PoC第2期）</strong></div><div>・10/25〜10/29：データ再学習（交通・宿泊統合版）</div><div>・10/30：RMSE検証・SHAP再解析</div><div>・10/31：行政側レビュー資料作成（本田担当）</div><div><br/></div><div>10/27に暫定モデルを共有予定です。</div>"
-              }
-            },
-            {
-              "id": "msg-prog-001-r2",
-              "replyToId": "msg-prog-001",
-              "createdDateTime": "2025-10-23T01:12:00Z",
-              "lastModifiedDateTime": "2025-10-23T01:12:00Z",
-              "messageType": "message",
-              "from": {
-                "user": {
-                  "id": "u-aizawa",
-                  "displayName": "相沢 美里（UX・顧客連携リーダー）",
-                  "userPrincipalName": "misato.aizawa@contoso.com"
-                }
-              },
-              "body": {
-                "contentType": "html",
-                "content": "<div><at id=\"0\">藤原 慎</at> さん</div><div>SHAP解析結果の出力形式、UI側でも可視化したいので、<strong>JSON形式</strong>での出力にしてもらえますか？</div><div>ダッシュボード連携の部分（ナビ・フィルタ強化）を私と中谷で実装中です。</div>"
+                "content": "<p>AIチーム側の最新進捗は <b>79%</b> に更新可能です。精度93.4%を達成、最終調整段階です。<br/><at id=\"0\">松下</at> さん 修正版で反映お願いします。</p>"
               },
               "mentions": [
-                {
-                  "id": 0,
-                  "mentionText": "藤原 慎",
-                  "mentioned": {
-                    "user": {
-                      "id": "u-fujiwara",
-                      "displayName": "藤原 慎（AI分析リーダー）",
-                      "userPrincipalName": "makoto.fujiwara@contoso.com"
-                    }
-                  }
-                }
+                { "id": 0, "mentioned": { "user": { "id": "u-matsushita", "displayName": "松下 翔太" } }, "mentionText": "松下" }
               ]
             },
             {
-              "id": "msg-prog-001-r3",
-              "replyToId": "msg-prog-001",
-              "createdDateTime": "2025-10-23T01:25:00Z",
-              "lastModifiedDateTime": "2025-10-23T01:25:00Z",
+              "id": "wkly-20251016-1510-r3",
+              "replyToId": "wkly-20251016-0910",
+              "createdDateTime": "2025-10-16T06:10:00Z",
+              "lastModifiedDateTime": "2025-10-16T06:10:00Z",
               "messageType": "message",
               "from": {
                 "user": {
-                  "id": "u-fujiwara",
-                  "displayName": "藤原 慎（AI分析リーダー）",
-                  "userPrincipalName": "makoto.fujiwara@contoso.com"
+                  "id": "u-matsushita",
+                  "displayName": "松下 翔太（スケジュール管理）",
+                  "userIdentityType": "aadUser"
                 }
               },
               "body": {
                 "contentType": "html",
-                "content": "<div>承知しました。JSON出力対応は<strong>10/26夜</strong>に反映します。UI側での描画用サンプルデータも合わせて共有します。</div>"
-              }
+                "content": "<p>了解しました。全体平均 <b>79.5%</b> に上方修正します。更新版をPMOフォルダに上げます。</p>"
+              },
+              "mentions": []
             },
             {
-              "id": "msg-prog-001-r4",
-              "replyToId": "msg-prog-001",
-              "createdDateTime": "2025-10-23T02:10:00Z",
-              "lastModifiedDateTime": "2025-10-23T02:10:00Z",
+              "id": "wkly-20251017-0900-r4",
+              "replyToId": "wkly-20251016-0910",
+              "createdDateTime": "2025-10-17T00:00:00Z",
+              "lastModifiedDateTime": "2025-10-17T00:00:00Z",
               "messageType": "message",
               "from": {
                 "user": {
-                  "id": "u-takeda",
-                  "displayName": "竹田 隆（コスト管理）",
-                  "userPrincipalName": "takashi.takeda@contoso.com"
+                  "id": "u-ishida",
+                  "displayName": "石田 智久（統括PM）",
+                  "userIdentityType": "aadUser"
                 }
               },
               "body": {
                 "contentType": "html",
-                "content": "<div>【報告】10月補正見積を本日行政側に提出済みです。クラウドコスト上昇分（＋5％）も了承済み。11月請求に反映されます。</div>"
-              }
-            },
-            {
-              "id": "msg-prog-001-r5",
-              "replyToId": "msg-prog-001",
-              "createdDateTime": "2025-10-25T03:20:00Z",
-              "lastModifiedDateTime": "2025-10-25T03:20:00Z",
-              "messageType": "message",
-              "from": {
-                "user": {
-                  "id": "u-nishikawa",
-                  "displayName": "西川 麻衣（品質PM）",
-                  "userPrincipalName": "mai.nishikawa@contoso.com"
-                }
+                "content": "<p>良い流れです。全体会議の資料では「改善傾向が見られる」として報告予定です。</p>"
               },
-              "body": {
-                "contentType": "html",
-                "content": "<div>品質計画書（PoC第2期）ドラフトをアップしました。</div><div><br/></div><div>📎 品質計画書_PoC2期draft_20251025.docx</div><div><br/></div><div><at id=\"0\">石田 智久</at> さん、<at id=\"1\">原口 由香</at> さん、レビューお願いします。次回のPMO＋品質チーム会議（10/24）で確定予定です。</div>"
-              },
-              "mentions": [
-                {
-                  "id": 0,
-                  "mentionText": "石田 智久",
-                  "mentioned": {
-                    "user": {
-                      "id": "u-ishida",
-                      "displayName": "石田 智久（統括PM）",
-                      "userPrincipalName": "tomohisa.ishida@contoso.com"
-                    }
-                  }
-                },
-                {
-                  "id": 1,
-                  "mentionText": "原口 由香",
-                  "mentioned": {
-                    "user": {
-                      "id": "u-haraguchi",
-                      "displayName": "原口 由香（成果物統括）",
-                      "userPrincipalName": "yuka.haraguchi@contoso.com"
-                    }
-                  }
-                }
-              ],
-              "attachments": [
-                {
-                  "id": "att-003",
-                  "contentType": "reference",
-                  "name": "品質計画書_PoC2期draft_20251025.docx",
-                  "contentUrl": "https://sharepoint.contoso.com/pmo/quality/品質計画書_PoC2期draft_20251025.docx"
-                }
-              ]
+              "mentions": []
             }
           ]
         },
         {
-          "id": "msg-prog-002",
+          "id": "wkly-20251017-1000",
           "replyToId": null,
-          "createdDateTime": "2025-10-25T08:00:00Z",
-          "lastModifiedDateTime": "2025-10-25T08:00:00Z",
+          "etag": "W/\"wkly-20251017-1000\"",
           "messageType": "message",
-          "subject": "【週末報告まとめ／10月25日時点】",
-          "from": {
-            "user": {
-              "id": "u-matsushita",
-              "displayName": "松下 翔太（スケジュール管理）",
-              "userPrincipalName": "shota.matsushita@contoso.com"
-            }
-          },
-          "body": {
-            "contentType": "html",
-            "content": "<div>【週末報告まとめ／10月25日時点】</div><div><br/></div><div>・全体進行率：71％</div><div>・PoC2期タスク登録完了</div><div>・成果物レビュー進行中（API・モデル）</div><div>・SharePoint運用開始準備：原口チーム完了報告</div><div><br/></div><div>来週から統合テスト移行に入ります。各チーム、テスト観点の再確認をお願いします。</div>"
-          },
-          "replies": []
-        }
-      ]
-    },
-    {
-      "id": "19:tech-issues@thread.tacv2",
-      "displayName": "💬 技術・課題共有",
-      "messages": [
-        {
-          "id": "msg-tech-001",
-          "replyToId": null,
-          "createdDateTime": "2025-10-24T04:10:00Z",
-          "lastModifiedDateTime": "2025-10-24T04:10:00Z",
-          "messageType": "message",
+          "createdDateTime": "2025-10-17T01:00:00Z",
+          "lastModifiedDateTime": "2025-10-17T01:00:00Z",
           "importance": "normal",
-          "subject": "API v2.0レビュー結果共有",
+          "subject": "QScoreレポート共有（第1回）",
           "from": {
             "user": {
-              "id": "u-miyano",
-              "displayName": "宮野 翔（QAチーム）",
-              "userPrincipalName": "sho.miyano@contoso.com"
+              "id": "u-nishikawa",
+              "displayName": "西川 麻衣（品質PM）",
+              "userIdentityType": "aadUser"
             }
           },
           "body": {
             "contentType": "html",
-            "content": "<div>API v2.0のレビュー結果を共有します。</div><div><br/></div><div>・GraphQLハイブリッド構成：可</div><div>・認証処理：トークン更新手順に不備あり（要修正）</div><div>・バージョン管理：リクエストスキーマに<code>schemaVersion</code>を追加推奨</div><div><br/></div><div><at id=\"0\">中谷 悠</at> さん、修正版の設計書は<strong>10/29</strong>提出で問題ないでしょうか？</div>"
+            "content": "<p><at id=\"0\">全員</at><br/>QScore試行の第1回結果を共有します。<br/>📎 QScore_Report_UX_20251017.pdf</p><p>概要：</p><ul><li>対象：UXチーム「レポート出力」機能</li><li>評価項目：UI応答時間・コード品質・テスト通過率</li><li>結果：総合スコア <b>74 → 80 (+6pt)</b></li><li>改善要因：非同期処理化による応答速度短縮</li></ul><p><at id=\"1\">相沢 沙耶</at> さん 次の対象として「比較分析」画面の測定をお願いしたいです。来週水曜までにテストスクリプトを共有ください。</p>"
           },
           "mentions": [
+            { "id": 0, "mentioned": { "conversation": { "id": "19:weekly@thread.tacv2" } }, "mentionText": "全員" },
+            { "id": 1, "mentioned": { "user": { "id": "u-aizawa", "displayName": "相沢 沙耶" } }, "mentionText": "相沢 沙耶" }
+          ],
+          "attachments": [
             {
-              "id": 0,
-              "mentionText": "中谷 悠",
-              "mentioned": {
-                "user": {
-                  "id": "u-nakatani",
-                  "displayName": "中谷 悠（基盤チーム）",
-                  "userPrincipalName": "haruka.nakatani@contoso.com"
-                }
-              }
+              "id": "att-qs-ux-20251017",
+              "contentType": "reference",
+              "name": "QScore_Report_UX_20251017.pdf",
+              "contentUrl": "https://contoso.sharepoint.com/sites/NEC-KANKO/Shared%20Documents/QScore_Report_UX_20251017.pdf"
             }
           ],
           "replies": [
             {
-              "id": "msg-tech-001-r1",
-              "replyToId": "msg-tech-001",
-              "createdDateTime": "2025-10-24T04:35:00Z",
-              "lastModifiedDateTime": "2025-10-24T04:35:00Z",
+              "id": "wkly-20251017-1020-r1",
+              "replyToId": "wkly-20251017-1000",
+              "createdDateTime": "2025-10-17T01:20:00Z",
+              "lastModifiedDateTime": "2025-10-17T01:20:00Z",
               "messageType": "message",
               "from": {
                 "user": {
-                  "id": "u-nakatani",
-                  "displayName": "中谷 悠（基盤チーム）",
-                  "userPrincipalName": "haruka.nakatani@contoso.com"
+                  "id": "u-aizawa",
+                  "displayName": "相沢 沙耶（UXリーダー）",
+                  "userIdentityType": "aadUser"
                 }
               },
               "body": {
                 "contentType": "html",
-                "content": "<div><at id=\"0\">宮野 翔</at> さん</div><div>承知しました。修正対応中です。<code>schemaVersion</code>は<strong>リクエストヘッダ</strong>で対応予定。明日（10/26）テスト環境で認証確認を行います。</div>"
+                "content": "<p><at id=\"0\">西川</at> さん 承知しました。スクリプト修正版を準備中です。週明け（10/21）午前に共有予定です。</p>"
               },
               "mentions": [
-                {
-                  "id": 0,
-                  "mentionText": "宮野 翔",
-                  "mentioned": {
-                    "user": {
-                      "id": "u-miyano",
-                      "displayName": "宮野 翔（QAチーム）",
-                      "userPrincipalName": "sho.miyano@contoso.com"
-                    }
-                  }
-                }
+                { "id": 0, "mentioned": { "user": { "id": "u-nishikawa", "displayName": "西川 麻衣" } }, "mentionText": "西川" }
               ]
             },
             {
-              "id": "msg-tech-001-r2",
-              "replyToId": "msg-tech-001",
-              "createdDateTime": "2025-10-24T05:00:00Z",
-              "lastModifiedDateTime": "2025-10-24T05:00:00Z",
+              "id": "wkly-20251017-1025-r2",
+              "replyToId": "wkly-20251017-1000",
+              "createdDateTime": "2025-10-17T01:25:00Z",
+              "lastModifiedDateTime": "2025-10-17T01:25:00Z",
               "messageType": "message",
               "from": {
                 "user": {
                   "id": "u-mochizuki",
-                  "displayName": "望月 亮（QAリーダー）",
-                  "userPrincipalName": "ryo.mochizuki@contoso.com"
+                  "displayName": "望月 俊（品質保証）",
+                  "userIdentityType": "aadUser"
                 }
               },
               "body": {
                 "contentType": "html",
-                "content": "<div>補足します。テスト観点では、GraphQLリクエストの<strong>パラメータ検証ロジック</strong>を追加します。QAチーム内で共通テストケースを<strong>10/27</strong>に共有予定です。</div>"
-              }
+                "content": "<p>QScoreレポート確認しました。品質指標の一部を品質チームの統合ダッシュボードに反映します。来週の品質会議（10/24）で共有予定です。</p>"
+              },
+              "mentions": []
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "id": "19:tech@thread.tacv2",
+      "displayName": "💬 技術・課題共有",
+      "messages": [
         {
-          "id": "msg-tech-002",
+          "id": "tech-20251016-1645",
           "replyToId": null,
-          "createdDateTime": "2025-10-24T06:10:00Z",
-          "lastModifiedDateTime": "2025-10-24T06:10:00Z",
+          "etag": "W/\"tech-20251016-1645\"",
           "messageType": "message",
+          "createdDateTime": "2025-10-16T07:45:00Z",
+          "lastModifiedDateTime": "2025-10-16T07:45:00Z",
           "importance": "normal",
-          "subject": "モデル精度報告書（ドラフト）更新",
+          "subject": "外部API仕様変更対応（リスク#17）",
           "from": {
             "user": {
-              "id": "u-honda",
-              "displayName": "本田 一樹（AIチーム）",
-              "userPrincipalName": "kazuki.honda@contoso.com"
+              "id": "u-nakajima",
+              "displayName": "中嶋 拓真（リスク分析官）",
+              "userIdentityType": "aadUser"
             }
           },
           "body": {
             "contentType": "html",
-            "content": "<div>モデル精度報告書（ドラフト）を更新しました。</div><div><br/></div><div>📄 Model_Accuracy_Report_v2.1.pdf</div><div><br/></div><div>RMSE: 0.152 → <strong>0.147</strong> に改善。SHAP可視化グラフを刷新し、自治体Bの事例を追記しています。<at id=\"0\">西川 麻衣</at> さん、体裁確認お願いします。</div>"
+            "content": "<p>皆さん<br/>リスク#17（外部API仕様変更）について報告します。</p><p>API提供元の仕様変更が確定：</p><ul><li>日時形式が <code>YYYY/MM/DD</code> → <code>YYYY-MM-DDTHH:MM:SS</code> に変更</li><li>フィールド名 <code>visit_date</code> → <code>used_date</code> に変更</li></ul><p><at id=\"0\">木下 俊輔</at> さん（データ基盤） ETLマッピング修正、影響範囲確認お願いします。<br/><at id=\"1\">橋本 翼</at> さん（品質管理） にもレビュー依頼を出しています。</p>"
           },
           "mentions": [
-            {
-              "id": 0,
-              "mentionText": "西川 麻衣",
-              "mentioned": {
-                "user": {
-                  "id": "u-nishikawa",
-                  "displayName": "西川 麻衣（品質PM）",
-                  "userPrincipalName": "mai.nishikawa@contoso.com"
-                }
-              }
-            }
+            { "id": 0, "mentioned": { "user": { "id": "u-kinoshita", "displayName": "木下 俊輔" } }, "mentionText": "木下 俊輔" },
+            { "id": 1, "mentioned": { "user": { "id": "u-hashimoto", "displayName": "橋本 翼" } }, "mentionText": "橋本 翼" }
           ],
-          "attachments": [
-            {
-              "id": "att-004",
-              "contentType": "reference",
-              "name": "Model_Accuracy_Report_v2.1.pdf",
-              "contentUrl": "https://sharepoint.contoso.com/ai/reports/Model_Accuracy_Report_v2.1.pdf"
-            }
-          ],
+          "attachments": [],
           "replies": [
             {
-              "id": "msg-tech-002-r1",
-              "replyToId": "msg-tech-002",
-              "createdDateTime": "2025-10-24T06:28:00Z",
-              "lastModifiedDateTime": "2025-10-24T06:28:00Z",
+              "id": "tech-20251016-1710-r1",
+              "replyToId": "tech-20251016-1645",
+              "createdDateTime": "2025-10-16T08:10:00Z",
+              "lastModifiedDateTime": "2025-10-16T08:10:00Z",
               "messageType": "message",
               "from": {
                 "user": {
-                  "id": "u-nishikawa",
-                  "displayName": "西川 麻衣（品質PM）",
-                  "userPrincipalName": "mai.nishikawa@contoso.com"
+                  "id": "u-kinoshita",
+                  "displayName": "木下 俊輔（データ基盤）",
+                  "userIdentityType": "aadUser"
                 }
               },
               "body": {
                 "contentType": "html",
-                "content": "<div>確認しました。グラフ凡例の日本語化をお願いします。併せて、顧客向け報告書は<strong>「概要＋付録」</strong>形式で提出予定なので、概要版は<strong>10/28</strong>までに共有ください。</div>"
-              }
-            },
-            {
-              "id": "msg-tech-002-r2",
-              "replyToId": "msg-tech-002",
-              "createdDateTime": "2025-10-24T07:05:00Z",
-              "lastModifiedDateTime": "2025-10-24T07:05:00Z",
-              "messageType": "message",
-              "from": {
-                "user": {
-                  "id": "u-aizawa",
-                  "displayName": "相沢 美里（UX・顧客連携リーダー）",
-                  "userPrincipalName": "misato.aizawa@contoso.com"
-                }
-              },
-              "body": {
-                "contentType": "html",
-                "content": "<div><at id=\"0\">本田 一樹</at> さん、SHAP結果の可視化部分、UIデザインに反映しました。ナビ機能のプロトタイプを今週中に共有予定です。</div><div>📎 Dashboard_NaviPrototype_v0.3.mp4</div>"
+                "content": "<p><at id=\"0\">中嶋</at> さん 確認しました。ETLのスキーマ修正を行います。再送予定（10/18）のデータで再テストを実施予定です。Airflowジョブ側もパラメータ変更を反映します。</p>"
               },
               "mentions": [
-                {
-                  "id": 0,
-                  "mentionText": "本田 一樹",
-                  "mentioned": {
-                    "user": {
-                      "id": "u-honda",
-                      "displayName": "本田 一樹（AIチーム）",
-                      "userPrincipalName": "kazuki.honda@contoso.com"
-                    }
-                  }
-                }
-              ],
-              "attachments": [
-                {
-                  "id": "att-005",
-                  "contentType": "reference",
-                  "name": "Dashboard_NaviPrototype_v0.3.mp4",
-                  "contentUrl": "https://sharepoint.contoso.com/ux/prototype/Dashboard_NaviPrototype_v0.3.mp4"
-                }
+                { "id": 0, "mentioned": { "user": { "id": "u-nakajima", "displayName": "中嶋 拓真" } }, "mentionText": "中嶋" }
               ]
+            },
+            {
+              "id": "tech-20251016-1725-r2",
+              "replyToId": "tech-20251016-1645",
+              "createdDateTime": "2025-10-16T08:25:00Z",
+              "lastModifiedDateTime": "2025-10-16T08:25:00Z",
+              "messageType": "message",
+              "from": {
+                "user": {
+                  "id": "u-hashimoto",
+                  "displayName": "橋本 翼（品質管理）",
+                  "userIdentityType": "aadUser"
+                }
+              },
+              "body": {
+                "contentType": "html",
+                "content": "<p><at id=\"0\">木下</at> さん 確認用テストケースをこちらで作成します。明日午前までに共有予定。ETL通過後にログ整合性も検証します。</p>"
+              },
+              "mentions": [
+                { "id": 0, "mentioned": { "user": { "id": "u-kinoshita", "displayName": "木下 俊輔" } }, "mentionText": "木下" }
+              ]
+            },
+            {
+              "id": "tech-20251017-0900-r3",
+              "replyToId": "tech-20251016-1645",
+              "createdDateTime": "2025-10-17T00:00:00Z",
+              "lastModifiedDateTime": "2025-10-17T00:00:00Z",
+              "messageType": "message",
+              "from": {
+                "user": {
+                  "id": "u-nakajima",
+                  "displayName": "中嶋 拓真（リスク分析官）",
+                  "userIdentityType": "aadUser"
+                }
+              },
+              "body": {
+                "contentType": "html",
+                "content": "<p>対応ありがとうございます。この件は「中リスク」→「監視中」に変更してリスクレジスタを更新します。</p>"
+              },
+              "mentions": []
             }
           ]
         },
         {
-          "id": "msg-tech-003",
+          "id": "tech-20251018-0910",
           "replyToId": null,
-          "createdDateTime": "2025-10-24T08:30:00Z",
-          "lastModifiedDateTime": "2025-10-24T08:30:00Z",
+          "etag": "W/\"tech-20251018-0910\"",
           "messageType": "message",
+          "createdDateTime": "2025-10-18T00:10:00Z",
+          "lastModifiedDateTime": "2025-10-18T00:10:00Z",
           "importance": "normal",
-          "subject": "今週タスク進捗まとめ",
+          "subject": "全体会議準備タスク（10/18）",
           "from": {
             "user": {
-              "id": "u-ishida",
-              "displayName": "石田 智久（統括PM）",
-              "userPrincipalName": "tomohisa.ishida@contoso.com"
+              "id": "u-miyano",
+              "displayName": "宮野 里桜（PMOアシスタント）",
+              "userIdentityType": "aadUser"
             }
           },
           "body": {
             "contentType": "html",
-            "content": "<div>各担当ありがとうございます。この週のタスク進捗をまとめると以下になります：</div><div><br/></div><div>・PoC第2期スケジュール確定 ✅</div><div>・SharePoint運用開始準備中（原口・宮野）🔄</div><div>・モデル精度報告書：最終化中（本田・西川）🔄</div><div>・ダッシュボード改修：UI設計完了、実装中（相沢・中谷）🔄</div><div><br/></div><div>次回：<strong>全体進捗レビュー 10/28（火）午前10:00〜</strong><br/>進捗更新をこのチャネルに投稿してください。</div>"
+            "content": "<p><at id=\"0\">全員</at><br/>全体会議（10/22）用の資料提出が本日締切です。以下の進捗を確認します：</p><ul><li>✅ QScoreレポート（<at id=\"1\">西川</at> さん）</li><li>✅ 英語版月次報告書（<at id=\"2\">李</at> さん）</li><li>🔄 全体進捗グラフ（<at id=\"3\">松下</at> さん）</li><li>🔄 リスク一覧更新（<at id=\"4\">中嶋</at> さん）</li><li>⏳ 顧客向けスライド英語版（<at id=\"5\">原口</at> さん）</li></ul><p><at id=\"5\">原口</at> さん、進捗いかがですか？</p>"
           },
-          "replies": []
+          "mentions": [
+            { "id": 0, "mentioned": { "conversation": { "id": "19:tech@thread.tacv2" } }, "mentionText": "全員" },
+            { "id": 1, "mentioned": { "user": { "id": "u-nishikawa", "displayName": "西川 麻衣" } }, "mentionText": "西川" },
+            { "id": 2, "mentioned": { "user": { "id": "u-li", "displayName": "李 芳蘭" } }, "mentionText": "李" },
+            { "id": 3, "mentioned": { "user": { "id": "u-matsushita", "displayName": "松下 翔太" } }, "mentionText": "松下" },
+            { "id": 4, "mentioned": { "user": { "id": "u-nakajima", "displayName": "中嶋 拓真" } }, "mentionText": "中嶋" },
+            { "id": 5, "mentioned": { "user": { "id": "u-haraguchi", "displayName": "原口 由香" } }, "mentionText": "原口" }
+          ],
+          "attachments": [],
+          "replies": [
+            {
+              "id": "tech-20251018-0930-r1",
+              "replyToId": "tech-20251018-0910",
+              "createdDateTime": "2025-10-18T00:30:00Z",
+              "lastModifiedDateTime": "2025-10-18T00:30:00Z",
+              "messageType": "message",
+              "from": {
+                "user": {
+                  "id": "u-haraguchi",
+                  "displayName": "原口 由香（成果物統括）",
+                  "userIdentityType": "aadUser"
+                }
+              },
+              "body": {
+                "contentType": "html",
+                "content": "<p><at id=\"0\">宮野</at> さん スライド最終確認中です。英語表現のチェックを <at id=\"1\">李</at> さんと並行しています。10:30までにアップします。</p>"
+              },
+              "mentions": [
+                { "id": 0, "mentioned": { "user": { "id": "u-miyano", "displayName": "宮野 里桜" } }, "mentionText": "宮野" },
+                { "id": 1, "mentioned": { "user": { "id": "u-li", "displayName": "李 芳蘭" } }, "mentionText": "李" }
+              ]
+            },
+            {
+              "id": "tech-20251018-0945-r2",
+              "replyToId": "tech-20251018-0910",
+              "createdDateTime": "2025-10-18T00:45:00Z",
+              "lastModifiedDateTime": "2025-10-18T00:45:00Z",
+              "messageType": "message",
+              "from": {
+                "user": {
+                  "id": "u-li",
+                  "displayName": "李 芳蘭（PMO補佐）",
+                  "userIdentityType": "aadUser"
+                }
+              },
+              "body": {
+                "contentType": "html",
+                "content": "<p>確認完了しました。誤訳修正と用語統一を反映しました。最終版 <b>Presentation_ENG_20251022.pptx</b> を共有しました。</p>"
+              },
+              "mentions": []
+            },
+            {
+              "id": "tech-20251018-1000-r3",
+              "replyToId": "tech-20251018-0910",
+              "createdDateTime": "2025-10-18T01:00:00Z",
+              "lastModifiedDateTime": "2025-10-18T01:00:00Z",
+              "messageType": "message",
+              "from": {
+                "user": {
+                  "id": "u-miyano",
+                  "displayName": "宮野 里桜（PMOアシスタント）",
+                  "userIdentityType": "aadUser"
+                }
+              },
+              "body": {
+                "contentType": "html",
+                "content": "<p>全資料受領しました。PMOフォルダに集約完了です。<br/><at id=\"0\">石田</at> さん、最終版としてご確認ください。</p>"
+              },
+              "mentions": [
+                { "id": 0, "mentioned": { "user": { "id": "u-ishida", "displayName": "石田 智久" } }, "mentionText": "石田" }
+              ]
+            },
+            {
+              "id": "tech-20251018-1015-r4",
+              "replyToId": "tech-20251018-0910",
+              "createdDateTime": "2025-10-18T01:15:00Z",
+              "lastModifiedDateTime": "2025-10-18T01:15:00Z",
+              "messageType": "message",
+              "from": {
+                "user": {
+                  "id": "u-ishida",
+                  "displayName": "石田 智久（統括PM）",
+                  "userIdentityType": "aadUser"
+                }
+              },
+              "body": {
+                "contentType": "html",
+                "content": "<p>確認しました。全体会議用の資料はこれで確定とします。各チーム代表者には別途アナウンス予定です。お疲れさまでした！</p>"
+              },
+              "mentions": []
+            }
+          ]
         }
       ]
     }
   ]
 }
 
-```
-### outlook予定表第二週
 
 ```
-✅ 想定されるOutlook予定（抜粋）
 
-PMO定例会議
+### outlook予定表第一週
+```
+予定表（人が読む用・要約）
 
-日時: 2025-10-13 (月) 10:00–11:30
+2025/10/14(火) 10:00–11:30
+第18回 PMO定例ミーティング（Teams）
+参加: PMO全員
 
-参加: 石田（主催）、西川、森岡、松下、竹田、原口、李、中嶋、三田村、宮野
+2025/10/17(金) 14:00–15:30
+対外報告準備ミーティング（NEC本社 第5会議室 + Teams）
+参加: 石田, 西川, 原口, 李, 三田村, 宮野
 
-開催: Microsoft Teams（PMO_定例）
+2025/10/18(土) 09:00–12:00
+ETL再送データ取り込み・検証ウィンドウ（運用ブロック / Teams）
+参加: 木下, 橋本, 中嶋
 
-メモ: 当日の議題共有・リスク#12・月次報告・10/22全体推進会議準備
+2025/10/18(土) 17:00–17:15
+締切: 全体会議（10/22）資料提出 締切リマインダ（Teams）
+参加: PMO
 
-リスク対策検討ミーティング
+2025/10/21(月) 09:00–11:00
+全体会議リハーサル（Teams）
+参加: PMO + 各チームリーダー
 
-日時: 2025-10-16 (木) 14:00–15:00
+2025/10/22(水) 10:00–11:30
+全体会議（顧客向け） （Teamsウェビナー想定）
+参加: PMO + 各チームリーダー + 顧客側出席者
 
-参加: 石田、西川、中嶋、森岡、竹田、松下
-
-開催: Microsoft Teams（PMO_Risk）
-
-メモ: 自治体Bデータ遅延対応（緊急度：中→高）、SOC監査対応、リスクレポート自動化
-
-全体推進会議
-
-日時: 2025-10-22 (水) 10:00–11:30
-
-参加: PMO＋各チームリーダー（約15名）
-
-開催: Microsoft Teams（全体推進会議）
-
-メモ: 10月分月次報告／各チーム進捗／リスク・コスト見通し／UXデモ共有
-
-月次報告書 提出締切（ドラフト）
-
-形式: 終日予定（リマインダー 09:00）
-
-日付: 2025-10-17 (金)
-
-参加: 原口（担当）、石田／西川（確認）
-
-メモ: ドラフト提出・10/22向け資料反映
+2025/10/24(金) 10:00–11:00
+品質会議（QScore共有） （Teams）
+参加: 西川, 望月, 相沢, 品質支援メンバー
 ```
 
 ```json
 {
-  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#me/calendarView",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.event)",
   "value": [
     {
-      "id": "evt-pmo-20251013",
-      "subject": "PMO定例会議",
-      "bodyPreview": "各チーム進捗／リスク#12／月次報告／10/22全体推進会議準備",
+      "id": "evt-pmo-18th-20251014",
+      "iCalUId": "040000008200E00074C5B7101A82E00800000000B0A2F9C2B7D6DA01000000000000000010000000",
+      "subject": "第18回 PMO定例ミーティング",
+      "bodyPreview": "PMO定例。進捗/品質/リスク/月次ドラフト/10/22全体会議準備。",
       "body": {
-        "contentType": "html",
-        "content": "<p>PMO定例。議題：各チーム進捗、リスク#12（自治体Bデータ遅延）、10月分月次報告、10/22全体推進会議準備。</p>"
+        "contentType": "HTML",
+        "content": "<p>議題: 進捗報告、品質(QScore)、リスク(#12/#17)、月次報告書、全体会議(10/22)準備</p>"
       },
-      "organizer": {
-        "emailAddress": { "name": "石田 智久（PM）", "address": "tomohisa.ishida@contoso.com" }
-      },
-      "attendees": [
-        { "type": "required", "emailAddress": { "name": "西川 麻衣（品質PM）", "address": "mai.nishikawa@contoso.com" } },
-        { "type": "required", "emailAddress": { "name": "森岡 翔", "address": "sho.morioka@contoso.com" } },
-        { "type": "required", "emailAddress": { "name": "松下 翔太", "address": "shota.matsushita@contoso.com" } },
-        { "type": "required", "emailAddress": { "name": "竹田 隆", "address": "takashi.takeda@contoso.com" } },
-        { "type": "required", "emailAddress": { "name": "原口 由香", "address": "yuka.haraguchi@contoso.com" } },
-        { "type": "optional", "emailAddress": { "name": "李 芳蘭", "address": "foran.lee@contoso.com" } },
-        { "type": "required", "emailAddress": { "name": "中嶋 陽介", "address": "yosuke.nakajima@contoso.com" } },
-        { "type": "optional", "emailAddress": { "name": "三田村 啓", "address": "kei.mitamura@contoso.com" } },
-        { "type": "optional", "emailAddress": { "name": "宮野 春香", "address": "haruka.miyano@contoso.com" } }
-      ],
-      "start": { "dateTime": "2025-10-13T10:00:00", "timeZone": "Tokyo Standard Time" },
-      "end":   { "dateTime": "2025-10-13T11:30:00", "timeZone": "Tokyo Standard Time" },
-      "location": { "displayName": "Microsoft Teams（PMO_定例）" },
+      "start": { "dateTime": "2025-10-14T10:00:00", "timeZone": "Tokyo Standard Time" },
+      "end":   { "dateTime": "2025-10-14T11:30:00", "timeZone": "Tokyo Standard Time" },
+      "location": { "displayName": "Microsoft Teams 会議" },
+      "isAllDay": false,
       "isOnlineMeeting": true,
       "onlineMeetingProvider": "teamsForBusiness",
       "onlineMeeting": {
-        "joinUrl": "https://teams.microsoft.com/l/meetup-join/19%3apmo-regular%40thread.tacv2/..."
+        "joinUrl": "https://teams.microsoft.com/l/meetup-join/pmo-18th-20251014"
       },
-      "categories": [ "PMO", "定例" },
-      "transactionId": "a1b2c3d4-pmo-20251013"
+      "organizer": {
+        "emailAddress": { "name": "石田 智久（統括PM）", "address": "t.ishida@contoso.com" }
+      },
+      "attendees": [
+        { "type": "required", "emailAddress": { "name": "西川 麻衣", "address": "m.nishikawa@contoso.com" } },
+        { "type": "required", "emailAddress": { "name": "森岡 翔", "address": "s.morioka@contoso.com" } },
+        { "type": "required", "emailAddress": { "name": "松下 翔太", "address": "s.matsushita@contoso.com" } },
+        { "type": "required", "emailAddress": { "name": "竹田 隆", "address": "t.takeda@contoso.com" } },
+        { "type": "required", "emailAddress": { "name": "原口 由香", "address": "y.haraguchi@contoso.com" } },
+        { "type": "required", "emailAddress": { "name": "李 芳蘭", "address": "f.li@contoso.com" } },
+        { "type": "required", "emailAddress": { "name": "中嶋 拓真", "address": "t.nakajima@contoso.com" } },
+        { "type": "required", "emailAddress": { "name": "三田村 圭吾", "address": "k.mitamura@contoso.com" } },
+        { "type": "required", "emailAddress": { "name": "宮野 里桜", "address": "r.miyano@contoso.com" } }
+      ],
+      "allowNewTimeProposals": true,
+      "reminderMinutesBeforeStart": 15,
+      "importance": "normal",
+      "sensitivity": "normal"
     },
     {
-      "id": "evt-risk-20251016",
-      "subject": "リスク対策検討ミーティング",
-      "bodyPreview": "自治体Bデータ遅延／SOC監査／リスクレポート自動化",
+      "id": "evt-ext-report-20251017",
+      "subject": "対外報告準備ミーティング",
+      "bodyPreview": "顧客向け月次報告プレゼンの構成・体裁・想定QAの最終確認。",
       "body": {
-        "contentType": "html",
-        "content": "<p>アジェンダ：自治体Bデータ遅延対応（緊急度：中→高）、SOC監査の指摘2件の対応、Power BIによるリスクレポート自動化。</p>"
+        "contentType": "HTML",
+        "content": "<p>資料: 月次報告スライド(日本語/英語)、QScore推移、想定Q&A</p>"
       },
-      "organizer": {
-        "emailAddress": { "name": "石田 智久（PM）", "address": "tomohisa.ishida@contoso.com" }
-      },
-      "attendees": [
-        { "type": "required", "emailAddress": { "name": "西川 麻衣（品質PM）", "address": "mai.nishikawa@contoso.com" } },
-        { "type": "required", "emailAddress": { "name": "中嶋 陽介", "address": "yosuke.nakajima@contoso.com" } },
-        { "type": "required", "emailAddress": { "name": "森岡 翔", "address": "sho.morioka@contoso.com" } },
-        { "type": "required", "emailAddress": { "name": "竹田 隆", "address": "takashi.takeda@contoso.com" } },
-        { "type": "required", "emailAddress": { "name": "松下 翔太", "address": "shota.matsushita@contoso.com" } }
-      ],
-      "start": { "dateTime": "2025-10-16T14:00:00", "timeZone": "Tokyo Standard Time" },
-      "end":   { "dateTime": "2025-10-16T15:00:00", "timeZone": "Tokyo Standard Time" },
-      "location": { "displayName": "Microsoft Teams（PMO_Risk）" },
+      "start": { "dateTime": "2025-10-17T14:00:00", "timeZone": "Tokyo Standard Time" },
+      "end":   { "dateTime": "2025-10-17T15:30:00", "timeZone": "Tokyo Standard Time" },
+      "location": { "displayName": "NEC本社 第5会議室 + Teams" },
       "isOnlineMeeting": true,
       "onlineMeetingProvider": "teamsForBusiness",
       "onlineMeeting": {
-        "joinUrl": "https://teams.microsoft.com/l/meetup-join/19%3apmo-risk%40thread.tacv2/..."
+        "joinUrl": "https://teams.microsoft.com/l/meetup-join/ext-report-20251017"
       },
-      "categories": [ "リスク", "PMO" ],
-      "transactionId": "a1b2c3d4-risk-20251016"
+      "organizer": {
+        "emailAddress": { "name": "原口 由香", "address": "y.haraguchi@contoso.com" }
+      },
+      "attendees": [
+        { "type": "required", "emailAddress": { "name": "石田 智久", "address": "t.ishida@contoso.com" } },
+        { "type": "required", "emailAddress": { "name": "西川 麻衣", "address": "m.nishikawa@contoso.com" } },
+        { "type": "required", "emailAddress": { "name": "李 芳蘭", "address": "f.li@contoso.com" } },
+        { "type": "optional", "emailAddress": { "name": "三田村 圭吾", "address": "k.mitamura@contoso.com" } },
+        { "type": "optional", "emailAddress": { "name": "宮野 里桜", "address": "r.miyano@contoso.com" } }
+      ],
+      "reminderMinutesBeforeStart": 10
+    },
+    {
+      "id": "evt-etl-window-20251018",
+      "subject": "ETL再送データ取り込み・検証ウィンドウ",
+      "bodyPreview": "再送(10/18)データの取り込み・スキーマ/ログ整合性検証。",
+      "body": {
+        "contentType": "HTML",
+        "content": "<p>変更点: used_date(ISO8601), visit_date廃止。Airflowパラメータ更新・ETL通過テスト。</p>"
+      },
+      "start": { "dateTime": "2025-10-18T09:00:00", "timeZone": "Tokyo Standard Time" },
+      "end":   { "dateTime": "2025-10-18T12:00:00", "timeZone": "Tokyo Standard Time" },
+      "location": { "displayName": "Teams／運用ブロック" },
+      "isOnlineMeeting": true,
+      "onlineMeetingProvider": "teamsForBusiness",
+      "onlineMeeting": { "joinUrl": "https://teams.microsoft.com/l/meetup-join/etl-verify-20251018" },
+      "organizer": {
+        "emailAddress": { "name": "木下 俊輔", "address": "s.kinoshita@contoso.com" }
+      },
+      "attendees": [
+        { "type": "required", "emailAddress": { "name": "橋本 翼", "address": "t.hashimoto@contoso.com" } },
+        { "type": "required", "emailAddress": { "name": "中嶋 拓真", "address": "t.nakajima@contoso.com" } }
+      ],
+      "categories": [ "運用" ],
+      "reminderMinutesBeforeStart": 30
+    },
+    {
+      "id": "evt-deadline-20251018",
+      "subject": "締切: 全体会議(10/22) 資料提出",
+      "bodyPreview": "PMOフォルダへ提出。英語版/進捗グラフ/リスク一覧/QScore含む。",
+      "body": {
+        "contentType": "HTML",
+        "content": "<p>提出物: 進捗WBS、QScore、リスク一覧、顧客向けサマリ、英語版スライド</p>"
+      },
+      "start": { "dateTime": "2025-10-18T17:00:00", "timeZone": "Tokyo Standard Time" },
+      "end":   { "dateTime": "2025-10-18T17:15:00", "timeZone": "Tokyo Standard Time" },
+      "location": { "displayName": "提出: SharePoint / PMO" },
+      "isOnlineMeeting": false,
+      "organizer": {
+        "emailAddress": { "name": "宮野 里桜", "address": "r.miyano@contoso.com" }
+      },
+      "attendees": [
+        { "type": "required", "emailAddress": { "name": "PMO全員", "address": "pmo@contoso.com" } }
+      ],
+      "categories": [ "締切", "PMO" ],
+      "reminderMinutesBeforeStart": 60
+    },
+    {
+      "id": "evt-rehearsal-20251021",
+      "subject": "全体会議リハーサル",
+      "bodyPreview": "10/22本番に向けたリハ。役割/発言順/Q&A想定最終確認。",
+      "body": {
+        "contentType": "HTML",
+        "content": "<p>当日8:00まで差し替え可。発言順: 石田→西川→松下→竹田→各チーム。</p>"
+      },
+      "start": { "dateTime": "2025-10-21T09:00:00", "timeZone": "Tokyo Standard Time" },
+      "end":   { "dateTime": "2025-10-21T11:00:00", "timeZone": "Tokyo Standard Time" },
+      "location": { "displayName": "Microsoft Teams 会議" },
+      "isOnlineMeeting": true,
+      "onlineMeetingProvider": "teamsForBusiness",
+      "onlineMeeting": {
+        "joinUrl": "https://teams.microsoft.com/l/meetup-join/rehearsal-20251021"
+      },
+      "organizer": {
+        "emailAddress": { "name": "宮野 里桜", "address": "r.miyano@contoso.com" }
+      },
+      "attendees": [
+        { "type": "required", "emailAddress": { "name": "石田 智久", "address": "t.ishida@contoso.com" } },
+        { "type": "required", "emailAddress": { "name": "西川 麻衣", "address": "m.nishikawa@contoso.com" } },
+        { "type": "required", "emailAddress": { "name": "松下 翔太", "address": "s.matsushita@contoso.com" } },
+        { "type": "optional", "emailAddress": { "name": "藤原 慎", "address": "s.fujiwara@contoso.com" } },
+        { "type": "optional", "emailAddress": { "name": "三宅 悠人", "address": "y.miyake@contoso.com" } },
+        { "type": "optional", "emailAddress": { "name": "相沢 沙耶", "address": "s.aizawa@contoso.com" } },
+        { "type": "optional", "emailAddress": { "name": "井原", "address": "i.ihara@contoso.com" } }
+      ],
+      "reminderMinutesBeforeStart": 15
     },
     {
       "id": "evt-allhands-20251022",
-      "subject": "全体推進会議",
-      "bodyPreview": "10月月次報告・各チーム進捗・リスク・コスト見通し・UXデモ",
+      "subject": "全体会議（顧客向け）",
+      "bodyPreview": "各チーム進捗・品質(QScore)・リスク・次フェーズ実証計画。",
       "body": {
-        "contentType": "html",
-        "content": "<p>10/22 全体推進会議。各チーム進捗・月次報告・リスク/コスト見通し、UXデモ共有。</p>"
+        "contentType": "HTML",
+        "content": "<p>顧客説明: 改善傾向、API/ETL変更影響、ダッシュボード試験稼働(11/5目標)</p>"
       },
-      "organizer": {
-        "emailAddress": { "name": "石田 智久（PM）", "address": "tomohisa.ishida@contoso.com" }
-      },
-      "attendees": [
-        { "type": "required", "emailAddress": { "name": "各チームリーダー", "address": "leaders@contoso.com" } },
-        { "type": "optional", "emailAddress": { "name": "品質PM（西川）", "address": "mai.nishikawa@contoso.com" } }
-      ],
       "start": { "dateTime": "2025-10-22T10:00:00", "timeZone": "Tokyo Standard Time" },
       "end":   { "dateTime": "2025-10-22T11:30:00", "timeZone": "Tokyo Standard Time" },
-      "location": { "displayName": "Microsoft Teams（全体推進会議）" },
+      "location": { "displayName": "Microsoft Teams ウェビナー" },
       "isOnlineMeeting": true,
       "onlineMeetingProvider": "teamsForBusiness",
       "onlineMeeting": {
-        "joinUrl": "https://teams.microsoft.com/l/meetup-join/19%3aallhands%40thread.tacv2/..."
-      },
-      "categories": [ "全体会議" ],
-      "transactionId": "a1b2c3d4-allhands-20251022"
-    },
-    {
-      "id": "evt-deadline-20251017",
-      "subject": "（締切）月次報告書ドラフト提出",
-      "bodyPreview": "原口→提出／石田・西川→確認。10/22資料へ反映。",
-      "body": {
-        "contentType": "html",
-        "content": "<p>原口：ドラフト提出。石田/西川：確認。10/22全体推進会議資料に反映。</p>"
+        "joinUrl": "https://teams.microsoft.com/l/meetup-join/allhands-20251022"
       },
       "organizer": {
-        "emailAddress": { "name": "原口 由香（成果物統括）", "address": "yuka.haraguchi@contoso.com" }
+        "emailAddress": { "name": "石田 智久（統括PM）", "address": "t.ishida@contoso.com" }
       },
       "attendees": [
-        { "type": "optional", "emailAddress": { "name": "石田 智久（PM）", "address": "tomohisa.ishida@contoso.com" } },
-        { "type": "optional", "emailAddress": { "name": "西川 麻衣（品質PM）", "address": "mai.nishikawa@contoso.com" } }
+        { "type": "required", "emailAddress": { "name": "PMO全員", "address": "pmo@contoso.com" } },
+        { "type": "required", "emailAddress": { "name": "各チームリーダー", "address": "teamleads@contoso.com" } },
+        { "type": "optional", "emailAddress": { "name": "顧客連絡窓口", "address": "customer.relations@example.com" } }
       ],
-      "isAllDay": true,
-      "start": { "dateTime": "2025-10-17", "timeZone": "Tokyo Standard Time" },
-      "end":   { "dateTime": "2025-10-18", "timeZone": "Tokyo Standard Time" },
-      "reminderMinutesBeforeStart": 60,
-      "location": { "displayName": "リマインダー" },
-      "categories": [ "締切", "PMO" ],
-      "transactionId": "a1b2c3d4-deadline-20251017"
+      "categories": [ "全社会議", "顧客向け" ],
+      "reminderMinutesBeforeStart": 30
+    },
+    {
+      "id": "evt-quality-20251024",
+      "subject": "品質会議（QScore共有）",
+      "bodyPreview": "UX機能のQScore(+6pt)の反映と次対象(比較分析画面)の測定段取り。",
+      "body": {
+        "contentType": "HTML",
+        "content": "<p>ダッシュボード集約、次回測定スクリプト最終確認</p>"
+      },
+      "start": { "dateTime": "2025-10-24T10:00:00", "timeZone": "Tokyo Standard Time" },
+      "end":   { "dateTime": "2025-10-24T11:00:00", "timeZone": "Tokyo Standard Time" },
+      "location": { "displayName": "Microsoft Teams 会議" },
+      "isOnlineMeeting": true,
+      "onlineMeetingProvider": "teamsForBusiness",
+      "onlineMeeting": {
+        "joinUrl": "https://teams.microsoft.com/l/meetup-join/quality-20251024"
+      },
+      "organizer": {
+        "emailAddress": { "name": "西川 麻衣（品質PM）", "address": "m.nishikawa@contoso.com" }
+      },
+      "attendees": [
+        { "type": "required", "emailAddress": { "name": "望月 俊", "address": "t.mochizuki@contoso.com" } },
+        { "type": "required", "emailAddress": { "name": "相沢 沙耶", "address": "s.aizawa@contoso.com" } },
+        { "type": "optional", "emailAddress": { "name": "品質支援チーム", "address": "qa-support@contoso.com" } }
+      ],
+      "reminderMinutesBeforeStart": 15
     }
   ]
 }
+
+```
+
+## 📘 第2週（10月20日週）
+
+### 🗓️ 会議③：第19回 PMO定例＋全体会議リハーサル
+
+```
+開催日：2025年10月21日（月） 09:00〜11:00
+場所：Teamsオンライン
+出席者：PMO全員＋各チームリーダー（AI：藤原、基盤：三宅、UX：相沢、運用：井原、品質：望月）
+
+議題
+
+全体報告スライド最終確認
+
+チーム別報告内容調整
+
+Q&A想定リスト共有
+
+リハーサル実施
+
+議事内容
+
+石田：「進捗は回復傾向。とはいえ、自治体Bのデータ再送分はまだ反映途中。全体会議では“影響限定的”と説明。」
+
+西川：「品質面はポジティブに報告可能。QScoreでUXチームの改善が数値化されました。」
+
+三宅（データ基盤）：「APIテスト、今夜最終確認予定。再送データの取り込みは10/22午前には完了予定。」
+
+相沢（UX）：「操作ガイドの英語版ドラフト完成。外国人観光客向けも想定。」
+
+藤原（AI分析）：「モデル精度93.8%。今週中に最終報告を出します。」
+
+決定事項
+
+全体会議（10/22）資料の差替は当日8:00まで許可。
+
+Q&Aリストは宮野がTeamsの「全体共有」チャネルに投稿。
+
+リスク#17（外部API変更）はリスク一覧に反映済み（中嶋確認）。
+```
+
+### 🗓️ 会議④：全体会議報告後レビュー
+
+```
+開催日：2025年10月23日（木） 10:00〜11:30
+場所：Teamsオンライン
+出席者：PMO全員
+
+議題
+
+顧客説明会フィードバック整理
+
+次フェーズ（実証運用）の準備タスク
+
+外部監査対応（新規業務）
+
+議事内容
+
+石田：「顧客側から“ダッシュボードの早期利用開始”を要望された。11月第1週までに試験版を稼働させる方向。」
+松下：「実証フェーズのスケジュール案を作成します。10/28までにドラフト提出。」
+西川：「品質監査（11月予定）に向け、監査証跡の整理を開始。テスト証跡フォルダを共有化します。」
+原口：「監査対応リストをドキュメントチームで整備中。」
+李：「英語監査資料も並行して整えます。」
+
+決定事項
+
+試験版ダッシュボード稼働目標：11/5
+
+品質監査準備チームを10/24付で設置（リーダー：西川）
+
+スケジュール更新版（実証フェーズ）を10/28提出
+
+アクションアイテム
+担当	内容	期限
+松下	実証フェーズスケジュール案	10/28
+西川・原口	監査対応リスト整備	10/25
+李	英語版監査資料準備	10/27
+石田	顧客フィードバック報告書まとめ	10/25
+```
+### teamsでの会話内容
+```
+🧾 まとめ（第2週：10/20〜10/24）
+項目	状況	備考
+全体会議リハ（10/21）	完了	当日8:00まで差し替え可ルール確定、Q&Aリストv3共有
+全体会議（10/22）	完了	進捗回復傾向・QScore+6ptを顧客へ明確化、録画・資料格納済み
+顧客フィードバック対応	進行	試験版ダッシュボード11/5稼働目標、各担当にタスク付与
+リスク#17（外部API変更）	監視中	影響限定的で説明、ログ整合テンプレ運用開始
+監査準備（新規業務）	始動	10/24チーム発足、証跡置き場・トレース・テンプレ整備着手
+実証フェーズWBS	作成中	10/28ドラフト提出予定（松下）
+英語資産	継続更新	操作ガイド英語版、監査資料英語版（10/27締切）
+```
+
+```
+📰 一般（General）
+スレッド①：全体会議リハのタスク確定（10/21 11:15）
+
+投稿者：宮野 里桜（PMOアシスタント）
+
+@全員
+本日（10/21）リハの決定事項を反映し、以下のタスクを確定しました。当日8:00まで差し替え可です。
+
+@西川 麻衣 さん：QScoreのグラフに注釈（“UX改善”の脚注）追記（期限：10/22 08:00）
+
+@松下 翔太 さん：進捗スライド1枚目に「回復傾向」のスパークライン追加（期限：10/22 08:00）
+
+@竹田 隆 さん：コスト影響の**補足スライド（1枚）**挿入（期限：10/22 08:00）
+
+@中嶋 拓真 さん：リスク#17の対応状況に最新の対応日（10/21）を記載（期限：10/22 08:00）
+
+@相沢 沙耶 さん：操作ガイド英語版の表紙差し替え（“for overseas visitors”の表記追加）（期限：10/22 08:00）
+
+資料は /PMO/AllHands_20251022/final/ に置いてください。
+Q&A想定リストは @宮野 があとで「📅 定例・進捗報告」チャネルにも転記します。
+
+返信：西川 麻衣｜10/21 11:23
+注釈の文言案を @望月 俊 さんにも確認済みです。修正して今晩アップします。
+
+返信：松下 翔太｜10/21 11:28
+スパークライン反映OKです。AIチームの最新値（93.8%）も反映し、更新後通知します。
+
+返信：竹田 隆｜10/21 11:34
+補足スライドは差額±影響の棒グラフで1枚に収めます。ドラフト15:00目処で共有。
+
+返信：相沢 沙耶｜10/21 11:40
+表紙差し替え完了版を17:00までに投入します。英語校正は @李 芳蘭 さんに依頼済み。
+
+スレッド②：顧客説明会フィードバック対応の指示（10/23 12:05）
+
+投稿者：石田 智久（統括PM）
+
+顧客側からダッシュボードの早期利用の要望を正式に受領しました。試験版の稼働目標は 11/5 で進めます。
+
+@三宅 悠人 さん（基盤）：試験版APIの公開条件とスロット構成を10/24までに共有ください。
+
+@相沢 沙耶 さん（UX）：試験版ダッシュボードの最小ナビ導線（3～5メニュー）案を10/25までに提示。
+
+@西川 麻衣 さん（品質）：**品質監査準備チーム（10/24発足）**の初回ToDoを整理して共有を。
+
+@宮野 里桜 さん：顧客向けフォローアップメール草案を10/23中に作成、 @原口 由香 さんでレビューを。
+
+返信：三宅 悠人｜10/23 12:20
+了解。ステージングと本番のswap運用での公開パス案を作成します。
+
+返信：相沢 沙耶｜10/23 12:28
+ナビ導線は「ホーム／需要予測／混雑ヒートマップ／比較レポート／エクスポート」で案出しします。
+
+返信：西川 麻衣｜10/23 12:32
+初回ToDo（監査証跡、変更履歴、テスト計画、例外時エビデンス）をチェックリスト化して共有します。
+
+返信：宮野 里桜｜10/23 13:05
+フォローアップ草案を上げました。@原口 由香 さんレビューお願いします。
+📎 Customer_FU_20251023_draft.docx
+
+📅 定例・進捗報告
+スレッド③：全体会議リハ結果・Q&A想定リスト（10/21 13:10）
+
+投稿者：宮野 里桜
+
+本日のリハ結果を反映したQ&A想定リスト v3を共有します。
+📎 QA_List_AllHands_v3.xlsx（カテゴリ：進捗／品質／リスク／コスト／ロードマップ）
+
+@中嶋 拓真 さん、リスク#17の回答テンプレを赤字で追記しましたので、文面ご確認ください。
+@竹田 隆 さん、コスト質問（Q12/Q13）の回答を一言要約に短縮しています。問題なければ確定にします。
+
+返信：中嶋 拓真｜10/21 13:22
+テンプレ修正OKです。「再送データの取り込み完了見込み：10/22午前」も明記しました。
+
+返信：竹田 隆｜10/21 13:30
+要約版で問題ありません。差分は備考に回し、スライドはコンパクトで。
+
+スレッド④：全体会議（10/22）ダイジェスト共有（10/22 12:05）
+
+投稿者：石田 智久
+
+全体会議、皆さんお疲れさまでした。ダイジェストを共有します。
+
+進捗：計画比を持ち直し、回復傾向を明示できた
+
+品質：QScore +6pt（UX）を強調、次対象は「比較分析」画面
+
+リスク：#17は監視中へ移行、影響は限定的で説明
+
+次フェーズ：試験版ダッシュボードを11/5に稼働目標
+
+アクション：監査準備チームを10/24発足
+
+資料と録画：/PMO/AllHands_20251022/final/ に格納済み
+
+返信：松下 翔太｜10/22 12:15
+ダッシュボード稼働に合わせ、実証フェーズWBSの初版を10/28に出します。
+
+返信：李 芳蘭｜10/22 12:18
+英語版の配布資料もアップしました（QA含む）。リンクは同フォルダに配置済みです。
+
+スレッド⑤：会議④アクションのステータス（10/23 17:45）
+
+投稿者：宮野 里桜
+
+会議④のアクション進捗を更新します。
+
+@松下 翔太 さん：実証フェーズWBS（10/28締切）→ ドラフト作成中
+
+@西川 麻衣 / @原口 由香 さん：監査対応リスト（10/25締切）→ 骨子版共有済み
+
+@李 芳蘭 さん：英語版監査資料（10/27締切）→ 用語統一中
+
+@石田 智久 さん：顧客フィードバック報告書（10/25締切）→ 構成レビュー中
+
+返信：西川 麻衣｜10/23 18:02
+チェックリストに証跡保管のパス規約を追記しました。@望月 俊 さんのダッシュボード連携も依頼済み。
+
+返信：石田 智久｜10/23 18:10
+報告書は明日午前でレビュー上げます。顧客要望→対応の表現は慎重に調整します。
+
+💬 技術・課題共有
+スレッド⑥：API最終確認とデータ取り込み（10/21 22:10）
+
+投稿者：三宅 悠人（データ基盤）
+
+@陳 文傑 さん、/api/v1/visits/summary の最終確認を開始します。
+
+ステージングでスロットproduction-previewに切替
+
+再送データの取り込み（scheduled 10/22 09:10）
+
+監視：APM／ログ（used_dateのISO8601）
+
+@木下 俊輔 さん、Airflow DAGの当日パラメータ（date_key）切替をご確認ください。
+
+返信：木下 俊輔｜10/21 22:18
+DAGのパラメータ切替OKです。used_dateのNULL/空文字はrejectルールで弾きます。テスト投入は9:20実施。
+
+返信：橋本 翼（品質管理）｜10/21 22:25
+取り込み後のログ整合テンプレを貼っておきます（エッジケースを5本追跡）。
+📎 etl_checklist_used_date_v2.xlsx
+
+スレッド⑦：UX操作ガイド英語版 & 試験版ダッシュボ（10/23 09:30）
+
+投稿者：相沢 沙耶（UX）
+
+@李 芳蘭 さん 英語表紙の最終校正ありがとうございました。
+試験版ダッシュボは5メニュー構成で確定案を出します：
+
+Home 2) Demand Forecast 3) Crowd Heatmap 4) Comparison 5) Export
+
+@宮内 梓 さん、「Comparison」のカラム説明を右サイドの折りたたみヘルプに変更できますか？（視線移動を減らす意図）
+
+返信：宮内 梓（UIエンジニア）｜10/23 09:42
+可能です。右パネル常時展開→折りたたみに切替、SP幅ではモーダル表示にします。今日中にPR出します。
+
+返信：西川 麻衣｜10/23 09:50
+PR後、QScoreスクリプトを当該画面にも適用して数値化します（次回品質会議で共有）。
+
+スレッド⑧：品質監査準備チーム 立ち上げ（10/24 09:05）
+
+投稿者：西川 麻衣（品質PM）
+
+本日付で品質監査準備チームを立ち上げました（会議④合意事項）。
+ToDo初版：
+
+証跡の最終置き場を /QA/Audit/2025Q4/ に統一（@原口 由香）
+
+テスト観点→監査観点のトレース（@望月 俊）
+
+例外発生時の再現手順テンプレ（@吉田 彩音）
+
+監査説明スライド雛形（@宮野 里桜）
+
+初回ミーティングは10/24 15:00–15:45（招待済み）。役割分担をその場で確定します。
+
+返信：原口 由香｜10/24 09:18
+置き場作りました。命名規則.mdも入れてあります。改版時は_v2→_final運用で。
+
+返信：望月 俊｜10/24 09:30
+トレース表、先にドラフトを出します。QScore観点も列追加します。
+
+スレッド⑨：完了報告まとめ（10/24 18:00）
+
+投稿者：宮野 里桜
+
+本週の完了報告をまとめます：
+
+✅ 10/22 全体会議 実施・録画格納
+
+✅ リスク#17 ステータス更新（監視中）
+
+✅ 英語版操作ガイド 表紙差し替え完了
+
+✅ 監査準備チーム 立ち上げ＆初回ToDo配布
+
+🔄 実証フェーズWBS（10/28締切）進行中
+
+🔄 英語版監査資料（10/27締切）用語統一中
+
+返信：石田 智久｜10/24 18:07
+グッドです。来週は11/5の試験稼働に向けた公開条件確定を最優先に進めましょう。
+```
+```
+```json
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('team-nec-kanko-dx')/channels/messages",
+  "team": {
+    "id": "team-nec-kanko-dx",
+    "displayName": "NEC観光DX基盤構築プロジェクト（全体）"
+  },
+  "fetchedAtUtc": "2025-10-27T10:00:00Z",
+  "channels": [
+    {
+      "id": "19:general@thread.tacv2",
+      "displayName": "📰 一般（General）",
+      "messages": [
+        {
+          "id": "gen-20251021-1115",
+          "replyToId": null,
+          "etag": "W/\"gen-20251021-1115\"",
+          "messageType": "message",
+          "createdDateTime": "2025-10-21T02:15:00Z",
+          "lastModifiedDateTime": "2025-10-21T02:15:00Z",
+          "importance": "normal",
+          "subject": "全体会議リハのタスク確定（当日8:00まで差し替え可）",
+          "from": {
+            "user": {
+              "id": "u-miyano",
+              "displayName": "宮野 里桜（PMOアシスタント）",
+              "userIdentityType": "aadUser"
+            }
+          },
+          "body": {
+            "contentType": "html",
+            "content": "<p><at id=\"0\">全員</at><br/>本日（10/21）リハの決定事項を反映し、以下のタスクを確定しました。<b>当日8:00まで差し替え可</b>です。</p><ul><li><at id=\"1\">西川 麻衣</at>：QScoreのグラフに注釈（“UX改善”の脚注）追記（期限：10/22 08:00）</li><li><at id=\"2\">松下 翔太</at>：進捗スライド1枚目に「回復傾向」のスパークライン追加（期限：10/22 08:00）</li><li><at id=\"3\">竹田 隆</at>：コスト影響の<b>補足スライド（1枚）</b>挿入（期限：10/22 08:00）</li><li><at id=\"4\">中嶋 拓真</at>：リスク#17の対応状況に最新の対応日（10/21）を記載（期限：10/22 08:00）</li><li><at id=\"5\">相沢 沙耶</at>：操作ガイド英語版の表紙差し替え（“for overseas visitors”の表記追加）（期限：10/22 08:00）</li></ul><p>資料は <code>/PMO/AllHands_20251022/final/</code> に置いてください。<br/>Q&amp;A想定リストは <at id=\"6\">宮野 里桜</at> があとで「📅 定例・進捗報告」チャネルにも転記します。</p>"
+          },
+          "mentions": [
+            { "id": 0, "mentioned": { "conversation": { "id": "19:general@thread.tacv2" } }, "mentionText": "全員" },
+            { "id": 1, "mentioned": { "user": { "id": "u-nishikawa", "displayName": "西川 麻衣" } }, "mentionText": "西川 麻衣" },
+            { "id": 2, "mentioned": { "user": { "id": "u-matsushita", "displayName": "松下 翔太" } }, "mentionText": "松下 翔太" },
+            { "id": 3, "mentioned": { "user": { "id": "u-takeda", "displayName": "竹田 隆" } }, "mentionText": "竹田 隆" },
+            { "id": 4, "mentioned": { "user": { "id": "u-nakajima", "displayName": "中嶋 拓真" } }, "mentionText": "中嶋 拓真" },
+            { "id": 5, "mentioned": { "user": { "id": "u-aizawa", "displayName": "相沢 沙耶" } }, "mentionText": "相沢 沙耶" },
+            { "id": 6, "mentioned": { "user": { "id": "u-miyano", "displayName": "宮野 里桜" } }, "mentionText": "宮野 里桜" }
+          ],
+          "attachments": [],
+          "replies": [
+            {
+              "id": "gen-20251021-1123-r1",
+              "replyToId": "gen-20251021-1115",
+              "createdDateTime": "2025-10-21T02:23:00Z",
+              "lastModifiedDateTime": "2025-10-21T02:23:00Z",
+              "messageType": "message",
+              "from": { "user": { "id": "u-nishikawa", "displayName": "西川 麻衣（品質PM）", "userIdentityType": "aadUser" } },
+              "body": {
+                "contentType": "html",
+                "content": "<p>注釈の文言案を <at id=\"0\">望月 俊</at> さんにも確認済みです。修正して今晩アップします。</p>"
+              },
+              "mentions": [
+                { "id": 0, "mentioned": { "user": { "id": "u-mochizuki", "displayName": "望月 俊" } }, "mentionText": "望月 俊" }
+              ]
+            },
+            {
+              "id": "gen-20251021-1128-r2",
+              "replyToId": "gen-20251021-1115",
+              "createdDateTime": "2025-10-21T02:28:00Z",
+              "lastModifiedDateTime": "2025-10-21T02:28:00Z",
+              "messageType": "message",
+              "from": { "user": { "id": "u-matsushita", "displayName": "松下 翔太（スケジュール管理）", "userIdentityType": "aadUser" } },
+              "body": { "contentType": "html", "content": "<p>スパークライン反映OKです。AIチームの最新値（93.8%）も反映し、更新後通知します。</p>" },
+              "mentions": []
+            },
+            {
+              "id": "gen-20251021-1134-r3",
+              "replyToId": "gen-20251021-1115",
+              "createdDateTime": "2025-10-21T02:34:00Z",
+              "lastModifiedDateTime": "2025-10-21T02:34:00Z",
+              "messageType": "message",
+              "from": { "user": { "id": "u-takeda", "displayName": "竹田 隆（コスト管理）", "userIdentityType": "aadUser" } },
+              "body": { "contentType": "html", "content": "<p>補足スライドは<strong>差額±影響の棒グラフ</strong>で1枚に収めます。ドラフト15:00目処で共有。</p>" },
+              "mentions": []
+            },
+            {
+              "id": "gen-20251021-1140-r4",
+              "replyToId": "gen-20251021-1115",
+              "createdDateTime": "2025-10-21T02:40:00Z",
+              "lastModifiedDateTime": "2025-10-21T02:40:00Z",
+              "messageType": "message",
+              "from": { "user": { "id": "u-aizawa", "displayName": "相沢 沙耶（UX）", "userIdentityType": "aadUser" } },
+              "body": {
+                "contentType": "html",
+                "content": "<p>表紙差し替え完了版を17:00までに投入します。英語校正は <at id=\"0\">李 芳蘭</at> さんに依頼済み。</p>"
+              },
+              "mentions": [
+                { "id": 0, "mentioned": { "user": { "id": "u-li", "displayName": "李 芳蘭" } }, "mentionText": "李 芳蘭" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "gen-20251023-1205",
+          "replyToId": null,
+          "etag": "W/\"gen-20251023-1205\"",
+          "messageType": "message",
+          "createdDateTime": "2025-10-23T03:05:00Z",
+          "lastModifiedDateTime": "2025-10-23T03:05:00Z",
+          "importance": "normal",
+          "subject": "顧客説明会フィードバック対応の指示（試験版 11/5 目標）",
+          "from": {
+            "user": {
+              "id": "u-ishida",
+              "displayName": "石田 智久（統括PM）",
+              "userIdentityType": "aadUser"
+            }
+          },
+          "body": {
+            "contentType": "html",
+            "content": "<p>顧客側から<b>ダッシュボードの早期利用</b>の要望を正式に受領。<b>試験版の稼働目標は 11/5</b>で進めます。</p><ul><li><at id=\"0\">三宅 悠人</at>（基盤）：試験版APIの公開条件とスロット構成を10/24までに共有ください。</li><li><at id=\"1\">相沢 沙耶</at>（UX）：試験版ダッシュボードの最小ナビ導線（3～5メニュー）案を10/25までに提示。</li><li><at id=\"2\">西川 麻衣</at>（品質）：<b>品質監査準備チーム（10/24発足）</b>の初回ToDoを整理して共有を。</li><li><at id=\"3\">宮野 里桜</at>：顧客向けフォローアップメール草案を10/23中に作成、 <at id=\"4\">原口 由香</at> でレビューを。</li></ul>"
+          },
+          "mentions": [
+            { "id": 0, "mentioned": { "user": { "id": "u-miyake", "displayName": "三宅 悠人" } }, "mentionText": "三宅 悠人" },
+            { "id": 1, "mentioned": { "user": { "id": "u-aizawa", "displayName": "相沢 沙耶" } }, "mentionText": "相沢 沙耶" },
+            { "id": 2, "mentioned": { "user": { "id": "u-nishikawa", "displayName": "西川 麻衣" } }, "mentionText": "西川 麻衣" },
+            { "id": 3, "mentioned": { "user": { "id": "u-miyano", "displayName": "宮野 里桜" } }, "mentionText": "宮野 里桜" },
+            { "id": 4, "mentioned": { "user": { "id": "u-haraguchi", "displayName": "原口 由香" } }, "mentionText": "原口 由香" }
+          ],
+          "attachments": [],
+          "replies": [
+            {
+              "id": "gen-20251023-1220-r1",
+              "replyToId": "gen-20251023-1205",
+              "createdDateTime": "2025-10-23T03:20:00Z",
+              "lastModifiedDateTime": "2025-10-23T03:20:00Z",
+              "messageType": "message",
+              "from": { "user": { "id": "u-miyake", "displayName": "三宅 悠人（データ基盤）", "userIdentityType": "aadUser" } },
+              "body": { "contentType": "html", "content": "<p>了解。ステージングと本番の<b>swap運用</b>での公開パス案を作成します。</p>" },
+              "mentions": []
+            },
+            {
+              "id": "gen-20251023-1228-r2",
+              "replyToId": "gen-20251023-1205",
+              "createdDateTime": "2025-10-23T03:28:00Z",
+              "lastModifiedDateTime": "2025-10-23T03:28:00Z",
+              "messageType": "message",
+              "from": { "user": { "id": "u-aizawa", "displayName": "相沢 沙耶（UX）", "userIdentityType": "aadUser" } },
+              "body": { "contentType": "html", "content": "<p>ナビ導線は「ホーム／需要予測／混雑ヒートマップ／比較レポート／エクスポート」で案出しします。</p>" },
+              "mentions": []
+            },
+            {
+              "id": "gen-20251023-1232-r3",
+              "replyToId": "gen-20251023-1205",
+              "createdDateTime": "2025-10-23T03:32:00Z",
+              "lastModifiedDateTime": "2025-10-23T03:32:00Z",
+              "messageType": "message",
+              "from": { "user": { "id": "u-nishikawa", "displayName": "西川 麻衣（品質PM）", "userIdentityType": "aadUser" } },
+              "body": { "contentType": "html", "content": "<p>初回ToDo（監査証跡、変更履歴、テスト計画、例外時エビデンス）を<b>チェックリスト化</b>して共有します。</p>" },
+              "mentions": []
+            },
+            {
+              "id": "gen-20251023-1305-r4",
+              "replyToId": "gen-20251023-1205",
+              "createdDateTime": "2025-10-23T04:05:00Z",
+              "lastModifiedDateTime": "2025-10-23T04:05:00Z",
+              "messageType": "message",
+              "from": { "user": { "id": "u-miyano", "displayName": "宮野 里桜（PMOアシスタント）", "userIdentityType": "aadUser" } },
+              "body": {
+                "contentType": "html",
+                "content": "<p>フォローアップ草案を上げました。<at id=\"0\">原口 由香</at> さんレビューお願いします。<br/>📎 Customer_FU_20251023_draft.docx</p>"
+              },
+              "mentions": [
+                { "id": 0, "mentioned": { "user": { "id": "u-haraguchi", "displayName": "原口 由香" } }, "mentionText": "原口 由香" }
+              ],
+              "attachments": [
+                {
+                  "id": "att-cust-fu-20251023",
+                  "contentType": "reference",
+                  "name": "Customer_FU_20251023_draft.docx",
+                  "contentUrl": "https://contoso.sharepoint.com/sites/NEC-KANKO/Shared%20Documents/Customer_FU_20251023_draft.docx"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "19:weekly@thread.tacv2",
+      "displayName": "📅 定例・進捗報告",
+      "messages": [
+        {
+          "id": "wkly-20251021-1310",
+          "replyToId": null,
+          "etag": "W/\"wkly-20251021-1310\"",
+          "messageType": "message",
+          "createdDateTime": "2025-10-21T04:10:00Z",
+          "lastModifiedDateTime": "2025-10-21T04:10:00Z",
+          "importance": "normal",
+          "subject": "全体会議リハ結果・Q&A想定リスト（v3）",
+          "from": {
+            "user": {
+              "id": "u-miyano",
+              "displayName": "宮野 里桜（PMOアシスタント）",
+              "userIdentityType": "aadUser"
+            }
+          },
+          "body": {
+            "contentType": "html",
+            "content": "<p>本日のリハ結果を反映した<b>Q&amp;A想定リスト v3</b>を共有します。<br/>📎 QA_List_AllHands_v3.xlsx（カテゴリ：進捗／品質／リスク／コスト／ロードマップ）</p><p><at id=\"0\">中嶋 拓真</at> さん、リスク#17の回答テンプレを赤字で追記しましたので、文面ご確認ください。<br/><at id=\"1\">竹田 隆</at> さん、コスト質問（Q12/Q13）の回答を<b>一言要約</b>に短縮しています。問題なければ確定にします。</p>"
+          },
+          "mentions": [
+            { "id": 0, "mentioned": { "user": { "id": "u-nakajima", "displayName": "中嶋 拓真" } }, "mentionText": "中嶋 拓真" },
+            { "id": 1, "mentioned": { "user": { "id": "u-takeda", "displayName": "竹田 隆" } }, "mentionText": "竹田 隆" }
+          ],
+          "attachments": [
+            {
+              "id": "att-qa-v3",
+              "contentType": "reference",
+              "name": "QA_List_AllHands_v3.xlsx",
+              "contentUrl": "https://contoso.sharepoint.com/sites/NEC-KANKO/Shared%20Documents/QA_List_AllHands_v3.xlsx"
+            }
+          ],
+          "replies": [
+            {
+              "id": "wkly-20251021-1322-r1",
+              "replyToId": "wkly-20251021-1310",
+              "createdDateTime": "2025-10-21T04:22:00Z",
+              "lastModifiedDateTime": "2025-10-21T04:22:00Z",
+              "messageType": "message",
+              "from": { "user": { "id": "u-nakajima", "displayName": "中嶋 拓真（リスク分析官）", "userIdentityType": "aadUser" } },
+              "body": { "contentType": "html", "content": "<p>テンプレ修正OKです。「再送データの取り込み完了見込み：10/22午前」も明記しました。</p>" },
+              "mentions": []
+            },
+            {
+              "id": "wkly-20251021-1330-r2",
+              "replyToId": "wkly-20251021-1310",
+              "createdDateTime": "2025-10-21T04:30:00Z",
+              "lastModifiedDateTime": "2025-10-21T04:30:00Z",
+              "messageType": "message",
+              "from": { "user": { "id": "u-takeda", "displayName": "竹田 隆（コスト管理）", "userIdentityType": "aadUser" } },
+              "body": { "contentType": "html", "content": "<p>要約版で問題ありません。差分は備考に回し、スライドはコンパクトで。</p>" },
+              "mentions": []
+            }
+          ]
+        },
+        {
+          "id": "wkly-20251022-1205",
+          "replyToId": null,
+          "etag": "W/\"wkly-20251022-1205\"",
+          "messageType": "message",
+          "createdDateTime": "2025-10-22T03:05:00Z",
+          "lastModifiedDateTime": "2025-10-22T03:05:00Z",
+          "importance": "normal",
+          "subject": "全体会議（10/22）ダイジェスト共有",
+          "from": { "user": { "id": "u-ishida", "displayName": "石田 智久（統括PM）", "userIdentityType": "aadUser" } },
+          "body": {
+            "contentType": "html",
+            "content": "<p>全体会議、皆さんお疲れさまでした。<b>ダイジェスト</b>を共有します。</p><ul><li>進捗：計画比を持ち直し、<b>回復傾向</b>を明示</li><li>品質：<b>QScore +6pt（UX）</b>を強調、次対象は「比較分析」画面</li><li>リスク：#17は<b>監視中</b>へ移行、影響は<b>限定的</b>で説明</li><li>次フェーズ：<b>試験版ダッシュボードを11/5</b>に稼働目標</li><li>アクション：<b>監査準備チームを10/24発足</b></li></ul><p>資料と録画：<code>/PMO/AllHands_20251022/final/</code> に格納済み</p>"
+          },
+          "mentions": [],
+          "attachments": [],
+          "replies": [
+            {
+              "id": "wkly-20251022-1215-r1",
+              "replyToId": "wkly-20251022-1205",
+              "createdDateTime": "2025-10-22T03:15:00Z",
+              "lastModifiedDateTime": "2025-10-22T03:15:00Z",
+              "messageType": "message",
+              "from": { "user": { "id": "u-matsushita", "displayName": "松下 翔太（スケジュール管理）", "userIdentityType": "aadUser" } },
+              "body": { "contentType": "html", "content": "<p>ダッシュボード稼働に合わせ、<b>実証フェーズWBS</b>の初版を10/28に出します。</p>" }
+            },
+            {
+              "id": "wkly-20251022-1218-r2",
+              "replyToId": "wkly-20251022-1205",
+              "createdDateTime": "2025-10-22T03:18:00Z",
+              "lastModifiedDateTime": "2025-10-22T03:18:00Z",
+              "messageType": "message",
+              "from": { "user": { "id": "u-li", "displayName": "李 芳蘭（PMO補佐）", "userIdentityType": "aadUser" } },
+              "body": { "contentType": "html", "content": "<p>英語版の配布資料もアップしました（QA含む）。リンクは同フォルダに配置済みです。</p>" }
+            }
+          ]
+        },
+        {
+          "id": "wkly-20251023-1745",
+          "replyToId": null,
+          "etag": "W/\"wkly-20251023-1745\"",
+          "messageType": "message",
+          "createdDateTime": "2025-10-23T08:45:00Z",
+          "lastModifiedDateTime": "2025-10-23T08:45:00Z",
+          "importance": "normal",
+          "subject": "会議④アクションのステータス更新",
+          "from": { "user": { "id": "u-miyano", "displayName": "宮野 里桜（PMOアシスタント）", "userIdentityType": "aadUser" } },
+          "body": {
+            "contentType": "html",
+            "content": "<p>会議④の<b>アクション進捗</b>を更新します。</p><ul><li><at id=\"0\">松下 翔太</at>：実証フェーズWBS（10/28締切）→ <b>ドラフト作成中</b></li><li><at id=\"1\">西川 麻衣</at> / <at id=\"2\">原口 由香</at>：監査対応リスト（10/25締切）→ <b>骨子版共有済み</b></li><li><at id=\"3\">李 芳蘭</at>：英語版監査資料（10/27締切）→ <b>用語統一中</b></li><li><at id=\"4\">石田 智久</at>：顧客フィードバック報告書（10/25締切）→ <b>構成レビュー中</b></li></ul>"
+          },
+          "mentions": [
+            { "id": 0, "mentioned": { "user": { "id": "u-matsushita", "displayName": "松下 翔太" } }, "mentionText": "松下 翔太" },
+            { "id": 1, "mentioned": { "user": { "id": "u-nishikawa", "displayName": "西川 麻衣" } }, "mentionText": "西川 麻衣" },
+            { "id": 2, "mentioned": { "user": { "id": "u-haraguchi", "displayName": "原口 由香" } }, "mentionText": "原口 由香" },
+            { "id": 3, "mentioned": { "user": { "id": "u-li", "displayName": "李 芳蘭" } }, "mentionText": "李 芳蘭" },
+            { "id": 4, "mentioned": { "user": { "id": "u-ishida", "displayName": "石田 智久" } }, "mentionText": "石田 智久" }
+          ],
+          "attachments": [],
+          "replies": [
+            {
+              "id": "wkly-20251023-1802-r1",
+              "replyToId": "wkly-20251023-1745",
+              "createdDateTime": "2025-10-23T09:02:00Z",
+              "lastModifiedDateTime": "2025-10-23T09:02:00Z",
+              "messageType": "message",
+              "from": { "user": { "id": "u-nishikawa", "displayName": "西川 麻衣（品質PM）", "userIdentityType": "aadUser" } },
+              "body": { "contentType": "html", "content": "<p>チェックリストに<b>証跡保管のパス規約</b>を追記しました。<at id=\"0\">望月 俊</at> さんのダッシュボード連携も依頼済み。</p>" },
+              "mentions": [
+                { "id": 0, "mentioned": { "user": { "id": "u-mochizuki", "displayName": "望月 俊" } }, "mentionText": "望月 俊" }
+              ]
+            },
+            {
+              "id": "wkly-20251023-1810-r2",
+              "replyToId": "wkly-20251023-1745",
+              "createdDateTime": "2025-10-23T09:10:00Z",
+              "lastModifiedDateTime": "2025-10-23T09:10:00Z",
+              "messageType": "message",
+              "from": { "user": { "id": "u-ishida", "displayName": "石田 智久（統括PM）", "userIdentityType": "aadUser" } },
+              "body": { "contentType": "html", "content": "<p>報告書は明日午前でレビュー上げます。顧客要望→対応の表現は慎重に調整します。</p>" }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "19:tech@thread.tacv2",
+      "displayName": "💬 技術・課題共有",
+      "messages": [
+        {
+          "id": "tech-20251021-2210",
+          "replyToId": null,
+          "etag": "W/\"tech-20251021-2210\"",
+          "messageType": "message",
+          "createdDateTime": "2025-10-21T13:10:00Z",
+          "lastModifiedDateTime": "2025-10-21T13:10:00Z",
+          "importance": "normal",
+          "subject": "API最終確認とデータ取り込み",
+          "from": { "user": { "id": "u-miyake", "displayName": "三宅 悠人（データ基盤）", "userIdentityType": "aadUser" } },
+          "body": {
+            "contentType": "html",
+            "content": "<p><at id=\"0\">陳 文傑</at> さん、<code>/api/v1/visits/summary</code> の<b>最終確認</b>を開始します。</p><ul><li>ステージングで<b>スロットproduction-preview</b>に切替</li><li>再送データの取り込み（scheduled 10/22 09:10）</li><li>監視：APM／ログ（<code>used_date</code>のISO8601）</li></ul><p><at id=\"1\">木下 俊輔</at> さん、Airflow DAGの当日パラメータ（<code>date_key</code>）切替をご確認ください。</p>"
+          },
+          "mentions": [
+            { "id": 0, "mentioned": { "user": { "id": "u-chen", "displayName": "陳 文傑" } }, "mentionText": "陳 文傑" },
+            { "id": 1, "mentioned": { "user": { "id": "u-kinoshita", "displayName": "木下 俊輔" } }, "mentionText": "木下 俊輔" }
+          ],
+          "attachments": [],
+          "replies": [
+            {
+              "id": "tech-20251021-2218-r1",
+              "replyToId": "tech-20251021-2210",
+              "createdDateTime": "2025-10-21T13:18:00Z",
+              "lastModifiedDateTime": "2025-10-21T13:18:00Z",
+              "messageType": "message",
+              "from": { "user": { "id": "u-kinoshita", "displayName": "木下 俊輔（データ基盤）", "userIdentityType": "aadUser" } },
+              "body": { "contentType": "html", "content": "<p>DAGのパラメータ切替OKです。<code>used_date</code>のNULL/空文字は<b>rejectルール</b>で弾きます。テスト投入は9:20実施。</p>" },
+              "mentions": []
+            },
+            {
+              "id": "tech-20251021-2225-r2",
+              "replyToId": "tech-20251021-2210",
+              "createdDateTime": "2025-10-21T13:25:00Z",
+              "lastModifiedDateTime": "2025-10-21T13:25:00Z",
+              "messageType": "message",
+              "from": { "user": { "id": "u-hashimoto", "displayName": "橋本 翼（品質管理）", "userIdentityType": "aadUser" } },
+              "body": {
+                "contentType": "html",
+                "content": "<p>取り込み後の<b>ログ整合</b>テンプレを貼っておきます（エッジケースを5本追跡）。<br/>📎 etl_checklist_used_date_v2.xlsx</p>"
+              },
+              "mentions": [],
+              "attachments": [
+                {
+                  "id": "att-etl-checklist-v2",
+                  "contentType": "reference",
+                  "name": "etl_checklist_used_date_v2.xlsx",
+                  "contentUrl": "https://contoso.sharepoint.com/sites/NEC-KANKO/Shared%20Documents/etl_checklist_used_date_v2.xlsx"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "tech-20251023-0930",
+          "replyToId": null,
+          "etag": "W/\"tech-20251023-0930\"",
+          "messageType": "message",
+          "createdDateTime": "2025-10-23T00:30:00Z",
+          "lastModifiedDateTime": "2025-10-23T00:30:00Z",
+          "importance": "normal",
+          "subject": "UX操作ガイド英語版 & 試験版ダッシュボード",
+          "from": { "user": { "id": "u-aizawa", "displayName": "相沢 沙耶（UX）", "userIdentityType": "aadUser" } },
+          "body": {
+            "contentType": "html",
+            "content": "<p><at id=\"0\">李 芳蘭</at> さん 英語表紙の<b>最終校正</b>ありがとうございました。<br/>試験版ダッシュボは<b>5メニュー構成</b>で確定案を出します：</p><ol><li>Home</li><li>Demand Forecast</li><li>Crowd Heatmap</li><li>Comparison</li><li>Export</li></ol><p><at id=\"1\">宮内 梓</at> さん、「Comparison」のカラム説明を右サイドの<b>折りたたみヘルプ</b>に変更できますか？（視線移動を減らす意図）</p>"
+          },
+          "mentions": [
+            { "id": 0, "mentioned": { "user": { "id": "u-li", "displayName": "李 芳蘭" } }, "mentionText": "李 芳蘭" },
+            { "id": 1, "mentioned": { "user": { "id": "u-miyauchi", "displayName": "宮内 梓" } }, "mentionText": "宮内 梓" }
+          ],
+          "attachments": [],
+          "replies": [
+            {
+              "id": "tech-20251023-0942-r1",
+              "replyToId": "tech-20251023-0930",
+              "createdDateTime": "2025-10-23T00:42:00Z",
+              "lastModifiedDateTime": "2025-10-23T00:42:00Z",
+              "messageType": "message",
+              "from": { "user": { "id": "u-miyauchi", "displayName": "宮内 梓（UIエンジニア）", "userIdentityType": "aadUser" } },
+              "body": {
+                "contentType": "html",
+                "content": "<p>可能です。右パネル常時展開→折りたたみに切替、SP幅では<b>モーダル</b>表示にします。今日中にPR出します。</p>"
+              },
+              "mentions": []
+            },
+            {
+              "id": "tech-20251023-0950-r2",
+              "replyToId": "tech-20251023-0930",
+              "createdDateTime": "2025-10-23T00:50:00Z",
+              "lastModifiedDateTime": "2025-10-23T00:50:00Z",
+              "messageType": "message",
+              "from": { "user": { "id": "u-nishikawa", "displayName": "西川 麻衣（品質PM）", "userIdentityType": "aadUser" } },
+              "body": {
+                "contentType": "html",
+                "content": "<p>PR後、<b>QScoreスクリプト</b>を当該画面にも適用して数値化します（次回品質会議で共有）。</p>"
+              },
+              "mentions": []
+            }
+          ]
+        },
+        {
+          "id": "tech-20251024-0905",
+          "replyToId": null,
+          "etag": "W/\"tech-20251024-0905\"",
+          "messageType": "message",
+          "createdDateTime": "2025-10-24T00:05:00Z",
+          "lastModifiedDateTime": "2025-10-24T00:05:00Z",
+          "importance": "normal",
+          "subject": "品質監査準備チーム 立ち上げ",
+          "from": { "user": { "id": "u-nishikawa", "displayName": "西川 麻衣（品質PM）", "userIdentityType": "aadUser" } },
+          "body": {
+            "contentType": "html",
+            "content": "<p>本日付で<b>品質監査準備チーム</b>を立ち上げました（会議④合意事項）。</p><p>ToDo初版：</p><ul><li><b>証跡の最終置き場</b>を <code>/QA/Audit/2025Q4/</code> に統一（<at id=\"0\">原口 由香</at>）</li><li><b>テスト観点→監査観点のトレース</b>（<at id=\"1\">望月 俊</at>）</li><li><b>例外発生時の再現手順テンプレ</b>（<at id=\"2\">吉田 彩音</at>）</li><li><b>監査説明スライド雛形</b>（<at id=\"3\">宮野 里桜</at>）</li></ul><p>初回ミーティングは<b>10/24 15:00–15:45</b>（招待済み）。役割分担をその場で確定します。</p>"
+          },
+          "mentions": [
+            { "id": 0, "mentioned": { "user": { "id": "u-haraguchi", "displayName": "原口 由香" } }, "mentionText": "原口 由香" },
+            { "id": 1, "mentioned": { "user": { "id": "u-mochizuki", "displayName": "望月 俊" } }, "mentionText": "望月 俊" },
+            { "id": 2, "mentioned": { "user": { "id": "u-yoshida", "displayName": "吉田 彩音" } }, "mentionText": "吉田 彩音" },
+            { "id": 3, "mentioned": { "user": { "id": "u-miyano", "displayName": "宮野 里桜" } }, "mentionText": "宮野 里桜" }
+          ],
+          "attachments": [],
+          "replies": [
+            {
+              "id": "tech-20251024-0918-r1",
+              "replyToId": "tech-20251024-0905",
+              "createdDateTime": "2025-10-24T00:18:00Z",
+              "lastModifiedDateTime": "2025-10-24T00:18:00Z",
+              "messageType": "message",
+              "from": { "user": { "id": "u-haraguchi", "displayName": "原口 由香（成果物統括）", "userIdentityType": "aadUser" } },
+              "body": { "contentType": "html", "content": "<p>置き場作りました。<code>命名規則.md</code>も入れてあります。改版時は<code>_v2</code>→<code>_final</code>運用で。</p>" }
+            },
+            {
+              "id": "tech-20251024-0930-r2",
+              "replyToId": "tech-20251024-0905",
+              "createdDateTime": "2025-10-24T00:30:00Z",
+              "lastModifiedDateTime": "2025-10-24T00:30:00Z",
+              "messageType": "message",
+              "from": { "user": { "id": "u-mochizuki", "displayName": "望月 俊（品質保証）", "userIdentityType": "aadUser" } },
+              "body": { "contentType": "html", "content": "<p>トレース表、先にドラフトを出します。<b>QScore観点</b>も列追加します。</p>" }
+            }
+          ]
+        },
+        {
+          "id": "tech-20251024-1800",
+          "replyToId": null,
+          "etag": "W/\"tech-20251024-1800\"",
+          "messageType": "message",
+          "createdDateTime": "2025-10-24T09:00:00Z",
+          "lastModifiedDateTime": "2025-10-24T09:00:00Z",
+          "importance": "normal",
+          "subject": "完了報告まとめ（10/24）",
+          "from": { "user": { "id": "u-miyano", "displayName": "宮野 里桜（PMOアシスタント）", "userIdentityType": "aadUser" } },
+          "body": {
+            "contentType": "html",
+            "content": "<p>本週の<b>完了報告</b>をまとめます：</p><ul><li>✅ 10/22 全体会議 実施・録画格納</li><li>✅ リスク#17 ステータス更新（監視中）</li><li>✅ 英語版操作ガイド 表紙差し替え完了</li><li>✅ 監査準備チーム 立ち上げ＆初回ToDo配布</li><li>🔄 実証フェーズWBS（10/28締切）進行中</li><li>🔄 英語版監査資料（10/27締切）用語統一中</li></ul>"
+          },
+          "mentions": [],
+          "attachments": [],
+          "replies": [
+            {
+              "id": "tech-20251024-1807-r1",
+              "replyToId": "tech-20251024-1800",
+              "createdDateTime": "2025-10-24T09:07:00Z",
+              "lastModifiedDateTime": "2025-10-24T09:07:00Z",
+              "messageType": "message",
+              "from": { "user": { "id": "u-ishida", "displayName": "石田 智久（統括PM）", "userIdentityType": "aadUser" } },
+              "body": { "contentType": "html", "content": "<p>グッドです。来週は<b>11/5の試験稼働</b>に向けた<b>公開条件確定</b>を最優先に進めましょう。</p>" }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+```
+
+
+```
+### outlook予定表第二週
+```
+予定表（人が読む用・要約）
+
+2025/10/21(火) 09:00–11:00
+第19回 PMO定例＋全体会議リハーサル（Teams）
+参加: PMO全員＋各チームリーダー（AI/基盤/UX/運用/品質）
+
+2025/10/22(水) 09:00–09:30
+ETL再送データ取り込み 監視ウィンドウ（運用ブロック／Teams）
+参加: 三宅、木下、橋本、陳
+
+2025/10/22(水) 10:00–11:30
+全体会議（顧客向け）（Teams）
+参加: PMO＋各チームリーダー＋顧客側出席者
+
+2025/10/23(木) 10:00–11:30
+全体会議報告後レビュー（会議④）（Teams）
+参加: PMO
+
+2025/10/23(木) 13:00–13:30
+顧客向けフォローアップメール レビュー（Teams）
+参加: 宮野、原口（必要に応じて石田もオプション）
+
+2025/10/24(金) 15:00–15:45
+品質監査準備チーム キックオフ（Teams）
+参加: 西川（主催）、原口、望月、吉田、宮野
+
+2025/11/05(水) 10:00–10:30
+【マイルストン】試験版ダッシュボード 稼働目標（Teamsリンク／情報共有用）
+```
+
+```json
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.event)",
+  "value": [
+    {
+      "id": "evt-pmo-19th-rehearsal-20251021",
+      "subject": "第19回 PMO定例＋全体会議リハーサル",
+      "bodyPreview": "全体報告スライド最終確認／チーム別報告調整／Q&A共有／通しリハ",
+      "body": {
+        "contentType": "HTML",
+        "content": "<p>議題: 全体報告スライド最終確認、各チーム報告調整、Q&A想定リスト共有、リハーサル</p>"
+      },
+      "start": { "dateTime": "2025-10-21T09:00:00", "timeZone": "Tokyo Standard Time" },
+      "end":   { "dateTime": "2025-10-21T11:00:00", "timeZone": "Tokyo Standard Time" },
+      "location": { "displayName": "Microsoft Teams 会議" },
+      "isOnlineMeeting": true,
+      "onlineMeetingProvider": "teamsForBusiness",
+      "onlineMeeting": { "joinUrl": "https://teams.microsoft.com/l/meetup-join/pmo-19-20251021" },
+      "organizer": { "emailAddress": { "name": "宮野 里桜（PMOアシスタント）", "address": "r.miyano@contoso.com" } },
+      "attendees": [
+        { "type": "required", "emailAddress": { "name": "石田 智久", "address": "t.ishida@contoso.com" } },
+        { "type": "required", "emailAddress": { "name": "PMO全員", "address": "pmo@contoso.com" } },
+        { "type": "required", "emailAddress": { "name": "各チームリーダー", "address": "teamleads@contoso.com" } }
+      ],
+      "reminderMinutesBeforeStart": 15,
+      "importance": "normal",
+      "sensitivity": "normal"
+    },
+    {
+      "id": "evt-etl-monitor-20251022",
+      "subject": "ETL再送データ取り込み 監視ウィンドウ",
+      "bodyPreview": "09:10取込／09:20テスト投入／used_date(ISO8601)ログ整合チェック",
+      "body": {
+        "contentType": "HTML",
+        "content": "<p>手順: スロットproduction-preview、Airflow date_key切替、APM/ログ監視、NULL/空文字rejectルール確認</p>"
+      },
+      "start": { "dateTime": "2025-10-22T09:00:00", "timeZone": "Tokyo Standard Time" },
+      "end":   { "dateTime": "2025-10-22T09:30:00", "timeZone": "Tokyo Standard Time" },
+      "location": { "displayName": "Teams／運用ブロック" },
+      "isOnlineMeeting": true,
+      "onlineMeetingProvider": "teamsForBusiness",
+      "onlineMeeting": { "joinUrl": "https://teams.microsoft.com/l/meetup-join/etl-monitor-20251022" },
+      "organizer": { "emailAddress": { "name": "三宅 悠人（データ基盤）", "address": "y.miyake@contoso.com" } },
+      "attendees": [
+        { "type": "required", "emailAddress": { "name": "木下 俊輔", "address": "s.kinoshita@contoso.com" } },
+        { "type": "required", "emailAddress": { "name": "橋本 翼", "address": "t.hashimoto@contoso.com" } },
+        { "type": "optional", "emailAddress": { "name": "陳 文傑", "address": "w.chen@contoso.com" } }
+      ],
+      "categories": [ "運用", "データ基盤" ],
+      "reminderMinutesBeforeStart": 10
+    },
+    {
+      "id": "evt-allhands-20251022",
+      "subject": "全体会議（顧客向け）",
+      "bodyPreview": "進捗回復・QScore(+6pt)・リスク#17監視中・試験版ダッシュボード11/5目標",
+      "body": {
+        "contentType": "HTML",
+        "content": "<p>アジェンダ: 進捗/品質(QScore)/リスク/コスト/ロードマップ。録画と資料は共有フォルダに格納。</p>"
+      },
+      "start": { "dateTime": "2025-10-22T10:00:00", "timeZone": "Tokyo Standard Time" },
+      "end":   { "dateTime": "2025-10-22T11:30:00", "timeZone": "Tokyo Standard Time" },
+      "location": { "displayName": "Microsoft Teams ウェビナー" },
+      "isOnlineMeeting": true,
+      "onlineMeetingProvider": "teamsForBusiness",
+      "onlineMeeting": { "joinUrl": "https://teams.microsoft.com/l/meetup-join/allhands-20251022" },
+      "organizer": { "emailAddress": { "name": "石田 智久（統括PM）", "address": "t.ishida@contoso.com" } },
+      "attendees": [
+        { "type": "required", "emailAddress": { "name": "PMO全員", "address": "pmo@contoso.com" } },
+        { "type": "required", "emailAddress": { "name": "各チームリーダー", "address": "teamleads@contoso.com" } },
+        { "type": "optional", "emailAddress": { "name": "顧客側出席者", "address": "customer.group@example.com" } }
+      ],
+      "categories": [ "顧客向け" ],
+      "reminderMinutesBeforeStart": 30
+    },
+    {
+      "id": "evt-postreview-20251023",
+      "subject": "全体会議報告後レビュー（会議④）",
+      "bodyPreview": "フィードバック整理／実証運用タスク／外部監査対応の段取り",
+      "body": {
+        "contentType": "HTML",
+        "content": "<p>決定: 試験版ダッシュボード11/5稼働目標、品質監査準備チーム10/24設置、実証フェーズWBSは10/28提出</p>"
+      },
+      "start": { "dateTime": "2025-10-23T10:00:00", "timeZone": "Tokyo Standard Time" },
+      "end":   { "dateTime": "2025-10-23T11:30:00", "timeZone": "Tokyo Standard Time" },
+      "location": { "displayName": "Microsoft Teams 会議" },
+      "isOnlineMeeting": true,
+      "onlineMeetingProvider": "teamsForBusiness",
+      "onlineMeeting": { "joinUrl": "https://teams.microsoft.com/l/meetup-join/postreview-20251023" },
+      "organizer": { "emailAddress": { "name": "石田 智久（統括PM）", "address": "t.ishida@contoso.com" } },
+      "attendees": [
+        { "type": "required", "emailAddress": { "name": "PMO全員", "address": "pmo@contoso.com" } }
+      ],
+      "reminderMinutesBeforeStart": 15
+    },
+    {
+      "id": "evt-followup-mail-review-20251023",
+      "subject": "顧客向けフォローアップメール レビュー",
+      "bodyPreview": "ドラフト確認（宮野→原口）。必要に応じ石田合流。",
+      "body": {
+        "contentType": "HTML",
+        "content": "<p>対象: Customer_FU_20251023_draft.docx。文面・表現の整合と用語統一の最終確認。</p>"
+      },
+      "start": { "dateTime": "2025-10-23T13:00:00", "timeZone": "Tokyo Standard Time" },
+      "end":   { "dateTime": "2025-10-23T13:30:00", "timeZone": "Tokyo Standard Time" },
+      "location": { "displayName": "Microsoft Teams 会議" },
+      "isOnlineMeeting": true,
+      "onlineMeetingProvider": "teamsForBusiness",
+      "onlineMeeting": { "joinUrl": "https://teams.microsoft.com/l/meetup-join/fu-review-20251023" },
+      "organizer": { "emailAddress": { "name": "宮野 里桜", "address": "r.miyano@contoso.com" } },
+      "attendees": [
+        { "type": "required", "emailAddress": { "name": "原口 由香", "address": "y.haraguchi@contoso.com" } },
+        { "type": "optional", "emailAddress": { "name": "石田 智久", "address": "t.ishida@contoso.com" } }
+      ],
+      "reminderMinutesBeforeStart": 10
+    },
+    {
+      "id": "evt-audit-kickoff-20251024",
+      "subject": "品質監査準備チーム キックオフ",
+      "bodyPreview": "証跡置き場／監査観点トレース／例外時再現手順／説明スライド雛形",
+      "body": {
+        "contentType": "HTML",
+        "content": "<p>ToDo: /QA/Audit/2025Q4/ 整備、トレース表ドラフト、再現手順テンプレ、説明スライド雛形作成</p>"
+      },
+      "start": { "dateTime": "2025-10-24T15:00:00", "timeZone": "Tokyo Standard Time" },
+      "end":   { "dateTime": "2025-10-24T15:45:00", "timeZone": "Tokyo Standard Time" },
+      "location": { "displayName": "Microsoft Teams 会議" },
+      "isOnlineMeeting": true,
+      "onlineMeetingProvider": "teamsForBusiness",
+      "onlineMeeting": { "joinUrl": "https://teams.microsoft.com/l/meetup-join/audit-kickoff-20251024" },
+      "organizer": { "emailAddress": { "name": "西川 麻衣（品質PM）", "address": "m.nishikawa@contoso.com" } },
+      "attendees": [
+        { "type": "required", "emailAddress": { "name": "原口 由香", "address": "y.haraguchi@contoso.com" } },
+        { "type": "required", "emailAddress": { "name": "望月 俊", "address": "t.mochizuki@contoso.com" } },
+        { "type": "required", "emailAddress": { "name": "吉田 彩音", "address": "a.yoshida@contoso.com" } },
+        { "type": "required", "emailAddress": { "name": "宮野 里桜", "address": "r.miyano@contoso.com" } }
+      ],
+      "categories": [ "品質", "監査" ],
+      "reminderMinutesBeforeStart": 15
+    },
+    {
+      "id": "evt-milestone-dashboard-20251105",
+      "subject": "【マイルストン】試験版ダッシュボード 稼働目標",
+      "bodyPreview": "顧客説明会フィードバック反映。公開条件確定・監視体制確認。",
+      "body": {
+        "contentType": "HTML",
+        "content": "<p>公開条件の最終確認、監視・ロールバック方針、連絡体制を確認</p>"
+      },
+      "start": { "dateTime": "2025-11-05T10:00:00", "timeZone": "Tokyo Standard Time" },
+      "end":   { "dateTime": "2025-11-05T10:30:00", "timeZone": "Tokyo Standard Time" },
+      "location": { "displayName": "Microsoft Teams（情報共有）" },
+      "isOnlineMeeting": true,
+      "onlineMeetingProvider": "teamsForBusiness",
+      "onlineMeeting": { "joinUrl": "https://teams.microsoft.com/l/meetup-join/milestone-20251105" },
+      "organizer": { "emailAddress": { "name": "石田 智久（統括PM）", "address": "t.ishida@contoso.com" } },
+      "attendees": [
+        { "type": "optional", "emailAddress": { "name": "PMO全員", "address": "pmo@contoso.com" } },
+        { "type": "optional", "emailAddress": { "name": "各チームリーダー", "address": "teamleads@contoso.com" } }
+      ],
+      "categories": [ "マイルストン" ],
+      "reminderMinutesBeforeStart": 60
+    }
+  ]
+}
+
 ```
 
 # ② データ基盤構築チーム（三宅チーム）
