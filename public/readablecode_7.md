@@ -4,7 +4,7 @@ tags:
   - リーダブルコード
   - 命名規則
 private: true
-updated_at: '2025-10-27T03:55:51+09:00'
+updated_at: '2025-10-27T04:23:26+09:00'
 id: cf52cd10d4c0f7d51fcc
 organization_url_name: null
 slide: false
